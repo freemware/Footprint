@@ -1,10 +1,10 @@
 # Footprint browser extension (source, v0.1)
 
 > **This is not the released extension.** The extension people install is the packaged v0.3.1 in the
-> repository's top-level [`footprint-extension-0.3.0/`](../../footprint-extension-0.3.0/) folder, built from newer source that isn't in
+> repository's top-level [`extension/`](../../extension/) folder, built from newer source that isn't in
 > this repository. This folder is the older source the web app uses for its builds and browser tests,
 > plus the bridge changes that let the web app show live scan results. Bring the two together before
-> releasing from here: [`footprint-extension-0.3.0/maintenance/source-changes.patch`](../../footprint-extension-0.3.0/maintenance/source-changes.patch)
+> releasing from here: [`extension/maintenance/source-changes.patch`](../../extension/maintenance/source-changes.patch)
 > applies cleanly to this source and covers the 0.3.0 Facebook fixes, but not 0.3.1's saved results,
 > previews or Instagram parts.
 

@@ -1,7 +1,7 @@
 # Footprint web app
 
 > This is the **web app** half of the repository. The browser extension people install is in the
-> top-level [`footprint-extension-0.3.0/`](../footprint-extension-0.3.0/) folder; see the [repository README](../README.md) for how the parts fit.
+> top-level [`extension/`](../extension/) folder; see the [repository README](../README.md) for how the parts fit.
 
 A social media privacy assistant. Drop in your Facebook or Instagram data download to see, in plain
 language, what the platform collects about you, then get a personal privacy plan: which settings to
@@ -59,7 +59,7 @@ in an export. Regenerate them with `npm run build:gazetteer`.
 
 ## Working with the browser extension
 
-The released extension is the packaged v0.3.1 in the repository's top-level [`footprint-extension-0.3.0/`](../footprint-extension-0.3.0/) folder (the folder keeps its old name; its manifest says 0.3.1).
+The released extension is the packaged v0.3.1 in the repository's top-level [`extension/`](../extension/) folder.
 This folder's `extension/` holds **older extension source (v0.1)** that the web app uses for its builds
 and browser tests. It is behind the release, so don't ship from it; see
 [`extension/README.md`](extension/README.md).

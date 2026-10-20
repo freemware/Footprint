@@ -4,7 +4,7 @@ This repository holds two separate parts:
 
 | Folder | What it is |
 |---|---|
-| [`footprint-extension-0.3.0/`](footprint-extension-0.3.0/) | **The browser extension** (packaged; its manifest says v0.3.1). Install it from [`releases/`](releases/). Everything below this table is about the extension. |
+| [`extension/`](extension/) | **The browser extension** (packaged v0.3.1). Install it from [`releases/`](releases/). Everything below this table is about the extension. |
 | [`web-app/`](web-app/) | **The web app** (source code). Reads the data download Facebook or Instagram gives you and builds a personal privacy plan, entirely in your browser. See [`web-app/README.md`](web-app/README.md). |
 
 Footprint is a Chrome extension that helps you review social media privacy settings, find posts you’re tagged in, and clean up old posts. Supported actions vary by platform.
@@ -86,12 +86,12 @@ The repository contains the packaged Manifest V3 extension. The original applica
 With Node.js 24 and npm 11, run:
 
 ```sh
-cd footprint-extension-0.3.0/maintenance
+cd extension/maintenance
 npm ci --ignore-scripts --no-audit --no-fund
 npm test
 ```
 
-The directory retains its original `0.3.0` name; the extension manifest identifies the current version as `0.3.1`.
+The extension's version is in `extension/manifest.json` (currently `0.3.1`).
 
 The test command runs five regression tests and a simulated Facebook privacy scan against the shipped scripts. These tests do not sign in to Facebook or change a live account.
 

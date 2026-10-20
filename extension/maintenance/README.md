@@ -5,14 +5,14 @@ This checkout contains a packaged Manifest V3 extension, not the original applic
 With Node.js 24 and npm 11:
 
 ```sh
-cd /workspace/Footprint/footprint-extension-0.3.0/maintenance
-npm ci --cache /workspace/footprint-tools/npm-cache --ignore-scripts --no-audit --no-fund
+cd extension/maintenance
+npm ci --ignore-scripts --no-audit --no-fund
 npm test
 ```
 
 Tests exercise the shipped content script and service worker against simulated Facebook pages. They never sign in, access a live Facebook account, or remove real tags.
 
-To test in Chrome, load `footprint-extension-0.3.0` as an unpacked extension. When updating an existing installation, keep its folder and click Reload in `chrome://extensions`, then reopen Footprint so its dashboard loads the updated bundle. This preserves the extension's stored data.
+To test in Chrome, load the `extension` folder as an unpacked extension. When updating an existing installation, keep its folder and click Reload in `chrome://extensions`, then reopen Footprint so its dashboard loads the updated bundle. This preserves the extension's stored data.
 
 Scans run in inactive tabs. Tagged and cleanup list results are saved in `chrome.storage.local`, separately by platform, tool, and source. The dashboard remembers the selected source across navigation and reloads. Clear-all removes saved lists along with other extension data.
 
