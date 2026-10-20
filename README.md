@@ -5,7 +5,7 @@ This repository holds two separate parts:
 | Folder | What it is |
 |---|---|
 | [`extension/`](extension/) | **The browser extension** (packaged v0.3.1). Install it from [`releases/`](releases/). Everything below this table is about the extension. |
-| [`web-app/`](web-app/) | **The web app** (source code). Reads the data download Facebook or Instagram gives you and builds a personal privacy plan, entirely in your browser. See [`web-app/README.md`](web-app/README.md). |
+| [`web-app/`](web-app/) | **The web app** (source code). Reads the data download Facebook or Instagram gives you and builds a personal privacy plan, entirely in your browser. **[Open the web app](https://claude.ai/artifact/Evhotzt7jLYS5CH7vRYTsf)** (test link) · [`web-app/README.md`](web-app/README.md) |
 
 Footprint is a Chrome extension that helps you review social media privacy settings, find posts you’re tagged in, and clean up old posts. Supported actions vary by platform.
 

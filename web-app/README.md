@@ -9,6 +9,14 @@ change, in what order, with exact steps, based on what was found in your own dow
 Everything runs in your browser: your download is never uploaded anywhere, and the web app never
 logs in to Facebook or Instagram or changes settings for you.
 
+## Try it
+
+**[Open the Footprint web app](https://claude.ai/artifact/Evhotzt7jLYS5CH7vRYTsf)** (test version)
+
+This is a temporary test link; it will move to Footprint's own website before release. Your download
+is read inside your browser on that page and isn't uploaded. To try it without your own data, choose
+**Explore the demo** on the start screen.
+
 *Working name. Not affiliated with Meta.*
 
 ## Run it
