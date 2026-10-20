@@ -1,0 +1,12 @@
+Belize City	01	17.500	-88.198	61461
+San Ignacio	02	17.159	-89.070	16812
+Orange Walk	04	18.081	-88.563	15298
+Belmopan	02	17.250	-88.767	13381
+Dangriga	05	16.970	-88.233	10750
+Corozal	03	18.394	-88.388	9871
+San Pedro	01	17.916	-87.966	8418
+Benque Viejo el Carmen	02	17.075	-89.139	7092
+Punta Gorda	06	16.098	-88.810	5205
+Placencia	05	16.514	-88.366	4300
+Shipyard	04	17.894	-88.655	3522
+Valley of Peace	02	17.335	-88.835	1809

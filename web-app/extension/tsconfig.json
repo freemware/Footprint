@@ -1,0 +1,8 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["vite/client", "chrome"],
+    "noEmit": true
+  },
+  "include": ["src", "ui", "../src/pro/license.ts", "../src/pro/config.ts", "../src/i18n/advice.ts", "../src/i18n/strings.ts"]
+}

@@ -1,0 +1,394 @@
+Caracas	25	10.488	-66.879	3000000
+Maracaibo	23	10.667	-71.612	2225000
+Maracay	04	10.235	-67.591	1754256
+Valencia	07	10.162	-68.008	1385083
+Barquisimeto	13	10.065	-69.357	809490
+Ciudad Guayana	06	8.351	-62.641	746535
+Barcelona	02	10.136	-64.686	424795
+Maturín	16	9.746	-63.183	410972
+Puerto La Cruz	02	10.214	-64.633	370000
+Petare	15	10.477	-66.808	364684
+Barinas	05	8.623	-70.207	353442
+Turmero	04	10.229	-67.474	344700
+Ciudad Bolívar	06	8.129	-63.541	338000
+Mérida	14	8.590	-71.156	300000
+Alto Barinas	05	8.593	-70.226	284289
+Santa Teresa del Tuy	15	10.233	-66.665	278890
+Cumaná	19	10.454	-64.183	257783
+San Cristóbal	20	7.767	-72.225	246583
+Baruta	15	10.434	-66.876	244216
+Mucumpiz	14	8.417	-71.133	215259
+Cabimas	23	10.399	-71.452	200818
+Coro	11	11.405	-69.673	195227
+Guatire	15	10.474	-66.542	191903
+Cúa	15	10.162	-66.882	182558
+Guarenas	15	10.470	-66.619	181612
+Puerto Cabello	07	10.473	-68.013	174000
+Ocumare del Tuy	15	10.118	-66.775	166072
+Guacara	07	10.226	-67.877	151752
+El Tigre	02	8.889	-64.253	150999
+El Limón	04	10.306	-67.632	148247
+Acarigua	18	9.555	-69.196	143704
+Los Teques	15	10.344	-67.043	140617
+Punto Fijo	11	11.692	-70.199	131784
+Charallave	15	10.242	-66.857	129182
+Palo Negro	04	10.174	-67.542	128875
+Cagua	04	10.186	-67.459	119033
+Anaco	02	9.430	-64.464	117596
+Calabozo	12	8.924	-67.429	117132
+Guanare	18	9.042	-69.742	112286
+Carúpano	19	10.665	-63.254	112082
+Ejido	14	8.547	-71.241	106915
+Catia La Mar	26	10.605	-67.032	106822
+Mariara	07	10.295	-67.718	105486
+Carora	13	10.173	-70.081	93788
+Valera	21	9.318	-70.604	93756
+Yaritagua	22	10.081	-69.124	89662
+Valle de La Pascua	12	9.216	-66.007	89080
+San Juan de los Morros	12	9.912	-67.354	87739
+Porlamar	17	10.958	-63.870	87120
+La Victoria	04	10.227	-67.331	87045
+Tinaquillo	08	9.919	-68.305	82145
+El Cafetal	15	10.465	-66.830	80029
+San Fernando de Apure	03	7.888	-67.472	78779
+San Carlos	08	9.661	-68.583	77192
+San Felipe	22	10.340	-68.742	76766
+Villa de Cura	04	10.039	-67.489	76614
+Araure	18	9.581	-69.239	73054
+Güigüe	07	10.083	-67.778	71530
+La Villa del Rosario	23	10.326	-72.313	65011
+Chacao	15	10.496	-66.854	64609
+San Antonio de Los Altos	15	10.389	-66.952	63873
+Machiques	23	10.061	-72.552	62968
+San José de Guanipa	02	8.887	-64.165	62128
+El Vigía	14	8.614	-71.657	59092
+Caucaguita	15	10.358	-66.803	59000
+Punta Cardón	11	11.658	-70.215	58926
+Los Dos Caminos	15	10.494	-66.829	58168
+El Hatillo	15	10.424	-66.826	57591
+La Dolorita	15	10.488	-66.786	56846
+San Carlos del Zulia	23	9.001	-71.927	56582
+Upata	06	8.016	-62.406	53685
+El Tocuyo	13	9.787	-69.793	53099
+Maiquetía	26	10.595	-66.956	52564
+Caucagüito	15	10.487	-66.738	52556
+Puerto Ayacucho	01	5.660	-67.583	52526
+Rubio	20	7.701	-72.356	51568
+Tucupita	09	9.058	-62.050	51534
+San Mateo	04	10.213	-67.424	50401
+Chivacoa	22	10.160	-68.895	45904
+Morón	07	10.487	-68.201	44308
+Lagunillas	23	10.130	-71.259	44257
+San Joaquín	07	10.261	-67.793	41630
+Quíbor	13	9.929	-69.620	41526
+Zaraza	12	9.350	-65.325	41483
+Carrizal	15	10.350	-66.986	40618
+Altagracia de Orituco	12	9.860	-66.381	40052
+Güiria	19	10.577	-62.298	40000
+Tacarigua	07	10.086	-67.920	39205
+Colón	20	8.031	-72.261	38233
+Trujillo	21	9.366	-70.437	38110
+Caraballeda	26	10.612	-66.852	37824
+La Asunción	17	11.033	-63.863	35084
+Los Rastrojos	13	10.026	-69.242	34636
+Barinitas	05	8.762	-70.412	34397
+Las Tejerías	04	10.254	-67.173	33320
+Cantaura	02	9.306	-64.358	33040
+San Antonio del Táchira	20	7.815	-72.443	32458
+Santa Rita	23	10.536	-71.511	31810
+Guasdualito	03	7.242	-70.732	30860
+Nirgua	22	10.150	-68.565	30188
+Santa Elena de Uairén	06	4.602	-61.110	29795
+Juan Griego	17	11.082	-63.965	28256
+Villa Bruzual	18	9.332	-69.120	27993
+Táriba	20	7.819	-72.224	27432
+La Fría	20	8.215	-72.249	27077
+La Guaira	26	10.602	-66.933	25259
+Tucacas	11	10.790	-68.326	12500
+Chichiriviche	11	10.929	-68.273	12500
+Caricuao	25	10.433	-66.983	0
+Tocuyito	07	10.113	-68.068	0
+El Chaparro	02	9.152	-65.017	0
+Santa Cruz de Guacas	05	7.443	-71.301	0
+El Real	05	8.435	-69.996	0
+Puerto Vivas	05	7.500	-71.844	0
+La Mula	05	8.571	-70.375	0
+Los Guasimitos	05	8.664	-70.232	0
+Zea	14	8.377	-71.784	0
+Yumare	22	10.597	-68.673	0
+Yaracal	11	10.970	-68.546	0
+Yaguaraparo	19	10.568	-62.826	0
+Las Casitas del Vegon de Nutrias	05	8.237	-69.418	0
+Valle de Guanape	02	9.910	-65.674	0
+Urumaco	11	11.201	-70.256	0
+Ureña	20	7.919	-72.447	0
+Uracoa	16	8.994	-62.352	0
+Urachiche	22	10.158	-69.008	0
+Umuquena	20	8.266	-72.064	0
+Tunapuy	19	10.575	-63.108	0
+Tumeremo	06	7.299	-61.505	0
+Tucupido	12	9.273	-65.772	0
+Tucaní	14	8.970	-71.273	0
+Tovar	14	8.330	-71.753	0
+Torunos	05	8.500	-70.081	0
+Torondoy	14	9.035	-71.014	0
+Tocópero	11	11.499	-69.259	0
+Tinaco	08	9.699	-68.433	0
+Timotes	14	8.982	-70.739	0
+Tía Juana	23	10.259	-71.363	0
+Temblador	16	9.005	-62.645	0
+Tabay	14	8.632	-71.078	0
+Soledad	02	8.162	-63.565	0
+Socopó	05	8.231	-70.822	0
+Siquisique	13	10.571	-69.702	0
+Sinamaica	23	11.087	-71.856	0
+Seboruco	20	8.145	-72.073	0
+Sarare	13	9.781	-69.163	0
+Santo Domingo	14	8.861	-70.695	0
+San Timoteo	23	9.790	-71.071	0
+Santa Rosa	05	8.440	-69.701	0
+Santa María de Ipire	12	8.816	-65.323	0
+Santa María de Caparo	14	7.714	-71.465	0
+Santa Lucía	15	10.305	-66.660	0
+Santa Lucía	05	8.102	-69.778	0
+Santa Isabel	21	9.632	-70.808	0
+Santa Inés	05	8.262	-69.898	0
+Santa Elena de Arenales	14	8.821	-71.466	0
+Santa Cruz de Mora	14	8.399	-71.641	0
+Santa Cruz de Bucaral	11	10.819	-69.277	0
+Santa Cruz	04	10.180	-67.512	0
+Santa Catalina	05	7.924	-68.917	0
+Santa Bárbara	16	9.607	-63.609	0
+Santa Bárbara	05	7.813	-71.178	0
+Santa Apolonia	21	9.471	-71.012	0
+Santa Ana	17	11.068	-63.922	0
+Santa Ana	02	9.306	-64.655	0
+Santa Ana	20	8.117	-72.022	0
+Santa Ana	20	7.642	-72.277	0
+San Simón	20	8.350	-71.851	0
+San Silvestre	05	8.276	-70.110	0
+San Rafael de Onoto	18	9.678	-68.973	0
+Carvajal	21	9.307	-70.590	0
+San Rafael de Canaguá	05	8.027	-70.009	0
+San Pedro de Coche	17	10.781	-63.997	0
+San Pablo	22	10.249	-68.844	0
+San Mateo	02	9.740	-64.549	0
+San Luis	11	11.120	-69.684	0
+San Juan de Manapiare	01	5.327	-66.054	0
+San Juan de los Cayos	11	11.172	-68.413	0
+San Juan Bautista	17	11.014	-63.944	0
+San José de Barlovento	15	10.301	-65.991	0
+San José de Aerocuar	19	10.600	-63.329	0
+San Francisco de Yare	15	10.178	-66.746	0
+San Francisco	23	10.554	-71.704	0
+San Fernando de Atabapo	01	4.046	-67.699	0
+San Diego	07	10.261	-67.954	0
+San Casimiro	04	10.002	-67.015	0
+San Carlos de Río Negro	01	1.920	-67.061	0
+Sanare	13	9.752	-69.652	0
+San Antonio del Golfo	19	10.442	-63.789	0
+San Antonio	16	10.119	-63.725	0
+San Antonio	05	7.964	-68.434	0
+Sabaneta	05	8.752	-69.934	0
+Sabana Grande	21	9.402	-70.798	0
+Sabana de Parra	22	10.121	-69.036	0
+Sabana de Mendoza	21	9.435	-70.775	0
+Río Chico	15	10.319	-65.978	0
+Río Caribe	19	10.698	-63.109	0
+Quiriquire	16	9.979	-63.220	0
+Queniquea	20	7.917	-72.014	0
+Quebrada Seca	05	8.700	-70.319	0
+Punta de Piedras	17	10.901	-64.097	0
+Punta de Piedra	05	7.618	-71.492	0
+Punta de Mata	16	9.691	-63.609	0
+Puerto Píritu	02	10.059	-65.037	0
+Puerto de Nutrias	05	8.073	-69.302	0
+Puerto Cumarebo	11	11.486	-69.353	0
+Pueblo Nuevo	11	11.948	-69.923	0
+Pueblo Nuevo El Chivo	23	8.962	-71.608	0
+Pueblo Llano	14	8.915	-70.659	0
+Pregonero	20	8.019	-71.766	0
+Píritu	11	11.366	-69.138	0
+Píritu	02	10.040	-65.030	0
+Píritu	18	9.371	-69.210	0
+Pedregal	11	11.020	-70.120	0
+Pedraza La Vieja	05	7.917	-71.059	0
+Pedernales	09	9.971	-62.252	0
+Pariaguán	02	8.844	-64.711	0
+Paraíso de Chabasquén	18	9.433	-69.947	0
+La Plaza Paraguachi	17	11.108	-63.855	0
+Papelón	18	8.941	-69.460	0
+Pampatar	17	11.001	-63.793	0
+Pampanito	21	9.410	-70.501	0
+Pampán	21	9.445	-70.476	0
+Palmira	20	7.837	-72.228	0
+Palmasola	12	9.233	-66.717	0
+Ospino	18	9.296	-69.454	0
+Ortiz	12	9.622	-67.290	0
+Onoto	02	9.597	-65.194	0
+Ocumare de la Costa	04	10.461	-67.769	0
+Obispos	05	8.607	-70.105	0
+Nueva Bolivia	14	9.140	-71.091	0
+Naiguatá	26	10.620	-66.738	0
+Naguanagua	07	10.256	-68.016	0
+Mucuchíes	14	8.749	-70.920	0
+Motatán	21	9.392	-70.591	0
+Monte Carmelo	21	9.188	-70.812	0
+Montalbán	07	10.213	-68.327	0
+Mirimire	11	11.160	-68.726	0
+Miranda	07	10.151	-68.393	0
+Michelena	20	7.957	-72.243	0
+Mene de Mauroa	11	10.681	-71.036	0
+Masparrito	05	9.002	-70.301	0
+Maroa	01	2.719	-67.560	0
+Maripa	06	7.416	-65.190	0
+Marigüitar	19	10.448	-63.902	0
+Maporal	05	7.645	-70.420	0
+Mapire	02	7.741	-64.710	0
+Mamporal	15	10.366	-66.134	0
+Macuto	26	10.605	-66.897	0
+Los Guayos	07	10.189	-67.938	0
+Lobatera	20	7.930	-72.247	0
+Libertad	08	9.357	-68.692	0
+Libertad	05	8.327	-69.631	0
+Canaguá	14	8.125	-71.460	0
+Capacho Viejo	20	7.829	-72.319	0
+La Yuca	05	8.731	-70.181	0
+La Vela de Coro	11	11.461	-69.566	0
+Veguitas	05	8.824	-69.996	0
+La Unión	05	8.216	-67.767	0
+Las Vegas	08	9.537	-68.630	0
+Las Mercedes	12	9.110	-66.396	0
+La Sabana	26	10.619	-66.382	0
+La Quebrada	21	9.155	-70.577	0
+La Plata	23	10.320	-71.272	0
+La Luz	05	8.394	-69.824	0
+Lagunillas	14	8.505	-71.389	0
+La Esmeralda	01	3.175	-65.545	0
+La Cruz de Taratara	11	11.063	-69.713	0
+La Concepción	23	10.619	-71.838	0
+Concepción	23	10.412	-71.689	0
+Chameta	05	8.100	-70.907	0
+Caramuca	05	8.597	-70.321	0
+La Azulita	14	8.714	-71.444	0
+Jacura	11	11.074	-68.856	0
+Irapa	19	10.570	-62.582	0
+Higuerote	15	10.483	-66.101	0
+Guayabal	12	8.001	-67.397	0
+Guasipati	06	7.477	-61.897	0
+Guaraque	14	8.154	-71.736	0
+Guanta	02	10.235	-64.597	0
+Guanarito	18	8.696	-69.208	0
+Guama	22	10.266	-68.820	0
+Guadarrama	05	8.535	-68.049	0
+Farriar	22	10.470	-68.559	0
+Escuque	21	9.297	-70.672	0
+Encontrados	23	9.060	-72.235	0
+El Valle del Espíritu Santo	17	10.983	-63.883	0
+El Toro	23	10.954	-71.648	0
+El Sombrero	12	9.386	-67.058	0
+El Socorro	12	8.994	-65.742	0
+El Regalo	05	8.435	-69.177	0
+San Rafael del Piñal	20	7.530	-71.959	0
+El Pilar	19	10.548	-63.154	0
+El Paradero	21	9.773	-70.615	0
+El Pao	08	9.639	-68.129	0
+El Palmer	06	8.033	-61.883	0
+El Palmar	06	8.011	-61.907	0
+Elorza	03	7.061	-69.498	0
+Lecherías	02	10.192	-64.692	0
+El Dividive	21	9.475	-70.735	0
+El Corozo	23	10.121	-71.044	0
+El Corozo	05	8.568	-70.358	0
+El Consejo	04	10.238	-67.270	0
+El Cobre	20	8.035	-72.057	0
+El Cantón	05	7.478	-71.297	0
+El Callao	06	7.347	-61.827	0
+El Baúl	08	8.962	-68.295	0
+Duaca	13	10.286	-69.162	0
+Dolores	05	8.286	-69.566	0
+Dabajuro	11	11.023	-70.678	0
+Curiapo	09	8.581	-60.998	0
+Curbatí	05	8.454	-70.554	0
+Cúpira	15	10.161	-65.700	0
+Cumanacoa	19	10.251	-63.919	0
+Concepción	23	10.800	-71.767	0
+Coloncito	20	8.326	-72.087	0
+Cojedes	08	9.622	-68.918	0
+Cocorote	22	10.320	-68.783	0
+Clarines	02	9.940	-65.165	0
+Ciudad Piar	06	7.452	-63.320	0
+Ciudad Ojeda	23	10.202	-71.315	0
+Ciudad De Nutrias	05	8.095	-69.308	0
+Ciudad Bolivia	05	8.353	-70.571	0
+Churuguara	11	10.812	-69.537	0
+Chejendé	21	9.619	-70.357	0
+Chaguaramas	12	9.338	-66.253	0
+Caucagua	15	10.283	-66.376	0
+Casigua El Cubo	23	8.746	-72.519	0
+Casanay	19	10.504	-63.417	0
+Caripito	16	10.111	-63.100	0
+Caripe	16	10.173	-63.500	0
+Cariaco	19	10.497	-63.553	0
+Carache	21	9.629	-70.229	0
+Capitanejo	05	8.012	-71.005	0
+Canape Capatárida	11	11.175	-70.621	0
+Campo Elías	21	9.395	-70.059	0
+Camatagua	04	9.788	-66.906	0
+Camaguán	12	8.107	-67.607	0
+Calderas	05	8.914	-70.447	0
+Caicara	16	9.818	-63.613	0
+Caicara del Orinoco	06	7.635	-66.168	0
+Cabure	11	11.145	-69.612	0
+Cabudare	13	10.027	-69.262	0
+Bum Bum	05	8.277	-70.767	0
+Bruzual	03	8.051	-69.333	0
+Boraure	22	10.248	-68.770	0
+Boconoito	18	8.847	-69.980	0
+Boconó	21	9.254	-70.251	0
+Boca de Uchire	02	10.132	-65.422	0
+Boca de Río	17	10.968	-64.180	0
+Bobures	23	9.242	-71.175	0
+Biscucuy	18	9.360	-69.983	0
+Biruaca	03	7.845	-67.517	0
+Betijoque	21	9.381	-70.733	0
+Bejuma	07	10.174	-68.259	0
+Barrancas	05	8.770	-70.111	0
+Barrancas	16	8.699	-62.197	0
+Barbacoas	04	9.479	-66.975	0
+Bailadores	14	8.253	-71.828	0
+Bachaquero	23	9.962	-71.124	0
+Aroa	22	10.439	-68.895	0
+Arismendi	05	8.480	-68.370	0
+Aricagua	14	8.224	-71.137	0
+Araya	19	10.580	-64.255	0
+Arauquita	05	8.708	-69.657	0
+Aragua	16	9.970	-63.487	0
+Aragua de Barcelona	02	9.456	-64.829	0
+Altamira	05	8.824	-70.502	0
+Los Puertos de Altagracia	23	10.715	-71.522	0
+Aguasay	16	9.425	-63.731	0
+Achaguas	03	7.779	-68.224	0
+Abejales	20	7.623	-71.510	0
+Las Mesas	20	8.171	-72.159	0
+San José de Bolívar	20	7.912	-71.973	0
+Santa Rita	04	10.205	-67.559	0
+Isla Ratón	01	5.069	-67.813	0
+San Josecito	20	7.661	-72.220	0
+Cordero	20	7.857	-72.181	0
+Sierra Imataca	09	8.394	-62.454	0
+San José de Guaribe	12	9.860	-65.813	0
+Palmasola	11	10.594	-68.544	0
+Delicias	20	7.565	-72.448	0
+La Grita	20	8.133	-71.984	0
+Capacho Nuevo	20	7.825	-72.308	0
+La Tendida	20	8.507	-71.832	0
+Agua Blanca	18	9.662	-69.107	0
+El Playón	18	9.100	-69.046	0
+Arapuey	14	9.259	-70.952	0
+Macapo	08	9.825	-68.439	0
+San Juan de Payara	03	7.646	-67.607	0
+San Sebastián	04	9.941	-67.172	0
+Santa Cruz de los Taques	11	11.823	-70.256	0
+Independencia	22	10.334	-68.755	0
+El Junko	26	10.472	-67.084	0

@@ -1,0 +1,340 @@
+Guatemala City	07	14.641	-90.513	994938
+Mixco	07	14.631	-90.607	473080
+Villa Nueva	07	14.525	-90.585	406830
+Petapa	07	14.502	-90.562	141455
+San Juan Sacatepéquez	07	14.719	-90.644	136886
+Quetzaltenango	13	14.835	-91.518	132230
+Villa Canales	07	14.483	-90.534	122194
+Escuintla	06	14.301	-90.786	103165
+Chinautla	07	14.703	-90.500	97172
+Chimaltenango	03	14.661	-90.819	82370
+Chichicastenango	14	14.943	-91.111	79759
+Huehuetenango	08	15.319	-91.472	79426
+Amatitlán	07	14.477	-90.635	71836
+Totonicapán	21	14.912	-91.361	69734
+Santa Catarina Pinula	07	14.570	-90.499	67994
+Santa Lucía Cotzumalguapa	06	14.335	-91.023	62097
+Puerto Barrios	09	15.728	-88.594	56605
+San Francisco El Alto	21	14.945	-91.443	54493
+Cobán	01	15.471	-90.371	53375
+San José Pinula	07	14.546	-90.413	47247
+San Pedro Ayampuc	07	14.779	-90.453	46803
+Jalapa	10	14.635	-89.989	45834
+Coatepeque	13	14.704	-91.864	45654
+Sololá	19	14.772	-91.183	45373
+Mazatenango	20	14.534	-91.503	44132
+Chiquimula	04	14.800	-89.546	41521
+San Pedro Sacatepéquez	17	14.968	-91.762	40021
+Salamá	02	15.103	-90.318	40000
+Antigua Guatemala	16	14.561	-90.734	39368
+Retalhuleu	15	14.536	-91.678	36656
+Zacapa	22	14.972	-89.531	36088
+Jutiapa	11	14.292	-89.896	34332
+Jacaltenango	08	15.667	-91.712	34084
+Santiago Atitlán	19	14.638	-91.229	33309
+Momostenango	21	15.044	-91.409	31739
+Palín	06	14.404	-90.697	31329
+San Benito	12	16.917	-89.919	30764
+Barberena	18	14.307	-90.362	30539
+Ciudad Vieja	16	14.524	-90.763	30203
+Ostuncalco	13	14.869	-91.621	28894
+Fraijanes	07	14.465	-90.441	28492
+Nahualá	19	14.843	-91.318	27690
+Cantel	13	14.812	-91.455	26063
+Panzos	01	15.399	-89.641	25569
+San Marcos	17	14.964	-91.794	25088
+Santiago Sacatepéquez	16	14.635	-90.677	24210
+La Gomera	06	14.082	-91.054	24001
+Santa Cruz del Quiché	14	15.031	-91.149	23618
+Nebaj	14	15.406	-91.147	23301
+Tecpán Guatemala	03	14.762	-90.992	21978
+Sumpango	16	14.646	-90.734	20884
+Comalapa	03	14.741	-90.888	20738
+Esquipulas	04	14.566	-89.352	20674
+Flores	12	16.923	-89.899	20464
+Chicacao	20	14.543	-91.326	20426
+San Pablo Jocopilas	20	14.589	-91.452	20259
+Comitancillo	17	15.089	-91.750	19669
+San Cristóbal Verapaz	01	15.396	-90.565	19664
+Gualán	22	15.120	-89.357	19354
+Nuevo San Carlos	15	14.593	-91.694	19162
+Colomba	13	14.707	-91.732	19115
+Morales	09	15.472	-88.841	18994
+Patzún	03	14.682	-91.014	18704
+Puerto San José	06	13.927	-90.822	18655
+San Andrés Itzapa	03	14.622	-90.843	18647
+Palencia	07	14.667	-90.357	18574
+Tiquisate	06	14.284	-91.361	18189
+San Lucas Sacatepéquez	16	14.611	-90.657	17959
+Jocotenango	16	14.578	-90.738	17918
+Alotenango	16	14.486	-90.804	17410
+Poptún	12	16.331	-89.417	17320
+Chisec	01	15.813	-90.289	17018
+Patzicía	03	14.632	-90.927	16494
+Cuilapa	18	14.276	-90.299	16484
+La Esperanza	13	14.872	-91.561	16461
+Sanarate	05	14.788	-90.199	15843
+El Estor	09	15.532	-89.331	15842
+El Tejar	03	14.647	-90.791	15770
+Asunción Mita	11	14.334	-89.711	15608
+Santa María de Jesús	16	14.495	-90.710	15529
+El Palmar	13	14.651	-91.578	15167
+Malacatán	17	14.911	-92.058	14923
+San Sebastián	15	14.562	-91.649	14823
+Santa Catarina Ixtahuacán	19	14.798	-91.359	14734
+San Lucas Tolimán	19	14.595	-91.147	14545
+Lívingston	09	15.828	-88.750	14350
+San Pedro Sacatepéquez	07	14.686	-90.643	14315
+Patulul	20	14.423	-91.160	14196
+Barillas	08	15.804	-91.316	14100
+San Francisco Zapotitlán	20	14.589	-91.521	13855
+San Miguel Chicaj	02	15.095	-90.394	13747
+San Pablo	17	14.933	-92.004	13668
+Guastatoya	05	14.854	-90.069	13467
+San Pedro Carchá	01	15.477	-90.311	13332
+San Mateo Ixtatán	08	15.832	-91.478	13213
+Joyabaj	14	14.993	-90.802	13164
+Santa Lucía Milpas Altas	16	14.577	-90.676	13001
+Santa Bárbara	20	14.436	-91.227	12906
+Panajachel	19	14.742	-91.157	12863
+Chiquimulilla	18	14.084	-90.385	12842
+San Andrés Xecul	21	14.905	-91.483	12133
+El Quetzal	17	14.769	-91.818	12122
+Sacapulas	14	15.288	-91.089	12088
+Flores Costa Cuca	13	14.632	-91.863	11984
+Salcajá	13	14.880	-91.457	11966
+Cabricán	13	15.075	-91.648	11946
+San Juan Chamelco	01	15.424	-90.330	11944
+Almolonga	13	14.816	-91.495	11913
+Chajul	14	15.485	-91.035	11657
+Atescatempa	11	14.175	-89.742	11543
+Melchor de Mencos	12	17.066	-89.152	11457
+Ciudad Tecún Umán	17	14.677	-92.140	11432
+Nueva Concepción	06	14.200	-91.300	11121
+San Juan Cotzal	14	15.434	-91.035	11046
+San Antonio Suchitepéquez	20	14.539	-91.414	10951
+Soloma	08	15.658	-91.430	10916
+Cuyotenango	20	14.540	-91.572	10825
+Santa Catarina Mita	11	14.451	-89.743	10817
+Rabinal	02	15.085	-90.493	10737
+Dolores	12	16.512	-89.417	10604
+Jalpatagua	11	14.137	-90.009	10469
+Pastores	16	14.594	-90.755	10393
+Monjas	10	14.500	-89.867	10351
+San Agustín Acasaguastlán	05	14.950	-89.967	10335
+San Luis Jilotepeque	10	14.647	-89.725	10306
+Oratorio	18	14.228	-90.176	10155
+Nueva Santa Rosa	18	14.381	-90.276	10130
+Masagua	06	14.203	-90.848	10045
+Zunil	13	14.785	-91.483	9986
+Huitán	13	15.049	-91.639	9958
+San Martín Jilotepeque	03	14.780	-90.793	9846
+Cubulco	02	15.105	-90.629	9753
+San Pedro La Laguna	19	14.693	-91.272	9681
+Parramos	03	14.609	-90.803	9613
+Santa Ana	12	16.800	-89.833	9523
+Ocós	17	14.510	-92.193	9463
+Zaragoza	03	14.650	-90.890	9361
+Zacualpa	14	15.027	-90.878	9241
+San Cristóbal Cucho	17	14.905	-91.781	9152
+Sayaxché	12	16.524	-90.188	9100
+Tactic	01	15.322	-90.354	8999
+Samayac	13	14.581	-91.461	8994
+Casillas	18	14.419	-90.243	8970
+Yepocapa	03	14.502	-90.954	8961
+Estanzuela	22	14.998	-89.573	8937
+Concepción Huista	08	15.624	-91.665	8925
+San Felipe	15	14.623	-91.595	8921
+Santo Domingo Xenacoj	16	14.681	-90.700	8791
+San Raimundo	07	14.765	-90.595	8689
+La Libertad	12	16.788	-90.117	8646
+Chiantla	08	15.355	-91.458	8465
+San Miguel Dueñas	16	14.522	-90.799	8424
+Cunén	14	15.336	-91.028	8400
+Pajapita	17	14.722	-92.035	8164
+Moyuta	11	14.039	-90.081	8145
+Nuevo Progreso	17	14.792	-91.919	8113
+San Jerónimo	02	15.060	-90.240	8093
+Concepción Chiquirichapa	13	14.855	-91.624	8080
+San Luis Ixcán	14	15.787	-91.095	7850
+Santa Cruz Balanyá	03	14.685	-90.919	7825
+San Antonio Aguas Calientes	16	14.547	-90.781	7811
+San Antonio La Paz	05	14.759	-90.285	7781
+Champerico	15	14.293	-91.912	7761
+Río Bravo	20	14.400	-91.317	7568
+El Tumbador	17	14.864	-91.934	7562
+San Miguel Sigüilá	13	14.895	-91.615	7551
+Mataquescuintla	10	14.529	-90.184	7539
+Chahal Guatemala	01	15.791	-89.605	7465
+El Progreso	11	14.350	-89.850	7350
+San Andrés	12	16.967	-89.917	7235
+San Vicente Pacaya	06	14.415	-90.636	7162
+Chuarrancho	07	14.818	-90.516	7149
+Santo Tomás La Unión	20	14.632	-91.411	7081
+Guazacapán	18	14.074	-90.417	7080
+Acatenango	03	14.555	-90.944	7050
+Santa María Chiquimula	21	15.030	-91.329	6980
+San Carlos Sija	13	14.984	-91.549	6831
+San Luis	12	16.199	-89.440	6776
+Taxisco	18	14.067	-90.468	6518
+La Libertad	08	15.514	-91.869	6439
+Tacaná	17	15.241	-92.067	6438
+Teculután	22	14.989	-89.719	6407
+San José Acatempa	11	14.265	-90.127	6367
+Santo Domingo Suchitepéquez	20	14.479	-91.483	6270
+San Bartolomé Milpas Altas	16	14.607	-90.678	6261
+Santa Cruz Naranjo	18	14.388	-90.370	6254
+San Pablo La Laguna	19	14.721	-91.272	6186
+El Asintal	15	14.596	-91.727	6156
+Río Hondo	22	15.045	-89.585	5997
+San José Poaquil	03	14.818	-90.912	5987
+Santa Rosa de Lima	18	14.388	-90.296	5984
+Santa Cruz Verapaz	01	15.373	-90.429	5843
+San Antonio Huista	08	15.650	-91.772	5669
+Senahú	01	15.400	-89.833	5633
+Magdalena Milpas Altas	16	14.548	-90.675	5582
+Aguacatán	08	15.342	-91.311	5572
+San Mateo	13	14.858	-91.590	5534
+San Bernardino	20	14.542	-91.458	5501
+La Democracia	06	14.229	-90.948	5479
+Purulhá	02	15.236	-90.236	5370
+Santa Clara La Laguna	19	14.715	-91.304	5306
+Ipala	04	14.620	-89.619	5283
+San Andrés Villa Seca	15	14.578	-91.585	5102
+Usumatlán	22	14.950	-89.783	4987
+Jocotán	04	14.821	-89.390	4930
+Santa Eulalia	08	15.731	-91.458	4921
+San José del Golfo	07	14.764	-90.372	4908
+La Reforma	17	14.801	-91.822	4905
+Tucurú	01	15.294	-90.119	4772
+Uspantán	14	15.347	-90.871	4714
+Cabañas	22	14.933	-89.800	4678
+Cahabón	01	15.567	-89.817	4671
+San Juan La Laguna	19	14.695	-91.287	4608
+Jerez	11	14.091	-89.751	4421
+San Martín Zapotitlán	15	14.608	-91.606	4419
+Tajumulco	17	15.083	-91.922	4329
+San Rafael Pie de la Cuesta	17	14.931	-91.914	4320
+El Jícaro	05	14.917	-89.900	4242
+Pueblo Nuevo Viñas	18	14.226	-90.476	4211
+San Cristóbal Totonicapán	21	14.917	-91.441	4191
+Quezaltepeque	04	14.636	-89.442	4126
+San Gabriel	20	14.511	-91.507	4118
+Iztapa	06	13.933	-90.707	4020
+San Francisco	12	16.800	-89.933	3954
+Pochuta	03	14.544	-91.089	3879
+Sansare	05	14.746	-90.116	3792
+Génova	13	14.617	-91.833	3744
+Ixtahuacán	08	15.417	-91.769	3708
+La Unión	22	14.967	-89.290	3682
+San Miguel Ixtahuacán	17	15.272	-91.748	3662
+San Martín Sacatepéquez	13	14.824	-91.642	3658
+Santa María Ixhuatán	18	14.190	-90.275	3634
+San Antonio Palopó	19	14.692	-91.116	3588
+San Pedro Necta	08	15.491	-91.766	3554
+Los Amates	09	15.256	-89.097	3417
+Conguaco	11	14.044	-90.031	3415
+San Pedro Pinula	10	14.667	-89.850	3302
+Concepción	19	14.784	-91.148	3292
+Todos Santos Cuchumatán	08	15.508	-91.604	3289
+Santa Catarina Barahona	16	14.551	-90.786	3214
+Pueblo Nuevo	20	14.647	-91.539	3116
+Catarina	17	14.854	-92.077	3040
+Yupiltepeque	11	14.197	-89.793	3028
+Santiago Chimaltenango	08	15.477	-91.697	3020
+Santa Catarina Palopó	19	14.723	-91.134	2948
+Cajolá	13	14.922	-91.615	2927
+Guanagazapa	06	14.225	-90.643	2842
+Agua Blanca	11	14.498	-89.650	2776
+San Miguel Acatán	08	15.704	-91.598	2773
+Zunilito	20	14.613	-91.510	2745
+Huité	22	14.928	-89.716	2712
+Santa Cruz Muluá	15	14.582	-91.624	2706
+Chinique	14	15.041	-91.026	2693
+San Marcos La Laguna	19	14.725	-91.258	2681
+San Juan Bautista	20	14.423	-91.179	2680
+Tejutla	17	15.123	-91.806	2653
+San Manuel Chaparrón	10	14.517	-89.767	2624
+San Andrés Semetabaj	19	14.745	-91.133	2605
+San Rafael Las Flores	18	14.476	-90.179	2572
+Morazán	05	14.933	-90.143	2554
+San Juan Ixcoy	08	15.600	-91.446	2535
+Nentón	08	15.801	-91.755	2530
+San José El Ídolo	20	14.450	-91.422	2412
+Chiché	14	15.009	-91.064	2406
+Santa Apolonia	03	14.790	-90.973	2396
+El Chol	02	14.961	-90.488	2391
+San José La Arada	04	14.723	-89.586	2361
+Pachalum	14	14.925	-90.663	2344
+Ixchiguán	17	15.164	-91.933	2263
+Quesada	11	14.270	-90.040	2250
+San Juan Tecuaco	18	14.084	-90.266	2210
+San Cristóbal Acasaguastlán	05	14.917	-89.883	2171
+San Lorenzo	20	14.486	-91.513	2165
+Malacatancito	08	15.245	-91.499	2121
+Chicamán	14	15.348	-90.800	2090
+San Miguel Panán	20	14.529	-91.367	2024
+San Antonio Ilotenango	14	15.055	-91.230	2021
+Lanquín	01	15.567	-89.967	2006
+Santa Ana Huista	08	15.681	-91.820	2004
+San Andrés Sajcabajá	14	15.176	-90.942	1988
+El Adelanto	11	14.171	-89.827	1964
+San Juan Atitán	08	15.429	-91.624	1910
+El Rodeo	17	14.914	-91.976	1887
+Pasaco	11	13.977	-90.206	1873
+Cuilco	08	15.407	-91.947	1713
+Canillá	14	15.165	-90.853	1698
+Palestina de los Altos	13	14.933	-91.694	1691
+Olopa	04	14.692	-89.350	1690
+Colotenango	08	15.406	-91.713	1690
+San Antonio Sacatepéquez	17	14.961	-91.732	1658
+Sibinal	17	15.150	-92.049	1657
+San Juan Ermita	04	14.765	-89.430	1623
+San Bartolomé Jocotenango	14	15.192	-91.078	1620
+Zapotitlán	11	14.139	-89.826	1617
+Camotán	04	14.820	-89.372	1597
+Esquipulas Palo Gordo	17	14.941	-91.826	1533
+San Rafael Petzal	08	15.405	-91.665	1525
+San Jacinto	04	14.677	-89.503	1519
+Comapa	11	14.113	-89.915	1493
+Santa María Visitación	19	14.717	-91.308	1487
+Santa Cruz La Laguna	19	14.744	-91.207	1422
+Santa Lucia La Reforma	21	15.128	-91.236	1406
+San Sebastián Huehuetenango	08	15.388	-91.615	1311
+Santa Lucía Utatlán	19	14.771	-91.267	1305
+Concepción Las Minas	04	14.522	-89.457	1295
+San Bartolo	21	15.084	-91.456	1290
+San José Ojetenán	17	15.217	-91.967	1269
+San José	12	16.983	-89.900	1201
+Sibilia	13	14.994	-91.624	1180
+Concepción Tutuapa	17	15.239	-91.845	1171
+San Francisco la Unión	13	14.924	-91.542	1170
+San Rafael La Independencia	08	15.701	-91.536	1059
+San Pédro Jocopilas	14	15.095	-91.151	1040
+Tamahú	01	15.309	-90.236	1012
+Patzité	14	14.964	-91.208	1003
+San Lorenzo	17	15.031	-91.735	945
+Granados	02	14.916	-90.523	937
+Santa Bárbara	08	15.316	-91.633	888
+San José Chacayá	19	14.771	-91.216	839
+Río Blanco	17	15.038	-91.685	829
+San Sebastián Coatán	08	15.736	-91.563	801
+Tectitán	08	15.306	-92.061	743
+Sipacapa	17	15.212	-91.634	661
+San Diego	22	14.790	-89.776	557
+San Gaspar Ixchil	08	15.388	-91.726	551
+Unión	08	15.922	-91.776	0
+Siquinalá	06	14.307	-90.967	0
+San José Ojetenam	17	15.234	-91.973	0
+San Jorge	22	14.926	-89.589	0
+San Carlos Alzatate	10	14.498	-90.060	0
+Raxruhá	01	15.867	-90.033	0
+Playa Grande	14	15.933	-90.733	0
+Olintepeque	13	14.886	-91.515	0
+La Tinta	01	15.317	-89.883	0
+La Democracia	08	15.625	-91.887	0
+La Blanca	17	14.579	-92.141	0
+El Chal	12	16.643	-89.653	0
+San Juan Ostuncalco	13	14.873	-91.690	0
+La Máquina	20	14.302	-91.567	0
+Fray Bartolomé de Las Casas	01	15.805	-89.861	0

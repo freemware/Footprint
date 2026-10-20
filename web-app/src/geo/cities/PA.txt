@@ -1,0 +1,636 @@
+Panamá	08	8.994	-79.520	408168
+San Miguelito	08	9.050	-79.471	321501
+Juan Díaz	08	9.050	-79.450	100636
+David	02	8.427	-82.431	81957
+Arraiján	13	8.952	-79.660	76815
+Colón	04	9.355	-79.900	76643
+Las Cumbres	08	9.089	-79.528	69102
+La Chorrera	13	8.880	-79.783	61232
+Pedregal	08	9.067	-79.433	51641
+Tocumen	08	9.089	-79.383	50844
+Santiago de Veraguas	10	8.100	-80.983	45355
+Parque Lefevre	08	9.017	-79.483	36997
+Chilibre	08	9.151	-79.621	33536
+Cativá	04	9.362	-79.832	29607
+Río Abajo	08	9.017	-79.500	26607
+Nuevo Belén	08	9.079	-79.396	24056
+Ancón	08	8.960	-79.551	20706
+Alcalde Díaz	08	9.120	-79.556	20285
+El Chorrillo	08	8.950	-79.547	18302
+Changuinola	01	9.430	-82.520	17997
+La Cabima	08	9.119	-79.537	17975
+La Concepción	02	8.512	-82.619	17698
+Pedregal	02	8.366	-82.435	17427
+Veracruz	13	8.890	-79.626	17144
+Curundú	08	8.971	-79.546	16361
+Penonomé	03	8.519	-80.357	16250
+Sabanitas	04	9.343	-79.810	15577
+Nuevo Arraiján	13	8.925	-79.720	14920
+Villa Unida	08	9.189	-79.625	14854
+San Vicente	08	9.114	-79.598	14109
+Chepo	08	9.170	-79.101	12912
+Puerto Escondido	04	9.193	-80.088	12371
+Pocrí	03	8.258	-80.550	12304
+El Coco	13	8.870	-79.804	11935
+San Juan Bautista	06	7.961	-80.413	11798
+Puerto Armuelles	02	8.278	-82.862	11743
+Las Lomas	02	8.429	-82.387	11726
+El Empalme	01	9.417	-82.517	11035
+Monagrillo	06	7.982	-80.438	10821
+Volcán	02	8.773	-82.638	10286
+Llano Bonito	06	7.976	-80.416	9716
+Unión Chocó	11	8.084	-77.535	9497
+Nueva Esperanza	08	9.102	-79.334	9342
+Chitré	06	7.961	-80.429	8969
+Las Tablas	07	7.765	-80.275	8939
+Puerto Pilón	04	9.363	-79.793	8754
+Almirante	01	9.301	-82.402	8744
+Vista Alegre	13	8.928	-79.703	8673
+Aguadulce	03	8.242	-80.546	8501
+Altos de San Francisco	13	8.862	-79.790	8189
+Canto del Llano	10	8.125	-80.964	7854
+Gonzalillo	08	9.092	-79.519	7793
+La Pesa	13	8.851	-79.824	7773
+Soná	10	8.012	-81.322	7669
+La Arena	06	7.968	-80.465	7175
+Pacora	08	9.079	-79.290	6856
+Antón	03	8.397	-80.261	6851
+Guadalupe	13	8.855	-79.814	6561
+La Herradura	13	8.848	-79.804	6271
+Boquete	02	8.780	-82.441	6123
+San Pablo Viejo Abajo	02	8.453	-82.502	5992
+Los Santos	07	7.933	-80.417	5970
+La Mitra	13	8.841	-79.786	5699
+Río Hato	03	8.379	-80.166	5615
+Natá	03	8.332	-80.520	5470
+Bocas del Toro	01	9.340	-82.242	5380
+Alto Boquete	02	8.735	-82.432	4746
+Vista Hermosa	08	9.112	-79.361	4742
+Gatuncillo	04	9.243	-79.649	4605
+El Palmar	02	8.301	-82.853	4536
+El Progreso	08	9.267	-79.117	4292
+Lídice	08	8.749	-79.910	4245
+Puerto Caimito	13	8.870	-79.714	4174
+Las Margaritas	08	9.184	-79.087	4165
+Los Algarrobos	02	8.496	-82.424	4160
+Buena Vista	04	9.274	-79.696	4077
+Potrero Grande	13	8.881	-79.828	4044
+San José	13	8.933	-79.733	3982
+Ocú	06	7.941	-80.779	3939
+Bejuco	13	8.600	-79.890	3897
+Villa Rosario	13	8.774	-79.875	3843
+Algarrobos Arriba	02	8.515	-82.423	3727
+Alto del Espino	13	8.842	-79.846	3672
+Nueva Gorgona	13	8.550	-79.875	3530
+Gualaca	02	8.530	-82.300	3453
+Capira	13	8.756	-79.880	3432
+Las Margaritas	04	9.326	-79.890	3302
+Las Lajas	13	8.550	-79.935	3291
+Bugaba	02	8.483	-82.620	3263
+San Felipe	08	8.951	-79.537	3262
+Guararé	07	7.815	-80.283	3243
+Cañazas	10	8.320	-81.212	3219
+Río Alejandro	04	9.371	-79.788	3084
+Vista Hermosa	03	8.527	-80.375	3063
+Quebrada Canoa	12	8.433	-81.783	3061
+Chigoré	03	8.530	-80.351	2899
+Parita	06	7.994	-80.521	2864
+Tolé	02	8.240	-81.672	2794
+Atalaya	10	8.042	-80.925	2686
+Sioguí Abajo	02	8.487	-82.665	2675
+Pesé	06	7.909	-80.614	2565
+Ustupo	09	9.131	-77.926	2514
+Divalá	02	8.411	-82.713	2506
+Chiriquí	02	8.393	-82.320	2429
+El Espino	13	8.838	-79.849	2422
+Cristóbal	04	9.352	-79.904	2366
+Chame	13	8.578	-79.886	2362
+Metetí	05	8.499	-77.979	2298
+Bajo Boquete	02	8.771	-82.433	2257
+Capellanía	03	8.299	-80.555	2252
+Quebrada Bonita Adentro	04	9.297	-79.706	2229
+Macaracas	07	7.732	-80.554	2224
+La Peña	10	8.128	-81.027	2223
+Progreso	02	8.447	-82.839	2211
+Nuevo Vigía	04	9.243	-79.608	2163
+La Mesa	10	8.147	-81.181	2090
+Playón Chico	09	9.311	-78.233	2042
+El Silencio	01	9.372	-82.529	2017
+Nuevo Emperador	13	9.003	-79.731	2003
+Guabito	01	9.490	-82.613	1978
+Los Algarrobos	10	8.109	-81.014	1977
+Farallón	03	8.357	-80.137	1967
+Santa Rita Arriba	04	9.330	-79.794	1960
+Santa Marta	02	8.514	-82.699	1952
+Juan Díaz	03	8.462	-80.283	1935
+Montijo	10	7.989	-81.056	1932
+Pedasí	07	7.530	-80.027	1920
+La Pintada	03	8.593	-80.443	1917
+San Francisco	10	8.067	-81.367	1898
+La Esperanza	02	8.403	-82.792	1890
+Aserrío de Gariché	02	8.483	-82.791	1804
+Escobal	04	9.144	-79.964	1790
+San Francisco	10	8.247	-80.975	1785
+San Vicente de Bique	13	8.911	-79.674	1784
+Santo Domingo	07	7.746	-80.242	1772
+Llano Marín	03	8.477	-80.325	1757
+Achutupo	09	9.198	-77.987	1753
+La Palma	05	8.406	-78.140	1728
+Nuevo San Carlitos	02	8.457	-82.437	1724
+Sortova	02	8.546	-82.652	1706
+Yaviza	05	8.158	-77.693	1700
+Santa María	06	8.111	-80.666	1679
+Boquerón	02	8.505	-82.570	1658
+Calzada Larga	08	9.173	-79.562	1656
+Dolega District	02	8.567	-82.414	1653
+Ailigandí	09	9.228	-78.028	1652
+El Roble	03	8.168	-80.659	1648
+San Isidro	02	8.530	-82.827	1648
+Tortí	08	8.921	-78.405	1611
+Guarumal	02	8.345	-82.532	1575
+Cerro Punta	02	8.850	-82.573	1568
+Gatún	04	9.289	-79.772	1553
+La Loma	03	8.167	-80.637	1542
+Chiriquí Grande	01	8.946	-82.118	1525
+El Giral	04	9.245	-79.693	1522
+Churuquita Grande	03	8.594	-80.272	1518
+Isla Bastimentos	01	9.300	-82.133	1500
+Santa Fé	05	8.655	-78.161	1499
+Nuevo San Juan	04	9.222	-79.666	1494
+Tonosí	07	7.407	-80.442	1478
+Jaqué	05	7.518	-78.163	1466
+La Mesa	08	9.173	-79.274	1448
+Las Colinas	13	8.550	-80.083	1447
+San José	13	8.532	-79.931	1444
+San Antonio	08	9.173	-79.547	1435
+San Ignacio de Tupile	09	9.289	-78.152	1429
+Los Pollos	03	8.399	-80.157	1419
+Cabra Número Uno	08	9.109	-79.337	1415
+Santa Clara	13	9.029	-79.754	1410
+Kusapín	12	9.178	-81.885	1408
+Barranco	01	9.520	-82.704	1398
+Portobelo	04	9.553	-79.657	1393
+Bisira	12	8.896	-81.854	1383
+Boca de Parita	06	8.008	-80.453	1381
+Río Duque	04	9.257	-79.679	1374
+Alanje	02	8.398	-82.559	1373
+Río Sereno	02	8.817	-82.857	1368
+Plaza de Caisán	02	8.737	-82.820	1363
+Santa Clara	02	8.834	-82.779	1360
+Punta de Burica	02	8.033	-82.867	1360
+Barranco Adentro	01	9.528	-82.733	1349
+Caimitillo	08	9.156	-79.540	1345
+El Rincón	06	8.119	-80.617	1341
+Palmas Bellas	04	9.228	-80.085	1337
+Quinteño	02	8.471	-82.394	1324
+Los Lotes	08	9.124	-79.289	1323
+Mulatupo	09	8.947	-77.751	1303
+Coclé	03	8.456	-80.429	1298
+Llano Largo	13	8.835	-79.808	1295
+Manaca Norte	02	8.334	-82.810	1294
+Las Palmas	10	8.136	-81.457	1291
+Cerro Azul	08	9.157	-79.421	1287
+La Palma	07	7.717	-80.383	1283
+Cerro Cama	13	9.028	-79.907	1274
+Gómez	02	8.561	-82.741	1257
+Hato Montaña	13	8.919	-79.739	1239
+El Espavé	13	8.662	-79.876	1236
+La Mesa	01	9.496	-82.675	1235
+Río Rita	04	9.303	-79.792	1222
+Howard	08	8.939	-79.591	1222
+Manaca Civil	02	8.325	-82.816	1220
+Kankintú	12	8.843	-81.815	1218
+Santo Domingo	02	8.508	-82.713	1216
+La Colorada	10	8.013	-80.986	1214
+Garachiné	05	8.067	-78.364	1188
+Punta Peña	01	8.917	-82.185	1187
+Potrerillos Abajo	02	8.640	-82.486	1182
+El Copé	03	8.620	-80.584	1176
+La Espigadilla	07	7.884	-80.390	1172
+Valle del Risco	01	9.231	-82.427	1171
+El Cortezo	03	8.346	-80.587	1157
+San Andrés	02	8.603	-82.726	1152
+La Tiza	07	7.751	-80.292	1150
+Tijeras	02	8.475	-82.561	1148
+María Chiquita	04	9.440	-79.755	1146
+Palmira	02	8.734	-82.459	1144
+La Palma	07	7.689	-80.196	1144
+Churuquita Chiquita	03	8.576	-80.272	1142
+El Caño	03	8.402	-80.518	1129
+El Ejido	07	7.916	-80.387	1120
+El Espino de Santa Rosa	10	8.093	-80.824	1113
+Sioguí Arriba	02	8.539	-82.686	1112
+Los Anastacios	02	8.530	-82.423	1110
+Pueblo Nuevo	12	8.881	-82.224	1109
+La Enea	07	7.833	-80.274	1105
+Bella Vista	07	7.750	-80.233	1104
+Narganá	09	9.444	-78.587	1090
+Paso Canoas Arriba	02	8.565	-82.822	1090
+Celmira	02	8.540	-82.800	1087
+El Valle de la Unión	04	9.236	-79.660	1081
+Alto de La Estancia	03	8.588	-80.184	1081
+Bugabita Arriba	02	8.521	-82.636	1076
+La Colorada	08	9.102	-79.416	1076
+Potrerillos Arriba	02	8.685	-82.491	1074
+Río Grande	03	8.427	-80.485	1070
+Caimito	02	8.542	-82.419	1066
+Finca Blanco	02	8.380	-82.874	1063
+Tubualá	09	9.517	-79.033	1061
+Río de Jesús	10	7.979	-81.162	1060
+Llano de Piedra	07	7.660	-80.563	1054
+Aguas Blancas	03	8.504	-80.312	1053
+San Félix	02	8.291	-81.867	1051
+Mata del Nance	02	8.451	-82.401	1051
+Cartí Sugdup	09	9.465	-78.959	1050
+Entradero	03	8.569	-80.207	1049
+Villa Carmen	13	8.798	-79.869	1043
+Pueblo Viejo	02	8.251	-81.663	1042
+El Uvito	10	8.116	-80.985	1037
+Caimito	03	8.623	-80.239	1032
+Chichica	12	8.359	-81.666	1026
+Santa Ana Arriba	07	7.933	-80.364	1025
+San Lorenzo	02	8.306	-82.101	1025
+Barrio Guadalupe	02	8.865	-82.565	1019
+El Coco	03	8.397	-80.350	1017
+Llano Largo	07	7.906	-80.426	1013
+Las Lajas	02	8.242	-81.869	1012
+Agua Buena	07	7.835	-80.394	1012
+Unión de Azuero	08	9.153	-79.170	1004
+El Cristo	03	8.251	-80.621	989
+Santa Rita	13	8.857	-79.880	987
+Santa Fé	10	8.511	-81.078	968
+San Miguel	08	8.457	-78.937	967
+Los Canelos	06	8.117	-80.708	965
+Cermeño	13	8.741	-79.853	928
+El Cocal	07	7.737	-80.280	926
+Palmira Centro	02	8.740	-82.452	920
+Bágala	02	8.464	-82.526	910
+Tinajas	02	8.553	-82.460	905
+Río Congo	13	8.967	-79.761	898
+París	06	8.051	-80.554	894
+Las Minas	06	7.796	-80.746	889
+Veladero	02	8.231	-81.654	885
+La Estrella	02	8.516	-82.672	885
+Querévalo	02	8.372	-82.527	882
+Horconcitos	02	8.311	-82.151	877
+Boca de Cupé	05	8.030	-77.590	877
+Nombre de Dios	04	9.579	-79.471	872
+San Carlos	13	8.473	-79.961	857
+Caimito	13	8.811	-79.947	836
+Guaca Arriba	02	8.537	-82.493	834
+Remedios	02	8.224	-81.827	829
+Cañaveral	03	8.517	-80.429	827
+Las Cruces	07	7.823	-80.430	823
+Las Palmitas	07	7.765	-80.293	821
+Peña Blanca	07	7.719	-80.284	804
+Potuga	06	8.063	-80.623	795
+Calobre	10	8.319	-80.841	795
+Chimán	08	8.691	-78.636	786
+Sesteadero	07	7.739	-80.249	771
+La Raya de Santa María	10	8.164	-80.821	757
+Bastimentos	01	9.347	-82.209	738
+Mendoza	13	9.015	-79.851	729
+Tres Quebradas	07	7.840	-80.407	715
+Monte Lirio	02	8.789	-82.829	715
+Cabuya	13	8.575	-79.927	699
+Rincón	02	8.464	-82.280	692
+El Porvenir	02	8.229	-81.833	659
+Santo Tomás	02	8.390	-82.651	653
+Hato Chami	12	8.443	-81.772	641
+Chupampa	06	8.076	-80.777	637
+El Cacao	13	8.761	-80.013	636
+Cañita	08	9.222	-78.895	629
+Los Olivos	07	7.916	-80.489	618
+Lajero Arriba	12	8.291	-81.770	617
+Paritilla	07	7.628	-80.172	608
+Tobobe	12	9.121	-81.825	607
+Toabré	03	8.651	-80.320	603
+Sorá	13	8.632	-80.009	598
+Sabana Grande	06	7.880	-80.638	574
+Mortí	05	8.842	-77.975	567
+El Higo	13	8.447	-80.036	566
+La Pasera	07	7.798	-80.303	563
+Playa Leona	13	8.784	-79.775	556
+San Pedro del Espino	10	8.140	-81.087	554
+El Potrero	03	8.521	-80.517	550
+Las Minas	03	8.641	-80.394	548
+Cucunatí	05	8.575	-78.257	537
+Oma	12	8.350	-81.802	535
+Puerto Obaldía	09	8.666	-77.419	533
+Los Cerritos	06	7.797	-80.611	531
+El Chirú	03	8.399	-80.187	531
+La Esmeralda	08	8.268	-78.925	524
+San José	07	7.674	-80.244	523
+Sabana Grande	07	7.835	-80.365	521
+Camarón Arriba	12	8.383	-81.993	515
+Piedras Gordas	03	8.638	-80.510	510
+Los Castillos	10	8.023	-81.119	510
+Ponuga	10	7.882	-80.979	509
+Chiguirí Arriba	03	8.672	-80.190	509
+Los Pozos	06	7.783	-80.645	508
+Puerto Vidal	10	8.048	-81.605	506
+Portobelillo	06	8.017	-80.595	497
+Buenos Aires	13	8.631	-79.948	496
+Pocrí	07	7.658	-80.121	494
+Plan de Chorcha	12	8.462	-82.159	490
+Cerro Banco	12	8.458	-82.031	487
+Las Uvas	13	8.459	-80.001	482
+Guarumal	10	7.794	-81.259	477
+Bayamón	11	7.968	-78.216	457
+Quebrada de Piedra	02	8.094	-81.679	455
+Los Naranjos	02	8.792	-82.447	452
+El Pedregoso	06	7.936	-80.638	452
+Las Huacas del Quije	03	8.467	-80.751	451
+El Retiro	03	8.480	-80.154	450
+Cordillera	02	8.707	-82.603	444
+Flores	07	7.482	-80.407	440
+Llano Grande	03	8.638	-80.438	438
+San Pablo Nuevo Abajo	02	8.426	-82.502	435
+Cochea Abajo	02	8.505	-82.359	435
+Chumical	06	7.845	-80.726	433
+Los Asientos	07	7.517	-80.135	430
+La Ermita	13	8.456	-80.068	426
+Guayabito	12	8.539	-81.482	420
+Cabuya	06	8.031	-80.632	417
+Las Guías Abajo	10	8.195	-80.755	416
+Unión Santeña	08	8.835	-78.651	413
+Nuevo Chagres	04	9.240	-80.083	410
+Villa Lourdes	07	7.811	-80.470	410
+Rovira Arriba	02	8.638	-82.500	403
+Los Castillos	06	7.986	-80.619	400
+Buenos Aires	12	8.414	-81.484	400
+San Juan de Dios	03	8.551	-80.226	400
+San Carlos	02	8.517	-82.509	392
+La Mesa	07	7.657	-80.618	392
+Coclé del Norte	04	9.075	-80.572	388
+Viento Frío	04	9.583	-79.407	387
+Santa Cruz	02	8.232	-81.913	386
+Olá	03	8.418	-80.651	384
+La Laja	07	7.731	-80.253	383
+Bahía Azul	12	9.142	-81.894	379
+Zapotillo	10	8.005	-81.507	375
+Cañas Gordas	02	8.743	-82.913	374
+Cambutal	07	7.265	-80.491	370
+Lolá	10	8.093	-81.472	364
+El Manantial	07	7.782	-80.247	363
+Alto de Jesús	10	8.262	-81.484	361
+Rincón Hondo	06	7.844	-80.604	359
+El Guabo	04	9.078	-80.083	359
+Peñas Chatas	06	8.015	-80.804	358
+Púcuro	05	7.979	-77.488	355
+Palenque	04	9.570	-79.363	355
+Caldera	02	8.649	-82.381	355
+Boca del Monte	02	8.353	-82.114	355
+Guararé Arriba	07	7.800	-80.360	350
+Miramar	01	8.995	-82.241	346
+El Carate	07	7.731	-80.297	345
+Los Ángeles	07	7.884	-80.358	342
+Lajas Adentro	02	8.250	-81.878	342
+Lajamina	07	7.586	-80.132	330
+Llano Grande	10	8.075	-81.136	328
+Boró	10	8.169	-81.301	326
+Cerro Caña	12	8.352	-81.611	319
+Arenosa	13	9.040	-79.951	319
+Cañas	07	7.447	-80.265	318
+Limones	02	8.100	-82.867	315
+Utirá	10	7.972	-81.218	312
+La Laguna	13	9.044	-79.842	312
+Corozal	11	8.201	-77.596	309
+Llano Abajo	07	7.786	-80.411	304
+Boca de Balsa	12	8.530	-82.031	304
+Hato Corotú	12	8.335	-81.970	303
+El Rincón	10	8.184	-81.433	300
+Llano Ñopo	12	8.420	-81.619	289
+El Nancito	02	8.238	-81.732	288
+Nueva Arenosa	13	8.869	-79.995	283
+Quebrada Tula	12	8.840	-81.996	283
+El Pedregoso	07	7.692	-80.328	279
+Santa Cruz	02	8.643	-82.759	274
+El Tejar	02	8.430	-82.573	267
+El Cacao	07	7.446	-80.409	261
+Bijagual	02	8.515	-82.334	257
+Santa Isabel	04	9.539	-79.196	256
+Chepillo	08	8.954	-79.129	255
+Palmira	04	9.544	-79.219	254
+El Peñón	10	8.350	-80.976	254
+Toza	03	8.345	-80.640	253
+La Laguna	13	8.604	-80.047	253
+Cerro Viejo	02	8.253	-81.577	253
+Contadora	08	8.625	-79.037	253
+La Montañuela	10	8.025	-80.863	251
+Los Ángeles	02	8.523	-82.200	250
+Cirí de Los Sotos	13	8.972	-80.092	250
+Sitio Prado	12	8.372	-81.581	248
+Paraíso	02	8.658	-82.586	242
+El Cortezo	07	7.427	-80.633	239
+Brujas	08	8.585	-78.530	239
+Nuestro Amo	03	8.445	-80.589	235
+Lajas de Tolé	02	8.170	-81.697	235
+Paraíso	07	7.685	-80.161	234
+La Raya de Calobre	10	8.216	-80.827	233
+Perales	07	7.775	-80.325	230
+Breñón	02	8.625	-82.813	230
+Guzman	03	8.520	-80.584	228
+Calidonia	10	7.958	-81.386	228
+Bayano	07	7.630	-80.382	224
+Guayabal	02	8.622	-82.579	220
+Boca Chica	02	8.219	-82.216	215
+El Barrito	10	7.961	-80.948	212
+Santa Rosa	02	8.600	-82.685	207
+Paredón Arriba	12	8.460	-81.196	207
+El Marañón	10	8.036	-81.215	205
+El Hato	07	7.793	-80.383	204
+Llano Grande	06	7.974	-80.711	203
+Vallerriquito	07	7.622	-80.320	196
+La Arena	06	7.750	-80.593	194
+San Juan	10	8.303	-81.016	193
+Las Guabas	07	7.815	-80.502	192
+Bajo Corral	07	7.605	-80.260	192
+Tebario	10	7.714	-80.978	190
+El Copé	03	8.438	-80.679	190
+Corozal	10	8.077	-81.440	189
+Llano de La Cruz	06	7.952	-80.642	188
+Pitaloza Arriba	06	7.642	-80.668	188
+El Líbano	13	8.617	-79.835	183
+Las Huacas	10	7.902	-81.141	180
+El Guásimo	07	7.806	-80.530	179
+Camogantí	05	8.042	-77.887	179
+Valle Rico	07	7.620	-80.351	178
+El Toro	06	7.751	-80.869	176
+Yape	11	8.098	-77.598	170
+El Cedro	06	7.686	-80.659	170
+Cerro Largo	06	7.834	-80.832	170
+El Potrero	10	8.377	-80.794	168
+Las Guabas	06	7.909	-80.807	165
+El Picador	10	8.378	-81.256	163
+Cerro Plata	12	8.477	-81.546	162
+El Muñoz	07	7.676	-80.321	161
+San Bartolo	10	8.211	-81.276	158
+La Colorada	07	7.824	-80.556	158
+Paja de Sombrero	02	8.683	-82.319	157
+Miramar	04	9.575	-79.336	154
+Las Trancas	07	7.734	-80.374	153
+Punta Róbalo	01	9.036	-82.250	149
+Guabal	02	8.575	-82.537	147
+Monjarás	10	8.369	-80.867	146
+Los Llanitos	13	8.598	-80.095	146
+El Cañafístulo	07	7.618	-80.233	141
+Bisvalles	10	8.183	-81.221	141
+Rodeo Viejo	10	8.112	-81.317	140
+El Calabacito	06	7.718	-80.598	134
+Bahía Honda	07	7.705	-80.453	131
+Los Higos	10	8.206	-80.860	127
+Arosemena	13	8.971	-79.966	127
+El Capurí	06	7.726	-80.643	124
+La Trinidad	06	7.915	-80.703	123
+Quebrada del Rosario	06	7.712	-80.742	123
+La Yeguada	10	8.431	-80.858	122
+Ave María	07	7.325	-80.454	120
+Oria Arriba	07	7.505	-80.206	118
+Calovébora	10	8.787	-81.211	117
+Caballero	03	8.543	-80.198	114
+El Pájaro	10	7.953	-81.122	112
+La Loma	10	7.437	-80.891	111
+Viguí	10	8.339	-81.498	110
+Playa Chiquita	04	9.566	-79.292	105
+La Miel	07	7.560	-80.327	102
+Calabacito	10	8.248	-81.082	100
+Arenas	10	7.369	-80.863	97
+Piedras Gordas	10	8.524	-80.912	94
+La Ensenada	08	8.366	-78.846	94
+Palmira	07	7.663	-80.357	93
+Cabuya	03	8.547	-80.168	93
+Cedro Arriba	07	7.781	-80.531	93
+Nuario	07	7.530	-80.327	92
+El Pantano	10	8.538	-81.069	92
+Guayabito	13	8.548	-80.013	89
+Las Sabanas	03	8.581	-80.680	88
+El María	10	8.029	-81.444	87
+La Garceana	10	7.937	-81.016	85
+El Alto	10	8.512	-81.036	85
+San José	10	8.467	-80.805	84
+La Guinea	08	8.342	-78.934	83
+Mogollón	07	7.643	-80.460	79
+La Tronosa	07	7.436	-80.587	79
+Pásiga	08	8.936	-78.909	77
+Río Hondo	07	7.712	-80.359	76
+Barnizal	10	8.405	-80.778	74
+Quebrada de Oro	10	8.035	-81.387	73
+Río Grande	10	7.719	-81.334	71
+Leones Arriba	06	7.766	-80.845	71
+Las Marias	03	8.888	-80.219	71
+Punta Laurel	01	9.141	-82.127	69
+Leones Arriba	10	7.754	-81.116	69
+San Marcelo	10	8.273	-81.160	66
+Los Cerros de Paja	06	7.718	-80.673	61
+Limón de Tijeras	06	7.818	-80.913	56
+La Laguna	10	8.339	-80.729	52
+Barranco Colorado	03	8.389	-80.635	52
+Cauchero	01	9.152	-82.264	40
+Boquerón	10	8.244	-80.859	38
+El Macano	07	7.685	-80.403	34
+El Coclá	10	8.321	-80.921	32
+Loma Yuca	12	8.718	-81.405	17
+Las Palmas	07	7.683	-80.497	13
+El Porvenir	09	9.553	-78.952	10
+Zangüengas	13	8.956	-79.870	0
+Tucutí	05	7.928	-77.946	0
+Pueblo Nuevo	05	8.150	-78.250	0
+Sardinilla	04	9.298	-79.640	0
+Santa Rosa Número Uno	13	8.865	-80.099	0
+Santa Rita	03	8.493	-80.183	0
+Santa Catalina	12	8.782	-81.328	0
+San Juan	02	8.277	-81.993	0
+San José	10	8.373	-81.405	0
+San Antonio	10	8.073	-80.932	0
+Salud	04	9.198	-80.132	0
+Río Grande	12	8.619	-81.288	0
+Panama City	04	9.334	-79.892	0
+Quebrada de Loro	12	8.359	-81.927	0
+Potrero de Caña	02	8.293	-81.699	0
+Pinogana	05	8.113	-77.689	0
+Piedra Roja	12	8.570	-81.747	0
+Peña Blanca	12	8.462	-81.679	0
+Paya	05	7.901	-77.390	0
+Palo Grande	02	8.347	-82.606	0
+Nueva Providencia	04	9.263	-79.816	0
+Miguel de La Borda	04	9.145	-80.301	0
+Mariabé	07	7.583	-80.066	0
+Maraca	12	8.373	-81.727	0
+Los Valles	10	8.449	-81.199	0
+Los Corotúes	10	8.420	-81.104	0
+Buabidi	12	8.475	-81.698	0
+Llano Grande	03	8.451	-80.227	0
+Las Ollas Arriba	13	8.807	-79.913	0
+La Soledad	10	7.879	-81.276	0
+Las Cabras	06	7.876	-80.549	0
+La Punta	10	7.557	-81.191	0
+Lagarterita	13	9.079	-79.914	0
+La Encantada	04	9.087	-80.192	0
+La Carrillo	10	7.970	-80.884	0
+Cabuya	06	7.983	-80.764	0
+Boca del Guásimo	04	9.051	-80.329	0
+Juay	02	8.284	-81.946	0
+Jaramillo Arriba	02	8.798	-82.424	0
+Hato Pilón	12	8.398	-81.865	0
+Hato Juli	12	8.350	-81.845	0
+Hato Jobo	12	8.392	-81.886	0
+Hato Culantro	12	8.468	-81.857	0
+Gonzalo Vásquez	08	8.415	-78.456	0
+Gobea	04	9.159	-80.251	0
+Gatú	10	8.538	-80.951	0
+El Prado	10	8.237	-81.504	0
+El Piro	10	8.209	-81.527	0
+El Pilón	10	7.954	-81.076	0
+El Pájaro	06	7.943	-80.570	0
+Salto Dupí	12	8.351	-81.887	0
+El Limón	06	8.058	-80.773	0
+El Espino Amarillo	07	7.676	-80.439	0
+El Espino	13	8.478	-80.013	0
+El Espinal	07	7.867	-80.319	0
+Bongo Arriba	02	8.589	-82.623	0
+El Bebedero	07	7.410	-80.456	0
+El Barrero	06	7.933	-80.514	0
+El Bale	10	8.357	-81.361	0
+Dos Ríos Abajo	02	8.528	-82.387	0
+Cuipo	04	9.069	-80.049	0
+Cuango	04	9.567	-79.317	0
+Coclecito	04	8.808	-80.556	0
+Chupá	07	7.800	-80.575	0
+Chepigana	05	8.286	-78.052	0
+Chacarero	02	8.489	-82.598	0
+Cerro Venado	02	8.228	-81.574	0
+Cerro de Plata	10	8.288	-81.368	0
+Cerro Iglesias	12	8.285	-81.798	0
+Cerro Iglesias	02	8.319	-81.564	0
+Cascabel	12	8.527	-81.874	0
+Cacique	04	9.609	-79.617	0
+Soloy	12	8.490	-82.071	0
+Boca de Río Indio	04	9.183	-80.191	0
+Boca del Río Chiriquí	12	8.845	-81.573	0
+Bajos de Güera	07	7.544	-80.625	0
+Altos de Güera	07	7.530	-80.621	0
+Alto Caballero	12	8.290	-81.673	0
+Agua de Salud	12	8.505	-81.464	0
+Achiote	04	9.211	-80.013	0
+Jingurudó	11	7.880	-78.077	0
+Lajas Blancas	11	8.415	-77.812	0
+Barriales	05	8.584	-78.388	0
+Platanilla	05	8.828	-78.384	0
+Setegantí	05	8.294	-78.100	0
+Agua Fría Número Uno	05	8.858	-78.198	0
+Norteño	00	9.003	-82.315	0
+Sieyic	01	9.383	-82.652	0
+Rámbala	01	8.920	-82.181	0
+Valle de La Mina	02	8.664	-82.232	0
+Cuoronte	12	8.675	-81.786	0
+Cabecera de Cerro Puerco	12	8.319	-81.760	0
+Santa Lucia	02	8.231	-81.826	0
+El Puerto	02	8.212	-81.808	0
+Mirones	12	8.558	-81.726	0
+Bajo Solis	02	8.348	-81.529	0
+Bella Vista	02	8.206	-81.621	0
+Cerro Pelado	10	8.162	-81.539	0
+Río Luís	10	8.684	-81.216	0
+Güibale	12	8.512	-81.363	0
+Ciricito Abajo	13	8.800	-80.077	0

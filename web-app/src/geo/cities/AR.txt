@@ -1,0 +1,987 @@
+Buenos Aires	07	-34.613	-58.377	13076300
+Córdoba	05	-31.413	-64.181	1428214
+Rosario	21	-32.947	-60.639	1173533
+Mendoza	13	-32.891	-68.827	876884
+San Miguel de Tucumán	24	-26.824	-65.223	781023
+La Plata	01	-34.921	-57.955	694167
+Mar del Plata	01	-38.000	-57.556	553935
+Salta	17	-24.786	-65.412	512686
+Santa Fe	21	-31.649	-60.709	489505
+San Juan	18	-31.538	-68.536	447048
+Resistencia	03	-27.461	-58.984	387158
+Santiago del Estero	22	-27.795	-64.261	354692
+Corrientes	06	-27.468	-58.834	339067
+Posadas	14	-27.367	-55.896	323739
+Morón	01	-34.651	-58.620	319934
+San Salvador de Jujuy	10	-24.195	-65.297	305891
+Bahía Blanca	01	-38.720	-62.272	276546
+Paraná	08	-31.733	-60.529	262295
+Merlo	01	-34.666	-58.729	244168
+Neuquén	15	-38.952	-68.059	242092
+José C. Paz	01	-34.515	-58.768	230208
+Quilmes	01	-34.729	-58.264	230000
+Pilar	01	-34.459	-58.914	226517
+Formosa	09	-26.185	-58.173	221383
+San Fernando del Valle de Catamarca	02	-28.470	-65.785	188812
+San Luis	19	-33.295	-66.336	183982
+Berazategui	01	-34.765	-58.213	167498
+La Rioja	12	-29.411	-66.851	162620
+San Miguel	01	-34.543	-58.712	157532
+Río Cuarto	05	-33.131	-64.350	153757
+Balvanera	07	-34.610	-58.398	152198
+Concordia	08	-31.393	-58.021	145210
+Comodoro Rivadavia	04	-45.864	-67.497	140850
+Belgrano	07	-34.563	-58.458	138942
+San Nicolás de los Arroyos	01	-33.334	-60.211	127742
+Villa Lugano	07	-34.679	-58.473	114000
+Santa Rosa	11	-36.617	-64.283	111424
+San Rafael	13	-34.618	-68.330	109163
+Tandil	01	-37.322	-59.133	104325
+Villa Mercedes	19	-33.676	-65.458	96781
+San Carlos de Bariloche	16	-41.146	-71.308	95394
+Trelew	04	-43.249	-65.305	93442
+Villa María	05	-32.408	-63.240	92453
+Reconquista	21	-29.150	-59.650	90184
+Zárate	01	-34.098	-59.029	88781
+Rafaela	21	-31.250	-61.487	88713
+Pergamino	01	-33.890	-60.574	87652
+Olavarría	01	-36.893	-60.323	86320
+Río Gallegos	20	-51.623	-69.218	85700
+Junín	01	-34.584	-60.943	85007
+San Martín	13	-33.081	-68.468	82549
+Presidencia Roque Sáenz Peña	03	-26.785	-60.439	81879
+Luján	01	-34.570	-59.105	81749
+Campana	01	-34.163	-58.959	81612
+Necochea	01	-38.554	-58.740	80478
+Gualeguaychú	08	-33.009	-58.517	78676
+Barracas	07	-34.650	-58.383	77474
+Cipolletti	16	-38.934	-67.990	75078
+Gobernador Gálvez	21	-33.030	-60.640	74650
+San Ramón de la Nueva Orán	17	-23.137	-64.324	74059
+Chimbas	18	-31.483	-68.533	73829
+General Roca	16	-39.033	-67.583	73212
+Venado Tuerto	21	-33.746	-61.969	72340
+Goya	06	-29.140	-59.263	70245
+Villa Carlos Paz	05	-31.424	-64.498	69451
+Concepción del Uruguay	08	-32.485	-58.232	67895
+Don Torcuato	01	-34.495	-58.627	64867
+Puerto Madryn	04	-42.769	-65.039	64555
+Tartagal	17	-22.516	-63.801	60819
+Hurlingham	01	-34.590	-58.629	60000
+Santo Tomé	21	-31.663	-60.765	59072
+San Francisco	05	-31.428	-62.083	59062
+San Pedro de Jujuy	10	-24.231	-64.866	58430
+Ushuaia	23	-54.811	-68.316	58028
+Punta Alta	01	-38.876	-62.074	57209
+General Pico	11	-35.657	-63.757	57029
+Colegiales	07	-34.574	-58.449	57000
+Oberá	14	-27.487	-55.120	56528
+Chivilcoy	01	-34.896	-60.017	54514
+Puerto Eldorado	14	-26.408	-54.695	54189
+Azul	01	-36.777	-59.859	53941
+Río Tercero	05	-32.173	-64.114	53389
+Los Polvorines	01	-34.503	-58.706	53354
+Mercedes	01	-34.651	-59.431	52949
+Río Grande	23	-53.788	-67.709	52681
+Barranqueras	03	-27.481	-58.939	50823
+Yerba Buena	24	-26.817	-65.317	50783
+Libertador General San Martín	10	-23.806	-64.788	49267
+Viedma	16	-40.813	-62.997	48940
+Tafí Viejo	24	-26.732	-65.259	48459
+Boedo	07	-34.633	-58.417	48231
+Palpalá	10	-24.256	-65.212	48199
+San Lorenzo	06	-28.133	-58.767	47626
+San Pedro	01	-33.679	-59.666	47452
+Cutral-Có	15	-38.934	-69.231	47380
+Tres Arroyos	01	-38.374	-60.280	47136
+San Isidro	01	-34.472	-58.527	45190
+Villa Constitución	21	-33.228	-60.330	44271
+Paso de los Libres	06	-29.713	-57.088	43805
+Santa Lucía	18	-31.540	-68.495	43565
+Villa Ángela	03	-27.574	-60.715	43511
+Villa de Mayo	01	-34.511	-58.681	43405
+General Pacheco	01	-34.453	-58.643	43287
+Chilecito	12	-29.162	-67.497	42248
+Lincoln	01	-34.866	-61.530	41808
+Tortuguitas	01	-34.475	-58.754	41390
+Pocito	18	-31.683	-68.583	40969
+Alta Gracia	05	-31.653	-64.428	40384
+Balcarce	01	-37.846	-58.255	38823
+Retiro	07	-34.583	-58.383	38635
+Ingeniero Pablo Nogués	01	-34.478	-58.707	38470
+Alderetes	24	-26.817	-65.133	38466
+San Vicente	14	-26.617	-54.133	38247
+Castelli	03	-25.947	-60.619	36588
+Curuzú Cuatiá	06	-29.792	-58.055	36390
+Caleta Olivia	20	-46.439	-67.528	36077
+Cañada de Gómez	21	-32.816	-61.395	36000
+Esperanza	21	-31.449	-60.932	35885
+Bell Ville	05	-32.626	-62.689	35105
+Nueve de Julio	01	-35.444	-60.883	34718
+Chacabuco	01	-34.642	-60.474	34587
+Villa Santa Rita	07	-34.611	-58.481	34000
+Caucete	18	-31.652	-68.281	33609
+Pontevedra	01	-34.748	-58.701	33515
+Gualeguay	08	-33.142	-59.310	33120
+Aguilares	24	-27.434	-65.614	32494
+Granadero Baigorria	21	-32.857	-60.718	32427
+Quitilipi	03	-26.869	-60.217	32083
+Puerto Iguazú	14	-25.599	-54.574	32038
+Villaguay	08	-31.865	-59.027	32027
+Casilda	21	-33.044	-61.168	32002
+General José de San Martín	03	-26.537	-59.342	31758
+Zapala	15	-38.899	-70.054	31534
+Villa Regina	16	-39.100	-67.067	31209
+Tigre	01	-34.426	-58.580	31106
+Famaillá	24	-27.054	-65.403	30951
+Chajarí	08	-30.750	-57.980	30655
+Mercedes	06	-29.184	-58.075	30649
+Centenario	15	-38.830	-68.132	28956
+Garupá	14	-27.482	-55.829	28814
+Gobernador Virasora	06	-28.050	-56.033	28756
+Esquel	04	-42.911	-71.319	28486
+Adrogué	01	-34.800	-58.384	28265
+Cruz del Eje	05	-30.726	-64.804	28166
+Machagai	03	-26.926	-60.050	28070
+Villa Dolores	05	-31.946	-65.190	28009
+Termas de Río Hondo	22	-27.494	-64.860	27838
+Charata	03	-27.214	-61.188	27813
+Capitán Bermúdez	21	-32.823	-60.719	27060
+Coronel Suárez	01	-37.455	-61.933	27000
+Las Breñas	03	-27.090	-61.082	26955
+Jesús María	05	-30.982	-64.094	26825
+Fontana	03	-27.418	-59.024	26745
+Esquina	06	-30.015	-59.529	26399
+Rawson	04	-43.300	-65.102	26335
+Muñiz	01	-34.556	-58.707	26221
+Allen	16	-38.977	-67.827	26083
+Dolores	01	-36.313	-57.679	25190
+Plottier	15	-38.967	-68.233	25186
+Victoria	08	-32.618	-60.155	25139
+Jardín América	14	-27.043	-55.227	24905
+La Calera	05	-31.344	-64.335	24796
+Tres Isletas	03	-26.341	-60.432	24747
+La Paz	08	-30.742	-59.645	24716
+Monte Caseros	06	-30.254	-57.636	24671
+Veinticinco de Mayo	01	-35.432	-60.173	24668
+Pérez	21	-32.998	-60.768	24436
+Marcos Juárez	05	-32.698	-62.107	24226
+Embarcación	17	-23.210	-64.100	23961
+Monteros	24	-27.167	-65.498	23771
+San Pedro	14	-26.622	-54.108	23736
+San Martín de los Andes	15	-40.158	-71.353	23519
+Villa Gesell	01	-37.264	-56.973	23257
+Avellaneda	21	-29.118	-59.658	23077
+Santo Tomé	06	-28.549	-56.041	22634
+Villa Ortúzar	07	-34.580	-58.468	22500
+Montecarlo	14	-26.566	-54.757	22229
+San Justo	21	-30.789	-60.592	21809
+Villa Allende	05	-31.295	-64.295	21683
+San José de Jáchal	18	-30.241	-68.747	21018
+Aristóbulo del Valle	14	-27.096	-54.896	20683
+Albardón	18	-31.437	-68.526	20413
+Añatuya	22	-28.461	-62.835	20261
+Deán Funes	05	-30.420	-64.350	20164
+Arroyo Seco	21	-33.155	-60.509	20008
+Laboulaye	05	-34.127	-63.391	19908
+Cinco Saltos	16	-38.822	-68.063	19819
+General Enrique Mosconi	17	-22.596	-63.813	19811
+Vera	21	-29.459	-60.213	19797
+Arroyito	05	-31.420	-63.050	19577
+El Soberbio	14	-27.298	-54.199	19571
+Diamante	08	-32.066	-60.638	19545
+Joaquín V. González	17	-25.114	-64.126	19185
+Pirané	09	-25.732	-59.109	19124
+Villa Ocampo	21	-28.488	-59.355	19101
+Villa Paula de Sarmiento	18	-31.493	-68.538	19092
+Cosquín	05	-31.245	-64.466	19070
+Sunchales	21	-30.944	-61.561	18757
+Santa Elena	08	-30.944	-59.788	18410
+Gálvez	21	-32.029	-61.221	18374
+Rufino	21	-34.268	-62.713	18361
+Saladas	06	-28.254	-58.626	18349
+Crespo	08	-32.029	-60.307	18296
+Firmat	21	-33.459	-61.483	18294
+Río Segundo	05	-31.653	-63.910	18155
+Puerto Rico	14	-26.796	-55.024	17491
+Coronda	21	-31.973	-60.920	16975
+San Antonio Oeste	16	-40.732	-64.948	16966
+San Jorge	21	-31.896	-61.860	16873
+Villa Nueva	05	-32.433	-63.248	16841
+Río Ceballos	05	-31.165	-64.322	16632
+Federal	08	-30.955	-58.783	16333
+General Villegas	01	-35.033	-63.013	16270
+Embalse	05	-32.180	-64.418	15900
+General Pinedo	03	-27.317	-61.283	15741
+Carcarañá	21	-32.857	-61.153	15619
+San Javier	21	-30.578	-59.932	15606
+Puerto Esperanza	14	-26.023	-54.614	15579
+El Bolsón	16	-41.961	-71.533	15537
+Wanda	14	-25.969	-54.563	15529
+Unquillo	05	-31.231	-64.316	15369
+San Luis del Palmar	06	-27.508	-58.555	15347
+Catriel	16	-37.879	-67.796	15169
+Morteros	05	-30.712	-61.999	15129
+Bella Vista	24	-27.034	-65.302	15126
+La Falda	05	-31.088	-64.490	15112
+Clorinda	09	-25.285	-57.719	15000
+La Punta	19	-33.184	-66.313	15000
+Pico Truncado	20	-46.795	-67.957	14985
+La Quiaca	10	-22.102	-65.593	14751
+Funes	21	-32.916	-60.810	14750
+Las Varillas	05	-31.872	-62.719	14649
+Dos de Mayo	14	-27.023	-54.687	14544
+Tinogasta	02	-28.063	-67.565	14509
+Fray Luis A. Beltrán	21	-32.791	-60.728	14390
+San Cristóbal	21	-30.311	-61.237	14286
+Recreo	02	-29.282	-65.061	14204
+Andalgalá	02	-27.582	-66.316	14068
+Santa Lucía	06	-28.987	-59.103	14056
+Tostado	21	-29.232	-61.769	14000
+Rosario del Tala	08	-32.303	-59.145	13807
+Federación	08	-31.006	-57.900	13789
+Arauco	12	-28.581	-66.793	13720
+Fraile Pintado	10	-23.941	-64.799	13682
+Chamical	12	-30.360	-66.314	13383
+Ceres	21	-29.881	-61.945	13063
+Recreo	21	-31.491	-60.733	12798
+Las Rosas	21	-32.477	-61.580	12793
+El Colorado	09	-26.308	-59.373	12780
+Oncativo	05	-31.914	-63.682	12660
+General Acha	11	-37.377	-64.604	12536
+Pilar	05	-31.679	-63.880	12488
+Roldán	21	-32.898	-60.907	12468
+Plaza Huincul	15	-38.926	-69.209	12273
+Laguna Paiva	21	-31.304	-60.659	12250
+Presidencia de la Plaza	03	-27.001	-59.842	12231
+Campo Grande	14	-27.208	-54.980	12040
+Villa Berthet	03	-27.292	-60.413	12029
+Veinticinco de Mayo	14	-27.377	-54.743	11928
+Las Toscas	21	-28.353	-59.258	11811
+Cafayate	17	-26.073	-65.978	11785
+Chos Malal	15	-37.378	-70.271	11721
+Coronel Dorrego	01	-38.719	-61.287	11644
+Oliva	05	-32.042	-63.570	11629
+San Salvador	08	-31.625	-58.505	11626
+Pampa del Indio	03	-26.050	-59.937	11588
+La Carlota	05	-33.420	-63.298	11490
+Humahuaca	10	-23.205	-65.350	11369
+Las Parejas	21	-32.685	-61.516	11317
+San Clemente del Tuyú	01	-36.357	-56.724	11174
+Merlo	19	-32.343	-65.014	11159
+San José de Feliciano	08	-30.385	-58.752	11137
+San Bernardo	03	-27.288	-60.713	11101
+Candelaria	14	-27.459	-55.745	11039
+Quimilí	22	-27.646	-62.417	10959
+Bernardo de Irigoyen	14	-26.255	-53.646	10889
+El Trébol	21	-32.201	-61.701	10871
+Campo Largo	03	-26.801	-60.842	10743
+Junín de los Andes	15	-39.950	-71.069	10592
+Almafuerte	05	-32.193	-64.256	10534
+Hernando	05	-32.427	-63.733	10486
+Corzuela	03	-26.954	-60.969	10470
+San Carlos Centro	21	-31.729	-61.092	10465
+Armstrong	21	-32.782	-61.602	10388
+Ingeniero Guillermo N. Juárez	09	-23.900	-61.850	10357
+Las Lomitas	09	-24.710	-60.593	10354
+General Cabrera	05	-32.813	-63.872	10351
+El Quebrachal	17	-25.283	-64.067	10243
+Puerto Deseado	20	-47.750	-65.894	10237
+Calchaquí	21	-29.888	-60.287	10221
+San Martín	18	-31.430	-68.501	10140
+Campo Ramón	14	-27.455	-55.021	10088
+La Leonesa	03	-27.038	-58.703	10067
+Leones	05	-32.662	-62.297	9971
+Corral de Bustos	05	-33.282	-62.185	9882
+Eduardo Castex	11	-35.915	-64.294	9861
+Choele Choel	16	-39.289	-65.661	9791
+El Carril	17	-25.074	-65.492	9780
+Puerto Tirol	03	-27.372	-59.082	9767
+Justo Daract	19	-33.859	-65.183	9680
+Totoras	21	-32.584	-61.169	9587
+Santa Rosa de Calamuchita	05	-32.069	-64.536	9504
+Abra Pampa	10	-22.720	-65.697	9425
+Malagueño	05	-31.465	-64.358	9364
+Villa Elisa	08	-32.163	-58.401	9334
+Villa Cañás	21	-34.006	-61.608	9328
+Las Heras	20	-46.542	-68.936	9303
+Campo Viera	14	-27.333	-55.057	9228
+Las Lajitas	17	-24.728	-64.193	9151
+Coronel Du Graty	03	-27.680	-60.915	9140
+Capilla del Monte	05	-30.861	-64.525	9085
+Clodomira	22	-27.574	-64.131	9043
+Santa Sylvina	03	-27.833	-61.137	9040
+Mburucuyá	06	-28.045	-58.228	9012
+Vicuña Mackenna	05	-33.920	-64.392	8994
+Viale	08	-31.868	-60.007	8939
+Ibarreta	09	-25.214	-59.859	8687
+Huinca Renancó	05	-34.840	-64.376	8637
+Malvinas Argentinas	05	-31.382	-64.055	8628
+General Ramírez	08	-32.176	-60.201	8614
+Apolinario Saravia	17	-24.433	-63.995	8595
+La Cruz	06	-29.174	-56.643	8591
+Puerto Piray	14	-26.469	-54.707	8557
+Taco Pozo	03	-25.616	-63.267	8470
+Chicoana	17	-25.105	-65.535	8468
+Puerto Vilelas	03	-27.514	-58.939	8455
+Colonia Aurora	14	-27.474	-54.525	8407
+El Galpón	17	-25.381	-64.653	8357
+Canals	05	-33.565	-62.889	8343
+Santa Rosa	06	-28.263	-58.119	8330
+Sarmiento	04	-45.588	-69.070	8292
+Garuhapé	14	-26.818	-54.957	8259
+Brinkmann	05	-30.866	-62.037	8237
+Pampa del Infierno	03	-26.505	-61.174	8176
+Calingasta	18	-31.334	-69.421	8176
+Coronel Moldes	05	-33.623	-64.597	8104
+Fiambalá	02	-27.672	-67.619	8061
+El Calafate	20	-50.341	-72.277	8000
+Urdinarrain	08	-32.686	-58.893	7992
+Bovril	08	-31.343	-59.445	7977
+Simoca	24	-27.263	-65.356	7939
+Alvear	06	-29.097	-56.550	7917
+Itatí	06	-27.270	-58.245	7902
+Lamarque	16	-39.423	-65.702	7819
+Huillapima	02	-28.725	-65.979	7779
+Yuto	10	-23.643	-64.472	7732
+Nueve de Julio	18	-31.669	-68.390	7652
+Nuestra Señora del Rosario de Caa Catí	06	-27.751	-57.621	7573
+Villa La Angostura	15	-40.762	-71.646	7526
+Hermoso Campo	03	-27.608	-61.344	7435
+Justiniano Posse	05	-32.884	-62.678	7406
+Concepción de la Sierra	14	-27.983	-55.520	7398
+San Miguel	06	-27.996	-57.590	7396
+Villa de Soto	05	-30.855	-64.999	7303
+Sampacho	05	-33.384	-64.722	7238
+La Cumbre	05	-30.982	-64.491	7235
+Realicó	11	-35.037	-64.245	7151
+Laguna Larga	05	-31.777	-63.801	7137
+Villa del Totoral	05	-30.817	-63.717	7110
+Villa María Grande	08	-31.666	-59.902	7101
+La Cocha	24	-27.769	-65.587	7066
+Malabrigo	21	-29.346	-59.970	7026
+Intendente Alvear	11	-35.234	-63.592	6990
+Sierra Grande	16	-41.606	-65.356	6978
+Veinticinco de Mayo	11	-37.774	-67.716	6962
+Arias	05	-33.644	-62.403	6928
+Monte Maíz	05	-33.205	-62.601	6920
+Monte Cristo	05	-31.343	-63.944	6914
+San Agustín de Valle Fértil	18	-30.634	-67.468	6864
+Cruz Alta	05	-33.009	-61.807	6862
+Icaño	02	-28.919	-65.328	6857
+Mina Clavero	05	-31.721	-65.006	6855
+Aviá Terai	03	-26.685	-60.729	6821
+General Fernández Oro	16	-38.953	-67.925	6813
+Santa Rosa de Río Primero	05	-31.152	-63.402	6788
+San Benito	08	-31.784	-60.442	6771
+La Toma	19	-33.053	-65.624	6663
+Trancas	24	-26.231	-65.281	6658
+Alba Posse	14	-27.570	-54.683	6652
+Yacimiento Río Turbio	20	-51.573	-72.351	6650
+Río Turbio	20	-51.536	-72.337	6650
+Los Frentones	03	-26.408	-61.414	6610
+Victorica	11	-36.215	-65.436	6565
+Ingeniero Luis A. Huergo	16	-39.071	-67.238	6483
+San José	14	-27.770	-55.783	6452
+Berrotarán	05	-32.451	-64.389	6446
+Adelia María	05	-33.632	-64.021	6434
+Los Altos	02	-28.048	-65.499	6421
+Salsipuedes	05	-31.137	-64.296	6411
+Fray Luis Beltrán	16	-39.314	-65.760	6401
+Trevelin	04	-43.086	-71.464	6395
+Senillosa	15	-39.014	-68.433	6394
+Capayán	02	-28.774	-66.047	6358
+Gobernador Roca	14	-27.186	-55.464	6315
+Rada Tilly	04	-45.925	-67.554	6208
+Larroque	08	-33.036	-59.001	6200
+Puerto Libertad	14	-25.920	-54.582	6143
+San Julián	20	-49.306	-67.727	6143
+Mocoretá	06	-30.619	-57.963	6088
+Suncho Corral	22	-27.934	-63.429	6087
+Panambí	14	-27.724	-54.915	5970
+Villa General Belgrano	05	-31.978	-64.556	5888
+Capioví	14	-26.930	-55.061	5860
+Villa Ojo de Agua	22	-29.500	-63.694	5832
+Concepción del Bermejo	03	-26.599	-60.946	5830
+Paso de la Patria	06	-27.317	-58.572	5818
+Maciá	08	-32.172	-59.399	5806
+Ingeniero Jacobacci	16	-41.329	-69.550	5785
+Gaimán	04	-43.290	-65.493	5753
+Perugorría	06	-29.341	-58.611	5685
+Comandante Fontana	09	-25.335	-59.682	5655
+Despeñaderos	05	-31.816	-64.290	5645
+Tilcara	10	-23.578	-65.395	5640
+Chañar Ladeado	21	-33.325	-62.038	5639
+Huerta Grande	05	-31.075	-64.491	5630
+Devoto	05	-31.404	-62.306	5597
+General Conesa	16	-40.104	-64.456	5595
+Balnearia	05	-31.009	-62.667	5585
+Margarita Belén	03	-27.262	-58.972	5547
+Sastre	21	-31.768	-61.829	5521
+Monte Buey	05	-32.916	-62.457	5497
+Laborde	05	-33.153	-62.857	5492
+General Levalle	05	-34.015	-63.924	5492
+Valle Hermoso	05	-31.117	-64.481	5486
+Tilisarao	19	-32.733	-65.291	5478
+Campo Gallo	22	-26.583	-62.850	5455
+Santo Pipó	14	-27.141	-55.409	5447
+Pozo del Molle	05	-32.019	-62.920	5429
+Caimancito	10	-23.741	-64.594	5403
+Villa Hernandarias	08	-31.231	-59.985	5375
+Palo Santo	09	-25.563	-59.338	5324
+Cerro Azul	14	-27.633	-55.496	5323
+Beltrán	22	-27.829	-64.061	5321
+Palma Sola	10	-23.978	-64.303	5318
+Las Higueras	05	-33.092	-64.289	5282
+Guatraché	11	-37.668	-63.530	5271
+Graneros	24	-27.649	-65.438	5263
+Tancacha	05	-32.243	-63.981	5184
+Calilegua	10	-23.774	-64.770	5174
+Cervantes	16	-39.054	-67.394	5173
+Villa Huidobro	05	-34.838	-64.587	5155
+El Alcázar	14	-26.715	-54.815	5127
+Ingenio La Esperanza	10	-24.226	-64.839	5002
+Campo Quijano	17	-24.910	-65.637	5000
+Villa Berna	05	-31.914	-64.732	5000
+Makallé	03	-27.207	-59.287	4994
+Presidencia Roca	03	-26.141	-59.595	4987
+Camilo Aldao	05	-33.127	-62.095	4895
+Santa Clara	10	-24.309	-64.663	4883
+Sumampa	22	-29.385	-63.469	4812
+Concepción	06	-28.392	-57.888	4800
+Macachín	11	-37.136	-63.666	4768
+Ucacha	05	-33.032	-63.507	4747
+Alejandro Roca	05	-33.354	-63.718	4724
+Villa Cura Brochero	05	-31.706	-65.018	4707
+28 de Noviembre	20	-51.584	-72.214	4686
+Villa Giardino	05	-31.033	-64.483	4679
+Las Lajas	15	-38.523	-70.367	4673
+Ingeniero Luiggi	11	-35.386	-64.465	4671
+Porteña	05	-31.014	-62.066	4624
+Las Perdices	05	-32.698	-63.706	4615
+Colonia Elisa	03	-26.930	-59.519	4570
+James Craik	05	-32.161	-63.467	4560
+Quilino	05	-30.214	-64.501	4534
+Guaraní	14	-27.523	-55.161	4530
+Concarán	19	-32.560	-65.243	4530
+Noetinger	05	-32.366	-62.311	4508
+La Tigra	03	-27.110	-60.587	4505
+Santa Rosa del Conlara	19	-32.343	-65.203	4489
+Puerto Ibicuy	08	-33.753	-59.178	4477
+Lucas González	08	-32.384	-59.530	4466
+San Cosme	06	-27.371	-58.512	4429
+Hasenkamp	08	-31.512	-59.835	4413
+Pampa de los Guanacos	22	-26.230	-61.838	4393
+San Francisco de Laishí	09	-26.243	-58.630	4384
+Loncopué	15	-38.073	-70.616	4323
+Castro Barros	12	-30.580	-65.727	4322
+San Antonio	02	-28.010	-65.709	4290
+Isla Verde	05	-33.241	-62.403	4245
+Las Garcitas	03	-26.618	-59.801	4244
+Mendiolaza	05	-31.267	-64.301	4204
+Comandante Luis Piedra Buena	20	-49.985	-68.915	4176
+General Galarza	08	-32.720	-59.396	4150
+Itá Ibaté	06	-27.426	-57.338	4115
+Colonias Unidas	03	-26.698	-59.632	4093
+Chichinales	16	-39.115	-66.927	4060
+Santa Magdalena	05	-34.518	-63.944	4059
+Estanislao del Campo	09	-25.055	-60.092	4055
+Lago Puelo	04	-42.067	-71.604	4046
+Villa Basilio Nievas	18	-31.550	-68.733	4038
+Tafí del Valle	24	-26.853	-65.710	4028
+San Antonio de los Cobres	17	-24.218	-66.319	4000
+Villa General Guemes	09	-24.755	-59.489	4000
+Villa Paranacito	08	-33.714	-58.658	3988
+Pueblo Libertador	06	-30.221	-59.390	3973
+La Escondida	03	-27.107	-59.448	3948
+Pozo del Tigre	09	-24.897	-60.324	3948
+Chimpay	16	-39.165	-66.142	3905
+Tintina	22	-27.027	-62.706	3868
+Quemú Quemú	11	-36.055	-63.564	3851
+General Enrique Godoy	16	-39.079	-67.158	3823
+La Eduvigis	03	-26.836	-59.062	3816
+La Mendieta	10	-24.312	-64.964	3812
+Etruria	05	-32.940	-63.247	3788
+El Maitén	04	-42.049	-71.167	3782
+Inriville	05	-32.944	-62.230	3778
+Catriló	11	-36.406	-63.422	3743
+Gancedo	03	-27.490	-61.676	3737
+Aluminé	15	-39.237	-70.920	3720
+Rancul	11	-35.069	-64.681	3699
+Riachuelo	06	-27.582	-58.745	3668
+El Aguilar	10	-23.216	-65.680	3655
+Basail	03	-27.885	-59.282	3652
+Seguí	08	-31.956	-60.125	3646
+La Clotilde	03	-27.133	-60.667	3625
+Los Helechos	14	-27.551	-55.079	3616
+Villa General Mitre	22	-29.143	-62.652	3605
+Valcheta	16	-40.680	-66.163	3596
+Perito Moreno	20	-46.590	-70.930	3588
+Colonia Benítez	03	-27.331	-58.946	3584
+Riacho Eh-Eh	09	-25.362	-58.278	3566
+Gobernador Juan E. Martínez	06	-28.912	-58.936	3529
+General Vedia	03	-26.934	-58.660	3513
+La Francia	05	-31.407	-62.634	3503
+Villa del Rosario	08	-30.796	-57.913	3488
+Azara	14	-28.062	-55.678	3484
+Trenel	11	-35.698	-64.132	3426
+Los Charrúas	08	-31.175	-58.188	3414
+Puerto Santa Cruz	20	-50.019	-68.523	3397
+Pomán	02	-28.395	-66.221	3387
+Ruiz de Montoya	14	-26.983	-55.050	3374
+Piedra del Águila	15	-40.048	-70.074	3372
+San Carlos	06	-27.746	-55.897	3350
+Colonia Barón	11	-36.152	-63.854	3317
+Alejo Ledesma	05	-33.606	-62.623	3310
+San Francisco del Monte de Oro	19	-32.598	-66.125	3295
+Caraguatay	14	-26.606	-54.781	3287
+San José de la Dormida	05	-30.354	-63.949	3272
+Morrison	05	-32.595	-62.835	3245
+Picún Leufú	15	-39.516	-69.288	3222
+Los Juríes	22	-28.465	-62.109	3212
+Cuesta Blanca	05	-31.487	-64.572	3200
+Naschel	19	-32.917	-65.375	3157
+Del Campillo	05	-34.377	-64.495	3155
+Ancasti	02	-28.812	-65.501	3082
+Dos Arroyos	14	-27.699	-55.252	3079
+Tacuarendí	21	-28.413	-59.260	3067
+Napenay	03	-26.733	-60.617	3056
+Toledo	05	-31.556	-64.009	3046
+La Para	05	-30.894	-63.001	3021
+Hersilia	21	-30.004	-61.841	3000
+Tolhuin	23	-54.511	-67.195	3000
+La Verde	03	-27.126	-59.374	2995
+Tres Algarrobos	01	-35.195	-62.774	2993
+General Campos	08	-31.523	-58.405	2982
+Villa Trinidad	21	-30.213	-61.876	2945
+Río Mayo	04	-45.686	-70.258	2939
+Dolavón	04	-43.307	-65.707	2929
+Winifreda	11	-36.226	-64.234	2902
+Sauce de Luna	08	-31.238	-59.219	2901
+San Basilio	05	-33.498	-64.315	2882
+San Agustín	05	-31.977	-64.374	2870
+Vista Alegre	15	-38.750	-68.183	2857
+Loreto	06	-27.768	-57.275	2856
+General San Martín	11	-37.979	-63.604	2846
+Vinchina	12	-28.760	-68.207	2834
+Villa del Dique	05	-32.177	-64.455	2829
+Elena	05	-32.572	-64.395	2815
+Los Surgentes	05	-32.985	-62.022	2804
+Sacanta	05	-31.663	-63.045	2791
+Villa Mugueta	21	-33.311	-61.055	2789
+Contraalmirante Cordero	16	-38.724	-68.153	2782
+Jacinto Arauz	11	-38.086	-63.432	2773
+Laguna Yema	09	-24.254	-61.245	2744
+Arroyo Cabral	05	-32.491	-63.401	2727
+Los Cóndores	05	-32.320	-64.278	2720
+Los Menucos	16	-40.844	-68.087	2689
+Villa Atamisqui	22	-28.496	-63.816	2683
+Nueve de Julio	06	-28.841	-58.827	2671
+Serrano	05	-34.470	-63.538	2670
+Mainque	16	-39.067	-67.300	2658
+Londres	02	-27.714	-67.133	2627
+Andacollo	15	-37.179	-70.669	2627
+General Roca	05	-32.732	-61.916	2597
+Pascanas	05	-33.126	-63.041	2567
+Oro Verde	08	-31.825	-60.517	2548
+Charadai	03	-27.655	-59.863	2538
+Villa Las Rosas	05	-31.950	-65.054	2535
+Buena Esperanza	19	-34.756	-65.254	2531
+Villa Valeria	05	-34.341	-64.920	2525
+Guatimozín	05	-33.461	-62.438	2524
+Hoyo de Epuyén	04	-42.072	-71.508	2498
+Santa Isabel	11	-36.227	-66.942	2493
+Maimará	10	-23.624	-65.408	2470
+La Granja	05	-31.009	-64.269	2406
+Colonia Dora	22	-28.600	-62.950	2406
+Caleufú	11	-35.596	-64.558	2396
+Miguel Riglos	11	-36.854	-63.688	2385
+Tío Pujio	05	-32.288	-63.356	2383
+La Playosa	05	-32.100	-63.031	2376
+Santiago Temple	05	-31.387	-63.418	2358
+Unión	19	-35.153	-65.946	2341
+Chavarría	06	-28.955	-58.573	2337
+Ubajay	08	-31.794	-58.313	2334
+Herradura	09	-26.487	-58.312	2333
+Puerto Leoni	14	-26.988	-55.166	2329
+Ordóñez	05	-32.841	-62.866	2328
+Saturnino M. Laspiur	05	-31.703	-62.482	2316
+Hualfín	02	-27.229	-66.831	2304
+Serrezuela	05	-30.638	-65.387	2291
+Candelaria	19	-32.060	-65.825	2269
+Gobernador Mansilla	08	-32.545	-59.355	2264
+Picada Gobernador López	14	-27.671	-55.246	2256
+Parera	11	-35.146	-64.501	2246
+Mojón Grande	14	-27.712	-55.156	2233
+Mariano Moreno	15	-38.750	-70.024	2225
+Samuhú	03	-27.521	-60.392	2223
+Buta Ranquil	15	-37.052	-69.877	2221
+Maquinchao	16	-41.249	-68.703	2195
+Arrufó	21	-30.233	-61.729	2190
+Cachí	17	-25.120	-66.165	2189
+Gobernador Costa	04	-44.050	-70.598	2185
+Santa Eufemia	05	-33.177	-63.283	2179
+Bonpland	14	-27.482	-55.478	2173
+Achiras	05	-33.175	-64.993	2173
+Villa Bustos	12	-29.286	-67.021	2165
+El Hoyo	22	-27.029	-63.232	2162
+Arroyo del Medio	14	-27.697	-55.404	2142
+Alpachiri	11	-37.377	-63.774	2138
+General Baldissera	05	-33.122	-62.306	2133
+Yapeyú	06	-29.469	-56.818	2124
+Capitán Solari	03	-26.802	-59.561	2123
+Las Acequias	05	-33.282	-63.976	2116
+Laguna Naick-Neck	09	-25.248	-58.094	2115
+Yataity Calle	06	-29.019	-58.908	2114
+Caseros	08	-32.463	-58.479	2109
+Saldán	05	-31.303	-64.307	2099
+Villa Ascasubi	05	-32.164	-63.892	2081
+San Francisco del Chañar	05	-29.788	-63.944	2067
+Santa Ana	08	-30.900	-57.932	2059
+Pedro R. Fernández	06	-28.751	-58.656	2058
+Los Antiguos	20	-46.550	-71.631	2047
+Sebastián Elcano	05	-30.161	-63.594	2042
+Burruyacú	24	-26.499	-64.742	2037
+Los Telares	22	-28.985	-63.449	2032
+Mariano I. Loza	06	-29.377	-58.194	2015
+Santa Rosa de Tastil	17	-24.452	-65.975	2000
+La Adela	11	-38.983	-64.083	2000
+Florentino Ameghino	14	-27.567	-55.133	1979
+Miramar	05	-30.919	-62.678	1979
+Anguil	11	-36.526	-64.010	1977
+Felipe Yofré	06	-29.102	-58.338	1947
+Domínguez	08	-31.987	-58.962	1925
+Villa Rumipal	05	-32.188	-64.480	1922
+Obispo Trejo	05	-30.781	-63.413	1911
+Los Varela	02	-27.930	-65.872	1908
+Luján	19	-32.367	-65.936	1896
+Ticino	05	-32.694	-63.436	1895
+Corralito	05	-32.025	-64.192	1873
+Doblas	11	-37.150	-64.012	1860
+La Criolla	08	-31.269	-58.106	1852
+Coronel Belisle	16	-39.187	-65.954	1841
+Puerto Bermejo	03	-26.927	-58.509	1832
+Hernández	08	-32.337	-60.022	1801
+Bernasconi	11	-37.905	-63.742	1781
+Cruz de los Milagros	06	-28.836	-59.005	1768
+Marull	05	-30.995	-62.826	1765
+Buchardo	05	-34.723	-63.509	1756
+Pampa Almirón	03	-26.700	-59.123	1747
+Añelo	15	-38.354	-68.788	1742
+San Pedro	22	-27.954	-65.167	1715
+Piedras Blancas	08	-31.186	-59.952	1714
+Mattaldi	05	-34.482	-64.173	1714
+Alto Río Senguer	04	-45.041	-70.820	1700
+Santa María	14	-27.935	-55.407	1687
+Palmar Grande	06	-27.942	-57.901	1672
+Lonquimay	11	-36.465	-63.624	1672
+Coté-Lai	03	-27.500	-59.600	1650
+Puerta de Corral Quemado	02	-27.230	-66.936	1634
+Colonia Elía	08	-32.671	-58.325	1620
+Bernardo Larroudé	11	-35.024	-63.583	1619
+Santa Catalina - Dique Lujan	01	-34.384	-58.707	1600
+Viamonte	05	-33.746	-63.098	1598
+Laguna Limpia	03	-26.496	-59.681	1594
+Herrera	08	-32.434	-58.632	1587
+Villa Concepción del Tío	05	-31.323	-62.814	1585
+Aranguren	08	-32.243	-60.161	1581
+Carnerillo	05	-32.914	-64.022	1575
+Idiazábal	05	-32.814	-63.033	1567
+Villa Urquiza	08	-31.648	-60.375	1566
+Agua de Oro	05	-31.067	-64.300	1553
+Cariló	01	-37.165	-56.891	1553
+Wenceslao Escalante	05	-33.173	-62.771	1549
+Telén	11	-36.264	-65.510	1549
+Puerto Yeruá	08	-31.537	-58.015	1541
+Las Junturas	05	-31.831	-63.450	1541
+Villa Mantero	08	-32.397	-58.746	1526
+Carrilobo	05	-31.873	-63.117	1522
+Los Laureles	21	-29.368	-59.736	1519
+Altos de Chipión	05	-30.956	-62.337	1512
+El Tío	05	-31.384	-62.829	1510
+Juan Pujol	06	-30.419	-57.856	1487
+Alta Italia	11	-35.334	-64.115	1481
+San Justo	08	-32.447	-58.436	1473
+Villa Reducción	05	-33.201	-63.862	1467
+Pilcaniyeu	16	-41.123	-70.722	1467
+Conscripto Bernardi	08	-31.048	-59.084	1464
+José de San Martín	04	-44.050	-70.470	1453
+Lapachito	03	-27.160	-59.386	1448
+Chorotis	03	-27.916	-61.400	1445
+Libertad	06	-30.043	-57.820	1438
+General Alvear	14	-27.426	-55.169	1431
+Lomas de Vallejos	06	-27.735	-57.919	1415
+Gato Colorado	21	-28.022	-61.187	1412
+Ceibas	08	-33.433	-58.750	1405
+El Huecú	15	-37.645	-70.580	1399
+El Arañado	05	-31.741	-62.893	1395
+La Maruja	11	-35.674	-64.940	1389
+Río Pico	04	-44.179	-71.368	1386
+Sierra Colorada	16	-40.585	-67.757	1374
+Dalmacio Vélez Sársfield	05	-32.611	-63.580	1344
+Coronel Baigorria	05	-32.848	-64.361	1334
+Tabossi	08	-31.801	-59.935	1333
+Las Ovejas	15	-36.989	-70.750	1312
+San Gustavo	08	-30.690	-59.398	1307
+Comallo	16	-41.030	-70.268	1306
+Pronunciamiento	08	-32.345	-58.443	1301
+Embajador Martini	11	-35.386	-64.281	1298
+Costa Sacate	05	-31.648	-63.759	1288
+General Enrique Mosconi	09	-23.217	-62.300	1279
+Villa Escolar	09	-26.622	-58.671	1261
+Santa Anita	08	-32.175	-58.786	1254
+San Antonio de Litín	05	-32.214	-62.632	1240
+Tres Capones	14	-28.006	-55.605	1234
+San Carlos	05	-31.178	-65.102	1215
+Los Conquistadores	08	-30.591	-58.468	1214
+Mutquín	02	-28.321	-66.143	1207
+Salsacate	05	-31.318	-65.090	1205
+Arata	11	-35.639	-64.356	1202
+Loreto	14	-27.332	-55.525	1201
+Uriburu	11	-36.507	-63.862	1200
+Piquillín	05	-31.302	-63.758	1170
+Herlitzka	06	-27.565	-58.256	1166
+Villa Tulumba	05	-30.396	-64.122	1161
+Cerro Corá	14	-27.513	-55.609	1153
+Garruchos	06	-28.172	-55.654	1152
+Cavanagh	05	-33.476	-62.339	1150
+La Cesira	05	-33.951	-62.972	1140
+Italó	05	-34.792	-63.782	1139
+Colonia La Tordilla	05	-31.237	-63.061	1138
+Mártires	14	-27.423	-55.377	1135
+Aldea San Antonio	08	-32.623	-58.705	1127
+Colonia San Bartolomé	05	-31.528	-62.724	1104
+Bella Italia	21	-31.282	-61.411	1100
+Barrancas	15	-36.823	-69.916	1098
+El Rodeo	02	-28.215	-65.874	1083
+Camarones	04	-44.797	-65.710	1079
+La Puerta de San José	02	-27.550	-67.017	1073
+Pasco	05	-32.747	-63.342	1072
+Bonpland	06	-29.817	-57.430	1063
+Ciervo Petiso	03	-26.580	-59.631	1055
+Cintra	05	-32.307	-62.652	1054
+Cañada de Luque	05	-30.733	-63.724	1054
+Darwin	16	-39.203	-65.740	1052
+Los Cocos	05	-30.925	-64.502	1035
+Almafuerte	14	-27.508	-55.403	1022
+Huanchillas	05	-33.667	-63.637	1020
+Las Varas	05	-31.803	-62.617	1017
+General Manuel J. Campos	11	-37.460	-63.585	1016
+Chazón	05	-33.079	-63.277	1010
+Charras	05	-33.024	-64.047	1001
+Antofagasta de la Sierra	02	-26.059	-67.406	500
+Villa General Roca	19	-32.665	-66.451	196
+Verónica	01	-35.388	-57.337	0
+Suipacha	01	-34.770	-59.688	0
+Sauce	06	-30.087	-58.788	0
+San Vicente	01	-35.025	-58.424	0
+Santa Ana	14	-27.367	-55.581	0
+San Roque	06	-28.575	-58.708	0
+San Miguel del Monte	01	-35.440	-58.807	0
+San Justo	01	-34.677	-58.561	0
+San Javier	14	-27.874	-55.135	0
+San Ignacio	14	-27.256	-55.534	0
+San Cayetano	01	-38.347	-59.610	0
+San Antonio de Areco	01	-34.250	-59.472	0
+San Andrés de Giles	01	-34.447	-59.445	0
+Saladillo	01	-35.637	-59.778	0
+Roque Pérez	01	-35.398	-59.333	0
+Rauch	01	-36.775	-59.090	0
+Ranchos	01	-35.516	-58.319	0
+Pinamar	01	-37.108	-56.861	0
+Pila	01	-36.001	-58.144	0
+Olivos	01	-34.507	-58.487	0
+Nogoyá	08	-32.394	-59.790	0
+Navarro	01	-35.006	-59.278	0
+Miramar	01	-38.272	-57.839	0
+Mar del Tuyú	01	-36.575	-56.689	0
+Marcos Paz	01	-34.782	-58.838	0
+Maipú	01	-36.863	-57.881	0
+Magdalena	01	-35.081	-57.513	0
+Lomas de Zamora	01	-34.761	-58.406	0
+Lobos	01	-35.185	-59.098	0
+Lobería	01	-38.156	-58.791	0
+Leandro N. Alem	14	-27.603	-55.325	0
+Las Flores	01	-36.014	-59.100	0
+Lanús	01	-34.703	-58.395	0
+Ituzaingó	01	-34.658	-58.663	0
+Ituzaingó	06	-27.582	-56.682	0
+General San Martín	01	-34.574	-58.535	0
+General Rodríguez	01	-34.608	-58.953	0
+General Lavalle	01	-36.406	-56.943	0
+General Las Heras	01	-34.927	-58.947	0
+General Juan Madariaga	01	-36.997	-57.140	0
+General Guido	01	-36.641	-57.792	0
+General Conesa	01	-36.520	-57.325	0
+General Belgrano	01	-35.770	-58.493	0
+Florencio Varela	01	-34.827	-58.396	0
+José María Ezeiza	01	-34.848	-58.529	0
+Espinillo	09	-24.981	-58.552	0
+Ensenada	01	-34.862	-57.911	0
+Empedrado	06	-27.952	-58.806	0
+Eldorado	14	-26.405	-54.625	0
+Coronel Vidal	01	-37.446	-57.729	0
+Colón	08	-32.223	-58.144	0
+Chascomús	01	-35.573	-58.008	0
+Castelli	01	-36.089	-57.804	0
+Caseros	01	-34.603	-58.564	0
+Carmen de Areco	01	-34.377	-59.824	0
+Capitán Sarmiento	01	-34.172	-59.790	0
+Capilla del Señor	01	-34.292	-59.102	0
+Cañuelas	01	-35.054	-58.762	0
+Brandsen	01	-35.168	-58.234	0
+Berón de Astrada	06	-27.551	-57.535	0
+Berisso	01	-34.873	-57.883	0
+Benito Juárez	01	-37.672	-59.807	0
+Bella Vista	06	-28.508	-59.041	0
+Belén de Escobar	01	-34.348	-58.793	0
+Baradero	01	-33.811	-59.508	0
+Ayacucho	01	-37.152	-58.487	0
+Apóstoles	14	-27.914	-55.754	0
+Guernica	01	-34.916	-58.381	0
+Villa Unión	22	-29.413	-62.788	0
+Villa Unión	12	-29.316	-68.227	0
+Villa Santa Rosa	18	-31.744	-68.314	0
+Villa Nueva	13	-32.897	-68.780	0
+Villa Media Agua	18	-31.983	-68.424	0
+Villa Krause	18	-31.567	-68.533	0
+Villa de María	05	-29.902	-63.723	0
+Villa del Salvador	18	-31.442	-68.397	0
+Villa del Rosario	05	-31.557	-63.535	0
+Villa Castelli	12	-29.014	-68.223	0
+Villa Aberastain	18	-31.650	-68.583	0
+Vedia	01	-34.496	-61.541	0
+Valle Grande	10	-23.476	-64.948	0
+Ulapes	12	-31.574	-66.237	0
+Tupungato	13	-33.371	-69.148	0
+Tunuyán	13	-33.577	-69.015	0
+Tumbaya	10	-23.858	-65.467	0
+Tres Lomas	01	-36.457	-62.860	0
+Trenque Lauquen	01	-35.970	-62.734	0
+Tornquist	01	-38.101	-62.223	0
+Toay	11	-36.673	-64.379	0
+Telsen	04	-42.436	-66.941	0
+Tecka	04	-43.495	-70.810	0
+Tapalqué	01	-36.355	-60.026	0
+Tamberías	18	-31.459	-69.422	0
+Tama	12	-30.508	-66.530	0
+Susques	10	-23.399	-66.367	0
+Selva	22	-29.768	-62.048	0
+Saujil	02	-28.174	-66.212	0
+Santa Victoria	17	-22.251	-64.965	0
+Santa Rosa	13	-33.254	-68.149	0
+Santa María	02	-26.695	-66.047	0
+Santa Catalina	10	-21.945	-66.052	0
+Sañogasta	12	-29.095	-67.116	0
+San Lorenzo	21	-32.743	-60.736	0
+San José	02	-28.383	-65.700	0
+San Isidro	02	-28.463	-65.726	0
+San Carlos de Bolívar	01	-36.231	-61.116	0
+San Carlos	17	-25.886	-65.929	0
+San Blas de los Sauces	12	-28.411	-67.093	0
+San Antonio	10	-24.368	-65.335	0
+Salto	01	-34.293	-60.255	0
+Salliqueló	01	-36.752	-62.961	0
+Rosario de Lerma	17	-24.982	-65.579	0
+Rosario de la Frontera	17	-25.797	-64.971	0
+Rojas	01	-34.195	-60.735	0
+Rodeo	18	-30.212	-69.137	0
+Rivadavia	13	-33.191	-68.461	0
+Rivadavia	18	-31.554	-68.653	0
+Rivadavia	17	-24.186	-62.885	0
+Río Colorado	16	-38.994	-64.093	0
+Rinconada	10	-22.441	-66.168	0
+Ramallo	01	-33.485	-60.006	0
+Puelches	11	-38.146	-65.914	0
+Puan	01	-37.546	-62.767	0
+Pozo Hondo	22	-27.166	-64.490	0
+Pigüé	01	-37.605	-62.403	0
+Pellegrini	01	-36.266	-63.166	0
+Pehuajó	01	-35.811	-61.897	0
+Patquía	12	-30.047	-66.882	0
+Paso de Indios	04	-43.862	-69.046	0
+Olta	12	-30.631	-66.263	0
+Nueva Esperanza	22	-26.199	-64.238	0
+Ñorquinco	16	-41.851	-70.902	0
+Monte Quemado	22	-25.806	-62.830	0
+Monte Hermoso	01	-38.983	-61.295	0
+Molinos	17	-25.439	-66.294	0
+Milagro	12	-31.008	-65.991	0
+Metán	17	-25.499	-64.974	0
+Melincué	21	-33.658	-61.455	0
+Médanos	01	-38.828	-62.694	0
+Malargüe	13	-35.475	-69.584	0
+Malanzán	12	-30.804	-66.609	0
+Maipú	13	-32.980	-68.785	0
+San Isidro de Lules	24	-26.928	-65.339	0
+Luján de Cuyo	13	-33.035	-68.878	0
+Limay Mahuida	11	-37.160	-66.674	0
+Libertador General San Martín	19	-32.411	-65.676	0
+Leleque	04	-42.412	-71.068	0
+La Viña	17	-25.466	-65.566	0
+Las Plumas	04	-43.721	-67.283	0
+Las Heras	13	-32.853	-68.828	0
+Las Coloradas	15	-39.555	-70.595	0
+La Puerta	02	-28.170	-65.790	0
+Laprida	01	-37.544	-60.800	0
+La Poma	17	-24.722	-66.201	0
+La Paz	13	-33.461	-67.550	0
+La Merced	02	-28.152	-65.660	0
+La Consulta	13	-33.736	-69.122	0
+La Candelaria	17	-26.127	-65.050	0
+La Cañada	22	-27.708	-63.774	0
+La Caldera	17	-24.605	-65.382	0
+La Banda	22	-27.733	-64.243	0
+Junín	13	-33.148	-68.479	0
+Iruya	17	-22.792	-65.217	0
+Herrera	22	-28.481	-63.068	0
+Henderson	01	-36.300	-61.717	0
+Helvecia	21	-31.098	-60.088	0
+Guaminí	01	-37.014	-62.419	0
+Guachipas	17	-25.520	-65.509	0
+Godoy Cruz	13	-32.929	-68.835	0
+Gobernador Gregores	20	-48.751	-70.247	0
+General Viamonte	01	-35.000	-61.035	0
+General Pinto	01	-34.765	-61.891	0
+General Martín Miguel de Güemes	17	-24.670	-65.048	0
+General Lavalle	13	-32.722	-68.591	0
+General La Madrid	01	-37.248	-61.263	0
+General Arenales	01	-34.303	-61.305	0
+General Alvear	01	-36.021	-60.014	0
+General Alvear	13	-34.977	-67.691	0
+Gastre	04	-42.262	-69.221	0
+Garza	22	-28.153	-63.539	0
+Frías	22	-28.636	-65.131	0
+Fernández	22	-27.920	-63.893	0
+Famatina	12	-28.923	-67.520	0
+El Simbolar	22	-27.972	-64.895	0
+El Cuy	16	-39.927	-68.342	0
+El Carmen	10	-24.387	-65.262	0
+El Alto	02	-28.311	-65.364	0
+Daireaux	01	-36.600	-61.750	0
+Cuchillo Có	11	-38.333	-64.643	0
+Coronel Pringles	01	-37.983	-61.356	0
+Concepción	24	-27.341	-65.596	0
+Colón	01	-33.895	-61.101	0
+Chumbicha	02	-28.854	-66.235	0
+Chepes	12	-31.344	-66.589	0
+Cerrillos	17	-24.898	-65.487	0
+Carmen de Patagones	01	-40.798	-62.981	0
+Carlos Tejedor	01	-35.393	-62.421	0
+Carlos Casares	01	-35.622	-61.362	0
+Carhué	01	-37.177	-62.758	0
+Brea Pozo	22	-28.244	-63.951	0
+Bragado	01	-35.119	-60.490	0
+Belén	02	-27.651	-67.029	0
+Bandera	22	-28.888	-62.266	0
+Banda del Río Salí	24	-26.833	-65.167	0
+Bañado de Ovanta	02	-28.106	-65.319	0
+Arrecifes	01	-34.064	-60.104	0
+Arraga	22	-28.050	-64.223	0
+Aminga	12	-28.848	-66.930	0
+Florentino Ameghino	01	-34.844	-62.467	0
+Algarrobo del Águila	11	-36.400	-67.145	0
+Alberti	01	-35.027	-60.276	0
+Aimogasta	12	-28.561	-66.806	0
+Avellaneda	01	-34.660	-58.367	0
+Rincón de Los Sauces	15	-37.398	-68.929	0

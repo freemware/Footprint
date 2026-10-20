@@ -1,0 +1,13 @@
+Paramaribo	16	5.866	-55.167	223757
+Lelydorp	19	5.700	-55.233	18223
+Brokopondo	10	5.056	-54.980	14662
+Nieuw Nickerie	14	5.926	-56.973	13143
+Moengo	13	5.614	-54.401	7074
+Nieuw Amsterdam	11	5.886	-55.089	4935
+Mariënburg	11	5.877	-55.043	4427
+Wageningen	14	5.760	-56.665	4145
+Albina	13	5.498	-54.055	3985
+Groningen	17	5.800	-55.467	3216
+Brownsweg	10	5.004	-55.153	2696
+Onverwacht	15	5.590	-55.195	2105
+Totness	12	5.876	-56.326	1685

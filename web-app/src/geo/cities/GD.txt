@@ -1,0 +1,7 @@
+Saint George's	03	12.053	-61.752	7500
+Gouyave	04	12.165	-61.730	3378
+Grenville	01	12.123	-61.625	2476
+Victoria	05	12.190	-61.707	2256
+Saint David’s	02	12.049	-61.669	1321
+Sauteurs	06	12.218	-61.639	1320
+Hillsborough	10	12.483	-61.456	1000

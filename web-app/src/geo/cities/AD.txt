@@ -1,0 +1,10 @@
+Andorra la Vella	07	42.508	1.521	20430
+les Escaldes	08	42.507	1.534	15853
+Encamp	03	42.535	1.580	11223
+Sant Julià de Lòria	06	42.464	1.491	8022
+la Massana	04	42.545	1.515	7211
+Canillo	02	42.568	1.598	3292
+Ordino	05	42.556	1.533	3066
+Pas de la Casa	03	42.543	1.734	2363
+Arinsal	04	42.572	1.485	1419
+El Tarter	02	42.580	1.654	1052

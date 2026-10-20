@@ -1,0 +1,3 @@
+Jamestown	02	-15.939	-5.717	637
+Georgetown	01	-7.929	-14.412	538
+Edinburgh of the Seven Seas	03	-37.068	-12.312	271

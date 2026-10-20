@@ -1,0 +1,13 @@
+name = "footprint-license"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Where the app is hosted. Add every origin that should be able to claim keys.
+ALLOWED_ORIGINS = "https://footprint.example"
+# Optional: your Stripe Payment Link id (plink_…). Leave empty to accept any paid session on the account.
+PAYMENT_LINK_ID = ""
+
+# Secrets, never in this file:
+#   npx wrangler secret put STRIPE_SECRET_KEY
+#   npx wrangler secret put LICENSE_PRIVATE_KEY   (paste the whole license-private.pem)

@@ -1,0 +1,4 @@
+Willemstad		12.108	-68.934	125000
+Sint Michiel Liber	00	12.150	-68.983	5138
+Barber	00	12.290	-69.074	2424
+Dorp Soto	00	12.277	-69.112	2233

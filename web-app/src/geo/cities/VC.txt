@@ -1,0 +1,9 @@
+Kingstown	04	13.155	-61.227	24518
+Kingstown Park	04	13.159	-61.232	17994
+Georgetown	01	13.281	-61.118	1680
+Byera Village	01	13.256	-61.120	1365
+Biabou	01	13.194	-61.139	1050
+Barrouallie	05	13.237	-61.273	1000
+Port Elizabeth	06	13.011	-61.235	839
+Chateaubelair	03	13.291	-61.240	735
+Layou	02	13.202	-61.270	140

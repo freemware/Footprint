@@ -1,0 +1,6 @@
+Monaco	00	43.733	7.417	32965
+Monte-Carlo	00	43.740	7.427	16012
+La Condamine	00	43.734	7.420	12167
+Fontvieille	00	43.727	7.418	3602
+Saint-Roman	00	43.749	7.434	3000
+Moneghetti	00	43.737	7.416	3000

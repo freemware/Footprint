@@ -1,0 +1,1415 @@
+Zürich	ZH	47.367	8.550	341730
+Genève	GE	46.202	6.146	183981
+Basel	BS	47.558	7.573	164488
+Bern	BE	46.948	7.447	121631
+Lausanne	VD	46.516	6.633	116751
+Winterthur	ZH	47.506	8.724	91908
+Sankt Gallen	SG	47.424	9.375	70572
+Lugano	TI	46.010	8.960	63000
+Luzern	LU	47.050	8.306	57066
+Zürich (Kreis 11)	ZH	47.423	8.522	54260
+Biel/Bienne	BE	47.137	7.246	48614
+Zürich (Kreis 3)	ZH	47.358	8.503	46018
+Zürich (Kreis 9)	ZH	47.382	8.480	44878
+Thun	BE	46.751	7.622	42136
+Köniz	BE	46.924	7.415	37196
+La Chaux-de-Fonds	NE	47.100	6.826	36825
+Zürich (Kreis 10)	ZH	47.408	8.501	36216
+Rapperswil	SG	47.226	8.822	34776
+Schaffhausen	SH	47.697	8.635	33863
+Zürich (Kreis 7)	ZH	47.373	8.580	33820
+Fribourg	FR	46.802	7.151	32827
+Chur	GR	46.850	9.533	32429
+Neuchâtel	NE	46.992	6.931	31270
+Vernier	GE	46.217	6.085	30086
+Zürich (Kreis 6)	ZH	47.392	8.544	29951
+Zürich (Kreis 2)	ZH	47.338	8.521	29215
+Zürich (Kreis 9) / Altstetten	ZH	47.389	8.485	28307
+Zürich (Kreis 12)	ZH	47.404	8.576	28189
+Sitten	VS	46.227	7.356	28045
+Lancy	GE	46.190	6.114	27291
+Zürich (Kreis 4) / Aussersihl	ZH	47.378	8.521	27273
+Emmen	LU	47.078	8.273	26889
+Kriens	LU	47.031	8.285	25010
+Yverdon-les-Bains	VD	46.779	6.641	23702
+Zug	ZG	47.172	8.517	23435
+Uster	ZH	47.347	8.721	23279
+Montreux	VD	46.433	6.911	22897
+Frauenfeld	TG	47.558	8.899	21979
+Zürich (Kreis 3) / Sihlfeld	ZH	47.374	8.512	20977
+Dietikon	ZH	47.402	8.400	20893
+Baar	ZG	47.196	8.530	20546
+Zürich (Kreis 6) / Unterstrass	ZH	47.395	8.537	20045
+Riehen	BS	47.579	7.647	20000
+Dübendorf	ZH	47.397	8.619	19882
+Meyrin	GE	46.234	6.080	19772
+Carouge	GE	46.181	6.139	19344
+Wettingen	AG	47.470	8.316	18191
+Allschwil	BL	47.551	7.536	18189
+Zürich (Kreis 11) / Oerlikon	ZH	47.408	8.543	17922
+Zürich (Kreis 11) / Seebach	ZH	47.422	8.548	17851
+Renens	VD	46.540	6.588	17811
+Kreuzlingen	TG	47.651	9.175	17655
+Jona	SG	47.230	8.839	17655
+Onex	GE	46.184	6.102	17302
+Zürich (Kreis 11) / Affoltern	ZH	47.418	8.512	17241
+Zürich (Kreis 10) / Höngg	ZH	47.403	8.497	17117
+Gossau	SG	47.416	9.255	17043
+Muttenz	BL	47.523	7.645	16927
+Wil	SG	47.462	9.046	16808
+Nyon	VD	46.383	6.240	16797
+Bellinzona	TI	46.193	9.017	16572
+Zürich (Kreis 9) / Albisrieden	ZH	47.374	8.490	16480
+Olten	SO	47.350	7.903	16411
+Oberwinterthur (Kreis 2)	ZH	47.517	8.769	16356
+Kloten	ZH	47.452	8.585	16289
+Pully	VD	46.510	6.662	16263
+Stadt Winterthur (Kreis 1)	ZH	47.495	8.720	16182
+Littau	LU	47.050	8.263	16121
+Baden	AG	47.473	8.306	16118
+Zürich (Kreis 2) / Wollishofen	ZH	47.340	8.531	16073
+Horgen	ZH	47.260	8.598	15973
+Grenchen	SO	47.192	7.396	15927
+Vevey	VD	46.463	6.843	15812
+Sierre	VS	46.292	7.536	15752
+Zürich (Kreis 10) / Wipkingen	ZH	47.395	8.525	15718
+Zürich (Kreis 8)	ZH	47.355	8.561	15519
+Aarau	AG	47.393	8.044	15501
+Herisau	AR	47.386	9.279	15438
+Seen (Kreis 3)	ZH	47.476	8.770	15434
+Adliswil	ZH	47.310	8.525	15230
+Steffisburg	BE	46.778	7.632	15191
+Monthey	VS	46.255	6.954	15106
+Zürich (Kreis 3) / Alt-Wiedikon	ZH	47.362	8.515	14931
+Pratteln	BL	47.521	7.694	14877
+Solothurn	SO	47.208	7.537	14853
+Burgdorf	BE	47.059	7.628	14788
+Martigny-Ville	VS	46.103	7.072	14768
+Locarno	TI	46.171	8.800	14509
+Freienbach	SZ	47.205	8.758	14302
+Langenthal	BE	47.215	7.796	14184
+Schwyz	SZ	47.021	8.654	14177
+Binningen	BL	47.540	7.569	14130
+Morges	VD	46.511	6.499	14117
+Wohlen	AG	47.351	8.275	13875
+Cham	ZG	47.182	8.464	13495
+Thalwil	ZH	47.292	8.564	13296
+Wädenswil	ZH	47.227	8.669	13269
+Bülach	ZH	47.522	8.540	13172
+Einsiedeln	SZ	47.128	8.747	13148
+Thônex	GE	46.188	6.199	13057
+Zürich (Kreis 4) / Hard	ZH	47.383	8.509	12976
+Wetzikon	ZH	47.326	8.798	12969
+Arbon	TG	47.517	9.433	12933
+Liestal	BL	47.485	7.734	12832
+Schlieren	ZH	47.397	8.448	12695
+Wülflingen (Kreis 6)	ZH	47.510	8.683	12598
+Spiez	BE	46.685	7.691	12594
+Muri	BE	46.931	7.487	12374
+Horw	LU	47.017	8.310	12348
+Uzwil	SG	47.437	9.134	12111
+Bulle	FR	46.618	7.057	12095
+Küssnacht	SZ	47.086	8.442	11777
+Zürich (Kreis 5)	ZH	47.388	8.522	11737
+Wallisellen	ZH	47.415	8.597	11705
+Münchenstein	BL	47.518	7.610	11644
+Küsnacht	ZH	47.318	8.584	11525
+Ebikon	LU	47.079	8.340	11471
+Versoix	GE	46.284	6.162	11467
+Zofingen	AG	47.288	7.946	11451
+Amriswil	TG	47.547	9.296	11351
+Zürich (Kreis 12) / Hirzenbach	ZH	47.402	8.586	11335
+Delémont	JU	47.365	7.345	11315
+Worb	BE	46.930	7.563	11053
+Mattenbach (Kreis 7)	ZH	47.487	8.747	11043
+Davos	GR	46.804	9.837	11024
+Lyss	BE	47.074	7.307	10937
+Münsingen	BE	46.873	7.561	10928
+Rheinfelden	AG	47.554	7.794	10733
+Gland	VD	46.421	6.270	10641
+Altstätten	SG	47.378	9.547	10574
+Spreitenbach	AG	47.423	8.368	10562
+Plan-les-Ouates	GE	46.168	6.117	10540
+Prilly	VD	46.537	6.605	10524
+La Tour-de-Peilz	VD	46.453	6.859	10522
+Chêne-Bougeries	GE	46.198	6.186	10487
+Zürich (Kreis 12) / Schwamendingen-Mitte	ZH	47.406	8.572	10476
+Rotkreuz	ZG	47.143	8.431	10439
+Uster / Kirch-Uster	ZH	47.346	8.718	10428
+Buchs	SG	47.167	9.478	10418
+Oftringen	AG	47.314	7.925	10390
+Zürich (Kreis 4) / Langstrasse	ZH	47.378	8.529	10386
+Le Locle	NE	47.056	6.749	10279
+Ecublens	VD	46.529	6.563	10262
+Birsfelden	BL	47.553	7.623	10232
+Richterswil	ZH	47.206	8.697	10189
+Oberwil	BL	47.514	7.558	10187
+Aesch	BL	47.471	7.597	10138
+Effretikon	ZH	47.426	8.691	10119
+Ecublens	FR	46.607	6.809	10065
+Villars-sur-Glâne	FR	46.791	7.117	10021
+Neuhausen	SH	47.686	8.615	10019
+Zürich (Kreis 7) / Hottingen	ZH	47.370	8.563	9934
+Zürich (Kreis 3) / Friesenberg	ZH	47.364	8.504	9909
+Zürich (Kreis 6) / Oberstrass	ZH	47.389	8.550	9906
+Zürich (Kreis 5) / Gewerbeschule	ZH	47.385	8.530	9891
+Arth	SZ	47.063	8.523	9850
+Münchenbuchsee	BE	47.022	7.450	9801
+Veyrier	GE	46.167	6.184	9800
+Le Grand-Saconnex	GE	46.232	6.121	9781
+Bernex	GE	46.176	6.075	9759
+Flawil	SG	47.413	9.183	9739
+Therwil	BL	47.499	7.557	9595
+Rüti	ZH	47.256	8.856	9576
+Weinfelden	TG	47.567	9.100	9414
+Sarnen	OW	46.896	8.245	9410
+Möhlin	AG	47.559	7.843	9382
+Suhr	AG	47.372	8.080	9374
+Belp	BE	46.891	7.498	9307
+Arlesheim	BL	47.494	7.620	9301
+Zuchwil	SO	47.202	7.566	9268
+Urdorf	ZH	47.385	8.426	9205
+Gstaad	BE	46.472	7.287	9200
+Brugg	AG	47.481	8.209	9196
+Eschenbach	SG	47.240	8.922	9175
+Wohlen	BE	46.971	7.357	9159
+Zollikofen	BE	46.999	7.458	9121
+Zürich (Kreis 7) / Witikon	ZH	47.358	8.591	9099
+Goldach	SG	47.474	9.467	9094
+Hünenberg	ZG	47.175	8.425	9032
+Rorschach	SG	47.478	9.490	9000
+Romanshorn	TG	47.566	9.379	8956
+Affoltern am Albis	ZH	47.277	8.451	8928
+Veltheim (Kreis 5)	ZH	47.514	8.717	8901
+Langnau	BE	46.939	7.787	8784
+Lutry	VD	46.502	6.686	8774
+Altdorf	UR	46.880	8.644	8678
+Töss (Kreis 4)	ZH	47.479	8.702	8672
+Wittenbach	SG	47.461	9.386	8542
+Steinhausen	ZG	47.195	8.486	8509
+Zürich (Kreis 2) / Enge	ZH	47.361	8.531	8253
+Hochdorf	LU	47.168	8.292	8192
+Kirchberg	SG	47.412	9.040	8127
+Wattwil	SG	47.300	9.087	8089
+Chiasso	TI	45.832	9.031	8060
+Sursee	LU	47.171	8.111	8014
+Pfäffikon	ZH	47.365	8.792	7994
+Obersiggenthal	AG	47.487	8.297	7990
+Unterägeri	ZG	47.136	8.585	7973
+Ingenbohl	SZ	46.999	8.615	7967
+Hegnau	ZH	47.392	8.670	7961
+Chêne-Bourg	GE	46.195	6.194	7959
+Neuenhof	AG	47.450	8.327	7957
+Männedorf	ZH	47.257	8.699	7951
+Biberist	SO	47.180	7.562	7889
+Reinach	AG	47.257	8.181	7845
+Giubiasco	TI	46.172	9.008	7752
+Schübelbach	SZ	47.173	8.928	7745
+Aigle	VD	46.318	6.965	7723
+Moutier	BE	47.278	7.370	7721
+Epalinges	VD	46.549	6.668	7706
+Oberriet	SG	47.321	9.568	7675
+Payerne	VD	46.822	6.938	7655
+Marly	FR	46.776	7.165	7653
+Aadorf	TG	47.492	8.901	7620
+Oberentfelden	AG	47.356	8.046	7553
+Naters	VS	46.325	7.989	7552
+Pregassona	TI	46.020	8.974	7548
+Regensdorf	ZH	47.434	8.469	7531
+Stans	NW	46.958	8.366	7475
+Rothrist	AG	47.305	7.892	7423
+Bussigny	VD	46.551	6.556	7408
+Lenzburg	AG	47.389	8.175	7392
+Lengnau	BE	47.182	7.368	7336
+Pfäffikon	SZ	47.201	8.778	7310
+Mendrisio	TI	45.870	8.982	7310
+Düdingen	FR	46.849	7.191	7155
+Siebnen	SZ	47.174	8.898	7104
+Embrach	ZH	47.506	8.594	7088
+Bassersdorf	ZH	47.443	8.629	7010
+Zürich (Kreis 7) / Fluntern	ZH	47.380	8.561	7009
+Langnau am Albis	ZH	47.289	8.541	7000
+Wollerau	SZ	47.195	8.719	6883
+Thalwil / Dorfkern	ZH	47.290	8.566	6829
+Igis	GR	46.945	9.572	6828
+Aarburg	AG	47.321	7.900	6828
+Domat	GR	46.835	9.451	6817
+Zürich (Kreis 7) / Hirslanden	ZH	47.362	8.568	6769
+Nidau	BE	47.125	7.240	6696
+Windisch	AG	47.479	8.218	6689
+Lachen	SZ	47.192	8.853	6685
+Au	SG	47.431	9.634	6673
+Frutigen	BE	46.587	7.649	6671
+Ollon	VD	46.295	6.993	6665
+Minusio	TI	46.178	8.815	6653
+Conthey	VS	46.224	7.303	6634
+Zermatt	VS	46.020	7.749	6629
+Bagnes	VS	46.083	7.217	6626
+Saanen	BE	46.489	7.260	6621
+Crissier	VD	46.546	6.576	6612
+Buchs	AG	47.394	8.082	6599
+Visp	VS	46.294	7.881	6576
+Gränichen	AG	47.359	8.102	6557
+Bremgarten	AG	47.351	8.342	6543
+Meggen	LU	47.047	8.375	6533
+Porrentruy	JU	47.417	7.076	6521
+Blécherette	VD	46.539	6.622	6516
+Kilchberg	ZH	47.324	8.545	6511
+Sirnach	TG	47.462	8.998	6463
+Muri	AG	47.274	8.339	6463
+Dornach	SO	47.480	7.616	6449
+Thal	SG	47.467	9.566	6433
+Ruswil	LU	47.084	8.126	6432
+Grabs	SG	47.182	9.444	6384
+Viganello	TI	46.013	8.969	6375
+Untersiggenthal	AG	47.502	8.256	6344
+Trimbach	SO	47.366	7.887	6220
+Zürich (Kreis 1)	ZH	47.371	8.542	6185
+Malters	LU	47.036	8.182	6181
+Frenkendorf	BL	47.507	7.716	6180
+Dietlikon / Dietlikon (Dorf)	ZH	47.418	8.619	6149
+Horgen / Horgen (Dorfkern)	ZH	47.256	8.602	6140
+Derendingen	SO	47.199	7.588	6093
+Bolligen	BE	46.975	7.497	6086
+Losone	TI	46.169	8.759	6070
+Neuenkirch	LU	47.100	8.204	5963
+Bex	VD	46.250	7.010	5956
+Mattenbach (Kreis 7) / Deutweg	ZH	47.494	8.739	5930
+Collombey	VS	46.274	6.948	5926
+Fully	VS	46.139	7.115	5922
+Bottmingen	BL	47.523	7.572	5912
+Biasca	TI	46.360	8.970	5885
+Sissach	BL	47.464	7.809	5873
+Balsthal	SO	47.316	7.693	5863
+Zollikon	ZH	47.340	8.574	5812
+Oberengstringen	ZH	47.408	8.465	5805
+Murten/Morat	FR	46.928	7.117	5800
+Massagno	TI	46.013	8.944	5774
+Stäfa	ZH	47.243	8.723	5737
+Les Avanchets	GE	46.222	6.108	5730
+Peseux	NE	46.987	6.889	5716
+Gelterkinden	BL	47.465	7.852	5709
+Teufen	AR	47.391	9.386	5683
+Glarus	GL	47.041	9.068	5681
+Uetendorf	BE	46.774	7.573	5654
+Appenzell	AI	47.331	9.410	5649
+Oberuzwil	SG	47.431	9.127	5616
+Pfäffikon / Pfäffikon (Dorfkern)	ZH	47.369	8.783	5595
+Adligenswil	LU	47.065	8.361	5576
+Savièse	VS	46.251	7.346	5575
+Zürich (Kreis 8) / Mühlebach	ZH	47.357	8.557	5570
+Uznach	SG	47.224	8.983	5561
+Buochs	NW	46.974	8.423	5524
+Herzogenbuchsee	BE	47.188	7.706	5522
+Heimberg	BE	46.795	7.604	5501
+Würenlos	AG	47.442	8.363	5497
+Villmergen	AG	47.350	8.248	5489
+Hinwil	ZH	47.294	8.844	5488
+Chavannes	VD	46.530	6.571	5454
+Hergiswil	NW	46.984	8.309	5437
+Menziken	AG	47.240	8.190	5415
+Basse-Nendaz	VS	46.190	7.312	5410
+Diepoldsau	SG	47.386	9.656	5401
+Sankt Margrethen	SG	47.453	9.637	5395
+Oberwinterthur (Kreis 2) / Guggenbühl	ZH	47.513	8.760	5376
+Oberwinterthur (Kreis 2) / Talacker	ZH	47.506	8.752	5375
+Buchrain	LU	47.096	8.347	5341
+Kirchberg	BE	47.085	7.583	5335
+Goldau	SZ	47.048	8.546	5285
+Altendorf	SZ	47.190	8.838	5280
+Le Mont-sur-Lausanne	VD	46.558	6.631	5270
+Urtenen	BE	47.027	7.501	5258
+Blonay	VD	46.468	6.896	5244
+Küttigen	AG	47.415	8.050	5234
+Saint-Imier	BE	47.153	6.997	5220
+Alpnach	OW	46.942	8.272	5218
+Kerns	OW	46.901	8.275	5217
+Laufen	BL	47.422	7.499	5210
+Zürich (Kreis 12) / Saatlen	ZH	47.411	8.565	5209
+Sumiswald	BE	47.027	7.745	5159
+Unterseen	BE	46.685	7.847	5150
+Rümlang	ZH	47.450	8.530	5144
+Orbe	VD	46.725	6.531	5132
+Uster / Ober-Uster	ZH	47.349	8.733	5100
+Châtel-Saint-Denis	FR	46.527	6.901	5094
+Ascona	TI	46.155	8.773	5084
+Interlaken	BE	46.684	7.866	5067
+Bad Ragaz	SG	47.006	9.503	5063
+Estavayer-le-Lac	FR	46.849	6.846	5061
+Sargans	SG	47.049	9.441	5045
+Greifensee	ZH	47.367	8.681	5032
+Wallisellen / Wallisellen-Ost	ZH	47.414	8.597	5031
+Herrliberg	ZH	47.291	8.615	5025
+Walenstadt	SG	47.124	9.312	5000
+Brig	VS	46.317	7.983	5000
+Zürich (Kreis 8) / Seefeld	ZH	47.355	8.555	4998
+Ettingen	BL	47.482	7.547	4980
+Echallens	VD	46.641	6.633	4972
+St. Moritz	GR	46.499	9.843	4952
+Zürich (Kreis 8) / Weinegg	ZH	47.352	8.570	4951
+Oetwil	ZH	47.270	8.720	4925
+Flamatt	FR	46.890	7.322	4922
+Männedorf / Dorfkern	ZH	47.256	8.692	4893
+Lausen	BL	47.471	7.760	4892
+Boudry	NE	46.950	6.838	4886
+Gerlafingen	SO	47.171	7.572	4864
+Schattdorf	UR	46.865	8.655	4860
+Ebnat-Kappel	SG	47.262	9.125	4852
+Flums	SG	47.091	9.343	4848
+Au	ZH	47.242	8.644	4844
+Bettlach	SO	47.201	7.424	4834
+Birmensdorf	ZH	47.355	8.443	4772
+Sennwald	SG	47.261	9.503	4768
+Hombrechtikon	ZH	47.253	8.772	4767
+Veltheim (Kreis 5) / Rosenberg	ZH	47.514	8.716	4765
+Langnau / Langnau (Dorf)	ZH	47.286	8.536	4745
+Schönenwerd	SO	47.369	8.002	4732
+Préverenges	VD	46.519	6.527	4695
+Wangen	SO	47.344	7.870	4686
+Dielsdorf	ZH	47.481	8.459	4671
+Rüschlikon	ZH	47.307	8.551	4653
+Meiringen	BE	46.727	8.187	4652
+Huttwil	BE	47.115	7.862	4643
+Vechigen	BE	46.946	7.561	4619
+Stadt Winterthur (Kreis 1) / Lind	ZH	47.506	8.734	4617
+Münchwilen	TG	47.477	8.997	4612
+Oensingen	SO	47.288	7.716	4609
+Frick	AG	47.512	8.025	4583
+Konolfingen	BE	46.879	7.620	4562
+Bubendorf	BL	47.446	7.738	4543
+Berikon	AG	47.352	8.372	4527
+Ehrendingen	AG	47.502	8.347	4519
+Erlenbach	ZH	47.303	8.597	4519
+Sachseln	OW	46.867	8.233	4511
+Bronschhofen	SG	47.478	9.035	4489
+Romont	FR	46.697	6.919	4483
+Stansstad	NW	46.977	8.336	4471
+Saint-Prex	VD	46.480	6.460	4461
+Kerzers	FR	46.976	7.196	4459
+Füllinsdorf	BL	47.507	7.731	4442
+Rolle	VD	46.458	6.335	4425
+Zumikon	ZH	47.332	8.623	4424
+Meilen	ZH	47.272	8.646	4419
+Oberrieden	ZH	47.274	8.578	4413
+Cortaillod	NE	46.943	6.844	4410
+Seon	AG	47.348	8.161	4407
+Sevelen	SG	47.122	9.486	4392
+Wetzikon / Kempten	ZH	47.333	8.810	4377
+Villeneuve	VD	46.399	6.927	4349
+Strengelbach	AG	47.279	7.929	4349
+Moudon	VD	46.668	6.798	4343
+Sigriswil	BE	46.717	7.713	4341
+Hägendorf	SO	47.335	7.841	4338
+Morbio Inferiore	TI	45.849	9.019	4331
+Wülflingen (Kreis 6) / Oberfeld	ZH	47.499	8.699	4288
+Gossau	ZH	47.305	8.758	4287
+Le Landeron	NE	47.057	7.071	4278
+Zuzwil	SG	47.475	9.112	4226
+Ennetbürgen	NW	46.984	8.410	4226
+Mellingen	AG	47.419	8.273	4224
+Sainte-Croix	VD	46.822	6.503	4214
+Bad Zurzach	AG	47.588	8.294	4213
+Feusisberg	SZ	47.187	8.747	4210
+Triengen	LU	47.236	8.077	4193
+Zollikerberg	ZH	47.345	8.601	4187
+Tramelan	BE	47.223	7.103	4186
+Schwerzenbach	ZH	47.382	8.657	4180
+Egnach	TG	47.543	9.380	4179
+Aarwangen	BE	47.238	7.769	4171
+Rebstein	SG	47.398	9.585	4163
+Dietikon / Oberdorf	ZH	47.401	8.394	4147
+Vétroz	VS	46.222	7.279	4137
+Rupperswil	AG	47.401	8.129	4137
+Veltheim (Kreis 5) / Blumenau	ZH	47.506	8.716	4135
+Uster / Nieder-Uster	ZH	47.347	8.701	4128
+Thayngen	SH	47.747	8.707	4120
+Gebenstorf	AG	47.481	8.239	4100
+Seen (Kreis 3) / Waser	ZH	47.489	8.760	4088
+Marin-Epagnier	NE	47.010	6.999	4087
+Le Chenit	VD	46.607	6.231	4062
+Kölliken	AG	47.333	8.022	4059
+Wängi	TG	47.497	8.953	4051
+Wolhusen	LU	47.060	8.074	4050
+Klosters Serneus	GR	46.889	9.838	4044
+Schmitten	FR	46.858	7.250	4040
+Obfelden	ZH	47.264	8.421	4039
+Lützelflüh	BE	47.008	7.692	4035
+Jegenstorf	BE	47.048	7.508	4027
+Niederlenz	AG	47.401	8.176	4022
+Balgach	SG	47.406	9.607	4019
+Egg	ZH	47.300	8.690	4003
+Engelberg	OW	46.821	8.401	4001
+Oberrohrdorf	AG	47.418	8.320	4001
+Heiden	AR	47.443	9.533	3999
+Bürglen	UR	46.876	8.665	3996
+Speicher	AR	47.411	9.443	3985
+Näfels	GL	47.098	9.064	3978
+Gordola	TI	46.183	8.867	3974
+Seuzach Dorf	ZH	47.536	8.732	3969
+Cheseaux	VD	46.586	6.606	3946
+Reiden	LU	47.247	7.971	3926
+Stabio	TI	45.848	8.936	3917
+Aarberg	BE	47.044	7.276	3911
+Zürich (Kreis 4) / Werd	ZH	47.372	8.526	3911
+Root	LU	47.115	8.390	3886
+Birr	AG	47.434	8.209	3884
+Menzingen	ZG	47.178	8.592	3878
+Erstfeld	UR	46.819	8.651	3876
+Troistorrents	VS	46.229	6.916	3873
+Brügg	BE	47.124	7.279	3868
+Bevaix	NE	46.930	6.815	3866
+Weggis	LU	47.032	8.432	3863
+Niederbipp	BE	47.272	7.696	3862
+Wetzikon / Ober-Wetzikon	ZH	47.325	8.800	3858
+Niedergösgen	SO	47.372	7.988	3847
+Wichtrach	BE	46.850	7.577	3843
+Hilterfingen	BE	46.735	7.662	3841
+Horgen / Allmend	ZH	47.247	8.607	3809
+Kaltbrunn	SG	47.214	9.026	3803
+Degersheim	SG	47.374	9.200	3802
+Rudolfstetten	AG	47.371	8.381	3800
+Fehraltorf	ZH	47.388	8.751	3767
+Sempach	LU	47.136	8.191	3754
+Lostorf	SO	47.384	7.947	3749
+Würenlingen	AG	47.534	8.257	3741
+Brittnau	AG	47.260	7.947	3735
+Feldmeilen	ZH	47.279	8.622	3732
+Grindelwald	BE	46.624	8.036	3730
+Schüpfheim	LU	46.952	8.017	3723
+Saint-Maurice	VS	46.218	7.003	3701
+Brüttisellen	ZH	47.422	8.633	3697
+La Tour-de-Trême	FR	46.611	7.065	3686
+Fleurier	NE	46.902	6.583	3681
+Geroldswil	ZH	47.422	8.411	3681
+Matten	BE	46.678	7.869	3676
+Bellevue	GE	46.257	6.155	3674
+Roggwil	BE	47.241	7.821	3673
+Niederurnen	GL	47.126	9.054	3657
+Caslano	TI	45.974	8.877	3655
+Agno	TI	45.999	8.900	3639
+Kehrsatz	BE	46.910	7.471	3636
+Niederglatt	ZH	47.491	8.500	3632
+Töss (Kreis 4) / Eichliacker	ZH	47.487	8.707	3626
+Utzenstorf	BE	47.132	7.554	3625
+Rüti / Dorfzentrum, Südl. Teil	ZH	47.254	8.857	3618
+Wettswil / Wettswil (Dorf)	ZH	47.342	8.471	3605
+Sins	AG	47.193	8.394	3600
+Kaiseraugst	AG	47.540	7.726	3600
+Oberglatt	ZH	47.476	8.519	3564
+Giswil	OW	46.833	8.181	3563
+Muotathal	SZ	46.977	8.765	3548
+Adelboden	BE	46.491	7.560	3541
+Rümlang / Rümlang (Dorfkern)	ZH	47.449	8.533	3528
+Langendorf	SO	47.220	7.515	3518
+Wallisellen / Wallisellen-West	ZH	47.419	8.586	3511
+Ibach	SZ	47.011	8.645	3500
+Lens	VS	46.283	7.450	3497
+Mörschwil	SG	47.471	9.423	3496
+La Neuveville	BE	47.066	7.097	3495
+Saxon	VS	46.149	7.175	3477
+Balerna	TI	45.846	9.007	3456
+Savigny	VD	46.538	6.732	3440
+Magden	AG	47.529	7.811	3433
+Uetikon	ZH	47.264	8.679	3431
+Poschiavo	GR	46.324	10.058	3428
+Eschlikon	TG	47.464	8.964	3425
+Confignon	GE	46.173	6.084	3425
+Muhen	AG	47.336	8.055	3419
+Tägerwilen	TG	47.657	9.140	3414
+Schänis	SG	47.160	9.045	3404
+Bütschwil	SG	47.360	9.072	3393
+Leuk	VS	46.317	7.634	3386
+Tavannes	BE	47.221	7.198	3367
+Sulgen	TG	47.540	9.186	3367
+Zürich (Kreis 10) / Rütihof	ZH	47.414	8.479	3326
+Pieterlen	BE	47.175	7.338	3317
+Schöftland	AG	47.306	8.051	3310
+Schmerikon	SG	47.225	8.948	3307
+Bassecourt	JU	47.338	7.244	3305
+Dagmersellen	LU	47.214	7.985	3300
+Rheineck	SG	47.466	9.590	3298
+Vouvry	VS	46.337	6.889	3296
+Entlebuch	LU	46.996	8.064	3293
+Luterbach	SO	47.214	7.585	3292
+Richterswil / Richterswil (Dorfkern)	ZH	47.203	8.705	3292
+Seengen	AG	47.325	8.207	3288
+Uitikon	ZH	47.369	8.457	3282
+Elgg	ZH	47.497	8.865	3282
+Walchwil	ZG	47.102	8.517	3268
+Hausen am Albis / Hausen (Dorf)	ZH	47.245	8.533	3253
+Hegnau / Sunnebüel-Eich	ZH	47.392	8.679	3250
+Schüpfen	BE	47.037	7.377	3248
+Ayent	VS	46.282	7.410	3243
+Breitenbach	SO	47.407	7.546	3241
+Gachnang	TG	47.539	8.853	3235
+Rafz	ZH	47.604	8.543	3233
+Schötz	LU	47.169	7.989	3231
+Steckborn	TG	47.667	8.983	3229
+Oberkirch	LU	47.156	8.116	3228
+Küsnacht / Heslibach	ZH	47.313	8.588	3228
+Stein am Rhein	SH	47.659	8.860	3224
+Jonschwil	SG	47.424	9.087	3221
+Beringen	SH	47.698	8.574	3216
+Safenwil	AG	47.322	7.983	3201
+Escholzmatt	LU	46.913	7.934	3192
+Schindellegi	SZ	47.175	8.713	3174
+Prangins	VD	46.395	6.250	3172
+Neftenbach / Dorf Neftenbach	ZH	47.528	8.665	3171
+Samstagern	ZH	47.192	8.682	3163
+Randogne	VS	46.310	7.501	3157
+Hermiswil	BE	46.831	7.478	3156
+Bürglen	TG	47.549	9.149	3149
+Stadt Winterthur (Kreis 1) / Neuwiesen	ZH	47.502	8.716	3149
+Waldkirch	SG	47.469	9.287	3137
+Willisau	LU	47.122	7.994	3125
+Dottikon	AG	47.384	8.240	3125
+Romanel-sur-Lausanne	VD	46.564	6.605	3123
+Bösingen	FR	46.892	7.228	3118
+Turbenthal	ZH	47.436	8.846	3109
+Gipf-Oberfrick	AG	47.499	8.005	3102
+Unterkulm	AG	47.310	8.114	3099
+Vallorbe	VD	46.713	6.379	3098
+Zürich (Kreis 1) / Rathaus	ZH	47.372	8.545	3091
+Saint-Blaise	NE	47.015	6.988	3089
+Courroux	JU	47.361	7.374	3085
+Rüti / Westlicher Dorfteil	ZH	47.255	8.845	3083
+Klingnau	AG	47.584	8.249	3069
+Leysin	VD	46.342	7.012	3066
+Wald	ZH	47.276	8.914	3061
+Erlen	TG	47.548	9.234	3057
+Satigny	GE	46.215	6.036	3055
+Beckenried	NW	46.967	8.476	3050
+Murgenthal	AG	47.271	7.839	3044
+Steinen	SZ	47.050	8.612	3041
+Tann	ZH	47.269	8.850	3034
+Château-d'Oex	VD	46.475	7.132	3034
+Stadt Winterthur (Kreis 1) / Heiligberg	ZH	47.494	8.723	3034
+Mollis	GL	47.089	9.072	3014
+Givisiez	FR	46.812	7.126	3010
+Zizers	GR	46.936	9.565	3009
+Belmont-sur-Lausanne	VD	46.519	6.676	3007
+Bachenbülach	ZH	47.503	8.546	2985
+Turgi	AG	47.492	8.254	2982
+Gams	SG	47.204	9.442	2971
+Illnau	ZH	47.411	8.721	2964
+Embrach / Embrach (Dorfkern)	ZH	47.504	8.595	2960
+Berg	TG	47.579	9.166	2942
+Grosswangen	LU	47.133	8.050	2941
+Mosnang	SG	47.363	9.043	2936
+Egerkingen	SO	47.320	7.784	2923
+Mattenbach (Kreis 7) / Gutschick	ZH	47.491	8.753	2923
+Seedorf	BE	47.034	7.312	2920
+Nottwil	LU	47.135	8.138	2911
+Oberburg	BE	47.037	7.627	2901
+Selzach	SO	47.205	7.455	2900
+Netstal	GL	47.063	9.057	2900
+Brienz	BE	46.755	8.038	2899
+Buttisholz	LU	47.114	8.094	2890
+Stettlen	BE	46.958	7.525	2884
+Hausen	AG	47.464	8.210	2881
+Reichenburg	SZ	47.171	8.977	2876
+Beromünster	LU	47.206	8.193	2876
+Rüti / Oberdorf	ZH	47.259	8.865	2875
+Obermeilen	ZH	47.266	8.656	2871
+Oberdiessbach	BE	46.841	7.617	2860
+Subingen	SO	47.199	7.619	2852
+Rohr	SO	47.410	7.953	2849
+Niederhasli	ZH	47.480	8.486	2848
+Chavornay	VD	46.702	6.569	2841
+Hedingen	ZH	47.298	8.448	2835
+Tafers	FR	46.815	7.219	2833
+Trimmis	GR	46.901	9.561	2831
+Vandœuvres	GE	46.222	6.203	2826
+Ins	BE	47.006	7.106	2826
+Dietikon / Hofacker	ZH	47.397	8.416	2826
+Signau	BE	46.919	7.724	2821
+Muralto	TI	46.173	8.802	2818
+Hegnau / Dammboden-Grindel	ZH	47.387	8.667	2817
+Zweisimmen	BE	46.555	7.373	2813
+Couvet	NE	46.925	6.633	2811
+Grossaffoltern	BE	47.065	7.357	2810
+Mettmenstetten	ZH	47.245	8.463	2798
+Cossonay	VD	46.614	6.506	2795
+Wattenwil	BE	46.770	7.508	2788
+Niederrohrdorf	AG	47.424	8.304	2784
+Gommiswald	SG	47.231	9.024	2781
+Mönchaltorf	ZH	47.310	8.720	2779
+Gais	AR	47.361	9.454	2778
+Zürich (Kreis 2) / Unter-Leimbach	ZH	47.334	8.514	2778
+Laupen	BE	46.902	7.240	2774
+Chermignon-d'en Haut	VS	46.288	7.475	2773
+Töss (Kreis 4) / Schlosstal	ZH	47.493	8.702	2762
+Schafisheim	AG	47.377	8.143	2758
+Avenches	VD	46.880	7.041	2758
+Bätterkinden	BE	47.132	7.538	2748
+Mühleberg	BE	46.955	7.261	2739
+Grandson	VD	46.809	6.646	2735
+Orsières	VS	46.029	7.144	2725
+Volketswil / Volketswil (Dorf)	ZH	47.390	8.691	2723
+Quarten	SG	47.107	9.242	2715
+Rickenbach bei Wil	TG	47.449	9.049	2714
+Wädenswil / Büelen	ZH	47.234	8.663	2710
+Anières	GE	46.277	6.222	2706
+Aubonne	VD	46.495	6.392	2703
+Samedan	GR	46.534	9.873	2700
+Lauperswil	BE	46.966	7.742	2700
+Ennenda	GL	47.034	9.079	2699
+Sementina	TI	46.184	8.992	2695
+Horgen / Scheller-Stockerstrasse	ZH	47.266	8.588	2690
+Unterengstringen	ZH	47.414	8.448	2675
+Tuggen	SZ	47.203	8.949	2671
+Niederhelfenschwil	SG	47.475	9.185	2668
+Chalais	VS	46.268	7.511	2665
+Chardonne	VD	46.477	6.827	2659
+Bonaduz	GR	46.811	9.398	2654
+Lauterbrunnen	BE	46.593	7.909	2646
+Glattbrugg	ZH	47.431	8.563	2642
+Zunzgen	BL	47.449	7.808	2632
+Effretikon / Watt	ZH	47.428	8.698	2632
+Seen (Kreis 3) / Büelwiesen	ZH	47.484	8.765	2632
+Menznau	LU	47.084	8.040	2628
+Chamoson	VS	46.203	7.223	2628
+Dietikon / Vorstadt	ZH	47.408	8.397	2619
+Schenkon	LU	47.178	8.132	2616
+Lenzerheide	GR	46.722	9.559	2610
+Küsnacht / Goldbach	ZH	47.327	8.581	2607
+Wülflingen (Kreis 6) / Härti	ZH	47.513	8.684	2602
+Märstetten-Dorf	TG	47.593	9.069	2600
+Schlieren / Spital	ZH	47.395	8.430	2587
+Glattfelden	ZH	47.559	8.502	2578
+Thusis	GR	46.697	9.439	2572
+Au / Mittel-Dorf	ZH	47.243	8.646	2562
+Eggiwil	BE	46.876	7.796	2559
+Wädenswil / Dorf (Wädenswil)	ZH	47.229	8.672	2556
+Wülflingen (Kreis 6) / Lindenplatz	ZH	47.511	8.693	2555
+Kirchlindach	BE	47.000	7.417	2553
+Fischingen	TG	47.414	8.969	2548
+Schwanden	GL	46.995	9.070	2541
+Adliswil / Adliswil (Stadtkern)	ZH	47.311	8.527	2538
+Flims	GR	46.837	9.285	2536
+Horgen / Oberdorf	ZH	47.258	8.590	2524
+Wetzikon / Unter-Wetzikon	ZH	47.316	8.794	2521
+Ringgenberg	BE	46.701	7.894	2514
+Kloten / Rütlen	ZH	47.447	8.588	2510
+Stein	AG	47.544	7.953	2504
+Villars-sur-Ollon	VD	46.298	7.056	2500
+Roggwil	TG	47.500	9.396	2500
+Müllheim	TG	47.602	9.004	2493
+Täuffelen	BE	47.066	7.199	2492
+Orpund	BE	47.139	7.308	2488
+Merenschwand	AG	47.259	8.376	2479
+Saint-Aubin-Sauges	NE	46.894	6.773	2476
+Birmenstorf	AG	47.462	8.248	2462
+Münsterlingen	TG	47.632	9.233	2459
+Meisterschwanden	AG	47.295	8.229	2459
+Ermatingen	TG	47.671	9.086	2453
+Maienfeld	GR	47.005	9.531	2435
+Rubigen	BE	46.899	7.545	2426
+Staufen	AG	47.382	8.167	2424
+Schiers	GR	46.970	9.687	2423
+Benken	SG	47.199	9.007	2419
+Russikon	ZH	47.397	8.775	2415
+Wolfhausen	ZH	47.256	8.799	2402
+Yvonand	VD	46.800	6.742	2401
+Matzingen	TG	47.520	8.934	2399
+Puidoux	VD	46.501	6.782	2398
+Küsnacht / Itschnach	ZH	47.327	8.601	2397
+Novazzano	TI	45.841	8.982	2395
+Lotzwil	BE	47.191	7.791	2391
+Riva San Vitale	TI	45.901	8.972	2390
+Attalens	FR	46.506	6.850	2380
+Pfungen	ZH	47.514	8.642	2369
+Seen (Kreis 3) / Ganzenbühl	ZH	47.481	8.762	2362
+Camorino	TI	46.165	9.005	2358
+Domdidier	FR	46.867	7.013	2353
+Sankt Niklaus	VS	46.177	7.803	2352
+Elgg / Städtchen und Umgebung	ZH	47.493	8.867	2342
+Krauchthal	BE	47.010	7.566	2339
+Monte Carasso	TI	46.186	8.999	2336
+Grimisuat	VS	46.259	7.384	2332
+Rüderswil	BE	46.984	7.722	2329
+Evilard	BE	47.150	7.239	2328
+Sarmenstorf	AG	47.311	8.249	2322
+Ilanz	GR	46.774	9.205	2321
+Courrendlin	JU	47.339	7.372	2314
+Nürensdorf	ZH	47.448	8.649	2310
+Unteriberg	SZ	47.063	8.805	2307
+Arosa	GR	46.778	9.676	2307
+Ardon	VS	46.210	7.260	2305
+Urnäsch	AR	47.317	9.280	2304
+Wilderswil	BE	46.664	7.862	2303
+Untervaz	GR	46.928	9.534	2303
+Montana	VS	46.313	7.488	2301
+Montagnola	TI	45.983	8.918	2297
+Claro	TI	46.258	9.023	2296
+Reconvilier	BE	47.234	7.222	2291
+Belfaux	FR	46.822	7.107	2286
+Ballwil	LU	47.154	8.322	2284
+Ebmatingen	ZH	47.350	8.640	2278
+Toffen	BE	46.860	7.492	2277
+Horn	SG	47.494	9.462	2274
+Lenk	BE	46.458	7.443	2268
+Othmarsingen	AG	47.401	8.214	2267
+Wallisellen / Rieden	ZH	47.417	8.600	2261
+Bonstetten	ZH	47.315	8.468	2260
+Erlinsbach	SO	47.398	8.008	2258
+Founex	VD	46.333	6.192	2254
+Udligenswil	LU	47.090	8.403	2252
+Hölstein	BL	47.423	7.770	2249
+Oberdorf	BL	47.394	7.752	2248
+Courtételle	JU	47.341	7.318	2248
+Kilchberg / Kilchberg (Dorfkern)	ZH	47.320	8.543	2244
+Silenen	UR	46.789	8.673	2243
+Penthalaz	VD	46.611	6.525	2241
+Nebikon	LU	47.192	7.978	2241
+Kloten / Holberg	ZH	47.446	8.577	2239
+Wimmis	BE	46.676	7.640	2237
+Bönigen	BE	46.687	7.894	2233
+Hettlingen	ZH	47.546	8.705	2221
+Wiedlisbach	BE	47.252	7.646	2213
+Riddes	VS	46.173	7.224	2213
+Mogelsberg	SG	47.362	9.135	2213
+Wetzikon / Robenhausen	ZH	47.331	8.788	2213
+Eggersriet	SG	47.442	9.469	2209
+Stadt Winterthur (Kreis 1) / Tössfeld	ZH	47.493	8.715	2207
+Pfeffingen	BL	47.460	7.590	2201
+Saignelégier	JU	47.256	6.996	2194
+Leytron	VS	46.187	7.208	2194
+Wilchingen	SH	47.667	8.468	2193
+Disentis	GR	46.703	8.851	2193
+Waltenschwil	AG	47.333	8.298	2192
+Lucens	VD	46.709	6.839	2192
+Troinex	GE	46.163	6.147	2192
+Scuol	GR	46.797	10.298	2184
+Hägglingen	AG	47.389	8.253	2183
+Bülach / Seematt	ZH	47.517	8.547	2171
+Mattenbach (Kreis 7) / Endliker	ZH	47.488	8.749	2169
+Geuensee	LU	47.200	8.107	2168
+Hitzkirch	LU	47.224	8.264	2165
+Feuerthalen	ZH	47.691	8.644	2165
+Inwil	LU	47.125	8.349	2163
+Puplinge	GE	46.210	6.231	2163
+Zwingen	BL	47.438	7.530	2162
+Castel San Pietro	TI	45.862	9.008	2150
+Broc	FR	46.605	7.099	2148
+Gattikon	ZH	47.284	8.548	2142
+Kaisten	AG	47.542	8.043	2140
+Deitingen	SO	47.215	7.619	2135
+Affeltrangen	TG	47.526	9.033	2135
+Ueberstorf	FR	46.866	7.310	2133
+Chexbres	VD	46.482	6.778	2133
+Seen (Kreis 3) / Oberseen	ZH	47.482	8.773	2133
+Coppet	VD	46.317	6.191	2124
+Walzenhausen	AR	47.449	9.605	2120
+Dietikon / Almend	ZH	47.405	8.392	2118
+Courgenay	JU	47.405	7.125	2106
+Fällanden	ZH	47.372	8.639	2100
+Rothenthurm	SZ	47.104	8.676	2098
+Wynigen	BE	47.106	7.667	2090
+Hohenrain	LU	47.181	8.318	2090
+Felsberg	GR	46.846	9.476	2088
+Wolfenschiessen	NW	46.903	8.394	2080
+Cernier	NE	47.059	6.900	2080
+Tann / Tann (Dorfkern)	ZH	47.265	8.850	2080
+Wolfwil	SO	47.269	7.797	2079
+Obergösgen	SO	47.365	7.952	2076
+Gontenschwil	AG	47.272	8.144	2067
+Bubikon	ZH	47.267	8.818	2052
+Malans	GR	46.981	9.575	2051
+Pfaffnau	LU	47.228	7.897	2047
+Worben	BE	47.103	7.295	2042
+Wigoltingen	TG	47.598	9.031	2040
+Thierachern	BE	46.753	7.574	2040
+Ottenbach	ZH	47.282	8.404	2039
+Grône	VS	46.253	7.459	2039
+Pfäffikon / Irgenhausen	ZH	47.362	8.793	2032
+Diemtigen	BE	46.649	7.565	2027
+Wangen	ZH	47.412	8.645	2015
+Seftigen	BE	46.788	7.539	2014
+Illnau / Unter-Illnau	ZH	47.408	8.726	2011
+Bilten	GL	47.150	9.026	2011
+Riggisberg	BE	46.810	7.480	2001
+Verbier	VS	46.100	7.227	2000
+Laufenburg	AG	47.560	8.062	2000
+Hallau	SH	47.696	8.458	2000
+Flüelen	UR	46.905	8.624	2000
+Caux	VD	46.432	6.939	2000
+Aeschi b. Spiez	BE	46.658	7.697	2000
+Lauffohr (Brugg)	AG	47.502	8.231	2000
+Hindelbank	BE	47.043	7.541	1994
+Madiswil	BE	47.165	7.799	1991
+Affoltern / Unterdorf	ZH	47.283	8.454	1989
+Sonnhalde	ZH	47.453	8.461	1984
+Gersau	SZ	46.994	8.525	1983
+Koppigen	BE	47.131	7.605	1977
+Wädenswil / Untermosen-Fuhr	ZH	47.228	8.663	1976
+Weisslingen	ZH	47.431	8.768	1975
+Bas-Vully	FR	46.962	7.113	1963
+Oberrieden / Berg	ZH	47.276	8.573	1961
+Dietikon / Kreuzacker	ZH	47.399	8.401	1955
+Büron	LU	47.212	8.094	1951
+Rüthi	SG	47.295	9.539	1945
+Lichtensteig	SG	47.324	9.088	1945
+Wangen an der Aare	BE	47.232	7.653	1944
+Zell	LU	47.137	7.925	1943
+Kloten / Geissberg	ZH	47.454	8.591	1941
+Nunningen	SO	47.394	7.620	1939
+Plaffeien	FR	46.742	7.287	1938
+Saint-Léonard	VS	46.252	7.417	1937
+Flühli	LU	46.884	8.016	1937
+Benglen	ZH	47.361	8.637	1937
+Endingen	AG	47.537	8.290	1935
+Rüeggisberg	BE	46.822	7.439	1933
+Oberurnen	GL	47.114	9.059	1932
+Gunzwil	LU	47.211	8.179	1925
+Eiken	AG	47.534	7.988	1923
+Lungern	OW	46.786	8.160	1921
+Arzier	VD	46.460	6.208	1919
+Malleray	BE	47.238	7.273	1918
+Neunkirch	SH	47.690	8.500	1911
+Werthenstein	LU	47.056	8.102	1909
+Cadenazzo	TI	46.152	8.947	1906
+Raron	VS	46.312	7.800	1901
+Riaz	FR	46.642	7.062	1894
+Thalwil / See	ZH	47.294	8.569	1893
+Zürich (Kreis 2) / Mittel-Leimbach	ZH	47.325	8.514	1891
+Altnau	TG	47.611	9.262	1887
+Römerswil	LU	47.169	8.245	1882
+Hildisrieden	LU	47.151	8.226	1882
+Bottighofen	TG	47.636	9.209	1882
+Oberlunkhofen	AG	47.312	8.392	1880
+Schlieren / Engstingerquartier	ZH	47.403	8.444	1877
+Canobbio	TI	46.036	8.966	1869
+Pontresina	GR	46.495	9.901	1863
+Büsserach	SO	47.394	7.541	1863
+Bülach / Gstückt	ZH	47.523	8.549	1863
+Binzikon	ZH	47.276	8.759	1854
+Alterswil	FR	46.796	7.259	1850
+Sankt Antoni	FR	46.822	7.261	1849
+Kollbrunn	ZH	47.458	8.783	1848
+Zürich (Kreis 5) / Escher-Wyss	ZH	47.391	8.513	1846
+Cevio	TI	46.315	8.603	1844
+Oberwinterthur (Kreis 2) / Zinzikon	ZH	47.520	8.756	1842
+Urdorf / Bodenfeld	ZH	47.389	8.423	1840
+Pfyn	TG	47.597	8.954	1839
+Vuadens	FR	46.615	7.017	1835
+Gorgier	NE	46.901	6.780	1832
+Brissago	TI	46.120	8.712	1831
+Wädenswil / Leihof-Mühlebach	ZH	47.224	8.671	1830
+Oberegg	AI	47.425	9.551	1827
+Walkringen	BE	46.949	7.620	1817
+Saint-Cergue	VD	46.446	6.157	1816
+Acquarossa	TI	46.455	8.943	1814
+Sankt Gallenkappel	SG	47.244	8.964	1811
+Meinier	GE	46.247	6.234	1811
+Otelfingen	ZH	47.461	8.391	1808
+Oberbuchsiten	SO	47.313	7.768	1807
+Oberrieden / Mitte	ZH	47.272	8.580	1807
+Ormalingen	BL	47.469	7.872	1803
+Ettiswil	LU	47.150	8.018	1801
+Rorbas	ZH	47.531	8.576	1797
+Uerikon	ZH	47.237	8.757	1794
+Cully	VD	46.489	6.729	1793
+Bioggio	TI	46.014	8.911	1784
+Killwangen	AG	47.432	8.351	1783
+Glattbrugg / Rohr/Platten-Balsberg	ZH	47.437	8.566	1780
+Rehetobel	AR	47.426	9.483	1779
+Grellingen	BL	47.442	7.589	1767
+Uster / Gschwader	ZH	47.360	8.714	1763
+Biglen	BE	46.926	7.625	1759
+Affoltern / Oberdorf	ZH	47.279	8.457	1759
+Effretikon / Rappenhalde-Bannhalde	ZH	47.424	8.697	1758
+Weiningen	ZH	47.420	8.436	1753
+Röschenz	BL	47.424	7.480	1753
+Thalwil / Nord	ZH	47.297	8.556	1751
+Itingen	BL	47.467	7.785	1750
+Vicques	JU	47.350	7.413	1741
+Dallenwil	NW	46.924	8.388	1738
+Andwil	SG	47.439	9.274	1737
+Schinznach Dorf	AG	47.447	8.141	1736
+Bévilard	BE	47.237	7.283	1736
+La Sarraz	VD	46.659	6.511	1734
+Künten	AG	47.389	8.330	1732
+Martigny-Combe	VS	46.078	7.051	1731
+Erlenbach im Simmental	BE	46.660	7.554	1730
+Comano	TI	46.036	8.955	1729
+Hasle	LU	46.978	8.053	1725
+Schleitheim	SH	47.748	8.482	1723
+Waldstatt	AR	47.356	9.283	1722
+Knutwil	LU	47.200	8.073	1722
+Vionnaz	VS	46.311	6.901	1719
+Aesch	ZH	47.330	8.654	1717
+Charmey	FR	46.620	7.165	1713
+Erlenbach / links des Dorfbachs oberhalb Bahnlinie	ZH	47.300	8.602	1709
+Corminboeuf	FR	46.810	7.105	1702
+Corsier	GE	46.263	6.225	1699
+Rüschegg	BE	46.780	7.392	1697
+Alle	JU	47.425	7.130	1693
+Affoltern / Hasenbüel	ZH	47.273	8.452	1690
+Pfaffhausen	ZH	47.365	8.624	1684
+Jonen	AG	47.297	8.393	1683
+Dänikon	ZH	47.447	8.406	1682
+Kloten / Kloten (Zentrum)	ZH	47.451	8.587	1681
+Uttigen	BE	46.794	7.578	1673
+Laupersdorf	SO	47.313	7.655	1670
+Teufenthal	AG	47.329	8.118	1665
+Stadt Winterthur (Kreis 1) / Altstadt	ZH	47.500	8.729	1665
+Vordemwald	AG	47.276	7.901	1661
+Dombresson	NE	47.072	6.959	1659
+Wauwil	LU	47.185	8.021	1657
+Chézard-Saint-Martin	NE	47.066	6.933	1655
+Koblenz	AG	47.610	8.238	1651
+Wiesendangen / Wiesendangen (Dorf)	ZH	47.522	8.790	1649
+Fontainemelon	NE	47.055	6.887	1647
+Gruyères	FR	46.583	7.082	1646
+Cazis	GR	46.719	9.433	1641
+Diegten	BL	47.414	7.811	1633
+Sorengo	TI	45.998	8.938	1629
+Guggisberg	BE	46.768	7.329	1628
+Eich	LU	47.151	8.167	1627
+Trogen	AR	47.408	9.465	1618
+Le Noirmont	JU	47.225	6.958	1617
+Freienstein	ZH	47.533	8.585	1617
+Fraubrunnen	BE	47.086	7.527	1616
+Vernayaz	VS	46.137	7.039	1612
+Bühler	AR	47.373	9.425	1612
+Saas-Fee	VS	46.108	7.927	1611
+Wynau	BE	47.256	7.816	1610
+Auw	AG	47.211	8.366	1610
+Tagelswangen	ZH	47.431	8.673	1606
+Gunzgen	SO	47.314	7.831	1604
+Binz	ZH	47.356	8.627	1601
+Saillon	VS	46.170	7.188	1598
+Sattel	SZ	47.082	8.636	1597
+Cadro	TI	46.046	8.987	1596
+Schwarzenberg	LU	47.017	8.173	1591
+Kloten / Freienberg (Chanzler-Chlini Chaseren)	ZH	47.466	8.581	1588
+Dällikon / Dällikon (Dorf)	ZH	47.440	8.438	1583
+Melide	TI	45.955	8.947	1577
+Riedholz	SO	47.232	7.568	1576
+Grolley	FR	46.834	7.071	1575
+Henggart	ZH	47.563	8.682	1574
+Arch	BE	47.165	7.431	1574
+Küsnacht / Dorf	ZH	47.318	8.583	1574
+Sellenbüren	ZH	47.344	8.483	1572
+Marsens	FR	46.656	7.059	1571
+Heimiswil	BE	47.068	7.667	1570
+Thalwil / Berg	ZH	47.292	8.556	1568
+Marthalen	ZH	47.629	8.653	1567
+Giffers	FR	46.762	7.208	1566
+Grüt	ZH	47.312	8.783	1565
+Nänikon	ZH	47.370	8.689	1560
+Airolo	TI	46.529	8.612	1559
+Evolène	VS	46.114	7.494	1557
+Cornaux	NE	47.040	7.019	1557
+Amden	SG	47.149	9.142	1557
+Chippis	VS	46.280	7.540	1556
+Brütten	ZH	47.473	8.676	1556
+Auvernier	NE	46.975	6.879	1555
+Adliswil / Hündli-Zopf	ZH	47.316	8.519	1553
+Glattbrugg / Wydacker/Bettacker/Lättenwiesen	ZH	47.429	8.567	1551
+Kallnach	BE	47.020	7.235	1545
+Oberwinterthur (Kreis 2) / Hegi	ZH	47.507	8.771	1539
+Magadino	TI	46.149	8.856	1538
+Arisdorf	BL	47.513	7.765	1538
+Wädenswil / Boller-Giessen	ZH	47.221	8.684	1538
+Zäziwil	BE	46.902	7.662	1535
+Tesserete	TI	46.068	8.965	1533
+Trubschachen	BE	46.922	7.845	1530
+Luchsingen	GL	46.966	9.037	1530
+Lodrino	TI	46.300	8.980	1526
+Fulenbach	SO	47.271	7.831	1526
+Wagenhausen	TG	47.660	8.848	1524
+Ligornetto	TI	45.862	8.952	1524
+Cugy	FR	46.815	6.889	1523
+Seedorf	UR	46.882	8.616	1522
+Froideville	VD	46.601	6.681	1518
+Schwellbrunn	AR	47.353	9.249	1517
+Attinghausen	UR	46.863	8.630	1515
+Faido	TI	46.477	8.801	1512
+Reigoldswil	BL	47.398	7.687	1509
+Eschenz	TG	47.648	8.875	1508
+Courfaivre	JU	47.335	7.282	1508
+Ersigen	BE	47.094	7.595	1507
+Trub	BE	46.942	7.880	1503
+Corgémont	BE	47.195	7.145	1503
+Hittnau / Hittnau (Dorf)	ZH	47.363	8.824	1502
+Genolier	VD	46.435	6.218	1498
+Buchholterberg	BE	46.814	7.675	1498
+Vitznau	LU	47.010	8.484	1496
+Adliswil / Sood	ZH	47.319	8.524	1494
+Brislach	BL	47.418	7.543	1493
+Uttwil	TG	47.584	9.341	1492
+Bäch	SZ	47.204	8.732	1479
+Oberengstringen / Sonnenberg	ZH	47.412	8.461	1477
+Lütisburg	SG	47.395	9.083	1476
+Stadt Winterthur (Kreis 1) / Brühlberg	ZH	47.498	8.713	1476
+Töss (Kreis 4) / Vorder-Dättnau	ZH	47.481	8.699	1476
+Villnachern	AG	47.471	8.160	1473
+Dachsen	ZH	47.665	8.618	1470
+Erlenbach / rechts des Dorfbachs oberhalb Bahnlinie	ZH	47.307	8.603	1470
+Montagny	VD	46.793	6.612	1467
+Melchnau	BE	47.182	7.851	1467
+Embrach / Kellersacker	ZH	47.515	8.591	1467
+Les Geneveys-sur-Coffrane	NE	47.015	6.851	1458
+Gimel	VD	46.509	6.307	1454
+Krummenau	SG	47.248	9.171	1453
+Boltigen	BE	46.628	7.391	1443
+Hochfelden	ZH	47.523	8.516	1442
+Visperterminen	VS	46.259	7.902	1440
+Oberbipp	BE	47.261	7.664	1440
+Wettswil / Ausser-Dorf	ZH	47.332	8.477	1438
+Steinmaur	ZH	47.497	8.452	1438
+Boniswil	AG	47.317	8.190	1436
+Neerach	ZH	47.511	8.471	1435
+Bülach / Soligänter	ZH	47.526	8.541	1434
+Uster / Nossikon	ZH	47.341	8.726	1433
+Bière	VD	46.538	6.334	1428
+Leukerbad	VS	46.379	7.627	1427
+Mumpf	AG	47.546	7.921	1425
+Jongny	VD	46.479	6.841	1423
+Seuzach / Seuzach (Dorf)	ZH	47.535	8.737	1419
+Vex	VS	46.212	7.398	1418
+Niederbüren	SG	47.465	9.206	1415
+Eriswil	BE	47.078	7.851	1414
+Bowil	BE	46.893	7.698	1414
+Seltisberg	BL	47.462	7.720	1412
+Adliswil / Oberleimbach	ZH	47.320	8.515	1411
+Gockhausen	ZH	47.381	8.600	1411
+Wädenswil / Hangenmoos	ZH	47.234	8.653	1407
+Homburg	TG	47.635	9.008	1406
+Gonten	AI	47.327	9.347	1406
+Oberglatt / Oberglatt (Dorfkern)	ZH	47.476	8.519	1406
+La Roche	FR	46.696	7.137	1405
+Weesen	SG	47.134	9.096	1402
+Egliswil	AG	47.349	8.186	1401
+Elsau-Räterschen	ZH	47.502	8.799	1395
+Luthern	LU	47.058	7.917	1392
+Kloten / Horainli	ZH	47.454	8.583	1391
+Dübendorf / Vogelquartier	ZH	47.395	8.612	1391
+Attiswil	BE	47.247	7.614	1389
+Kloten / Balsberg	ZH	47.442	8.575	1389
+Wila	ZH	47.419	8.845	1387
+Rohrbach	BE	47.135	7.813	1386
+Gampel	VS	46.316	7.742	1386
+Dietlikon / Eichwiesen	ZH	47.419	8.621	1386
+Wahlen	BL	47.402	7.515	1383
+Villigen	AG	47.527	8.215	1381
+Hüttwilen	TG	47.607	8.873	1381
+Lyssach	BE	47.064	7.582	1375
+Veltheim	AG	47.438	8.147	1374
+Altishofen	LU	47.199	7.970	1368
+Grächen	VS	46.195	7.837	1362
+Jussy	GE	46.236	6.267	1356
+Sankt Stephan	BE	46.508	7.396	1352
+Paudex	VD	46.505	6.668	1352
+Cadempino	TI	46.037	8.934	1351
+Treyvaux	FR	46.728	7.138	1349
+Breíl	GR	46.770	9.060	1344
+Péry	BE	47.194	7.249	1342
+Rodersdorf	SO	47.481	7.458	1338
+Waldenburg	BL	47.383	7.750	1337
+Güttingen	TG	47.603	9.287	1336
+Müntschemier	BE	46.995	7.146	1333
+Oberglatt / Bahnhofquartier	ZH	47.471	8.513	1333
+Hérémence	VS	46.180	7.405	1331
+Dardagny	GE	46.196	5.995	1329
+Andelfingen	ZH	47.594	8.678	1328
+Court	BE	47.240	7.337	1328
+Schinznach Bad	AG	47.450	8.168	1327
+Sâles	FR	46.635	6.973	1326
+Avry-sur-Matran	FR	46.788	7.067	1326
+Begnins	VD	46.442	6.248	1323
+Seeberg	BE	47.156	7.666	1321
+Hadlikon	ZH	47.288	8.857	1321
+Oberhelfenschwil	SG	47.357	9.111	1318
+Ramsen	SH	47.708	8.809	1316
+Perroy	VD	46.467	6.353	1315
+Linden	BE	46.847	7.678	1315
+Schönenbuch	BL	47.539	7.506	1313
+Bäretswil	ZH	47.337	8.856	1313
+Aristau	AG	47.287	8.364	1313
+Dietikon / Guggenbühl	ZH	47.400	8.408	1312
+Bellmund	BE	47.109	7.246	1311
+Ferenbalm	BE	46.949	7.211	1310
+Boncourt	JU	47.495	7.013	1304
+Uerkheim	AG	47.304	8.023	1302
+Zürich (Kreis 1) / Lindenhof	ZH	47.372	8.540	1298
+Kleinlützel	SO	47.425	7.416	1296
+Salmsach	TG	47.554	9.372	1293
+Malvaglia	TI	46.406	8.982	1290
+Fontenais	JU	47.403	7.081	1289
+Leibstadt	AG	47.588	8.176	1287
+Dübendorf / Kunklerstrasse	ZH	47.401	8.627	1284
+Adliswil / Sonnenberg	ZH	47.310	8.521	1283
+Matzendorf	SO	47.304	7.628	1282
+Frauenkappelen	BE	46.954	7.338	1281
+Les Ponts-de-Martel	NE	46.997	6.731	1278
+Schachen	ZH	47.324	8.473	1278
+Opfikon	ZH	47.432	8.576	1277
+Les Breuleux	JU	47.211	7.008	1277
+Läufelfingen	BL	47.395	7.856	1271
+Oberengstringen / Zentrum	ZH	47.407	8.463	1271
+Oberrüti	AG	47.167	8.394	1268
+Urdorf / Moos	ZH	47.390	8.429	1266
+Mühlethurnen	BE	46.813	7.509	1265
+Unterlunkhofen	AG	47.321	8.381	1263
+Mesocco	GR	46.394	9.233	1262
+Affoltern / Sonnenberg	ZH	47.281	8.460	1262
+Eichberg	SG	47.344	9.531	1260
+Andermatt	UR	46.636	8.594	1258
+Rhäzüns	GR	46.799	9.398	1257
+Thalwil / Süd	ZH	47.285	8.570	1255
+Hochwald	SO	47.454	7.645	1254
+Laax	GR	46.805	9.258	1252
+Wädenswil / Eichweid	ZH	47.218	8.674	1252
+Wyssachen	BE	47.079	7.829	1251
+Au / Unter-Dorf	ZH	47.247	8.633	1249
+Sulz	ZH	47.540	8.789	1244
+Trun	GR	46.743	8.987	1243
+Grüsch	GR	46.980	9.646	1243
+Celerina	GR	46.512	9.858	1241
+Schlieren / Boden	ZH	47.397	8.457	1241
+Salgesch	VS	46.312	7.571	1240
+Travers	NE	46.940	6.676	1233
+Stalden	VS	46.233	7.873	1232
+Emmetten	NW	46.957	8.515	1232
+Wülflingen (Kreis 6) / Niederfeld	ZH	47.509	8.680	1227
+Dorf	ZH	47.239	8.736	1226
+Praroman	FR	46.751	7.178	1223
+Wildhaus	SG	47.206	9.354	1221
+Flurlingen	ZH	47.684	8.630	1221
+Mühlehalde	ZH	47.283	8.534	1220
+Wikon	LU	47.263	7.968	1218
+Radelfingen	BE	47.021	7.272	1218
+Dietikon / Schönenwerd	ZH	47.397	8.426	1218
+Häggenschwil	SG	47.495	9.345	1216
+Richterswil / Dorfkern	ZH	47.207	8.706	1216
+Sulz	AG	47.536	8.096	1215
+Churwalden	GR	46.781	9.544	1214
+Schlieren / Freiestrasse	ZH	47.396	8.442	1212
+Liesberg	BL	47.404	7.428	1210
+Zuoz	GR	46.602	9.960	1209
+Palézieux	VD	46.542	6.840	1209
+Sankt Peterzell	SG	47.318	9.176	1207
+Schlieren / Zentrum	ZH	47.398	8.448	1207
+Varen	VS	46.319	7.607	1203
+Esslingen	ZH	47.283	8.710	1203
+Cugnasco	TI	46.175	8.917	1202
+Apples	VD	46.552	6.429	1201
+Mauensee	LU	47.167	8.068	1199
+Glovelier	JU	47.335	7.206	1199
+Oron-la-Ville	VD	46.571	6.826	1198
+Meinisberg	BE	47.160	7.348	1198
+Champéry	VS	46.175	6.869	1191
+Lumino	TI	46.230	9.064	1190
+Bettingen	BS	47.570	7.664	1189
+Beatenberg	BE	46.699	7.794	1188
+Arzo	TI	45.876	8.941	1188
+Gutenswil	ZH	47.384	8.718	1188
+Dürrenäsch	AG	47.321	8.159	1187
+Buttwil	AG	47.268	8.311	1185
+Seen (Kreis 3) / Waldegg	ZH	47.484	8.756	1184
+Orvin	BE	47.161	7.214	1181
+Haag (Rheintal)	SG	47.210	9.489	1180
+Welschenrohr	SO	47.281	7.527	1179
+Thundorf	TG	47.546	8.964	1179
+Nänikon / Nänikon (Dorfkern)	ZH	47.371	8.693	1178
+Männedorf / Ausserfeld	ZH	47.246	8.706	1175
+Les Brenets	NE	47.068	6.705	1169
+Lavertezzo	TI	46.259	8.838	1168
+Leuzigen	BE	47.175	7.458	1167
+Courtelary	BE	47.178	7.072	1163
+Langnau / Vitaquartier	ZH	47.294	8.538	1161
+Tamins	GR	46.830	9.406	1160
+Baltschieder	VS	46.309	7.866	1158
+Charrat	VS	46.125	7.131	1156
+Blumenstein	BE	46.742	7.521	1154
+Luzein	GR	46.920	9.761	1153
+Kloten / Spitz	ZH	47.445	8.587	1153
+Brusio	GR	46.260	10.124	1152
+Niederglatt / Niederglatt (Dorfkern)	ZH	47.491	8.500	1147
+Kilchberg / Bächler-Stocken	ZH	47.327	8.540	1147
+Obfelden / Toussen	ZH	47.266	8.430	1146
+Ganterschwil	SG	47.381	9.092	1145
+Zürich (Kreis 11) / Schwandenholz	ZH	47.425	8.521	1145
+Seglingen	ZH	47.572	8.521	1144
+Zürich (Kreis 12) / Auzelg	ZH	47.415	8.570	1143
+Uhwiesen	ZH	47.671	8.635	1140
+Richterswil / Burghalde	ZH	47.210	8.691	1137
+Greifensee / Pfisterhölzli	ZH	47.364	8.690	1135
+Melano	TI	45.922	8.984	1133
+Jenaz	GR	46.929	9.713	1130
+Schlieren / Kamp	ZH	47.394	8.445	1129
+Meierskappel	LU	47.125	8.443	1128
+Salvan	VS	46.119	7.021	1127
+Oberengstringen / Rauchacher	ZH	47.409	8.456	1126
+Adliswil / Tal	ZH	47.311	8.534	1125
+Tanay	VS	46.345	6.830	1124
+Löhningen	SH	47.701	8.552	1124
+Kandersteg	BE	46.495	7.673	1123
+Gryon	VD	46.274	7.060	1122
+Regensdorf / Feldblumen-Riedthofstrasse	ZH	47.436	8.467	1122
+Effretikon / Rikon	ZH	47.431	8.686	1120
+Muolen	SG	47.521	9.325	1118
+Saas-Grund	VS	46.123	7.937	1116
+Kriegstetten	SO	47.174	7.598	1116
+Grand-Savagnier	NE	47.051	6.955	1116
+Hofstetten	ZH	47.478	8.506	1115
+Rue	FR	46.619	6.822	1108
+Erlach	BE	47.042	7.097	1108
+Hinteregg	ZH	47.307	8.683	1107
+Kindhausen / Kindhausen (Dorf)	ZH	47.406	8.683	1107
+Heitenried	FR	46.828	7.299	1106
+Le Vaud	VD	46.478	6.236	1104
+Les Bois	JU	47.177	6.905	1104
+Obfelden / Oberlunnern	ZH	47.262	8.416	1103
+Aire-la-Ville	GE	46.191	6.043	1100
+Oberschrot	FR	46.741	7.281	1099
+Kleinandelfingen	ZH	47.601	8.684	1094
+Villaz-Saint-Pierre	FR	46.721	6.956	1093
+Trélex	VD	46.415	6.208	1092
+Regensdorf / Obstgarten	ZH	47.428	8.466	1090
+Zürich (Kreis 1) / City	ZH	47.373	8.536	1089
+Wegenstetten	AG	47.498	7.931	1080
+Linthal	GL	46.921	8.998	1080
+Schwerzenbach / Blatten	ZH	47.383	8.650	1078
+Knonau	ZH	47.224	8.462	1077
+Mönchaltorf / Dorf	ZH	47.304	8.722	1077
+Grossacker/Opfikon	ZH	47.427	8.579	1076
+Kappelen	BE	47.060	7.269	1075
+Elsau-Räterschen / Räterschen	ZH	47.499	8.796	1071
+Pura	TI	45.986	8.869	1069
+Trachselwald	BE	47.017	7.736	1068
+Neudorf	LU	47.177	8.209	1068
+Birchwil	ZH	47.454	8.635	1066
+Stetten	SH	47.740	8.663	1065
+Greifensee / Müllerwis / Seilerwis	ZH	47.370	8.682	1064
+Wittnau	AG	47.481	7.976	1062
+Gravesano	TI	46.042	8.918	1062
+Mézières	FR	46.680	6.926	1060
+Dübendorf / Wasserfurren	ZH	47.394	8.608	1060
+Staffelbach	AG	47.284	8.042	1059
+Rechthalten	FR	46.768	7.240	1058
+Burgistein	BE	46.785	7.500	1058
+Courgevaux	FR	46.906	7.112	1057
+Zernez	GR	46.699	10.093	1053
+Langenbruck	BL	47.349	7.768	1049
+Stettfurt	TG	47.526	8.953	1048
+Höri	ZH	47.508	8.512	1041
+Tegerfelden	AG	47.558	8.289	1040
+Uetikon / Grossdorf	ZH	47.267	8.678	1040
+Kollbrunn / Kollbrunn (Dorfkern)	ZH	47.457	8.774	1040
+Regensdorf / Hofacher-Geeren	ZH	47.435	8.462	1038
+Dürrenroth	BE	47.090	7.792	1037
+Bäriswil	BE	47.019	7.527	1036
+Küsnacht / Schiedhalden	ZH	47.321	8.589	1033
+Dürnten	ZH	47.279	8.842	1032
+Langrickenbach	TG	47.594	9.247	1031
+Bottens	VD	46.616	6.661	1030
+Bauma	ZH	47.367	8.879	1029
+Turtmann	VS	46.300	7.702	1025
+Schwerzenbach / Chimli	ZH	47.386	8.659	1020
+Messen	SO	47.092	7.445	1018
+Dübendorf / Sonnenberg	ZH	47.395	8.632	1018
+Seuzach Dorf / Breite-Weid	ZH	47.533	8.734	1016
+Goldingen	SG	47.265	8.962	1013
+Kloten / Hostrass	ZH	47.453	8.595	1012
+Verscio	TI	46.185	8.732	1009
+Urdorf / Oberurdorf	ZH	47.381	8.423	1008
+Vorderthal	SZ	47.122	8.902	1006
+Vals Platz	GR	46.616	9.180	1006
+Ependes	FR	46.754	7.146	1006
+Buus	BL	47.506	7.864	1005
+Fiesch	VS	46.400	8.135	1003
+Himmelried	SO	47.421	7.600	1002
+Evionnaz	VS	46.181	7.022	1001
+Bodio	TI	46.378	8.910	1001
+Silvaplana	GR	46.458	9.795	973
+Chancy	GE	46.150	5.972	942
+Wölflinswil	AG	47.461	7.998	910
+Scharans	GR	46.718	9.459	867
+Pampigny	VD	46.581	6.429	843
+Densbüren	AG	47.453	8.053	758
+Schwaderloch	AG	47.585	8.145	726
+Bavois	VD	46.684	6.567	662
+Haslen	AI	47.369	9.368	638
+Saint-Livres	VD	46.508	6.388	568
+Pailly	VD	46.701	6.675	430
+Därligen	BE	46.662	7.808	390
+Ballens	VD	46.555	6.373	389
+Saubraz	VD	46.516	6.330	354
+Grancy	VD	46.592	6.464	308
+Gottlieben	TG	47.664	9.134	290
+Mollens	VD	46.578	6.363	282
+Tiefencastel	GR	46.660	9.579	244
+Sottens	VD	46.655	6.742	209
+Bauen	UR	46.936	8.578	206
+Hinterrhein	GR	46.533	9.200	108
+Arvigo	GR	46.302	9.113	92
+Buseno	GR	46.274	9.107	90
+Cauco	GR	46.335	9.121	34
+Santa Maria in Calanca	GR	46.263	9.145	0
+Promontogno	GR	46.339	9.558	0
+La Punt Chamues-ch	GR	46.579	9.920	0
+Ostermundigen	BE	46.957	7.490	0
+Landquart	GR	46.950	9.567	0
+St-Légier-La Chiésaz	VD	46.472	6.874	0
+L'Abbaye	VD	46.650	6.319	0
+Diessenhofen	TG	47.689	8.750	0
+Rottenschwil	AG	47.314	8.361	0
+Münchenwiler	BE	46.913	7.126	0
+Veyras	VS	46.302	7.536	0
+Känerkinden	BL	47.412	7.837	0
+Saint Saphorin	VD	46.473	6.796	0
+Cuarnens	VD	46.625	6.437	0
+Bünzen	AG	47.310	8.324	0
+Biberstein	AG	47.416	8.085	0
+Braggio	GR	46.303	9.124	0
+Saint-George	VD	46.514	6.260	0
+Berolle	VD	46.558	6.336	0
+Mauraz	VD	46.606	6.421	0
+Chavannes-le-Veyron	VD	46.607	6.451	0
+La Chaux	VD	46.617	6.472	0
+Chevilly	VD	46.643	6.477	0
+Moiry	VD	46.649	6.453	0
+Ferreyres	VD	46.658	6.485	0
+Orny	VD	46.668	6.526	0
+Pompaples	VD	46.667	6.510	0
+Penthéréaz	VD	46.682	6.604	0
+Vuarrens	VD	46.686	6.648	0
+Rueyres	VD	46.693	6.692	0
+Tägertschi	BE	46.875	7.585	0
+Kirchleerau	AG	47.276	8.066	0
+Matran	FR	46.786	7.098	0
+Oberhof	AG	47.449	8.003	0
+Besenbüren	AG	47.314	8.346	0
+Tenniken	BL	47.437	7.811	0
+Gansingen	AG	47.543	8.135	0
+Vuisternens-devant-Romont	FR	46.653	6.930	0
+Wettswil	ZH	47.337	8.475	0
+Oberkulm	AG	47.299	8.122	0
+Savosa	TI	46.019	8.942	0
+Aeugst am Albis	ZH	47.267	8.485	0
+Pont-la-Ville	FR	46.698	7.111	0
+Servion	VD	46.571	6.778	0
+Chéserex	VD	46.399	6.175	0
+Hohentannen	TG	47.509	9.225	0
+Valeyres-sous-Montagny	VD	46.799	6.611	0
+Bedigliora	TI	46.003	8.841	0
+Uebeschi	BE	46.738	7.556	0
+Kleinbösingen	FR	46.894	7.205	0
+Niedermuhlern	BE	46.858	7.467	0
+Cheseaux-Noréaz	VD	46.782	6.670	0
+Rochefort	NE	46.978	6.808	0
+Corcelles-le-Jorat	VD	46.606	6.743	0
+Rüegsau	BE	47.025	7.674	0
+Auswil	BE	47.136	7.832	0
+Rümligen	BE	46.830	7.495	0
+Donat	GR	46.628	9.430	0
+Surpierre	FR	46.746	6.859	0
+Oberhünigen	BE	46.880	7.657	0
+Les Clées	VD	46.732	6.463	0
+Busswil bei Melchnau	BE	47.186	7.832	0
+Walliswil bei Niederbipp	BE	47.236	7.690	0
+Rüti bei Lyssach	BE	47.057	7.577	0

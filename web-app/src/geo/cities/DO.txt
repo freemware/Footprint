@@ -1,0 +1,208 @@
+Santo Domingo	34	18.472	-69.892	2201941
+Santiago de los Caballeros	25	19.452	-70.697	1200000
+Santo Domingo Oeste	37	18.500	-70.000	701269
+Santo Domingo Este	37	18.488	-69.857	700000
+San Pedro de Macorís	24	18.454	-69.309	217899
+La Romana	12	18.427	-68.973	208437
+Bella Vista	34	18.455	-69.945	175683
+San Cristóbal	33	18.417	-70.100	154040
+Puerto Plata	18	19.793	-70.688	146000
+San Francisco de Macorís	06	19.301	-70.253	124763
+Salvaleón de Higüey	10	18.615	-68.708	123787
+Concepción de La Vega	30	19.222	-70.530	102426
+Punta Cana	10	18.582	-68.404	100023
+Santa Cruz de Barahona	03	18.209	-71.101	77160
+Bonao	31	18.937	-70.409	73269
+San Juan de la Maguana	23	18.806	-71.230	72950
+Bajos de Haina	33	18.415	-70.033	66784
+Baní	35	18.280	-70.332	66709
+Moca	08	19.394	-70.526	61834
+Azua	01	18.453	-70.735	59139
+Villa Francisca	34	18.483	-69.889	50185
+Mao	27	19.552	-71.078	48297
+Boca Chica	37	18.450	-69.600	46300
+Salcedo	19	19.378	-70.418	45299
+Esperanza	27	19.585	-70.985	42169
+Cotuí	21	19.053	-70.149	41641
+Villa Altagracia	33	18.673	-70.171	40027
+Hato Mayor del Rey	29	18.763	-69.257	35999
+Nagua	14	19.383	-69.847	33862
+Villa Bisonó	25	19.564	-70.876	33137
+Jarabacoa	30	19.117	-70.636	29983
+Constanza	30	18.909	-70.745	29481
+Villa Consuelo	34	18.483	-69.900	28621
+Santa Cruz de El Seibo	28	18.766	-69.039	23547
+Tamboril	25	19.485	-70.611	23304
+Las Matas de Farfán	23	18.873	-71.517	21802
+San José de Ocoa	36	18.547	-70.506	21148
+Bayaguana	32	18.750	-69.635	21055
+Río Grande	18	19.667	-70.767	20154
+Monte Llano	18	19.735	-70.599	19029
+Ciudad Nueva	34	18.467	-69.893	18756
+Neiba	02	18.481	-71.420	18670
+Quisqueya	24	18.555	-69.408	17694
+San Fernando de Monte Cristi	15	19.848	-71.646	17001
+Sabana Grande de Boyá	32	18.945	-69.793	16834
+Dajabón	04	19.549	-71.708	16398
+Sabaneta	26	19.478	-71.341	16380
+Monte Plata	32	18.807	-69.784	15532
+Cristo Rey	34	18.500	-69.933	14325
+Sabana de la Mar	29	19.059	-69.388	13977
+San Carlos	34	18.483	-69.900	13456
+Duvergé	09	18.378	-71.525	13405
+Cambita Garabitos	33	18.455	-70.199	13382
+La Julia	34	18.467	-69.933	12575
+Cabral	03	18.250	-71.217	12303
+Comendador	11	18.878	-71.703	12070
+Salsipuedes	19	19.406	-70.380	11675
+Villa Vásquez	15	19.741	-71.446	11642
+Yamasá	32	18.773	-70.026	11595
+San Gregorio de Nigua	33	18.383	-70.083	11542
+Samaná	20	19.206	-69.337	11432
+Sánchez	20	19.228	-69.614	11365
+Pedernales	16	18.038	-71.744	11072
+Vicente Noble	03	18.384	-71.180	11060
+Sabana Yegua	01	18.717	-71.017	10624
+La Agustina	34	18.500	-69.933	10457
+Las Matas de Santa Cruz	15	19.671	-71.505	10218
+Villa González	25	19.541	-70.789	10177
+Fantino	21	19.121	-70.300	10024
+San José de Las Matas	25	19.339	-70.938	9853
+Las Guáranas	06	19.193	-70.208	9586
+Pimentel	06	19.184	-70.109	9550
+Miches	28	18.984	-69.048	9273
+Villa Jaragua	02	18.491	-71.484	9248
+Río San Juan	14	19.644	-70.076	8983
+Ensanche Luperón	34	18.500	-69.900	8576
+Piedra Blanca	31	18.844	-70.317	8531
+Padre Las Casas	01	18.732	-70.939	8485
+Imbert	18	19.754	-70.829	8024
+Sosúa	18	19.752	-70.520	7713
+Las Terrenas	20	19.311	-69.543	7713
+Laguna Salada	27	19.650	-71.084	7601
+Tenares	19	19.374	-70.351	7390
+Peralta	01	18.582	-70.770	7236
+El Factor	14	19.318	-69.888	7014
+Paya	35	18.262	-70.296	6916
+Loma de Cabrera	04	19.433	-71.600	6679
+Monción	26	19.411	-71.153	6625
+Jimaní	09	18.492	-71.850	6567
+Nizao	35	18.247	-70.211	6530
+Gaspar Hernández	08	19.627	-70.278	6506
+Paraíso	03	17.992	-71.165	6490
+Licey al Medio	25	19.433	-70.600	6435
+Tamayo	02	18.395	-71.203	6429
+Castillo	06	19.208	-70.027	6328
+Jima Abajo	30	19.133	-70.376	6299
+Guaymate	12	18.588	-68.979	6224
+Otra Banda	10	18.650	-68.663	6071
+Galván	02	18.502	-71.343	6027
+Rincón	30	19.119	-70.406	5909
+Veragua Arriba	08	19.583	-70.333	5858
+Villa Riva	06	19.181	-69.913	5700
+Yayas de Viajama	01	18.607	-70.928	5669
+El Valle	29	18.976	-69.378	5666
+San Víctor Arriba	08	19.477	-70.536	5624
+Yaguate	33	18.335	-70.181	5610
+Estebanía	01	18.458	-70.644	5591
+Juan de Herrera	23	18.874	-71.238	5543
+Los Llanos	24	18.620	-69.496	5529
+La Descubierta	09	18.571	-71.730	5521
+Esperalvillo	32	18.815	-70.036	5445
+Enriquillo	03	17.900	-71.233	5423
+Cercado Abajo	23	18.727	-71.517	5316
+San Rafael del Yuma	10	18.430	-68.674	5285
+Vallejuelo	23	18.654	-71.334	5217
+Sabana Iglesia	25	19.321	-70.760	5135
+Cabrera	14	19.643	-69.905	4947
+Jaibón	27	19.612	-71.148	4853
+Sabana Grande de Palenque	33	18.263	-70.148	4809
+Las Charcas	01	18.450	-70.617	4720
+Altamira	18	19.677	-70.844	4563
+Las Salinas	03	18.275	-71.316	4513
+Los Ríos	02	18.521	-71.591	4440
+Luperón	18	19.891	-70.962	4393
+Castañuelas	15	19.714	-71.499	4209
+Pueblo Viejo	01	18.400	-70.768	4192
+Matanzas	35	18.243	-70.418	4124
+Cabarete	18	19.750	-70.408	4094
+El Peñón	03	18.296	-71.184	4088
+Cevicos	21	19.004	-69.979	4064
+Los Botados	32	18.732	-69.995	4054
+La Canela	25	19.473	-70.816	4026
+Guayabo Dulce	29	18.650	-69.283	3897
+Villa Isabela	18	19.816	-71.061	3887
+Pepillo Salcedo	15	19.698	-71.745	3866
+Tireo Arriba	30	18.935	-70.689	3816
+Tábara Arriba	01	18.570	-70.880	3736
+Hondo Valle	11	18.716	-71.695	3713
+Palmar Arriba	25	19.540	-70.738	3700
+Río Verde Arriba	30	19.316	-70.566	3613
+Hatillo Palma	15	19.663	-71.194	3574
+Maizal	27	19.637	-71.027	3384
+El Puerto	24	18.783	-69.467	3278
+Villa Tapia	19	19.301	-70.422	3113
+Postrer Río	09	18.544	-71.636	3078
+Jaquimeyes	03	18.312	-71.161	3038
+Villarpando	01	18.659	-71.039	3016
+Arenoso	06	19.187	-69.859	2897
+La Ciénaga	03	18.069	-71.107	2875
+El Guayabal	01	18.750	-70.837	2835
+Los Hidalgos	18	19.733	-71.033	2805
+Cristóbal	09	18.294	-71.293	2735
+Pizarrete	35	18.299	-70.226	2695
+Oviedo	16	17.801	-71.401	2671
+El Carril	33	18.449	-70.028	2643
+Guananico	18	19.727	-70.923	2620
+Cayetano Germosén	08	19.344	-70.483	2526
+Fundación	03	18.287	-71.181	2511
+El Palmar	02	18.411	-71.246	2445
+El Llano	11	18.817	-71.633	2438
+Don Juan	32	18.828	-69.946	2396
+Canoa	03	18.355	-71.159	2371
+Bohechío	23	18.775	-70.989	2281
+Sabana Buey	35	18.274	-70.524	2265
+Jamao al Norte	08	19.636	-70.447	2216
+La Uvilla	02	18.362	-71.210	2178
+Ramón Santana	24	18.542	-69.180	2175
+Partido	04	19.484	-71.547	2170
+Polo	03	18.079	-71.287	2121
+Pescadería	03	18.268	-71.166	2116
+Pedro Corto	23	18.849	-71.410	2067
+Restauración	04	19.315	-71.692	2031
+Gonzalo	32	18.951	-69.751	2027
+Mella	09	18.359	-71.417	2024
+Baitoa	25	19.325	-70.704	2013
+Palmar de Ocoa	01	18.297	-70.586	1997
+El Cacao	33	18.527	-70.296	1997
+Boca de Yuma	10	18.378	-68.609	1991
+Arroyo Salado	14	19.500	-69.900	1990
+Amina	27	19.548	-70.996	1910
+Cachón	03	18.248	-71.189	1903
+Agua Santa del Yuna	06	19.151	-69.801	1830
+Hostos	06	19.180	-70.020	1813
+Cana Chapetón	15	19.607	-71.257	1758
+Jicomé	27	19.650	-70.949	1725
+Guatapanal	27	19.507	-70.917	1657
+Estero Hondo	18	19.827	-71.174	1649
+Juancho	16	17.858	-71.293	1623
+Pedro Sánchez	28	18.864	-69.109	1621
+Juan Santiago	11	18.703	-71.590	1549
+Juan López Abajo	08	19.433	-70.500	1535
+El Pino	04	19.435	-71.475	1529
+Guayabal	09	18.598	-71.642	1504
+Joba Arriba	08	19.567	-70.267	1471
+Pedro García	25	19.592	-70.653	1457
+Bánica	11	19.082	-71.705	1443
+Majagual	32	19.041	-69.836	1430
+Río Limpio	11	19.245	-71.531	1376
+Juan Adrián	31	18.764	-70.337	1371
+Juncalito Abajo	25	19.220	-70.819	1229
+Sabana del Puerto	31	19.067	-70.417	1223
+Pedro Santana	11	19.105	-71.695	1170
+Villa Elisa	15	19.686	-71.270	1143
+La Entrada	14	19.554	-69.908	1112
+La Caya	27	19.700	-71.121	1005
+Matayaya	23	18.890	-71.595	1001
+Guerra	37	18.559	-69.701	0
+Villa La Mata	21	19.017	-70.267	0

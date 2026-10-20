@@ -1,0 +1,18 @@
+Koror	06	7.340	134.473	14000
+Koror Town	06	7.343	134.479	12676
+Kloulklubed	15	7.042	134.256	702
+Ulimang	08	7.624	134.642	581
+Mengellang	09	7.696	134.631	488
+Ngchesar Hamlet	12	7.469	134.610	300
+Melekeok Village	07	7.496	134.637	271
+Ngchemiangel	01	7.446	134.477	270
+Ngerkeai	14	7.555	134.636	223
+Ngardmau	10	7.610	134.574	221
+Angaur State	03	6.906	134.130	188
+Kayangel	05	8.082	134.717	188
+Imeong Hamlet	13	7.531	134.527	132
+Ngetkib	02	7.365	134.515	62
+Tobi Village	04	3.005	131.122	44
+Sonsorol Village	16	5.326	132.219	30
+Ngereklmadel	11	7.488	134.486	0
+Ngerulmud	07	7.501	134.624	0

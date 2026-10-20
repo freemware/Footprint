@@ -1,0 +1,7 @@
+Kralendijk	BO	12.150	-68.267	3081
+Dorp Antriol	BO	12.167	-68.267	2980
+Upper Hell's Gate	SB	17.643	-63.226	2810
+Dorp Rincón	BO	12.233	-68.333	1496
+Dorp Tera Kora	BO	12.133	-68.267	1186
+Oranjestad	SE	17.483	-62.986	1097
+The Bottom	SB	17.626	-63.249	488

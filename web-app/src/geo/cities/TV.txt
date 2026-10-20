@@ -1,0 +1,8 @@
+Funafuti	FUN	-8.524	179.194	4492
+Alapi Village	FUN	-8.521	179.197	1024
+Fakaifou Village	FUN	-8.518	179.201	1007
+Savave Village	NKF	-8.027	178.314	586
+Tanrake Village	NUI	-7.246	177.145	408
+Toga Village	NMG	-6.288	176.315	258
+Asau Village	VAI	-7.490	178.680	250
+Kulia Village	NIT	-6.108	177.334	224

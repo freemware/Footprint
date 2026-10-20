@@ -1,0 +1,15 @@
+Georgetown	12	6.804	-58.155	235017
+Linden	18	6.008	-58.307	44690
+New Amsterdam	13	6.248	-57.517	35039
+Anna Regina	16	7.264	-58.508	12448
+Bartica	11	6.408	-58.622	11157
+Skeldon	13	5.883	-57.133	5859
+Rosignol	15	6.271	-57.537	5782
+Mahaica Village	12	6.684	-57.922	4867
+Mahdia	17	5.267	-59.150	4200
+Parika	14	6.837	-58.429	4081
+Vreed-en-Hoop	14	6.809	-58.198	3073
+Mahaicony Village	15	6.576	-57.805	2130
+Mabaruma	10	8.200	-59.783	717
+Lethem	19	3.383	-59.800	716
+Fort Wellington	15	6.391	-57.604	0

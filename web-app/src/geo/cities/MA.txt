@@ -1,0 +1,260 @@
+Casablanca	06	33.588	-7.611	3144909
+Rabat	04	34.013	-6.833	1655753
+Fès	03	34.033	-5.000	964891
+Sale	04	34.053	-6.798	903485
+Marrakesh	07	31.634	-8.000	839296
+Agadir	09	30.420	-9.598	698310
+Tangier	01	35.767	-5.800	688356
+Meknès	03	33.894	-5.547	545705
+Oujda-Angad	02	34.681	-1.909	405253
+Al Hoceïma	01	35.252	-3.937	395644
+Kenitra	04	34.261	-6.580	366570
+Tétouan	01	35.578	-5.368	326261
+Temara	04	33.929	-6.907	313510
+Safi	07	32.299	-9.237	288163
+Salé Al Jadida	04	33.997	-6.740	200000
+Mohammedia	06	33.686	-7.383	187708
+Khouribga	05	32.881	-6.906	167673
+Beni Mellal	05	32.337	-6.350	166399
+Fès al Bali	03	34.070	-4.955	156000
+El Jadid	06	33.257	-8.509	147549
+Taza	03	34.210	-4.010	141890
+Nador	02	35.168	-2.934	129260
+Settat	06	33.001	-7.617	119082
+Larache	01	35.193	-6.156	109294
+Ksar El Kebir	01	35.000	-5.904	108753
+Khemisset	04	33.824	-6.066	106991
+Guelmim	10	28.987	-10.057	98229
+Berrechid	06	33.266	-7.588	93954
+Errachidia	08	31.931	-4.427	92374
+Oued Zem	05	32.863	-6.574	84910
+Al Fqih Ben Çalah	05	32.502	-6.688	84072
+Taourirt	02	34.407	-2.897	82518
+Berkane	02	34.920	-2.320	80721
+Sidi Slimane	04	34.265	-5.926	79437
+Sidi Qacem	04	34.221	-5.708	74755
+Khenifra	05	32.935	-5.662	73906
+Ifrane	03	33.527	-5.110	73782
+Taroudant	09	30.470	-8.877	71133
+Essaouira	07	31.512	-9.770	70634
+Tiflet	04	33.895	-6.306	70010
+Oulad Teïma	09	30.395	-9.209	66832
+Sefrou	03	33.832	-4.828	65150
+Youssoufia	07	32.246	-8.529	64910
+Tan-Tan	10	28.438	-11.103	61924
+Ouezzane	01	34.796	-5.578	58684
+Guercif	03	34.226	-3.354	57544
+Ouarzazat	08	30.919	-6.893	57245
+Tirhanimîne	01	35.236	-3.955	55827
+Dakhla	EH	30.411	-9.556	55618
+Tiznit	09	29.697	-9.732	55092
+Fnidek	01	35.849	-5.357	53559
+Azrou	03	33.434	-5.221	48249
+Midelt	05	32.685	-4.745	45159
+Skhirate	04	33.853	-7.032	44850
+Souq Larb’a al Gharb	04	34.687	-6.003	44059
+Jerada	02	34.310	-2.160	43696
+Smara	11	26.738	-11.672	42056
+Kasba Tadla	05	32.598	-6.268	41199
+Sidi Bennour	06	32.652	-8.428	40044
+Imzouren	01	35.146	-3.851	40000
+Martil	01	35.617	-5.275	39738
+Azemmour	06	33.290	-8.342	37140
+Tinghir	08	31.515	-5.533	36795
+Chefchaouene	01	35.169	-5.264	36280
+Al Aaroui	02	35.011	-3.009	36021
+El Aïoun	02	34.583	-2.506	35196
+Zagora	08	30.332	-5.838	35154
+Taounate	03	34.537	-4.640	32802
+Sidi Yahia El Gharb	04	34.305	-6.304	32202
+Zaïo	02	34.943	-2.733	30008
+Asilah	01	35.465	-6.034	28861
+Bouarfa	02	32.534	-1.962	28846
+El Hajeb	03	33.688	-5.371	28126
+Mechraa Bel Ksiri	04	34.574	-5.956	27802
+Bouznika	06	33.789	-7.160	27283
+Tahla	03	34.050	-4.422	25761
+Arfoud	08	31.435	-4.233	23637
+Setti Fatma	07	31.225	-7.678	22283
+Reçani	08	31.283	-4.266	20469
+Sidi Ifni	09	29.380	-10.173	20000
+Ahfir	02	34.954	-2.100	19611
+Oulmes	04	33.426	-6.001	19014
+Bni Bouayach	01	35.105	-3.840	18271
+Aïn Beni Mathar	02	34.010	-2.032	16289
+Boujniba	05	32.900	-6.775	15041
+Kelaat Mgouna	08	31.246	-6.133	14190
+Ifrane	05	31.702	-6.349	13000
+Zawyat an Nwaçer	06	33.380	-7.619	12696
+Figuig (Centre)	54	32.109	-1.229	12516
+Targuist	01	34.938	-4.319	11560
+Midar	02	34.940	-3.533	10229
+Mhamid	08	29.820	-5.720	10000
+Cap Negro II	01	35.660	-5.285	10000
+Zag	10	28.022	-9.294	7751
+Gueltat Zemmour	11	25.143	-12.372	6740
+Oualidia	06	32.734	-9.031	5826
+Tarfaya	11	27.939	-12.926	5615
+Aïn Leuh	03	33.290	-5.339	5278
+Taghazout	09	30.543	-9.711	5233
+Tafraout	09	29.724	-8.975	4924
+Oukaïmedene	07	31.206	-7.861	4440
+Sidi Smai’il	06	32.825	-8.511	4279
+Saidia	02	35.082	-2.229	3871
+Mosquée		34.806	-2.413	3150
+Imlili	12	22.656	-15.607	2269
+Zawyat ech Cheïkh	05	32.644	-5.918	2000
+Akhfennir	11	28.095	-12.052	1583
+Tmourghout	03	33.907	-4.027	1250
+Jebel Tiskaouine	08	31.027	-5.116	1197
+Oulad Tayeb	03	33.946	-4.995	500
+Zoumi	01	34.803	-5.345	0
+Zinat	01	35.430	-5.400	0
+Saddina	01	35.614	-5.452	0
+Touama	07	31.535	-7.493	0
+Tiztoutine	02	34.972	-3.153	0
+Tizguine	07	31.228	-8.316	0
+Tit Mellil	06	33.558	-7.486	0
+Tissa	03	34.288	-4.664	0
+Tiout	09	30.389	-8.696	0
+Tiouli	02	34.367	-1.837	0
+Timoulilt	05	32.204	-6.467	0
+Timezgana	03	34.580	-4.730	0
+Timezgadiouine	07	30.884	-9.045	0
+Tilmi	08	31.818	-5.768	0
+Tifni	05	31.628	-6.941	0
+Telouet	08	31.289	-7.238	0
+Tazouta	03	33.670	-4.634	0
+Taznakht	08	30.578	-7.203	0
+Tazemmourt	09	30.409	-8.829	0
+Tazarine	03	33.883	-4.186	0
+Tata	09	29.744	-7.973	0
+Tarsouat	09	29.582	-9.027	0
+Teroual	04	34.675	-5.273	0
+Taounza	05	32.094	-6.606	0
+Taouloukoult	07	31.222	-9.079	0
+Taouima	02	35.130	-2.928	0
+Tanalt	09	29.775	-9.168	0
+Tamorot	01	34.936	-4.779	0
+Tamanar	07	31.001	-9.678	0
+Talzemt	03	33.590	-4.190	0
+Talmest	07	31.810	-9.330	0
+Taliouine	09	30.529	-7.913	0
+Tadrart	09	30.775	-9.460	0
+Tabouda	03	34.719	-5.140	0
+Tabia	05	32.030	-6.800	0
+Tabia	09	30.035	-8.877	0
+Tabant	05	31.653	-6.410	0
+Senada	01	35.075	-4.216	0
+Skoura	08	31.063	-6.553	0
+Sidi Yahya Ou Saad	05	32.680	-5.577	0
+Sidi Redouane	04	34.687	-5.445	0
+Sidi Rahhal	07	31.650	-7.473	0
+Sidi Moussa	07	32.272	-7.201	0
+Sidi Lamine	05	32.908	-6.051	0
+Sidi Jaber	05	32.390	-6.421	0
+Sidi Harazem	03	34.027	-4.883	0
+Sidi Bousber	04	34.563	-5.362	0
+Sidi Bou Othmane	07	31.902	-7.942	0
+Sidi Amar	05	32.950	-5.832	0
+Sidi Abdallah	07	32.535	-7.832	0
+Selouane	02	35.073	-2.942	0
+Rouadi	01	35.141	-4.136	0
+Rislane	02	34.770	-2.460	0
+Ghouazi	03	34.477	-5.302	0
+Reggada	09	29.580	-9.701	0
+Ratba	03	34.778	-4.940	0
+Ourtzagh	03	34.535	-4.969	0
+Oulad Daoud	03	34.404	-4.693	0
+Oulad Ayad	05	32.200	-6.800	0
+Ouijjane	09	29.628	-9.540	0
+Oued Laou	01	35.448	-5.096	0
+Oued Amlil	03	34.200	-4.280	0
+Moulay Yacoub	03	34.088	-5.182	0
+Moulay Brahim	07	31.288	-7.968	0
+Moulay Bouchta	03	34.489	-5.130	0
+Moulay Abdallah	06	33.197	-8.588	0
+Missour	03	33.049	-3.989	0
+Mediouna	06	33.452	-7.520	0
+Mdiq	01	35.683	-5.329	0
+Matmata	03	34.099	-4.552	0
+Madagh	02	35.010	-2.337	0
+Lalla Mimouna	04	34.846	-6.066	0
+Kerrouchen	05	32.796	-5.319	0
+Kariat Arkmane	02	35.107	-2.747	0
+Karia Ba Mohamed	03	34.371	-5.214	0
+Jorf	08	31.494	-4.406	0
+Itzer	05	32.878	-5.051	0
+Isseksi	05	32.230	-6.277	0
+Inezgane	09	30.355	-9.536	0
+Imider	08	31.373	-5.794	0
+Imilchil	08	32.153	-5.625	0
+Iguidi	09	30.838	-7.903	0
+Hassi Berkane	02	34.839	-2.867	0
+Zerkten	07	31.445	-7.392	0
+Had Kourt	04	34.616	-5.740	0
+Oulad Frej	06	32.960	-8.227	0
+Guisser	06	32.766	-7.498	0
+Guenfouda	02	34.484	-2.046	0
+Goulmima	08	31.692	-4.953	0
+Galaz	03	34.544	-4.804	0
+Fifi	01	34.949	-5.248	0
+Fezna	08	31.529	-4.456	0
+Ezzhiliga	04	33.300	-6.530	0
+El Ksiba	05	32.573	-6.019	0
+Ouaoula	05	31.870	-6.750	0
+Derdara	01	35.110	-5.290	0
+Demnate	05	31.734	-7.005	0
+Debdou	02	33.982	-3.043	0
+Riah	06	33.151	-7.375	0
+Dar Ould Zidouh	05	32.312	-6.905	0
+Dar Bouazza	06	33.515	-7.817	0
+Dar Chaoui	01	35.538	-5.717	0
+Chichaoua	07	31.544	-8.763	0
+Bzou	05	32.092	-7.048	0
+Brikcha	01	34.967	-5.573	0
+Bouskoura	06	33.450	-7.652	0
+Boumia	05	32.724	-5.103	0
+Boulemane	03	33.364	-4.729	0
+Boulaouane	06	32.860	-8.056	0
+Boudinar	02	35.156	-3.624	0
+Bouabout	07	31.266	-9.179	0
+Bigoudine	09	30.724	-9.211	0
+Bhalil	03	33.852	-4.872	0
+Bab Taza	01	35.062	-5.198	0
+Azilal	05	31.962	-6.571	0
+Azgour	07	31.138	-8.315	0
+Assoul	08	31.953	-5.208	0
+Assads	09	30.230	-8.860	0
+Argana	09	30.782	-9.120	0
+Arbaoua	04	34.902	-5.949	0
+Arazane	09	30.503	-8.606	0
+Aourir	09	30.492	-9.636	0
+Aoulouz	09	30.673	-8.181	0
+Aoufous	08	31.680	-4.170	0
+Amouguer	08	32.275	-4.935	0
+Amizmiz	07	31.217	-8.232	0
+Amerzgane	08	31.044	-7.210	0
+Amersid	05	32.750	-4.471	0
+Amalou	09	30.192	-8.749	0
+Alnif	08	31.114	-5.172	0
+Almis Marmoucha	03	33.320	-4.180	0
+Aknoul	03	34.654	-3.868	0
+Ajdir	03	34.743	-3.976	0
+Anergui	05	32.069	-5.940	0
+Aguelmous	05	33.161	-5.846	0
+Agdz	08	30.694	-6.446	0
+Agadir Melloul	09	30.225	-7.796	0
+Adassil	07	31.108	-8.491	0
+Adar	09	30.141	-8.372	0
+Abadou	07	31.579	-7.313	0
+Mellila	06	33.380	-7.140	0
+Tidili Mesfioua	07	31.466	-7.612	0
+Tamri	09	30.696	-9.830	0
+Smimou	07	31.210	-9.709	0
+Tizgane	01	35.412	-5.068	0
+Bouarouss	03	34.360	-4.810	0
+Azla	01	35.553	-5.245	0
+Boukhalef	01	35.733	-5.900	0
+Sidi Abdallah Ghiat		31.523	-7.833	0
+Zawit Al Bour	09	30.675	-8.174	0

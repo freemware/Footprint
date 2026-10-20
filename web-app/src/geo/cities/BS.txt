@@ -1,0 +1,25 @@
+Nassau	23	25.058	-77.343	227940
+Lucaya	25	26.533	-78.667	46525
+Freeport	25	26.533	-78.700	26910
+West End	54	26.687	-78.977	12724
+Cooper’s Town	46	26.871	-77.511	8413
+San Andros	47	25.067	-78.050	7800
+George Town	10	23.516	-75.787	7314
+Marsh Harbour	37	26.541	-77.064	5314
+High Rock	41	26.610	-78.279	3744
+Andros Town	47	24.705	-77.769	2455
+Clarence Town	15	23.100	-74.983	1752
+Dunmore Town	22	25.502	-76.636	1523
+Spanish Wells	53	25.547	-76.764	1500
+Arthur’s Town	06	24.622	-75.672	1175
+Alice Town	05	25.728	-79.297	949
+Cockburn Town	35	24.052	-74.531	831
+Matthew Town	13	20.950	-73.673	452
+Colonel Hill	40	22.755	-74.204	240
+Abraham’s Bay	16	22.367	-72.967	235
+Port Nelson	49	23.650	-74.842	91
+Duncan Town	18	22.191	-75.726	70
+Masons Bay	24	22.544	-73.878	0
+Hard Bargain	45	26.317	-77.567	0
+Governor’s Harbour	39	25.167	-76.233	0
+Black Point	36	24.100	-76.383	0

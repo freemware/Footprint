@@ -1,0 +1,5 @@
+São Tomé	02	0.337	6.727	53300
+Santo António	01	1.639	7.420	1156
+Trindade	02	0.297	6.681	0
+São João dos Angolares	02	0.134	6.649	0
+Guadalupe	02	0.379	6.638	0

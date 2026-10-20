@@ -1,0 +1,142 @@
+Asunción	22	-25.286	-57.647	1482200
+Ciudad del Este	01	-25.510	-54.611	320782
+San Lorenzo	06	-25.340	-57.509	227876
+Capiatá	06	-25.355	-57.445	198553
+Lambaré	06	-25.347	-57.606	126377
+Fernando de la Mora	06	-25.339	-57.522	120167
+Limpio	06	-25.166	-57.486	96143
+Nemby	06	-25.395	-57.536	94641
+Pedro Juan Caballero	02	-22.547	-55.733	75109
+Encarnación	11	-27.331	-55.867	74983
+Mariano Roque Alonso	06	-25.208	-57.532	72008
+Itauguá	06	-25.393	-57.354	64997
+Villa Elisa	06	-25.368	-57.593	64099
+Villa Hayes	16	-25.093	-57.524	57217
+San Antonio	06	-25.421	-57.547	55754
+Caaguazú	04	-25.471	-56.016	54808
+Presidente Franco	01	-25.564	-54.611	54292
+Coronel Oviedo	04	-25.444	-56.440	51286
+Concepción	07	-23.400	-57.432	48123
+Villarrica	10	-25.749	-56.435	41157
+Pilar	13	-26.859	-58.306	28716
+Caazapá	05	-26.196	-56.368	23996
+Caacupé	08	-25.386	-57.142	21696
+Itá	06	-25.501	-57.367	18459
+San Juan Bautista	12	-26.669	-57.146	16593
+Nueva Esperanza	19	-24.508	-54.855	12717
+Juan de Ayolas	12	-27.387	-56.847	12061
+Santa Rita	01	-25.783	-55.067	11823
+Colonia General Alfredo Stroessner	04	-25.364	-55.707	11558
+Areguá	06	-25.313	-57.385	11222
+San Isidro de Curuguaty	19	-24.472	-55.692	11095
+Horqueta	07	-23.343	-57.060	10531
+Lima	17	-23.883	-56.482	10367
+Piribebuy	08	-25.465	-57.042	10337
+Paraguarí	15	-25.621	-57.147	10079
+Tobatí	08	-25.261	-57.083	9952
+Ypacarai	06	-25.408	-57.289	9655
+San Pedro de Ycuamandiyú	17	-24.085	-57.087	9360
+Capitán Bado	02	-23.267	-55.533	9114
+Guarambaré	06	-25.491	-57.456	9065
+Eusebio Ayala	08	-25.383	-56.961	8253
+Filadelfia	24	-22.339	-60.032	8048
+San Juan Nepomuceno	05	-26.112	-55.939	7893
+Benjamín Aceval	16	-24.967	-57.567	7751
+Doctor Juan León Mallorquín	01	-25.431	-55.254	7481
+Salto del Guairá	19	-24.063	-54.307	7385
+Santa Rosa Misiones	12	-26.887	-56.849	7257
+Yaguarón	15	-25.561	-57.283	7181
+Repatriación	04	-25.533	-55.950	7085
+Obligado	11	-27.033	-55.633	6350
+Emboscada	08	-25.150	-57.350	5911
+Carapeguá	15	-25.800	-57.233	5784
+San Pedro del Paraná	11	-26.833	-56.206	5722
+Bella Vista	02	-22.133	-56.517	5653
+Colonia Menno	24	-22.367	-59.817	5615
+Nanawua	16	-25.279	-57.703	5587
+Arquitecto Tomás Romero Pereira	11	-26.483	-55.250	5533
+Hohenau	11	-27.073	-55.642	5306
+Quiindy	15	-25.976	-57.234	5137
+Puerto Rosario	17	-24.441	-57.143	5123
+San José	04	-25.533	-56.733	5117
+San Alberto	01	-24.967	-54.900	4989
+Doctor Juan Manuel Frutos	04	-25.384	-55.832	4797
+Yuty	05	-26.615	-56.246	4774
+Atyrá	08	-25.279	-57.172	4768
+Altos	08	-25.263	-57.254	4763
+Puerto Mayor Otaño	11	-26.400	-54.700	4701
+San Bernardino	08	-25.311	-57.296	4651
+Ybycuí	15	-26.017	-57.050	4629
+Iturbe	10	-26.055	-56.485	4475
+La Paloma	19	-24.130	-54.614	4383
+Carmen del Paraná	11	-27.222	-56.152	4196
+General Artigas	11	-26.935	-56.222	4073
+Colonia Catuete	19	-24.133	-54.617	4070
+Pirayú	15	-25.484	-57.235	4000
+Fram	11	-26.983	-55.883	3916
+Itacurubí del Rosario	17	-24.535	-56.824	3887
+Itacurubí de la Cordillera	08	-25.462	-56.853	3576
+Capiíbary	17	-24.800	-56.033	3537
+Yguazú	01	-25.462	-55.000	3363
+Acahay	15	-25.917	-57.150	3205
+Itakyry	01	-24.986	-55.150	3038
+Abaí	05	-26.033	-55.933	3024
+General Elizardo Aquino	17	-24.444	-56.901	2983
+Nueva Italia	06	-25.611	-57.466	2841
+Trinidad	11	-27.117	-55.783	2837
+Colonia Neuland	24	-22.667	-60.117	2816
+Ygatimi	19	-24.124	-55.644	2809
+Cedrales	01	-25.657	-54.723	2754
+Antequera	17	-24.085	-57.202	2701
+La Colmena	15	-25.886	-56.841	2551
+Jesús	11	-27.056	-55.741	2530
+Capitán Miranda	11	-27.200	-55.800	2498
+Fuerte Olimpo	23	-21.042	-57.874	2475
+Carayaó	04	-25.198	-56.399	2473
+Arroyos y Esteros	08	-25.055	-57.099	2455
+Tacuatí	17	-23.450	-56.583	2405
+Colonia Mauricio José Troche	10	-25.567	-56.283	2368
+Bella Vista	11	-27.050	-55.550	2334
+Villa Florida	12	-26.383	-57.150	2305
+Mbocayaty	10	-25.719	-56.422	2296
+Caapucú	15	-26.235	-57.182	2284
+Natalio	11	-26.757	-55.138	2252
+Guayaybi	17	-24.533	-56.433	2247
+San Cosme y Damián	11	-27.317	-56.331	2223
+Mbuyapey	15	-26.219	-56.758	2201
+Naranjal	01	-25.967	-55.183	2151
+Santiago	12	-27.143	-56.768	2144
+Santa María	12	-26.783	-56.933	2095
+Yhú	04	-25.058	-55.923	2092
+Colonia San Lorenzo	11	-26.493	-54.800	2000
+Cecilio Baez	04	-25.072	-56.244	1977
+Sapucaí	15	-25.667	-56.952	1932
+Natalicio Talavera	10	-25.633	-56.300	1809
+Colonia Minga Porá	01	-24.867	-54.900	1770
+Pirapó	11	-26.860	-55.544	1756
+San Joaquín	04	-25.029	-56.043	1745
+Edelira	11	-26.767	-55.279	1698
+Unión	17	-24.808	-56.521	1653
+Itapé	10	-25.852	-56.614	1641
+Caraguatay	08	-25.238	-56.827	1637
+Belén	07	-23.466	-57.262	1621
+Buena Vista	05	-26.184	-56.082	1580
+Independencia	10	-25.691	-56.268	1575
+General Delgado	11	-27.090	-56.525	1544
+Isla Pucú	08	-25.309	-56.900	1529
+San Patricio	12	-26.967	-56.817	1525
+Colonia Carlos Antonio López	11	-26.399	-54.757	1496
+San Juan del Paraná	11	-27.302	-55.965	1492
+Mbutuý	04	-24.975	-56.309	1466
+General Higinio Morínigo	05	-25.950	-55.917	1399
+Yataity del Norte	17	-24.833	-56.350	1392
+Corpus Christi	19	-24.080	-54.939	1387
+Coronel Martínez	10	-25.759	-56.617	1359
+General José Eduvigis Díaz	13	-27.201	-58.367	1345
+San Miguel	12	-26.500	-57.050	1210
+Colonia Nueva Germania	17	-23.911	-56.701	1206
+Capitán Pablo Lagerenza	23	-19.917	-60.783	1200
+Yegros	05	-26.450	-56.400	1140
+Santa Elena	08	-25.413	-56.797	1137
+Cerrito	13	-27.342	-57.641	1036
+Chore	17	-24.186	-56.583	0

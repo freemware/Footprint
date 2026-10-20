@@ -1,0 +1,98 @@
+Port Louis	18	-20.162	57.499	155226
+Beau Bassin-Rose Hill	17	-20.233	57.466	111355
+Vacoas	17	-20.298	57.478	110000
+Curepipe	17	-20.316	57.526	84200
+Quatre Bornes	17	-20.264	57.479	80961
+Triolet	16	-20.058	57.550	23269
+Goodlands	19	-20.038	57.651	20910
+Centre de Flacq	13	-20.190	57.714	17710
+Bel Air Rivière Sèche	13	-20.258	57.750	17671
+Mahébourg	14	-20.408	57.700	17042
+Saint Pierre	15	-20.218	57.521	16414
+Bambous	12	-20.257	57.406	15345
+Le Hochet	16	-20.135	57.521	15197
+Rose Belle	14	-20.400	57.597	12619
+Chemin Grenier	20	-20.487	57.466	12457
+Rivière du Rempart	19	-20.103	57.685	11675
+Grand Baie	19	-20.018	57.580	11512
+Plaine Magnien	14	-20.430	57.670	10778
+Pailles	15	-20.193	57.488	10622
+Surinam	20	-20.510	57.505	10621
+Lalmatie	13	-20.190	57.661	10404
+New Grove	14	-20.409	57.614	9935
+Rivière des Anguilles	20	-20.485	57.551	9927
+Terre Rouge	16	-20.126	57.524	9566
+Petit Raffray	19	-20.020	57.623	9117
+Moka	15	-20.219	57.496	8842
+Pamplemousses	16	-20.104	57.570	8836
+Montagne Blanche	00	-20.285	57.659	8661
+Grand Bois	20	-20.419	57.544	7804
+Long Mountain	16	-20.143	57.562	7775
+Plaine des Papayes	16	-20.065	57.572	7617
+Pointe aux Piments	16	-20.065	57.523	7556
+Brisée Verdière	13	-20.164	57.647	7374
+Nouvelle France	14	-20.371	57.561	7238
+Grand Gaube	19	-20.006	57.661	7156
+Poste de Flacq	13	-20.163	57.731	7133
+Beau Vallon	14	-20.419	57.695	7016
+Dagotière	15	-20.245	57.562	6915
+Bon Accueil	13	-20.171	57.656	6553
+Quartier Militaire	15	-20.248	57.597	6424
+Laventure	13	-20.146	57.677	6171
+Morcellement Saint André	16	-20.072	57.568	6150
+Port Mathurin	23	-19.683	63.417	6000
+Ecroignard	13	-20.226	57.736	5952
+Piton	19	-20.090	57.630	5909
+Fond du Sac	16	-20.047	57.584	5796
+Sebastopol	13	-20.291	57.688	5745
+Roches Noire	19	-20.111	57.712	5733
+Quatre Cocos	13	-20.202	57.774	5724
+Petite Rivière	12	-20.196	57.446	5331
+Camp Diable	20	-20.463	57.579	5082
+Chamouny	20	-20.482	57.466	4913
+Cap Malheureux	19	-19.984	57.614	4803
+Calebasses	16	-20.112	57.554	4648
+Midlands	17	-20.319	57.570	4546
+Camp Ithier	13	-20.216	57.746	4401
+Souillac	20	-20.517	57.517	4392
+Plaines des Roches	19	-20.112	57.691	4218
+Saint Hubert	14	-20.364	57.638	4170
+Olivia	13	-20.288	57.731	3980
+Notre Dame	16	-20.141	57.553	3959
+Tamarin	12	-20.326	57.371	3764
+The Vale	19	-20.030	57.602	3707
+Cottage	19	-20.060	57.629	3646
+Quatre Soeurs	13	-20.299	57.771	3515
+Gros Cailloux	12	-20.207	57.430	3361
+Albion	12	-20.208	57.408	3254
+Roche Terre	19	-20.019	57.645	3199
+Saint Julien	13	-20.226	57.636	3188
+Providence	15	-20.245	57.612	3126
+Crève Coeur	16	-20.191	57.557	3097
+Queen Victoria	13	-20.220	57.708	3025
+Amaury	19	-20.131	57.659	2912
+Dubreuil	15	-20.301	57.599	2726
+Camp de Masque	13	-20.237	57.663	2721
+Cascavelle	12	-20.287	57.407	2613
+Arsenal	16	-20.106	57.535	2599
+Baie aux Huîtres	23	-19.694	63.408	2500
+Grande Rivière Sud Est	13	-20.286	57.776	2472
+Grande Rivière Noire	12	-20.360	57.366	2361
+Espérance Trébuchet	19	-20.070	57.642	2323
+Camp Thorel	15	-20.215	57.616	2299
+Verdun	15	-20.234	57.555	2208
+Grand Sable	14	-20.314	57.764	2208
+Mare La Chaux	13	-20.198	57.749	2058
+Flic en Flac	12	-20.274	57.363	2010
+Melrose	15	-20.270	57.632	2002
+Bois des Amourettes	14	-20.363	57.731	1986
+Congomah	16	-20.149	57.591	1956
+Clémencia	13	-20.264	57.706	1835
+Saint Aubin	20	-20.496	57.550	1659
+Cluny	14	-20.367	57.604	1629
+Bambous Virieux	14	-20.343	57.758	1540
+Petite Case Noyale	12	-20.393	57.365	1525
+Mapou	19	-20.076	57.601	1288
+Ebene	17	-20.245	57.492	1001
+Vingt Cinq	21	-10.388	56.618	250
+Cargados Carajos	22	-16.603	59.659	63

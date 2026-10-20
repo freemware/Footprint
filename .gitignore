@@ -1,0 +1,13 @@
+# Never commit anyone's real Facebook or Instagram download.
+# (Facebook and Instagram name their ZIPs facebook-<name>-<date>-<id>.zip / instagram-<name>-<date>-<id>.zip.)
+facebook-*.zip
+instagram-*.zip
+facebook-*/
+instagram-*/
+/data/
+/export*/
+
+# Build output and dependencies
+node_modules/
+dist/
+.DS_Store

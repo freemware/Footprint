@@ -1,0 +1,10 @@
+Bridgetown	08	13.107	-59.620	98511
+Speightstown	09	13.251	-59.644	3634
+Oistins	01	13.071	-59.546	2285
+Bathsheba	06	13.211	-59.526	1765
+Holetown	04	13.187	-59.638	1350
+Crane	10	13.105	-59.449	935
+Greenland	02	13.258	-59.578	623
+Welchman Hall	11	13.187	-59.577	0
+Four Cross Roads	05	13.170	-59.522	0
+Checker Hall	07	13.284	-59.642	0

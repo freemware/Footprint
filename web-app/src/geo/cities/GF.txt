@@ -1,0 +1,17 @@
+Cayenne	GF	4.933	-52.333	61550
+Matoury	GF	4.849	-52.324	26350
+Saint-Laurent-du-Maroni	GF	5.502	-54.029	24287
+Kourou	GF	5.163	-52.643	24029
+Rémire-Montjoly	GF	4.917	-52.267	19029
+Macouria	GF	4.912	-52.374	8773
+Mana	GF	5.669	-53.779	5885
+Apatou	GF	5.155	-54.343	4752
+Grand-Santi	GF	4.273	-54.381	3941
+Sinnamary	GF	5.377	-52.957	3180
+Saint-Georges	GF	3.889	-51.802	2742
+Roura	GF	4.729	-52.325	2229
+Iracoubo	GF	5.480	-53.205	1536
+Camopi	GF	3.169	-52.335	1295
+Rémire	GF	4.886	-52.279	0
+Régina	GF	4.313	-52.131	0
+Maripasoula	GF	3.642	-54.032	0

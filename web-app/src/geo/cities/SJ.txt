@@ -1,0 +1,2 @@
+Longyearbyen	21	78.223	15.647	2060
+Olonkinbyen	22	70.922	-8.719	14

@@ -1,0 +1,123 @@
+Montevideo	10	-34.903	-56.188	1270737
+Salto	15	-31.383	-57.967	99823
+Paysandú	11	-32.317	-58.081	73249
+Las Piedras	02	-34.730	-56.219	69682
+Rivera	13	-30.905	-55.551	64631
+Maldonado	09	-34.900	-54.950	55478
+Tacuarembó	18	-31.717	-55.981	51854
+Melo	03	-32.370	-54.167	51023
+Mercedes	17	-33.252	-58.030	42359
+Artigas	01	-30.400	-56.467	41909
+Minas	08	-34.376	-55.238	38025
+San José de Mayo	16	-34.337	-56.714	36529
+Durazno	05	-33.381	-56.524	33926
+Florida	07	-34.096	-56.214	32234
+Barros Blancos	02	-34.752	-56.003	31650
+Treinta y Tres	19	-33.233	-54.383	25653
+Rocha	14	-34.483	-54.333	25515
+San Carlos	09	-34.791	-54.918	24938
+Pando	02	-34.717	-55.958	24047
+Fray Bentos	12	-33.117	-58.311	23279
+Colonia del Sacramento	04	-34.463	-57.840	21714
+Trinidad	06	-33.517	-56.900	21429
+La Paz	02	-34.760	-56.226	19913
+Canelones	02	-34.523	-56.278	19698
+Delta del Tigre	16	-34.765	-56.364	17973
+Carmelo	04	-34.000	-58.284	16921
+Santa Lucía	02	-34.453	-56.391	16438
+Progreso	02	-34.667	-56.218	15973
+Young	12	-32.698	-57.627	15924
+Dolores	17	-33.530	-58.217	15880
+Paso de Carrasco	02	-34.860	-56.052	15393
+Río Branco	03	-32.598	-53.386	13567
+Juan L. Lacaze	04	-34.419	-57.453	13223
+Paso de los Toros	18	-32.817	-56.517	13221
+Bella Unión	01	-30.260	-57.599	13171
+Chui	14	-33.698	-53.459	10485
+Nueva Helvecia	04	-34.300	-57.233	10054
+Nueva Palmira	04	-33.870	-58.412	9335
+Libertad	16	-34.635	-56.617	9311
+Rosario	04	-34.317	-57.350	9308
+Colonia Nicolich	02	-34.815	-56.024	8902
+Piriápolis	09	-34.863	-55.275	7968
+Castillos	14	-34.199	-53.859	7686
+Tranqueras	13	-31.200	-55.750	7474
+Sarandí del Yi	05	-33.350	-55.633	7367
+Punta del Este	09	-34.947	-54.934	7234
+Pan de Azúcar	09	-34.779	-55.236	7180
+San Ramón	02	-34.292	-55.956	7008
+Lascano	14	-33.672	-54.206	6976
+Sarandí Grande	07	-33.733	-56.333	6441
+Joaquín Suárez	02	-34.735	-56.035	6257
+Tarariras	04	-34.266	-57.619	6069
+Sauce	02	-34.652	-56.064	5910
+José Pedro Varela	08	-33.455	-54.536	5388
+Guichón	11	-32.358	-57.198	5051
+Tala	02	-34.343	-55.764	4949
+Barra de Carrasco	02	-34.877	-56.030	4824
+Cardona	17	-33.870	-57.370	4712
+Atlántida	02	-34.772	-55.758	4669
+Vichadero	13	-31.778	-54.692	4170
+Toledo	02	-34.738	-56.095	4056
+Empalme Olmos	02	-34.698	-55.893	4007
+Vergara	19	-32.944	-53.938	3998
+San Jacinto	02	-34.545	-55.872	3954
+Santa Rosa	02	-34.498	-56.038	3711
+Florencio Sánchez	04	-33.878	-57.372	3587
+Minas de Corrales	13	-31.574	-55.471	3509
+Ombúes de Lavalle	04	-33.938	-57.810	3482
+La Paloma	14	-34.663	-54.165	3230
+Tomás Gomensoro	01	-30.429	-57.436	2872
+Quebracho	11	-31.935	-57.901	2871
+Villa Constitución	15	-31.069	-57.849	2846
+Solís de Mataojo	08	-34.600	-55.468	2704
+Villa del Carmen	05	-33.239	-56.009	2703
+Aiguá	09	-34.205	-54.757	2692
+Casupá	07	-34.100	-55.648	2679
+Rodríguez	16	-34.381	-56.538	2588
+Isidoro Noblía	03	-31.962	-54.123	2526
+Baltasar Brum	01	-30.719	-57.326	2517
+Nuevo Berlín	12	-32.980	-58.059	2461
+José Batlle y Ordóñez	08	-33.467	-55.117	2438
+Ecilda Paullier	16	-34.358	-57.049	2395
+Santa Clara de Olimar	19	-32.923	-54.944	2291
+Las Toscas	02	-34.733	-55.717	2287
+Migues	02	-34.488	-55.628	2203
+Las Piedras	01	-30.262	-57.582	2185
+José Enrique Rodó	17	-33.696	-57.532	2143
+Los Cerrillos	02	-34.605	-56.356	2100
+Belén	15	-30.787	-57.776	2033
+Pajas Blancas	10	-34.802	-56.334	2000
+Palmitas	17	-33.507	-57.801	1979
+San Bautista	02	-34.440	-55.959	1905
+25 de Mayo	07	-34.189	-56.339	1839
+25 de Agosto	07	-34.412	-56.402	1799
+Soca	02	-34.684	-55.702	1742
+San Javier	12	-32.665	-58.133	1701
+Mariscala	08	-34.041	-54.777	1695
+Montes	02	-34.493	-55.562	1687
+Cebollatí	14	-33.267	-53.794	1624
+La Paloma	05	-32.727	-55.583	1567
+Aceguá	03	-31.872	-54.164	1501
+Santiago Vázquez	10	-34.790	-56.350	1468
+San Antonio	02	-34.451	-56.080	1453
+Alejandro Gallinal	07	-33.863	-55.543	1354
+Santa Bernardina	05	-33.354	-56.525	1340
+Juanicó	02	-34.595	-56.253	1339
+Puntas de Valdéz	16	-34.586	-56.701	1312
+Cardal	07	-34.291	-56.389	1291
+Rafael Perazza	16	-34.523	-56.797	1274
+Dieciocho de Julio	14	-33.682	-53.553	1202
+Villa Soriano	17	-33.398	-58.322	1195
+Tupambaé	03	-32.833	-54.767	1189
+Blanquillo	05	-32.767	-55.633	1170
+San Félix	11	-32.346	-58.101	1161
+Piedras Coloradas	11	-32.372	-57.609	1120
+La Floresta	02	-34.756	-55.681	1107
+Aguas Corrientes	02	-34.522	-56.394	1101
+Velázquez	14	-34.036	-54.281	1090
+Villa Sara	19	-33.253	-54.419	1071
+Santa Catalina	17	-33.791	-57.488	1067
+Estación Porvenir	11	-32.371	-57.854	1055
+Curtina	18	-32.150	-56.117	1053
+Carlos Reyles	05	-33.057	-56.477	1036

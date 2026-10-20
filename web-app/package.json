@@ -1,0 +1,52 @@
+{
+  "name": "footprint",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Explore your Facebook data export locally in your browser. Not affiliated with Meta.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:single": "tsc --noEmit && vite build --mode single",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build:gazetteer": "node scripts/build-gazetteer.mjs",
+    "build:extension": "tsc -p extension/tsconfig.json && node scripts/build-extension.mjs",
+    "build:extension:test": "FOOTPRINT_TEST=1 node scripts/build-extension.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/public-sans": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@zip.js/zip.js": "^2.23.0",
+    "comlink": "^4.4.2",
+    "echarts": "^6.1.0",
+    "echarts-for-react": "^3.0.6",
+    "framer-motion": "^14.2.0",
+    "lucide-react": "^1.57.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "topojson-client": "^3.1.0",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/chrome": "^0.3.5",
+    "@types/geojson": "^7946.0.16",
+    "@types/jsdom": "^30.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/topojson-client": "^3.1.5",
+    "@vitejs/plugin-react": "^6.1.2",
+    "all-the-cities": "^3.1.0",
+    "jsdom": "^29.1.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vite-plugin-singlefile": "^2.3.3",
+    "vitest": "^5.0.5",
+    "world-atlas": "^2.0.2"
+  }
+}

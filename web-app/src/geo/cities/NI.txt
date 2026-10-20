@@ -1,0 +1,166 @@
+Managua	10	12.133	-86.250	973087
+León	08	12.438	-86.878	144538
+Masaya	11	11.974	-86.094	130113
+Chinandega	03	12.629	-87.131	126387
+Matagalpa	12	12.926	-85.917	109089
+Estelí	05	13.092	-86.354	96422
+Granada	06	11.930	-85.956	89409
+Jinotega	07	13.091	-86.002	55000
+El Viejo	03	12.663	-87.167	53504
+Nueva Guinea	18	11.688	-84.456	52929
+Tipitapa	10	12.197	-86.097	50000
+Juigalpa	04	12.106	-85.365	50000
+Ciudad Sandino	10	12.159	-86.344	50000
+Bluefields	18	12.014	-83.764	44373
+Diriamba	02	11.858	-86.239	35008
+Ocotal	13	13.632	-86.475	33928
+Puerto Cabezas	17	14.035	-83.389	33635
+Chichigalpa	03	12.578	-87.027	33137
+Rivas	15	11.437	-85.826	30000
+San Rafael del Sur	10	11.849	-86.438	29836
+Jinotepe	02	11.850	-86.199	29507
+Boaco	01	12.472	-85.659	29046
+Nagarote	08	12.266	-86.565	26270
+Jalapa	13	13.922	-86.123	24037
+La Paz Centro	08	12.340	-86.675	23481
+San Marcos	02	11.909	-86.204	23347
+Masatepe	11	11.914	-86.145	21452
+Nandaime	06	11.757	-86.053	20810
+El Rama	18	12.160	-84.220	20456
+Somoto	09	13.481	-86.582	20316
+Corinto	03	12.482	-87.173	19183
+Río Blanco	12	12.934	-85.224	17018
+Camoapa	01	12.384	-85.513	16653
+El Crucero	10	11.990	-86.310	16469
+Siuna	17	13.733	-84.777	16056
+Somotillo	03	13.044	-86.905	15385
+Santo Tomás	04	12.069	-85.091	14809
+Quilalí	13	13.567	-86.026	13590
+San Carlos	14	11.124	-84.778	13451
+Ciudad Darío	12	12.731	-86.124	13318
+Ticuantepe	10	12.023	-86.205	13209
+El Sauce	08	12.887	-86.539	11898
+Condega	05	13.365	-86.398	11000
+Acoyapa	04	11.970	-85.171	10563
+Matiguás	12	12.837	-85.462	10523
+Diriomo	06	11.876	-86.052	10113
+Telica	08	12.522	-86.859	8776
+San Lorenzo	01	12.378	-85.666	8694
+Corn Island	18	12.176	-83.061	8011
+Bocana de Paiwas	18	12.786	-85.123	7872
+Las Praderas	07	13.170	-85.850	7836
+Villa Sandino	04	12.048	-84.994	7799
+San Juan del Sur	15	11.253	-85.870	7790
+Niquinohomo	11	11.905	-86.094	7732
+Larreynaga	08	12.677	-86.572	7703
+Puerto Morazán	03	12.850	-87.172	7671
+San Jorge	15	11.456	-85.803	7158
+Nindirí	11	12.004	-86.121	7073
+Dolores	02	11.857	-86.216	7065
+Wiwilí	13	13.627	-85.825	6955
+La Concepción	11	11.937	-86.190	6946
+Nandasmo	11	11.924	-86.121	6934
+Laguna de Perlas	18	12.343	-83.671	6809
+Waslala	17	13.233	-85.383	6498
+Waspán	17	14.742	-83.972	6403
+Posoltega	03	12.544	-86.980	6403
+Bonanza	17	14.029	-84.591	6315
+El Realejo	03	12.543	-87.165	6208
+Santo Domingo	04	12.264	-85.082	5827
+Santa Teresa	02	11.743	-86.214	5789
+San Rafael del Norte	07	13.212	-86.111	5458
+Belén	15	11.503	-85.889	5415
+El Ayote	04	12.190	-85.287	5406
+Potosí	15	11.494	-85.857	5222
+Villa El Carmen	10	11.980	-86.506	5219
+Tisma	11	12.082	-86.017	5182
+Masachapa	10	11.787	-86.514	5000
+San Juan de Limay	05	13.176	-86.612	4997
+Muy Muy	12	12.762	-85.629	4839
+Pueblo Nuevo	05	13.380	-86.481	4608
+San Sebastián de Yalí	07	13.305	-86.186	4514
+Teustepe	01	12.420	-85.798	4287
+San Miguelito	14	11.403	-84.900	4181
+Jiquilillo	03	12.746	-87.452	4142
+Moyogalpa	15	11.540	-85.698	3940
+San Dionisio	12	12.760	-85.850	3910
+Diriá	06	11.884	-86.055	3903
+San Fernando	13	13.678	-86.315	3899
+San Juan de Río Coco	09	13.545	-86.165	3820
+Palacagüina	09	13.456	-86.406	3678
+Muelle de los Bueyes	18	12.070	-84.535	3587
+Achuapa	08	13.054	-86.590	3299
+La Libertad	04	12.216	-85.166	3127
+El Rosario	02	11.778	-86.374	2991
+Santa Rosa del Peñón	08	12.801	-86.370	2913
+San Ramón	12	12.923	-85.839	2827
+Altagracia	15	11.566	-85.578	2771
+El Almendro	14	11.679	-84.703	2681
+Tola	15	11.439	-85.939	2638
+La Paz de Carazo	02	11.823	-86.128	2454
+Cuapa	04	12.269	-85.382	2400
+San José de Bocay	07	13.542	-85.539	2367
+Mozonte	13	13.660	-86.438	2338
+Catarina	11	11.912	-86.074	2327
+Yalagüina	09	13.484	-86.493	2265
+Totogalpa	09	13.563	-86.493	2265
+La Concordia	07	13.195	-86.167	2249
+Valle San Francisco	10	12.517	-86.283	2219
+San José de los Remates	01	12.598	-85.762	2115
+San Juan de Oriente	11	11.906	-86.073	2111
+Telpaneca	09	13.532	-86.287	2037
+Quezalguaque	08	12.507	-86.903	1974
+Terrabona	12	12.730	-85.965	1902
+Santa Lucía	01	12.533	-85.711	1869
+Ciudad Antigua	13	13.641	-86.308	1787
+Buenos Aires	15	11.469	-85.817	1692
+La Cruz de Río Grande	18	13.113	-84.186	1669
+LLano de La Cruz	07	13.124	-86.008	1643
+El Jicaral	08	12.727	-86.381	1446
+San José de Cusmapa	09	13.288	-86.655	1419
+Morrito	14	11.621	-85.081	1360
+El Tortuguero	18	12.822	-84.196	1292
+Comalapa	04	12.283	-85.511	1272
+Las Sabanas	09	13.343	-86.622	1257
+Cárdenas	15	11.196	-85.509	1204
+Murra	13	13.758	-86.018	1179
+La Conquista	02	11.734	-86.193	919
+San Lucas	09	13.414	-86.611	910
+Cinco Pinos	03	13.230	-86.868	784
+Santa María	13	13.747	-86.709	720
+Greytown	14	10.947	-83.735	642
+Santo Tomás del Norte	03	13.186	-86.923	608
+Dipilto	13	13.721	-86.506	467
+Prinzapolka	17	13.407	-83.565	394
+Macuelizo	13	13.653	-86.613	374
+Villanueva	03	12.964	-86.815	0
+Tonalá	03	12.767	-87.133	0
+Sébaco	12	12.853	-86.096	0
+Santa Teresa	02	11.803	-86.163	0
+San Pedro de Lóvago	04	12.129	-85.115	0
+San Pedro del Norte	03	13.276	-86.878	0
+San Nicolás	05	12.932	-86.348	0
+San Isidro	12	12.930	-86.195	0
+San Francisco Libre	10	12.505	-86.299	0
+San Francisco del Norte	03	13.199	-86.771	0
+El Cuá	07	13.368	-85.673	0
+Mulukukú	17	13.176	-84.955	0
+Mateare	10	12.235	-86.428	0
+Malpaisillo	08	12.594	-86.680	0
+La Trinidad	05	12.969	-86.235	0
+Kukrahill	18	12.241	-83.745	0
+Karawala	18	12.931	-83.577	0
+Esquipulas	12	12.664	-85.787	0
+El Rosario	02	11.833	-86.165	0
+El Cuá	07	13.417	-85.750	0
+El Jícaro	13	13.723	-86.139	0
+Bocay	07	14.297	-85.152	0
+Boca de Sábalos	14	11.050	-84.467	0
+Santa Maía de Pantasma	07	13.348	-85.945	0
+Wiwilí de Jinotega	07	13.615	-85.817	0
+Wiwili	07	13.619	-85.825	0
+El Coral	04	11.918	-84.648	0
+Waslala	17	13.336	-85.371	0
+El Ayote	18	12.500	-84.815	0
+La Dalia	12	13.137	-85.737	0
+Rancho Grande	12	13.237	-85.558	0

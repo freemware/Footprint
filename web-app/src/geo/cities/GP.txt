@@ -1,0 +1,25 @@
+Les Abymes	GP	16.273	-61.505	63058
+Baie-Mahault	GP	16.267	-61.585	30551
+Le Gosier	GP	16.206	-61.493	28698
+Petit-Bourg	GP	16.192	-61.591	24994
+Sainte-Anne	GP	16.226	-61.381	22859
+Le Moule	GP	16.332	-61.347	22692
+Sainte-Rose	GP	16.333	-61.697	20192
+Capesterre-Belle-Eau	GP	16.045	-61.564	19821
+Pointe-à-Pitre	GP	16.241	-61.536	18264
+Lamentin	GP	16.270	-61.632	14891
+Saint-François	GP	16.252	-61.273	12732
+Basse-Terre	GP	15.997	-61.732	11472
+Saint-Claude	GP	16.025	-61.700	10134
+Trois-Rivières	GP	15.976	-61.645	8812
+Gourbeyre	GP	15.995	-61.692	8571
+Petit-Canal	GP	16.379	-61.487	8554
+Pointe-Noire	GP	16.232	-61.789	7749
+Vieux-Habitants	GP	16.059	-61.767	7728
+Bouillante	GP	16.130	-61.769	7540
+Grand-Bourg	GP	15.884	-61.315	5867
+Baillif	GP	16.020	-61.746	5705
+Port-Louis	GP	16.417	-61.530	5515
+Anse-Bertrand	GP	16.472	-61.507	5146
+Beauséjour	GP	16.304	-61.074	1716
+Petites Anses	GP	15.850	-61.645	1314

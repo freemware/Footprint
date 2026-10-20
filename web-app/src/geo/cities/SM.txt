@@ -1,0 +1,9 @@
+Serravalle	09	43.969	12.482	9258
+Borgo Maggiore	06	43.942	12.447	6424
+San Marino	07	43.937	12.446	4500
+Domagnano	03	43.950	12.468	3161
+Fiorentino	05	43.910	12.457	2510
+Acquaviva	01	43.946	12.418	1530
+Faetano	04	43.928	12.498	1177
+Poggio di Chiesanuova	02	43.905	12.421	951
+Monte Giardino	08	43.909	12.482	910

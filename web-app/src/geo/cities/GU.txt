@@ -1,0 +1,22 @@
+Dededo Village	DD	13.518	144.839	44943
+Yigo Village	YG	13.536	144.889	20539
+Tamuning-Tumon-Harmon Village	TM	13.488	144.781	19685
+Tamuning	TM	13.488	144.781	19685
+Mangilao Village	MA	13.448	144.801	15191
+Barrigada Village	BA	13.469	144.799	8875
+Santa Rita Village	SR	13.386	144.672	7500
+Mongmong-Toto-Maite Village	MT	13.469	144.782	6825
+Chalan Pago-Ordot Village	CP	13.447	144.759	6822
+Yona Village	YN	13.410	144.777	6484
+Agat Village	AT	13.389	144.659	5656
+Agana Heights Village	AH	13.466	144.748	3940
+Talofofo Village	TF	13.355	144.758	3215
+Inarajan Village	IN	13.274	144.748	3052
+Sinajana Village	SJ	13.463	144.754	2853
+Merizo Village	ME	13.266	144.669	2152
+Asan-Maina Village	AS	13.472	144.717	2137
+Piti Village	PI	13.463	144.693	1666
+Hagåtña	AN	13.476	144.749	1051
+Hagåtña Village	AN	13.473	144.758	1051
+Umatac Village	UM	13.298	144.663	903
+Guam Government House	AN	13.472	144.750	0
