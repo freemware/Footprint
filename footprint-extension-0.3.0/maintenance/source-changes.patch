@@ -1,0 +1,495 @@
+--- a/extension/src/shared/types.ts
++++ b/extension/src/shared/types.ts
+@@ -13,6 +13,8 @@
+ export interface Locator {
+   role?: string | string[];
+   name?: Pattern;
++  href?: string;
++  unique?: boolean;
+   /** Only look inside the first match of this locator (e.g. a dialog). */
+   within?: Locator;
+ }
+@@ -31,18 +33,19 @@
+   /** Open the control next to a setting's question (its edit button, menu or switch). */
+   | { op: 'openSetting'; question: Pattern; timeout?: number }
+   /** Pick an option in the menu or dialog that just opened. */
+-  | { op: 'choose'; option: Pattern; optional?: boolean; timeout?: number }
++  | { op: 'choose'; option: Pattern; near?: Pattern; optional?: boolean; timeout?: number }
+   /** Gather the selectable items in a list (tagged posts, your posts), scrolling to load more. */
+   | { op: 'collect'; maxScrolls?: number; limit?: number }
+   /** Tick the items with these keys (from collect). */
+   | { op: 'select'; keys: string[] }
+-  | { op: 'sleep'; ms: number };
++  | { op: 'sleep'; ms: number }
++  | { op: 'setToggle'; question: Pattern; value: boolean; timeout?: number }; 
+ 
+ export type StepResult =
+   | { ok: true; value?: SettingReading; items?: ListItem[]; selected?: number; missing?: string[] }
+   | { ok: false; reason: FailReason; detail?: string };
+ 
+-export type FailReason = 'not_found' | 'signed_out' | 'security_check' | 'unreadable' | 'cancelled' | 'error';
++export type FailReason = 'not_found' | 'signed_out' | 'security_check' | 'unreadable' | 'cancelled' | 'error' | 'restricted';
+ 
+ export interface SettingReading {
+   /** Normalised value: an audience key, or true/false for on/off settings. */
+--- a/extension/src/engine/dom.ts
++++ b/extension/src/engine/dom.ts
+@@ -46,7 +46,7 @@
+   if (el.tagName === 'INPUT' || el.tagName === 'SELECT' || el.tagName === 'TEXTAREA') {
+     const id = el.getAttribute('id');
+     const label = (id && el.ownerDocument.querySelector(`label[for="${CSS_escape(id)}"]`)) || el.closest('label');
+-    if (label) return norm(label.textContent);
++    if (label) return norm(leafTexts(label).map(x => x.text).join(' '));
+     const v = (el as HTMLInputElement).value;
+     if ((el.getAttribute('type') ?? '') === 'submit' && v) return norm(v);
+   }
+@@ -97,6 +97,7 @@
+       // Plain text locator: only the innermost element carrying the text.
+       if (Array.from(el.children).some((c) => matchesAny(norm(c.textContent), names))) continue;
+     }
++    if (loc.href && el.getAttribute('href') !== loc.href && (el as HTMLAnchorElement).href !== loc.href) continue;
+     const name = nameOf(el);
+     if (names.length && !matchesAny(name, names)) continue;
+     if (!isVisible(el)) continue;
+@@ -105,7 +106,7 @@
+   return out.sort((a, b) => a.len - b.len || a.i - b.i).map((x) => x.el);
+ }
+ 
+-export const find = (root: ParentNode, loc: Locator): Element | null => findAll(root, loc)[0] ?? null;
++export const find = (root: ParentNode, loc: Locator): Element | null => { const hits=findAll(root,loc); return loc.unique && hits.length!==1 ? null : hits[0] ?? null; };
+ 
+ /** Click like a person: pointer and mouse events, then click (some sites listen for each). */
+ export function press(el: Element) {
+@@ -123,7 +124,9 @@
+ /* ---------- settings: question → current value ---------- */
+ 
+ const AUDIENCE: [RegExp, string][] = [
+-  [/^only me$/i, 'only_me'],
++  [/^(only me|no one)$/i, 'only_me'],
++  [/^possible connections$/i, 'public'],
++  [/^people you follow$/i, 'friends'],
+   [/^friends of friends$/i, 'friends_of_friends'],
+   [/^friends except/i, 'custom'],
+   [/^specific friends$/i, 'custom'],
+@@ -169,13 +172,15 @@
+   return out;
+ }
+ 
+-const CONTROL_ROLES = ['button', 'combobox', 'switch', 'checkbox', 'link', 'menuitem'];
++const CONTROL_ROLES = ['button', 'combobox', 'switch', 'checkbox', 'link', 'menuitem', 'radio', 'menuitemradio'];
+ 
+ /**
+  * The row a question sits in: the smallest ancestor (up to 6 levels) that also holds a control.
+  * Settings pages almost always show "question · current value · control" together.
+  */
+ export function rowOf(q: Element): Element | null {
++  const enclosing = q.closest('button,select,[role=button],[role=switch],[role=checkbox],[role=radio],[role=combobox]');
++  if (enclosing) return enclosing;
+   let e: Element | null = q;
+   for (let depth = 0; e && depth < 7; depth++, e = e.parentElement) {
+     const hasControl = Array.from(e.querySelectorAll('*')).some((c) => CONTROL_ROLES.includes(roleOf(c)) && !q.contains(c)) || (CONTROL_ROLES.includes(roleOf(e)) && e !== q);
+@@ -187,7 +192,7 @@
+ export function readSetting(root: ParentNode, question: Pattern, vocab: Vocabulary): SettingReading | null {
+   const q = findQuestion(root, question);
+   if (!q) return null;
+-  const row = rowOf(q) ?? q.parentElement;
++  const row = CONTROL_ROLES.includes(roleOf(q)) ? q : rowOf(q) ?? q.parentElement;
+   if (!row) return null;
+   // A switch, checkbox or radio button in the row speaks for itself.
+   if (vocab === 'onoff') {
+@@ -195,6 +200,26 @@
+     if (sw) {
+       const checked = sw.getAttribute('aria-checked') ?? ((sw as HTMLInputElement).checked !== undefined ? String((sw as HTMLInputElement).checked) : null);
+       if (checked === 'true' || checked === 'false') return { value: checked === 'true', raw: checked === 'true' ? 'On' : 'Off' };
++    }
++  }
++  if (vocab === 'audience') {
++    const modal = find(root, {role:['dialog','alertdialog']});
++    if (modal && findQuestion(modal, question)) {
++      const selected = findAll(modal, {role:['radio','menuitemradio']}).find(isChecked);
++      if (selected) {
++        const label=nameOf(selected);
++        const primary=label.match(/^(Friends of friends|Only me|No one|Possible connections|Public|Everyone|Friends)(?:$|\s+(?:Your|Anyone|People|Only))/i)?.[1];
++        const value=normaliseValue(primary ?? label, vocab);
++        if(value!==undefined) return {value,raw:primary ?? label};
++      }
++    }
++  }
++  // Combined question/value text is common on current Facebook buttons.
++  if (vocab === 'audience') {
++    for (const el of [q, ...Array.from(row.querySelectorAll('*')), row]) {
++      const label = nameOf(el);
++      const value = label.match(/(?:\?|People with your (?:phone number|email address))\s*(Possible connections|Friends of friends|Only me|No one|Friends|Public|Everyone)$/i);
++      if (value) { const v = normaliseValue(value[1]!, vocab); if (v !== undefined) return {value: v, raw: value[1]!}; }
+     }
+   }
+   const qText = norm(q.textContent);
+@@ -230,11 +255,17 @@
+ 
+ const OPTION_ROLES = ['radio', 'menuitemradio', 'menuitem', 'option', 'menuitemcheckbox', 'button', 'link'];
+ 
+-export function findOption(root: ParentNode, option: Pattern): Element | null {
++export function findOption(root: ParentNode, option: Pattern, near?: Pattern): Element | null {
++  if (near) { const q = findQuestion(root, near); for(let row=q?.parentElement, depth=0; row && depth<8; row=row.parentElement, depth++){ const hit=findOption(row,option); if(hit) return hit; } return null; }
++  const modal = find(root,{role:['dialog','alertdialog']});
++  if(modal) root=modal;
+   const res = toRegexps(option);
+   for (const role of OPTION_ROLES) {
+     const hit = findAll(root, { role }).find((el) => {
+       const n = nameOf(el);
++      const primary = norm(el.textContent).split(/[\n·•]/)[0] ?? '';
++      const audience = n.match(/^(Friends of friends|Only me|No one|Public|Everyone|Possible connections|Friends)(?:$|\s+(?:Your|Anyone|People|Only|Your profile))/i)?.[1];
++      if (res.some(r => r.test(primary) || (audience && r.test(audience)))) return true;
+       // Match the option's main label, not its description ("Only me · Only you can see …").
+       const first = norm(n.split(/[\n·•]/)[0]);
+       return res.some((r) => r.test(first) || r.test(n));
+@@ -330,12 +361,12 @@
+ export function looksLikeSecurityCheck(doc: Document): boolean {
+   if (/\/checkpoint\b|\/two_step_verification|\/challenge/.test(doc.location?.pathname ?? '')) return true;
+   const text = norm(doc.body?.textContent).slice(0, 20000);
+-  return /you('|’)re temporarily blocked|temporarily restricted|you('|’)re going too fast|slow down|we limit how often|confirm (it'?s|that it'?s) you|security check|unusual activity/i.test(text);
++  return /you('|’)re temporarily blocked|temporarily restricted|you('|’)re going too fast|slow down|we limit how often|confirm (it'?s|that it'?s) you|security check(?!s|up)\b|unusual activity/i.test(text);
+ }
+ 
+ /** Control labels only (never post text or names in lists), for a problem report. */
+ export function outline(doc: Document): PageOutline {
+-  const wanted = ['button', 'menuitem', 'menuitemradio', 'radio', 'switch', 'checkbox', 'tab', 'heading', 'option', 'combobox', 'dialog'];
++  const wanted = ['link', 'button', 'menuitem', 'menuitemradio', 'radio', 'switch', 'checkbox', 'tab', 'heading', 'option', 'combobox', 'dialog'];
+   const controls: PageOutline['controls'] = [];
+   for (const el of Array.from(doc.querySelectorAll('*'))) {
+     const role = roleOf(el);
+@@ -346,5 +377,7 @@
+     controls.push({ role, name });
+     if (controls.length >= 150) break;
+   }
+-  return { path: doc.location?.pathname ?? '', controls };
+-}
++  return { path: (doc.location?.pathname ?? '') + (doc.location?.search ?? ''), controls };
++}
++
++export function deviceRestricted(doc: Document): boolean { return /you can['’]?t make this change at the moment|device you don['’]?t usually use/i.test(norm(doc.body?.textContent)); }
+--- a/extension/src/engine/runner.ts
++++ b/extension/src/engine/runner.ts
+@@ -1,5 +1,5 @@
+ import type { Step, StepResult } from '../shared/types';
+-import { find, findOption, isChecked, listItems, looksLikeSecurityCheck, looksSignedOut, press, readSetting, settingControl } from './dom';
++import { deviceRestricted, find, findOption, isChecked, listItems, looksLikeSecurityCheck, looksSignedOut, press, readSetting, settingControl } from './dom';
+ 
+ /**
+  * Runs one recipe step inside a platform's page. Steps are run one at a time by the
+@@ -14,6 +14,7 @@
+ async function until<T>(doc: Document, fn: () => T | null | undefined, timeout: number): Promise<T | Fail> {
+   const end = Date.now() + timeout;
+   for (;;) {
++    if(deviceRestricted(doc)) return {ok:false,reason:'restricted'};
+     if (looksSignedOut(doc)) return { ok: false, reason: 'signed_out' };
+     if (looksLikeSecurityCheck(doc)) return { ok: false, reason: 'security_check' };
+     const v = fn();
+@@ -64,8 +65,21 @@
+         await sleep(settle);
+         return { ok: true };
+       }
++      case 'setToggle': {
++        const el = await until(doc, () => settingControl(doc, step.question), timeout);
++        if (isFail(el)) return el;
++        const state = el.getAttribute('aria-checked');
++        if (state !== 'true' && state !== 'false') return {ok:false, reason:'unreadable'};
++        if ((state === 'true') !== step.value) {
++          press(el);
++          const confirmed = await until(doc, () => el.getAttribute('aria-checked') === String(step.value) ? el : null, timeout);
++          if (isFail(confirmed)) return confirmed;
++          await sleep(settle);
++        }
++        return {ok:true};
++      }
+       case 'choose': {
+-        const el = await until(doc, () => findOption(doc, step.option), step.optional ? Math.min(timeout, 1500) : timeout);
++        const el = await until(doc, () => findOption(doc, step.option, step.near), step.optional ? Math.min(timeout, 1500) : timeout);
+         if (isFail(el)) return step.optional && el.reason === 'not_found' ? { ok: true } : el;
+         press(el);
+         await sleep(settle);
+@@ -73,7 +87,10 @@
+       }
+       case 'collect': {
+         const first = await until(doc, () => (listItems(doc).length ? true : null), timeout);
+-        if (isFail(first)) return first.reason === 'not_found' ? { ok: true, items: [] } : first;
++        if (isFail(first)) {
++          if(first.reason !== 'not_found') return first;
++          return /no activity to show|no posts to show|nothing to show|no results found/i.test(doc.body.textContent ?? '') ? {ok:true,items:[]} : {ok:false,reason:'unreadable'};
++        }
+         let still = 0;
+         let count = listItems(doc).length;
+         for (let i = 0; i < (step.maxScrolls ?? 20) && still < 2 && count < (step.limit ?? 500); i++) {
+@@ -96,7 +113,7 @@
+           selected++;
+           await sleep(120);
+         }
+-        return { ok: true, selected, missing: [...want] };
++        return want.size ? {ok:false,reason:'not_found',detail:'Some selected items are no longer present; no bulk action was performed'} : { ok: true, selected, missing: [] };
+       }
+     }
+   } catch (e) {
+--- a/extension/src/platforms/facebook.ts
++++ b/extension/src/platforms/facebook.ts
+@@ -3,17 +3,7 @@
+ import { p } from './types';
+ import type { Locator, Step } from '../shared/types';
+ 
+-/**
+- * Facebook recipes: where each setting lives and how to read and change it, by visible labels.
+- *
+- * Paths checked in October 2026 against Meta's Help Center wording and recent guides:
+- *   Settings & privacy → Settings → Audience and visibility → Posts / How people find and contact you /
+- *   Profile and tagging; Accounts Center → Password and security; Accounts Center → Your information
+- *   and permissions → Your activity off Meta technologies; Activity log → Activity you're tagged in;
+- *   Activity log → Manage activity → Move to trash (kept 30 days).
+- * Labels are English for now. When Facebook renames something, update the patterns here.
+- */
+-
++/** Facebook flows inspected live on October 20, 2026. English labels only. */
+ declare const __FB_ORIGIN__: string | undefined;
+ declare const __AC_ORIGIN__: string | undefined;
+ /** Overridden only by the test build, which points these at stand-in pages. */
+@@ -22,43 +12,29 @@
+ 
+ const NAV = ['link', 'tab', 'button', 'menuitem'];
+ const section = (...names: string[]): Locator => ({ role: NAV, name: names });
+-const settingsSection = (...names: string[]): Step[] => [
+-  { op: 'goto', url: `${FB}/settings` },
+-  { op: 'click', loc: section(...names) },
+-];
+ /** After choosing an option, close or save if the page asks. */
+ const finish: Step[] = [
+-  { op: 'click', optional: true, loc: { role: 'button', name: p('^save( changes)?$', '^done$', '^confirm$', '^close$') } },
+-];
+-const toggleOff: Step[] = [
+-  { op: 'choose', optional: true, option: p('^no$', '^off$', "^don'?t allow", '^not allowed$'), timeout: 1500 },
++  { op: 'click', optional: true, loc: { role: 'button', name: p('^save( changes)?$', '^done$', '^confirm$') } },
+ ];
+ 
+ const copy = (id: string) => FIX_COPY[id];
+ const wide = (v: string | boolean) => v === 'public' || v === 'friends_of_friends';
+ 
+-const POSTS = settingsSection('^Posts$');
+-const FIND = settingsSection('^How people (can )?find and contact you$');
+-const TAGGING = settingsSection('^Profile and tagging$');
++const POSTS = [{ op: 'goto', url: `${FB}/settings/?tab=posts` }] as Step[];
++const FIND = [{ op: 'goto', url: `${FB}/settings/?tab=how_people_find_and_contact_you` }] as Step[];
++const TAGGING = [{ op: 'goto', url: `${FB}/settings/?tab=profile_and_tagging` }] as Step[];
+ const SECURITY = (item: string): Step[] => [
+   { op: 'goto', url: `${AC}/password_and_security` },
+   { op: 'click', loc: section(item) },
+ ];
+ const OFF_META: Step[] = [
+   { op: 'goto', url: `${AC}/info_and_permissions` },
+-  { op: 'click', loc: section('^Your activity off Meta technologies$', '^Activity from other businesses$') },
+-  { op: 'click', loc: section('^Manage future activity$') },
+-];
+-const AD_PARTNERS: Step[] = [
+-  { op: 'goto', url: `${AC}/ad_preferences` },
+-  { op: 'click', optional: true, loc: section('^Ad settings$', '^Manage info$') },
+-  { op: 'click', loc: section('^Activity information from ad partners$') },
+-  { op: 'click', optional: true, loc: section('^Review setting$') },
+-];
++  { op: 'click', loc: section('^Activity from other businesses$') },
++];
++const ACTIVITY_ALLOW = '^Allow us to use this activity to show you';
++const ACTIVITY_DENY = "^Don['’]?t allow us to use this activity to show you";
+ 
+ const SETTINGS_URL = `${FB}/settings`;
+-/** Most specific first: the setting's own sentence, then the page heading as a last resort. */
+-const AD_PARTNER_QUESTION = p('(use|using|based on) (this |the )?activity( information)? from (ad )?partners', 'more personali[sz]ed', '^activity information from ad partners$');
+ 
+ export const FACEBOOK_CHECKS: CheckDef[] = [
+   {
+@@ -70,7 +46,7 @@
+     limits: copy('two_factor')?.limits ?? '',
+     manual: ['Open Accounts Center → Password and security → Two-factor authentication.', 'Pick your Facebook account and choose an authentication app or text message.', 'Save the recovery codes somewhere safe.'],
+     url: `${AC}/password_and_security`,
+-    open: SECURITY('^Two-factor authentication$'),
++    open: [...SECURITY('^Two-factor authentication$'), {op:'click', loc:{...section('Facebook$'), unique:true}}],
+     read: { question: p('^Two-factor authentication$', 'two-factor authentication is'), vocab: 'onoff' },
+     risky: (v) => v === false,
+     // No automatic fix: turning it on needs your phone, so you stay in charge of this one.
+@@ -82,12 +58,12 @@
+     impact: 'medium',
+     why: copy('login_alerts')?.why ?? '',
+     limits: copy('login_alerts')?.limits ?? '',
+-    manual: ['Open Accounts Center → Password and security → Login alerts.', 'Turn on alerts by notification and by email.'],
++    manual: ['Check Accounts Center → Password and security for Login alerts.', 'This control was absent on the inspected layout. Footprint leaves its status unknown and does not change it.'],
+     url: `${AC}/password_and_security`,
+     open: SECURITY('^Login alerts$'),
+     read: { question: p('^(in-app )?notifications?$', '^Facebook notifications$'), vocab: 'onoff' },
+     risky: (v) => v === false,
+-    fix: { to: 'On', expect: true, steps: [{ op: 'openSetting', question: p('^(in-app )?notifications?$', '^Facebook notifications$') }, ...finish] },
++
+   },
+   {
+     id: 'future_posts',
+@@ -105,31 +81,31 @@
+   },
+   {
+     id: 'lookup_phone',
+-    title: 'Who can find you with your phone number',
+-    area: 'visibility',
+-    impact: 'high',
+-    why: copy('lookup')?.why ?? '',
+-    limits: copy('lookup')?.limits ?? '',
+-    manual: ['Open Settings → Audience and visibility → How people find and contact you.', 'Next to “Who can look you up using the phone number you provided?”, choose Only me.'],
+-    url: SETTINGS_URL,
+-    open: FIND,
+-    read: { question: p('look you up using the phone number', 'look you up.*phone'), vocab: 'audience' },
+-    risky: wide,
+-    fix: { to: 'Only me', expect: 'only_me', steps: [{ op: 'openSetting', question: p('look you up using the phone number', 'look you up.*phone') }, { op: 'choose', option: p('^only me$') }, ...finish] },
++    title: 'Profile suggestions based on your phone number',
++    area: 'visibility',
++    impact: 'high',
++    why: 'Controls whether Facebook suggests your profile using contact information other people uploaded.',
++    limits: 'People can still find your profile by name and other connections.',
++    manual: ['Open Settings → Audience and visibility → How people find and contact you.', 'Open People with your phone number and choose No one.'],
++    url: SETTINGS_URL,
++    open: FIND,
++    read: { question: p('^People with your phone number'), vocab: 'audience' },
++    risky: wide,
++    fix: { to: 'No one', expect: 'only_me', steps: [{ op: 'openSetting', question: p('^People with your phone number') }, { op: 'choose', option: p('^no one$') }, ...finish] },
+   },
+   {
+     id: 'lookup_email',
+-    title: 'Who can find you with your email address',
+-    area: 'visibility',
+-    impact: 'high',
+-    why: copy('lookup')?.why ?? '',
+-    limits: copy('lookup')?.limits ?? '',
+-    manual: ['Open Settings → Audience and visibility → How people find and contact you.', 'Next to “Who can look you up using the email address you provided?”, choose Friends.'],
+-    url: SETTINGS_URL,
+-    open: FIND,
+-    read: { question: p('look you up using the email address', 'look you up.*email'), vocab: 'audience' },
+-    risky: wide,
+-    fix: { to: 'Friends', expect: 'friends', steps: [{ op: 'openSetting', question: p('look you up using the email address', 'look you up.*email') }, { op: 'choose', option: p('^friends$') }, ...finish] },
++    title: 'Profile suggestions based on your email address',
++    area: 'visibility',
++    impact: 'high',
++    why: 'Controls whether Facebook suggests your profile using contact information other people uploaded.',
++    limits: 'People can still find your profile by name and other connections.',
++    manual: ['Open Settings → Audience and visibility → How people find and contact you.', 'Open People with your email address and choose No one.'],
++    url: SETTINGS_URL,
++    open: FIND,
++    read: { question: p('^People with your email address'), vocab: 'audience' },
++    risky: wide,
++    fix: { to: 'No one', expect: 'only_me', steps: [{ op: 'openSetting', question: p('^People with your email address') }, { op: 'choose', option: p('^no one$') }, ...finish] },
+   },
+   {
+     id: 'friends_list',
+@@ -157,7 +133,7 @@
+     open: FIND,
+     read: { question: p('search engines outside of facebook', 'search engines'), vocab: 'onoff' },
+     risky: (v) => v === true,
+-    fix: { to: 'Off', expect: false, steps: [{ op: 'openSetting', question: p('search engines outside of facebook', 'search engines') }, ...toggleOff, ...finish] },
++    fix: { to: 'Off', expect: false, steps: [{ op: 'setToggle', question: p('search engines outside of facebook'), value:false }] },
+   },
+   {
+     id: 'friend_requests',
+@@ -185,59 +161,34 @@
+     open: TAGGING,
+     read: { question: p("review posts you('|’)?re tagged in"), vocab: 'onoff' },
+     risky: (v) => v === false,
+-    fix: { to: 'On', expect: true, steps: [{ op: 'openSetting', question: p("review posts you('|’)?re tagged in") }, { op: 'choose', optional: true, option: p('^on$', '^enabled$', '^yes$'), timeout: 1500 }, ...finish] },
++    fix: { to: 'On', expect: true, steps: [{ op: 'setToggle', question: p("review posts you('|’)?re tagged in"), value:true }] },
+   },
+   {
+     id: 'other_businesses',
+     title: 'Activity from other businesses',
+     area: 'tracking',
+     impact: 'high',
+-    why: copy('other_businesses')?.why ?? '',
+-    limits: copy('other_businesses')?.limits ?? '',
+-    manual: ['Open Accounts Center → Your information and permissions → Your activity off Meta technologies.', 'Choose Manage future activity → Disconnect future activity.'],
++    why: 'Controls whether Meta uses activity sent by other businesses to personalize relevant content, including ads.',
++    limits: 'Businesses may still send activity. Meta may anonymize it or use it to improve products. This preference may apply to multiple connected accounts.',
++    manual: ['Open Accounts Center → Your information and permissions → Activity from other businesses.', 'Choose Don’t allow, then Confirm. This is also linked from Ad preferences → Manage info.'],
+     url: `${AC}/info_and_permissions`,
+     open: OFF_META,
+-    read: { question: p('^disconnect future activity'), vocab: 'onoff' },
+-    display: (v) => (v ? 'Disconnected' : 'Connected'),
+-    risky: (v) => v === false,
+-    fix: {
+-      to: 'Disconnected',
+-      expect: true,
+-      steps: [
+-        { op: 'choose', option: p('^disconnect future activity') },
+-        { op: 'click', optional: true, loc: { role: 'button', name: p('^continue$', '^disconnect$', '^confirm$') } },
+-        { op: 'click', optional: true, loc: { role: 'button', name: p('^disconnect$', '^confirm$', '^done$') } },
+-      ],
+-    },
+-  },
+-  {
+-    id: 'ad_partners',
+-    title: 'Ads based on activity from ad partners',
+-    area: 'ads',
+-    impact: 'medium',
+-    why: 'Advertisers share what you did on their sites and apps so Facebook can pick ads for you.',
+-    limits: 'Changes how ads are picked for you. Advertisers can still share the activity with Meta.',
+-    manual: ['Open Accounts Center → Ad preferences → Ad settings → Activity information from ad partners.', 'Choose not to use this activity for ads.'],
+-    url: `${AC}/ad_preferences`,
+-    open: AD_PARTNERS,
+-    read: { question: AD_PARTNER_QUESTION, vocab: 'onoff' },
+-    display: (v) => (v ? 'Used for ads' : 'Not used'),
++    read: { question: p(ACTIVITY_ALLOW), vocab: 'onoff' },
++    display: (v) => (v ? 'Used for relevant content' : 'Not used for relevant content'),
+     risky: (v) => v === true,
+     fix: {
+-      to: 'Not used',
++      to: 'Not used for relevant content',
+       expect: false,
+-      steps: [
+-        { op: 'openSetting', question: AD_PARTNER_QUESTION },
+-        { op: 'choose', optional: true, option: p("^no\\b", "^don'?t use", '^off$', '^not allowed$'), timeout: 2000 },
+-        ...finish,
+-      ],
++      steps: [{op:'choose', option:p(ACTIVITY_DENY)}, {op:'click', optional:true, loc:section('^Confirm$')}],
+     },
+   },
++
+ ];
+ 
+ const activityLog = (...category: string[]): Step[] => [
+   { op: 'goto', url: `${FB}/me/allactivity` },
+-  { op: 'click', optional: true, loc: section("^Activity you('|’)?re tagged in$") },
++  {op:'click', loc:section('^Your Facebook activity')},
++  { op: 'click', loc: section("^Activity you('|’)?re tagged in$") },
+   { op: 'click', loc: section(...category) },
+ ];
+ 
+@@ -251,7 +202,7 @@
+   checks: FACEBOOK_CHECKS,
+   tags: {
+     sources: [
+-      { id: 'tagged_posts', label: 'Posts you’re tagged in', open: activityLog("^Posts you('|’)?re tagged in$") },
++      { id: 'tagged_posts', label: 'Posts you’re tagged in', open: activityLog("^Posts( and comments)? you('|’)?re tagged in$") },
+       { id: 'tagged_photos', label: 'Photos and videos you’re tagged in', open: activityLog("^Photos( and videos)? you('|’)?re tagged in$") },
+     ],
+     action: { role: 'button', name: p('^remove tags?$', '^untag$') },
+@@ -266,8 +217,9 @@
+         label: 'Your posts',
+         open: [
+           { op: 'goto', url: `${FB}/me/allactivity` },
+-          { op: 'click', optional: true, loc: section('^Manage (your )?(posts|activity)$') },
+-          { op: 'click', optional: true, loc: section('^Your posts$') },
++          {op:'click', loc:section('^Your Facebook activity')},
++          {op:'click', loc:section('^Posts$')},
++          {op:'click', loc:section('^Your posts, photos and videos$')},
+         ],
+       },
+     ],
+--- a/extension/src/background/jobs.ts
++++ b/extension/src/background/jobs.ts
+@@ -215,7 +215,8 @@
+       }
+       // Count from a fresh list: rows that are gone were really changed.
+       await ctx.update({ message: 'Checking what changed…', progress: 0.95 });
+-      const { items } = await collect(tab, source.open, () => false);
++      const { items, out: verification } = await collect(tab, source.open, () => false);
++      if (!verification.ok) throw new Error('Could not verify the refreshed list; no changes are confirmed');
+       const left = new Set(items.map((x) => x.key));
+       const done = chosen.filter((k) => !left.has(k)).length;
+       await addHistory({ at: Date.now(), platform: platformId, kind, ok: done > 0 && !stopped, summary: list === 'tags' ? `Removed your tag from ${done} of ${chosen.length} ${source.label.toLowerCase()}` : `Moved ${done} of ${chosen.length} posts to trash (recoverable for 30 days)` });
