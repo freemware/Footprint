@@ -1,9 +1,9 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';import {JSDOM} from 'jsdom';
-const dir='../release/footprint-extension-0.3.0/';let state={},listener,pageListener,doc,clock=Date.now();const RealDate=Date;
+const dir=new URL('../',import.meta.url); let state={},listener,pageListener,doc,clock=Date.now();const RealDate=Date;
 class FastDate extends RealDate {static now(){return clock+=300}}
 const later=fn=>{queueMicrotask(fn);return 1};
-const content=fs.readFileSync(dir+'content.js','utf8');
-const settings=fs.readFileSync('live-contact.html','utf8');
+const content=fs.readFileSync(new URL('content.js',dir),'utf8');
+const settings=fs.readFileSync(new URL('live-contact.html',import.meta.url),'utf8');
 function render(html,url='https://www.facebook.com/settings/'){
  const w=new JSDOM('<body>'+html+'</body>',{url,runScripts:'outside-only'}).window;
  w.Date=FastDate;w.setTimeout=later;w.chrome={runtime:{onMessage:{addListener(fn){pageListener=fn}}}};w.eval(content);doc=w.document;
@@ -19,7 +19,7 @@ function route(url){
  else render(settings,url);
 }
 const api={runtime:{id:'test-extension',getURL:p=>'chrome-extension://test-extension/'+p,onMessage:{addListener(fn){listener=fn}},onInstalled:{addListener(){}},onStartup:{addListener(){}}},alarms:{onAlarm:{addListener(){}},get:async()=>null,clear:async()=>true,create:async()=>{}},storage:{local:{get:async k=>({[k]:state[k]}),set:async o=>Object.assign(state,o)}},action:{setBadgeText:async()=>{},setBadgeBackgroundColor:async()=>{}},tabs:{create:async()=>({id:1}),update:async(id,{url})=>route(url),get:async()=>({id:1,status:'complete'}),remove:async()=>{},sendMessage:async(id,msg)=>new Promise(resolve=>pageListener(msg,{},resolve))},scripting:{executeScript:async()=>{}}};
-const ctx=vm.createContext({chrome:api,Date:FastDate,setTimeout:later,structuredClone,TextEncoder,TextDecoder,crypto:globalThis.crypto,console,atob});vm.runInContext(fs.readFileSync(dir+'background.js','utf8'),ctx);
+const ctx=vm.createContext({chrome:api,Date:FastDate,setTimeout:later,structuredClone,TextEncoder,TextDecoder,crypto:globalThis.crypto,console,atob});vm.runInContext(fs.readFileSync(new URL('background.js',dir),'utf8'),ctx);
 const ack=await new Promise(resolve=>listener({type:'scan',platform:'facebook'},{id:api.runtime.id,url:api.runtime.getURL('dashboard.html')},resolve));assert.equal(ack.ok,true);
 for(let i=0;i<20000&&state.job?.status!=='done'&&state.job?.status!=='failed';i++)await new Promise(resolve=>setImmediate(resolve));
 assert.equal(state.job.status,'done');const report=state.reports.facebook[0];assert.equal(report.results.length,10);

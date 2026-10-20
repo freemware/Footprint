@@ -1,3 +1,24 @@
+Footprint 0.3.1 — scan visibility and saved tagged results
+
+- Scan tabs stay in the background so Footprint remains visible.
+- Tagged and cleanup results are saved separately by platform and list.
+- The selected list is remembered across navigation and reloads.
+- Post previews and links are shown when available in Facebook activity rows.
+- Collection waits for delayed content, scrolls inner panels, and retains virtualized rows.
+- Incomplete lists are explicitly marked partial; unread settings show Scan incomplete.
+- Bulk selector rows are excluded from tagged results.
+
+Validation: five packaged regression tests, simulated packaged Facebook privacy scan,
+JavaScript syntax and manifest checks, and desktop/mobile Chromium UI checks passed.
+Live account mutations and complete historical coverage were not verified.
+
+Install/update: keep the existing unpacked extension folder, replace its contents,
+reload Footprint at chrome://extensions, and reopen the dashboard. Preserving the
+folder preserves extension identity and stored data. For a new installation, Load
+unpacked using the folder containing manifest.json.
+
+Earlier release notes:
+
 Footprint 0.3.0 — Facebook navigation update
 
 Installation/update:

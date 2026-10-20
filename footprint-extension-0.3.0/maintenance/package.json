@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test regression.test.mjs && node production-smoke.mjs"},
+  "devDependencies": {"jsdom": "30.1.3"}
+}
