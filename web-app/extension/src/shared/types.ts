@@ -13,6 +13,8 @@ export type Pattern = string | string[];
 export interface Locator {
   role?: string | string[];
   name?: Pattern;
+  href?: string;
+  unique?: boolean;
   /** Only look inside the first match of this locator (e.g. a dialog). */
   within?: Locator;
 }
@@ -31,18 +33,20 @@ export type Step =
   /** Open the control next to a setting's question (its edit button, menu or switch). */
   | { op: 'openSetting'; question: Pattern; timeout?: number }
   /** Pick an option in the menu or dialog that just opened. */
-  | { op: 'choose'; option: Pattern; optional?: boolean; timeout?: number }
+  | { op: 'choose'; option: Pattern; near?: Pattern; optional?: boolean; timeout?: number }
   /** Gather the selectable items in a list (tagged posts, your posts), scrolling to load more. */
   | { op: 'collect'; maxScrolls?: number; limit?: number }
+  | { op: 'preview' }
   /** Tick the items with these keys (from collect). */
   | { op: 'select'; keys: string[] }
-  | { op: 'sleep'; ms: number };
+  | { op: 'sleep'; ms: number }
+  | { op: 'setToggle'; question: Pattern; value: boolean; timeout?: number };
 
 export type StepResult =
-  | { ok: true; value?: SettingReading; items?: ListItem[]; selected?: number; missing?: string[] }
+  | { ok: true; value?: SettingReading; items?: ListItem[]; selected?: number; missing?: string[]; complete?: boolean; stopReason?: string; preview?: Partial<ListItem> }
   | { ok: false; reason: FailReason; detail?: string };
 
-export type FailReason = 'not_found' | 'signed_out' | 'security_check' | 'unreadable' | 'cancelled' | 'error';
+export type FailReason = 'not_found' | 'signed_out' | 'security_check' | 'unreadable' | 'cancelled' | 'error' | 'restricted';
 
 export interface SettingReading {
   /** Normalised value: an audience key, or true/false for on/off settings. */
@@ -58,6 +62,20 @@ export interface ListItem {
   text: string;
   /** ISO date (YYYY-MM-DD) when one could be read from the row or its heading. */
   date?: string;
+  url?: string;
+  thumbnail?: string;
+  author?: string;
+  postText?: string;
+  previewChecked?: boolean;
+}
+
+export interface SavedList {
+  items: ListItem[];
+  at: number;
+  complete: boolean;
+  stopReason?: string;
+  workerTabId?: number;
+  workerUrl?: string;
 }
 
 /** What the page looked like when a step failed: control labels only, for problem reports. */
@@ -90,7 +108,7 @@ export interface ScanReport {
   results: CheckResult[];
 }
 
-export type JobKind = 'scan' | 'fix' | 'find_tags' | 'untag' | 'find_posts' | 'trash_posts';
+export type JobKind = 'scan' | 'fix' | 'find_tags' | 'untag' | 'find_posts' | 'trash_posts' | 'previews';
 
 /** The one task running at a time, shown live on every Footprint screen. */
 export interface Job {

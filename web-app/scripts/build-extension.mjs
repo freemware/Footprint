@@ -12,15 +12,16 @@
 import { build } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
-import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { resolve } from 'node:path';
 
 const root = resolve(import.meta.dirname, '..');
 const ext = resolve(root, 'extension');
 const test = process.env.FOOTPRINT_TEST === '1';
+const version = '0.4.0';
 const out = resolve(ext, test ? 'dist-test' : 'dist');
-const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
+
 
 const STAND_IN = 'http://localhost:4310';
 const define = {
@@ -39,6 +40,7 @@ mkdirSync(out, { recursive: true });
 for (const [name, entry] of [['background', 'src/background/index.ts'], ['content', 'src/content.ts'], ['bridge', 'src/bridge.ts']]) {
   await build({
     configFile: false,
+    publicDir: false,
     logLevel: 'warn',
     define,
     build: {
@@ -54,6 +56,7 @@ for (const [name, entry] of [['background', 'src/background/index.ts'], ['conten
 // Screens: the toolbar popup and the full dashboard.
 await build({
   configFile: false,
+  publicDir: false,
   logLevel: 'warn',
   root: resolve(ext, 'ui'),
   base: './',
@@ -69,12 +72,12 @@ await build({
 
 cpSync(resolve(ext, 'public'), out, { recursive: true });
 
-const hosts = ['https://www.facebook.com/*', 'https://web.facebook.com/*', 'https://accountscenter.facebook.com/*', 'https://accountscenter.meta.com/*'];
+const hosts = ['https://www.facebook.com/*', 'https://web.facebook.com/*', 'https://accountscenter.facebook.com/*', 'https://accountscenter.meta.com/*', 'https://www.instagram.com/*', 'https://accountscenter.instagram.com/*'];
 const manifest = {
   manifest_version: 3,
   name: test ? 'Footprint (test build)' : 'Footprint: privacy scans',
   short_name: 'Footprint',
-  version: pkg.version,
+  version,
   description: 'Scan your social media privacy settings, fix what you approve, untag yourself and clear old posts. Your data stays in your browser.',
   icons: { 16: 'icons/icon-16.png', 32: 'icons/icon-32.png', 48: 'icons/icon-48.png', 128: 'icons/icon-128.png' },
   action: { default_popup: 'popup.html', default_title: 'Footprint', default_icon: { 16: 'icons/icon-16.png', 32: 'icons/icon-32.png' } },
@@ -89,7 +92,7 @@ const manifest = {
 writeFileSync(resolve(out, 'manifest.json'), JSON.stringify(manifest, null, 2));
 
 if (!test) {
-  const zip = resolve(ext, `footprint-extension-${pkg.version}.zip`);
+  const zip = resolve(ext, `footprint-extension-${version}.zip`);
   rmSync(zip, { force: true });
   if (existsSync(out)) execSync(`cd "${out}" && zip -qr "${zip}" .`);
   // Offered from the Footprint app's extension page until the store listings are live.

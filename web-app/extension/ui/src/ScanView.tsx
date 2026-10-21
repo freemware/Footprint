@@ -4,19 +4,20 @@ import { C, ago } from './copy';
 import { Button, Card, Dialog, JobBar, LinkButton, Pill, ProblemReport, ProGate, Ring } from './parts';
 import { useStored } from './hooks';
 import { call } from '../../src/shared/messages';
-import { FACEBOOK } from '../../src/platforms/facebook';
+import { platform } from '../../src/platforms/registry';
 import type { CheckDef } from '../../src/platforms/types';
 import type { CheckResult } from '../../src/shared/types';
 
 const IMPACT_ORDER = { high: 0, medium: 1, low: 2 } as const;
 
 /** Facebook privacy scan: what's open now, and approve-to-fix. */
-export function ScanView({ pro, focus, onKey }: { pro: boolean; focus?: string; onKey: () => void }) {
+export function ScanView({ pro, focus, onKey, platformId = 'facebook' }: { pro: boolean; focus?: string; onKey: () => void; platformId?: string }) {
+  const definition = platform(platformId)!;
   const reports = useStored('reports');
   const job = useStored('job');
-  const latest = reports.facebook?.[0];
+  const latest = reports[platformId]?.[0];
   // A scan stopped by sign-out or a security check reads nothing; keep showing the last full one.
-  const shown = reports.facebook?.find((r) => r.results.length > 0);
+  const shown = reports[platformId]?.find((r) => r.results.length > 0);
   const report = latest;
   const running = job?.status === 'running';
   const [selected, setSelected] = useState<string[]>([]);
@@ -25,11 +26,11 @@ export function ScanView({ pro, focus, onKey }: { pro: boolean; focus?: string; 
 
   const rows = useMemo(() => {
     const byId = new Map(shown?.results.map((r) => [r.checkId, r]) ?? []);
-    return FACEBOOK.checks
+    return definition.checks
       .map((check) => ({ check, result: byId.get(check.id) }))
       .filter((x) => x.result)
       .sort((a, b) => IMPACT_ORDER[a.check.impact] - IMPACT_ORDER[b.check.impact]) as { check: CheckDef; result: CheckResult }[];
-  }, [shown]);
+  }, [shown, definition]);
   const risk = rows.filter((r) => r.result.status === 'risk');
   const ok = rows.filter((r) => r.result.status === 'ok');
   const unknown = rows.filter((r) => r.result.status === 'unknown');
@@ -45,8 +46,8 @@ export function ScanView({ pro, focus, onKey }: { pro: boolean; focus?: string; 
     <div className="space-y-6">
       <header className="flex flex-wrap items-start gap-5">
         <div className="min-w-0 flex-1 basis-80">
-          <h1 className="display text-[32px] font-semibold text-ink">{C.scan.title}</h1>
-          <p className="mt-2 max-w-[68ch] text-ink-2">{C.scan.lead}</p>
+          <h1 className="display text-[32px] font-semibold text-ink">{definition.name} privacy scan</h1>
+          <p className="mt-2 max-w-[68ch] text-ink-2">{C.scan.lead.replaceAll('Facebook',definition.name)}</p>
           {shown && (
             <p className="mt-2 text-[13px] text-ink-3">
               {C.scan.last(ago(shown.at))}
@@ -54,7 +55,7 @@ export function ScanView({ pro, focus, onKey }: { pro: boolean; focus?: string; 
             </p>
           )}
         </div>
-        <Button onClick={() => void call({ type: 'scan', platform: 'facebook' })} disabled={running}>
+        <Button onClick={() => void call({ type: 'scan', platform: platformId })} disabled={running}>
           {running && job?.kind === 'scan' ? C.scan.scanning : report ? C.scan.scanAgain : C.scan.scanNow}
         </Button>
       </header>
@@ -63,7 +64,7 @@ export function ScanView({ pro, focus, onKey }: { pro: boolean; focus?: string; 
 
       {report?.signedOut && (
         <Banner tone="risk" text={C.scan.signedOut}>
-          <LinkButton href={FACEBOOK.home} size="sm">
+          <LinkButton href={definition.home} size="sm">
             {C.scan.openFacebook} <ExternalLink className="size-3.5" aria-hidden />
           </LinkButton>
         </Banner>
@@ -82,7 +83,7 @@ export function ScanView({ pro, focus, onKey }: { pro: boolean; focus?: string; 
           <Card className="flex flex-wrap items-center gap-5 p-5">
             <Ring ok={ok.length} total={rows.length} size={72} />
             <div className="min-w-0 flex-1 basis-56">
-              <p className="display text-[22px] font-semibold text-ink">{C.scan.summary(risk.length, ok.length, unknown.length)}</p>
+              <p className="display text-[22px] font-semibold text-ink">{unknown.length || rows.length < definition.checks.length ? `Scan incomplete · ${ok.length} private · ${unknown.length + definition.checks.length - rows.length} unread` : C.scan.summary(risk.length, ok.length, unknown.length)}</p>
               <p className="text-[13px] text-ink-3">{ok.length} of {rows.length} checked settings are private.</p>
             </div>
             {fixable.length > 0 && (
@@ -136,7 +137,7 @@ export function ScanView({ pro, focus, onKey }: { pro: boolean; focus?: string; 
               <Button
                 variant="fix"
                 onClick={() => {
-                  void call({ type: 'fix', platform: 'facebook', checks: approving });
+                  void call({ type: 'fix', platform: platformId, checks: approving });
                   setApproving(null);
                   setSelected([]);
                 }}
@@ -149,7 +150,7 @@ export function ScanView({ pro, focus, onKey }: { pro: boolean; focus?: string; 
           <p className="text-ink-2">{C.approve.lead}</p>
           <ul className="space-y-2">
             {approving.map((id) => {
-              const check = FACEBOOK.checks.find((c) => c.id === id)!;
+              const check = definition.checks.find((c) => c.id === id)!;
               const reading = shown?.results.find((r) => r.checkId === id)?.reading;
               const now = reading ? (check.display?.(reading.value) ?? reading.raw) : undefined;
               return (

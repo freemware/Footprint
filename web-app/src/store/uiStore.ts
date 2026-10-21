@@ -68,7 +68,7 @@ const safeStorage: StateStorage = {
 export const useUiStore = create<UiStore>()(
   persist(
     (set) => ({
-      theme: 'dark',
+      theme: 'light',
       view: 'overview',
       hidePersonal: true,
       inspector: null,

@@ -1,53 +1,9 @@
-Footprint 0.3.1 — scan visibility and saved tagged results
+Footprint 0.4.0
 
-- Scan tabs stay in the background so Footprint remains visible.
-- Tagged and cleanup results are saved separately by platform and list.
-- The selected list is remembered across navigation and reloads.
-- Post previews and links are shown when available in Facebook activity rows.
-- Collection waits for delayed content, scrolls inner panels, and retains virtualized rows.
-- Incomplete lists are explicitly marked partial; unread settings show Scan incomplete.
-- Bulk selector rows are excluded from tagged results.
+Keep the existing extension installation and folder, replace its contents with the new package, then click Reload in your browser's extensions page. Close old Footprint dashboards and reopen it.
 
-Validation: five packaged regression tests, simulated packaged Facebook privacy scan,
-JavaScript syntax and manifest checks, and desktop/mobile Chromium UI checks passed.
-Live account mutations and complete historical coverage were not verified.
+New: full-sized post review cards, optional caption/image loading from original post pages, original links, Keep decisions, Needs review filtering, JSON inventory export, combined scanning of both Facebook tagged lists, incremental checkpoints, continuation from paused workers, and a friendlier shared visual palette.
 
-Install/update: keep the existing unpacked extension folder, replace its contents,
-reload Footprint at chrome://extensions, and reopen the dashboard. Preserving the
-folder preserves extension identity and stored data. For a new installation, Load
-unpacked using the folder containing manifest.json.
+A paused scan stays incomplete. Reaching a source's end does not prove Facebook exposed every historical tag. Missing/deleted/private posts may have no preview. No live-account removal or complete historical coverage is guaranteed.
 
-Earlier release notes:
-
-Footprint 0.3.0 — Facebook navigation update
-
-Installation/update:
-1. Unzip this archive.
-2. For an existing unpacked installation, replace the files in its existing folder with these files, then click Reload for Footprint at chrome://extensions. Keeping the same folder preserves the extension identity and local data.
-3. For a new installation, enable Developer mode and Load unpacked; select the folder containing manifest.json.
-4. Close old Facebook settings tabs and run a fresh scan from Footprint.
-
-Changes:
-- Direct routes for Posts, contact/discovery, and Profile and tagging.
-- Correct native radio labels, described options, and nested question/value rows.
-- Phone/email checks now cover profile suggestions, with No one as the target.
-- State-aware switches: repeated fixes do not invert the intended setting.
-- Current Activity from other businesses preference replaces duplicate off-Meta/ad-partner checks.
-- Facebook account selection for MFA; ambiguous account selection and unfamiliar-device restrictions stay unknown.
-- Login alerts has no automatic fix on the inspected layout where its control was absent.
-- Required activity-log category navigation and renamed destinations.
-- Missing selected rows, unreadable lists, and failed verification cannot count as successful removals.
-- Outline diagnostics include navigation links and route query strings.
-
-Verification:
-19 DOM/recipe/runner regression tests passed, including captured live contact-settings structure.
-Packaged service worker + packaged content script complete a simulated full Facebook scan: 8 readable checks, blocked MFA and absent login alerts unknown.
-Strict TypeScript check of changed engine/recipes passed.
-All shipped JavaScript syntax checked; manifest references validated; ZIP integrity checked.
-Live Facebook routes and control structures inspected October 20, 2026.
-
-Limits:
-This extension was not installed into Work's browser. No live account privacy changes, untagging, or trash actions were performed. Those mutations were not verified end to end against Facebook. MFA's final state was blocked by Meta's unfamiliar-device restriction. Instagram behavior is retained from the supplied newer compiled bundle and was not newly verified.
-
-Maintenance:
-The supplied source archive predates the newer compiled extension. This release preserves the newer compiled UI/Instagram code, replaces its Facebook recipe object in both worker and UI, and rebuilds the content engine from the patched source. maintenance/source-changes.patch records source edits; test/build scripts are retained for review. The scripts refer to this task's staging layout and are not an independent full project build.
+Source: web-app/extension. See the root README and docs/0.4.0-validation.md.

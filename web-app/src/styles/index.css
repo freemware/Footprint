@@ -6,9 +6,11 @@
  * Light is its own selected palette, not an automatic flip.
  * Chart category colors live in src/theme/tokens.ts and are mirrored here as --cat-*.
  */
-:root,
 :root[data-theme='dark'] {
   color-scheme: dark;
+  --peach-soft: #382b29;
+  --peach-ink: #ffb28b;
+  --mint-soft: #173d35;
   --bg: #10151f;
   --surface: #171e2b;
   --surface-2: #1f2837;
@@ -51,23 +53,27 @@
   --backdrop: rgb(6 9 15 / 0.62);
 }
 
+:root,
 :root[data-theme='light'] {
   color-scheme: light;
-  --bg: #f3f5f9;
+  --peach-soft: #fff0e5;
+  --peach-ink: #b34f20;
+  --mint-soft: #e7f7ee;
+  --bg: #f7f5ff;
   --surface: #ffffff;
-  --surface-2: #f4f6fa;
+  --surface-2: #f5f2fc;
   --surface-3: #e8ecf3;
-  --border: #dde2ea;
-  --border-strong: #c6cede;
+  --border: #e7e0fa;
+  --border-strong: #cdbff6;
   --grid: #eceff4;
 
-  --text: #131a26;
-  --text-2: #44506a;
-  --text-3: #66728a;
+  --text: #28213d;
+  --text-2: #5b536e;
+  --text-3: #726a84;
 
-  --accent: #4352d4;
+  --accent: #7047eb;
   --accent-ink: #ffffff;
-  --accent-dim: rgb(67 82 212 / 0.1);
+  --accent-dim: #eee8ff;
 
   --cat-messages: #2a78d6;
   --cat-ads: #eb6834;
@@ -78,7 +84,7 @@
   --cat-security: #6250d6;
   --cat-other: #e34948;
 
-  --plan: #0b8577;
+  --plan: #087b64;
   --plan-ink: #ffffff;
   --warning-ink: #8a5a00;
   --good-ink: #0a7a0a;
@@ -196,3 +202,13 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* A little response to every deliberate action; no scroll hijacking. */
+button, a, select, input { transition: background-color .18s, border-color .18s, box-shadow .18s, transform .18s; }
+button:active:not(:disabled) { transform: translateY(1px); }
+.drop-zone:hover { border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-dim); }
+.post-card:hover { box-shadow: 0 8px 24px -12px rgb(73 44 130 / .25); }
+.start-main, .start-guide { animation: appear .32s ease-out both; }
+.start-guide { animation-delay: .06s; }
+@keyframes appear { from {opacity:0;transform:translateY(8px)} to {opacity:1;transform:translateY(0)} }
+@media(min-width:1024px) { .start-guide { position:sticky;top:96px; } }

@@ -161,6 +161,7 @@ export const C = {
     tagging: 'Tagging',
   } satisfies Record<CheckArea, string>,
   reason: {
+    restricted: "This account requires manual review.",
     not_found: 'The page didn’t show what Footprint looks for.',
     unreadable: 'The setting wasn’t on the page where Footprint expected it.',
     signed_out: 'You’re signed out.',

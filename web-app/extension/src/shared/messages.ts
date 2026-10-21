@@ -5,7 +5,8 @@ import type { AppReport, AutoscanSettings } from './types';
 export type Request =
   | { type: 'scan'; platform: string }
   | { type: 'fix'; platform: string; checks: string[] }
-  | { type: 'find'; platform: string; list: 'tags' | 'posts'; source: string }
+  | { type: 'find'; platform: string; list: 'tags' | 'posts'; source: string; resume?: boolean }
+  | { type: 'previews'; platform: string; list: 'tags' | 'posts'; source: string }
   | { type: 'act'; platform: string; list: 'tags' | 'posts'; source: string; keys: string[] }
   | { type: 'cancel' }
   | { type: 'license'; key: string }

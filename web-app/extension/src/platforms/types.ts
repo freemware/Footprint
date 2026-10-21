@@ -42,6 +42,7 @@ export interface ListSource {
 }
 
 export interface ListRecipe {
+  mode?: 'untag' | 'trash' | 'archive';
   sources: ListSource[];
   /** The button that acts on the ticked rows, then an optional confirmation in a dialog. */
   action: Locator;

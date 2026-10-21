@@ -7,7 +7,7 @@ import { call } from '../../src/shared/messages';
 import { PLATFORMS } from '../../src/platforms/registry';
 import type { Frequency } from '../../src/shared/types';
 
-export function HomeView({ go }: { go: (v: string) => void }) {
+export function HomeView({ onChoosePlatform }: { go: (v: string) => void; onChoosePlatform: (id:string)=>void }) {
   const reports = useStored('reports');
   return (
     <div className="space-y-6">
@@ -37,9 +37,9 @@ export function HomeView({ go }: { go: (v: string) => void }) {
                   <>
                     <p className="text-[14px] text-ink-2">
                       {latest?.signedOut ? 'Signed out in this browser · ' : latest?.stoppedBy === 'security_check' ? 'Last scan stopped at a security check · ' : ''}
-                      {r ? `${risk ? `${risk} to look at` : 'All checked settings private'} · scanned ${ago(r.at)}` : latest ? '' : C.home.neverScanned}
+                      {r ? `${risk ? `${risk} to look at` : r.results.some(x=>x.status==='unknown') ? 'Scan incomplete' : 'All checked settings private'} · scanned ${ago(r.at)}` : latest ? '' : C.home.neverScanned}
                     </p>
-                    <Button className="mt-auto" onClick={() => go('scan')}>
+                    <Button className="mt-auto" onClick={() => onChoosePlatform(p.id)}>
                       {C.home.openScan}
                     </Button>
                   </>

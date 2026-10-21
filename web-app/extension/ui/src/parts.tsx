@@ -98,12 +98,13 @@ export function Dialog({ title, children, onClose, actions }: { title: string; c
 }
 
 const KIND_LABEL: Record<Job['kind'], string> = {
+  previews: 'Loading post previews',
   scan: 'Scanning Facebook',
   fix: 'Making approved changes',
   find_tags: 'Finding posts you’re tagged in',
   untag: 'Removing your tags',
   find_posts: 'Finding your posts',
-  trash_posts: 'Moving posts to trash',
+  trash_posts: 'Updating approved posts',
 };
 
 /** Live progress of whatever Footprint is doing, with a Stop button. */

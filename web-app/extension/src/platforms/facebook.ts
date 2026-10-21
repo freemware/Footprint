@@ -3,17 +3,7 @@ import type { CheckDef, PlatformDef } from './types';
 import { p } from './types';
 import type { Locator, Step } from '../shared/types';
 
-/**
- * Facebook recipes: where each setting lives and how to read and change it, by visible labels.
- *
- * Paths checked in October 2026 against Meta's Help Center wording and recent guides:
- *   Settings & privacy → Settings → Audience and visibility → Posts / How people find and contact you /
- *   Profile and tagging; Accounts Center → Password and security; Accounts Center → Your information
- *   and permissions → Your activity off Meta technologies; Activity log → Activity you're tagged in;
- *   Activity log → Manage activity → Move to trash (kept 30 days).
- * Labels are English for now. When Facebook renames something, update the patterns here.
- */
-
+/** Facebook flows inspected live on October 20, 2026. English labels only. */
 declare const __FB_ORIGIN__: string | undefined;
 declare const __AC_ORIGIN__: string | undefined;
 /** Overridden only by the test build, which points these at stand-in pages. */
@@ -22,43 +12,29 @@ export const AC = typeof __AC_ORIGIN__ === 'string' ? __AC_ORIGIN__ : 'https://a
 
 const NAV = ['link', 'tab', 'button', 'menuitem'];
 const section = (...names: string[]): Locator => ({ role: NAV, name: names });
-const settingsSection = (...names: string[]): Step[] => [
-  { op: 'goto', url: `${FB}/settings` },
-  { op: 'click', loc: section(...names) },
-];
 /** After choosing an option, close or save if the page asks. */
 const finish: Step[] = [
-  { op: 'click', optional: true, loc: { role: 'button', name: p('^save( changes)?$', '^done$', '^confirm$', '^close$') } },
-];
-const toggleOff: Step[] = [
-  { op: 'choose', optional: true, option: p('^no$', '^off$', "^don'?t allow", '^not allowed$'), timeout: 1500 },
+  { op: 'click', optional: true, loc: { role: 'button', name: p('^save( changes)?$', '^done$', '^confirm$') } },
 ];
 
 const copy = (id: string) => FIX_COPY[id];
 const wide = (v: string | boolean) => v === 'public' || v === 'friends_of_friends';
 
-const POSTS = settingsSection('^Posts$');
-const FIND = settingsSection('^How people (can )?find and contact you$');
-const TAGGING = settingsSection('^Profile and tagging$');
+const POSTS = [{ op: 'goto', url: `${FB}/settings/?tab=posts` }] as Step[];
+const FIND = [{ op: 'goto', url: `${FB}/settings/?tab=how_people_find_and_contact_you` }] as Step[];
+const TAGGING = [{ op: 'goto', url: `${FB}/settings/?tab=profile_and_tagging` }] as Step[];
 const SECURITY = (item: string): Step[] => [
   { op: 'goto', url: `${AC}/password_and_security` },
   { op: 'click', loc: section(item) },
 ];
 const OFF_META: Step[] = [
   { op: 'goto', url: `${AC}/info_and_permissions` },
-  { op: 'click', loc: section('^Your activity off Meta technologies$', '^Activity from other businesses$') },
-  { op: 'click', loc: section('^Manage future activity$') },
+  { op: 'click', loc: section('^Activity from other businesses$') },
 ];
-const AD_PARTNERS: Step[] = [
-  { op: 'goto', url: `${AC}/ad_preferences` },
-  { op: 'click', optional: true, loc: section('^Ad settings$', '^Manage info$') },
-  { op: 'click', loc: section('^Activity information from ad partners$') },
-  { op: 'click', optional: true, loc: section('^Review setting$') },
-];
+const ACTIVITY_ALLOW = '^Allow us to use this activity to show you';
+const ACTIVITY_DENY = "^Don['’]?t allow us to use this activity to show you";
 
 const SETTINGS_URL = `${FB}/settings`;
-/** Most specific first: the setting's own sentence, then the page heading as a last resort. */
-const AD_PARTNER_QUESTION = p('(use|using|based on) (this |the )?activity( information)? from (ad )?partners', 'more personali[sz]ed', '^activity information from ad partners$');
 
 export const FACEBOOK_CHECKS: CheckDef[] = [
   {
@@ -70,7 +46,7 @@ export const FACEBOOK_CHECKS: CheckDef[] = [
     limits: copy('two_factor')?.limits ?? '',
     manual: ['Open Accounts Center → Password and security → Two-factor authentication.', 'Pick your Facebook account and choose an authentication app or text message.', 'Save the recovery codes somewhere safe.'],
     url: `${AC}/password_and_security`,
-    open: SECURITY('^Two-factor authentication$'),
+    open: [...SECURITY('^Two-factor authentication$'), {op:'click', loc:{...section('Facebook$'), unique:true}}],
     read: { question: p('^Two-factor authentication$', 'two-factor authentication is'), vocab: 'onoff' },
     risky: (v) => v === false,
     // No automatic fix: turning it on needs your phone, so you stay in charge of this one.
@@ -82,12 +58,12 @@ export const FACEBOOK_CHECKS: CheckDef[] = [
     impact: 'medium',
     why: copy('login_alerts')?.why ?? '',
     limits: copy('login_alerts')?.limits ?? '',
-    manual: ['Open Accounts Center → Password and security → Login alerts.', 'Turn on alerts by notification and by email.'],
+    manual: ['Check Accounts Center → Password and security for Login alerts.', 'This control was absent on the inspected layout. Footprint leaves its status unknown and does not change it.'],
     url: `${AC}/password_and_security`,
     open: SECURITY('^Login alerts$'),
     read: { question: p('^(in-app )?notifications?$', '^Facebook notifications$'), vocab: 'onoff' },
     risky: (v) => v === false,
-    fix: { to: 'On', expect: true, steps: [{ op: 'openSetting', question: p('^(in-app )?notifications?$', '^Facebook notifications$') }, ...finish] },
+
   },
   {
     id: 'future_posts',
@@ -105,31 +81,31 @@ export const FACEBOOK_CHECKS: CheckDef[] = [
   },
   {
     id: 'lookup_phone',
-    title: 'Who can find you with your phone number',
+    title: 'Profile suggestions based on your phone number',
     area: 'visibility',
     impact: 'high',
-    why: copy('lookup')?.why ?? '',
-    limits: copy('lookup')?.limits ?? '',
-    manual: ['Open Settings → Audience and visibility → How people find and contact you.', 'Next to “Who can look you up using the phone number you provided?”, choose Only me.'],
+    why: 'Controls whether Facebook suggests your profile using contact information other people uploaded.',
+    limits: 'People can still find your profile by name and other connections.',
+    manual: ['Open Settings → Audience and visibility → How people find and contact you.', 'Open People with your phone number and choose No one.'],
     url: SETTINGS_URL,
     open: FIND,
-    read: { question: p('look you up using the phone number', 'look you up.*phone'), vocab: 'audience' },
+    read: { question: p('^People with your phone number'), vocab: 'audience' },
     risky: wide,
-    fix: { to: 'Only me', expect: 'only_me', steps: [{ op: 'openSetting', question: p('look you up using the phone number', 'look you up.*phone') }, { op: 'choose', option: p('^only me$') }, ...finish] },
+    fix: { to: 'No one', expect: 'only_me', steps: [{ op: 'openSetting', question: p('^People with your phone number') }, { op: 'choose', option: p('^no one$') }, ...finish] },
   },
   {
     id: 'lookup_email',
-    title: 'Who can find you with your email address',
+    title: 'Profile suggestions based on your email address',
     area: 'visibility',
     impact: 'high',
-    why: copy('lookup')?.why ?? '',
-    limits: copy('lookup')?.limits ?? '',
-    manual: ['Open Settings → Audience and visibility → How people find and contact you.', 'Next to “Who can look you up using the email address you provided?”, choose Friends.'],
+    why: 'Controls whether Facebook suggests your profile using contact information other people uploaded.',
+    limits: 'People can still find your profile by name and other connections.',
+    manual: ['Open Settings → Audience and visibility → How people find and contact you.', 'Open People with your email address and choose No one.'],
     url: SETTINGS_URL,
     open: FIND,
-    read: { question: p('look you up using the email address', 'look you up.*email'), vocab: 'audience' },
+    read: { question: p('^People with your email address'), vocab: 'audience' },
     risky: wide,
-    fix: { to: 'Friends', expect: 'friends', steps: [{ op: 'openSetting', question: p('look you up using the email address', 'look you up.*email') }, { op: 'choose', option: p('^friends$') }, ...finish] },
+    fix: { to: 'No one', expect: 'only_me', steps: [{ op: 'openSetting', question: p('^People with your email address') }, { op: 'choose', option: p('^no one$') }, ...finish] },
   },
   {
     id: 'friends_list',
@@ -157,7 +133,7 @@ export const FACEBOOK_CHECKS: CheckDef[] = [
     open: FIND,
     read: { question: p('search engines outside of facebook', 'search engines'), vocab: 'onoff' },
     risky: (v) => v === true,
-    fix: { to: 'Off', expect: false, steps: [{ op: 'openSetting', question: p('search engines outside of facebook', 'search engines') }, ...toggleOff, ...finish] },
+    fix: { to: 'Off', expect: false, steps: [{ op: 'setToggle', question: p('search engines outside of facebook'), value:false }] },
   },
   {
     id: 'friend_requests',
@@ -185,59 +161,34 @@ export const FACEBOOK_CHECKS: CheckDef[] = [
     open: TAGGING,
     read: { question: p("review posts you('|’)?re tagged in"), vocab: 'onoff' },
     risky: (v) => v === false,
-    fix: { to: 'On', expect: true, steps: [{ op: 'openSetting', question: p("review posts you('|’)?re tagged in") }, { op: 'choose', optional: true, option: p('^on$', '^enabled$', '^yes$'), timeout: 1500 }, ...finish] },
+    fix: { to: 'On', expect: true, steps: [{ op: 'setToggle', question: p("review posts you('|’)?re tagged in"), value:true }] },
   },
   {
     id: 'other_businesses',
     title: 'Activity from other businesses',
     area: 'tracking',
     impact: 'high',
-    why: copy('other_businesses')?.why ?? '',
-    limits: copy('other_businesses')?.limits ?? '',
-    manual: ['Open Accounts Center → Your information and permissions → Your activity off Meta technologies.', 'Choose Manage future activity → Disconnect future activity.'],
+    why: 'Controls whether Meta uses activity sent by other businesses to personalize relevant content, including ads.',
+    limits: 'Businesses may still send activity. Meta may anonymize it or use it to improve products. This preference may apply to multiple connected accounts.',
+    manual: ['Open Accounts Center → Your information and permissions → Activity from other businesses.', 'Choose Don’t allow, then Confirm. This is also linked from Ad preferences → Manage info.'],
     url: `${AC}/info_and_permissions`,
     open: OFF_META,
-    read: { question: p('^disconnect future activity'), vocab: 'onoff' },
-    display: (v) => (v ? 'Disconnected' : 'Connected'),
-    risky: (v) => v === false,
-    fix: {
-      to: 'Disconnected',
-      expect: true,
-      steps: [
-        { op: 'choose', option: p('^disconnect future activity') },
-        { op: 'click', optional: true, loc: { role: 'button', name: p('^continue$', '^disconnect$', '^confirm$') } },
-        { op: 'click', optional: true, loc: { role: 'button', name: p('^disconnect$', '^confirm$', '^done$') } },
-      ],
-    },
-  },
-  {
-    id: 'ad_partners',
-    title: 'Ads based on activity from ad partners',
-    area: 'ads',
-    impact: 'medium',
-    why: 'Advertisers share what you did on their sites and apps so Facebook can pick ads for you.',
-    limits: 'Changes how ads are picked for you. Advertisers can still share the activity with Meta.',
-    manual: ['Open Accounts Center → Ad preferences → Ad settings → Activity information from ad partners.', 'Choose not to use this activity for ads.'],
-    url: `${AC}/ad_preferences`,
-    open: AD_PARTNERS,
-    read: { question: AD_PARTNER_QUESTION, vocab: 'onoff' },
-    display: (v) => (v ? 'Used for ads' : 'Not used'),
+    read: { question: p(ACTIVITY_ALLOW), vocab: 'onoff' },
+    display: (v) => (v ? 'Used for relevant content' : 'Not used for relevant content'),
     risky: (v) => v === true,
     fix: {
-      to: 'Not used',
+      to: 'Not used for relevant content',
       expect: false,
-      steps: [
-        { op: 'openSetting', question: AD_PARTNER_QUESTION },
-        { op: 'choose', optional: true, option: p("^no\\b", "^don'?t use", '^off$', '^not allowed$'), timeout: 2000 },
-        ...finish,
-      ],
+      steps: [{op:'choose', option:p(ACTIVITY_DENY)}, {op:'click', optional:true, loc:section('^Confirm$')}],
     },
   },
+
 ];
 
 const activityLog = (...category: string[]): Step[] => [
   { op: 'goto', url: `${FB}/me/allactivity` },
-  { op: 'click', optional: true, loc: section("^Activity you('|’)?re tagged in$") },
+  {op:'click', loc:section('^Your Facebook activity')},
+  { op: 'click', loc: section("^Activity you('|’)?re tagged in$") },
   { op: 'click', loc: section(...category) },
 ];
 
@@ -251,7 +202,7 @@ export const FACEBOOK: PlatformDef = {
   checks: FACEBOOK_CHECKS,
   tags: {
     sources: [
-      { id: 'tagged_posts', label: 'Posts you’re tagged in', open: activityLog("^Posts you('|’)?re tagged in$") },
+      { id: 'tagged_posts', label: 'Posts you’re tagged in', open: activityLog("^Posts( and comments)? you('|’)?re tagged in$") },
       { id: 'tagged_photos', label: 'Photos and videos you’re tagged in', open: activityLog("^Photos( and videos)? you('|’)?re tagged in$") },
     ],
     action: { role: 'button', name: p('^remove tags?$', '^untag$') },
@@ -266,8 +217,9 @@ export const FACEBOOK: PlatformDef = {
         label: 'Your posts',
         open: [
           { op: 'goto', url: `${FB}/me/allactivity` },
-          { op: 'click', optional: true, loc: section('^Manage (your )?(posts|activity)$') },
-          { op: 'click', optional: true, loc: section('^Your posts$') },
+          {op:'click', loc:section('^Your Facebook activity')},
+          {op:'click', loc:section('^Posts$')},
+          {op:'click', loc:section('^Your posts, photos and videos$')},
         ],
       },
     ],

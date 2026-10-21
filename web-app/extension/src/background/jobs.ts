@@ -1,3 +1,4 @@
+import { postUrl } from '../engine/media';
 import { BrowserTab, type RunOutcome } from './browserTab';
 import { addHistory, get, latestReport, saveReport, set } from './store';
 import { platform } from '../platforms/registry';
@@ -47,7 +48,7 @@ async function withJob<T>(kind: JobKind, platformId: string, total: number | und
 }
 
 /** Platform tabs stay hidden for scans unless the person chose to watch. */
-const openTab = async (forceHidden = false) => BrowserTab.open(forceHidden ? false : (await get('prefs')).watch);
+const openTab = async (_forceHidden = false) => BrowserTab.open(false);
 
 const need = (id: string): PlatformDef => {
   const p = platform(id);
@@ -166,30 +167,129 @@ const sourceOf = (r: ListRecipe, id: string) => {
   return s;
 };
 
-async function collect(tab: BrowserTab, open: Step[], cancelled: () => boolean, limit = 500) {
-  const out = await tab.run([...open, { op: 'collect', limit }], { cancelled, pace: 300 });
-  const last = out.results[out.results.length - 1];
-  return { out, items: out.ok && last?.ok ? (last.items ?? []) : [] };
+export const listKey = (platformId: string, list: ListKind, source: string) => `${platformId}:${list}:${source}`;
+
+async function saveList(key: string, value: import('../shared/types').SavedList) {
+  const lists = await get('listResults');
+  lists[key] = value;
+  const [platformId,list,sourceId] = key.split(':');
+  const sources = list === 'tags' ? platform(platformId!)?.tags?.sources : undefined;
+  if(sourceId==='all' && sources) {
+    const enriched = new Map(value.items.map(i=>[i.key,i]));
+    for(const source of sources) {
+      const entry=lists[`${platformId}:tags:${source.id}`];
+      if(entry) entry.items=entry.items.map(i=>({...i,...enriched.get(i.key)}));
+    }
+  }
+  if (sources && sources.length>1 && sourceId !== 'all') {
+    const entries = sources.map(s=>lists[`${platformId}:tags:${s.id}`]);
+    const union = new Map<string,ListItem>();
+    for(const entry of entries) for(const item of entry?.items ?? []) union.set(item.key,{...union.get(item.key),...item});
+    lists[`${platformId}:tags:all`] = {items:[...union.values()],at:Date.now(),complete:entries.every(e=>e?.complete),stopReason:entries.every(e=>e?.complete)?'end':'checkpoint'};
+  }
+  await set('listResults', lists);
 }
 
-/** List the rows (tagged posts, your posts) so the person can choose what to change. Read only. */
-export async function findList(platformId: string, list: ListKind, sourceId: string): Promise<ListItem[]> {
+async function collect(tab: BrowserTab, open: Step[], cancelled: () => boolean, limit = Infinity) {
+  const opened = await tab.run(open, {cancelled,pace:300});
+  const seen = new Map<string,ListItem>();
+  if (!opened.ok) return {out:opened,items:[] as ListItem[],complete:false};
+  let complete = false;
+  let out = opened;
+  for (let chunk=0; chunk<30 && !cancelled(); chunk++) {
+    out = await tab.run([{op:'collect',maxScrolls:8,limit}],{cancelled});
+    const result = out.results.at(-1);
+    if (!out.ok || !result?.ok) break;
+    for (const item of result.items ?? []) seen.set(item.key,item);
+    complete = !!result.complete;
+    if (complete || seen.size >= limit) break;
+  }
+  return {out,items:[...seen.values()],complete};
+}
+
+/** Read in chunks, save each chunk, and retain the worker at a pause for a true continuation. */
+export async function findList(platformId: string, list: ListKind, sourceId: string, resume = false): Promise<ListItem[]> {
   const p = need(platformId);
+  if(list==='tags' && sourceId==='all') {
+    for(const source of p.tags!.sources) {
+      if(resume && (await get('listResults'))[listKey(platformId,list,source.id)]?.complete) continue;
+      await findList(platformId,list,source.id,resume);
+      if(cancelFlag || (await get('job'))?.status==='failed') break;
+    }
+    return (await get('listResults'))[listKey(platformId,list,'all')]?.items ?? [];
+  }
   const source = sourceOf(recipe(p, list), sourceId);
-  return withJob(list === 'tags' ? 'find_tags' : 'find_posts', platformId, undefined, async (ctx) => {
-    await ctx.update({ message: `Looking through ${source.label.toLowerCase()}…` });
+  const key = listKey(platformId,list,sourceId);
+  return withJob(list === 'tags' ? 'find_tags' : 'find_posts', platformId, undefined, async ctx => {
+    const cached = (await get('listResults'))[key];
+    let tab = resume && cached?.workerTabId && cached.workerUrl ? await BrowserTab.resume(cached.workerTabId,cached.workerUrl) : null;
+    const continuing = !!tab;
+    // Close only our verified old worker when the person starts a fresh traversal.
+    if (!resume && cached?.workerTabId && cached.workerUrl) await (await BrowserTab.resume(cached.workerTabId,cached.workerUrl))?.close();
+    tab ??= await openTab();
+    const found = new Map<string,ListItem>((continuing ? cached?.items ?? [] : []).map(i=>[i.key,i]));
+    let keep = false;
+    try {
+      if (!continuing) {
+        const opened = await tab.run(source.open,{cancelled:ctx.cancelled,pace:300});
+        if (!opened.ok) throw new Error(opened.reason === 'signed_out' ? `Sign in to ${p.name}, then retry.` : `Could not open this list: ${opened.reason}. Saved results were kept.`);
+      }
+      let idle = 0;
+      for (let chunk=0; chunk<20; chunk++) {
+        if (ctx.cancelled()) break;
+        const out = await tab.run([{op:'collect',maxScrolls:8}],{cancelled:ctx.cancelled});
+        const result = out.results.at(-1);
+        if (!out.ok || !result?.ok) {
+          await ctx.update({error:out.reason, message:`Scanning paused: ${out.reason}. Saved discoveries are available.`,status:'failed',endedAt:Date.now()});
+          return [...found.values()];
+        }
+        const before = found.size;
+        for (const item of result.items ?? []) {
+          const previous = found.get(item.key);
+          found.set(item.key,{...previous,...item,thumbnail:item.thumbnail || previous?.thumbnail,postText:item.postText || previous?.postText});
+        }
+        idle = found.size > before ? 0 : idle+1;
+        const items = [...found.values()];
+        await saveList(key,{items,at:Date.now(),complete:!!result.complete,stopReason:result.complete?'end':'checkpoint',workerTabId:result.complete?undefined:tab.id,workerUrl:await tab.url()});
+        await ctx.update({message:`${items.length} discovered · checking more ${source.label.toLowerCase()}…`});
+        if (result.complete) {
+          await ctx.update({items,message:`${items.length} discovered · reached the end of this Facebook list. Other tagged activity may be in another list.`});
+          return items;
+        }
+        if (idle >= 4) break;
+      }
+      keep = true;
+      await ctx.update({items:[...found.values()],message:`${found.size} saved · scan paused. Continue from this position to look for more.`});
+      return [...found.values()];
+    } finally { if (!keep) await tab.close(); }
+  });
+}
+
+/** Load the actual post's visible text/poster in small, cancellable read-only batches. */
+export async function loadPreviews(platformId:string,list:ListKind,sourceId:string) {
+  const key = listKey(platformId,list,sourceId);
+  return withJob('previews',platformId,undefined,async ctx=>{
+    const cached = (await get('listResults'))[key];
+    if (!cached) return;
+    const items = [...cached.items];
+    const pending = items.filter(i => i.url && !i.previewChecked && postUrl(i.url)).slice(0,12);
     const tab = await openTab();
     try {
-      const { out, items } = await collect(tab, source.open, ctx.cancelled);
-      if (!out.ok && out.reason !== 'cancelled') {
-        await ctx.update({ status: 'failed', error: out.reason, outline: out.outline, endedAt: Date.now(), message: out.reason === 'signed_out' ? `Sign in to ${p.name} in this browser, then try again.` : `Couldn't open ${source.label.toLowerCase()} on ${p.name}.` });
-        return [];
+      for (const [n,item] of pending.entries()) {
+        if (ctx.cancelled()) break;
+        await ctx.update({progress:n/pending.length,message:`Loading post preview ${n+1} of ${pending.length}`});
+        const url = postUrl(item.url)!;
+        // Do not follow off-platform redirects or login/security prompts.
+        await tab.goto(url);
+        if (!postUrl(await tab.url())) break;
+        const result = await tab.step({op:'preview'});
+        if (!result.ok) { await ctx.update({error:result.reason}); break; }
+        const index = items.findIndex(i=>i.key===item.key);
+        items[index] = {...item,...result.preview, thumbnail:result.preview?.thumbnail || item.thumbnail};
+        await saveList(key,{...cached,items,at:Date.now()});
       }
-      await ctx.update({ items, message: `Found ${items.length}` });
-      return items;
-    } finally {
-      await tab.close();
-    }
+      await ctx.update({message:'Post previews saved. Load more previews to continue.',items});
+    } finally {await tab.close();}
   });
 }
 
@@ -197,7 +297,21 @@ export async function findList(platformId: string, list: ListKind, sourceId: str
 export async function actOnList(platformId: string, list: ListKind, sourceId: string, keys: string[]): Promise<{ done: number; total: number }> {
   const p = need(platformId);
   const r = recipe(p, list);
+  if(list==='tags' && sourceId==='all') {
+    const cache = await get('listResults');
+    const remaining = new Set(keys.slice(0,r.maxPerRun));
+    let done=0;
+    for(const source of r.sources) {
+      const batch=(cache[listKey(platformId,list,source.id)]?.items ?? []).filter(i=>remaining.has(i.key)).map(i=>i.key);
+      if(!batch.length) continue;
+      const result=await actOnList(platformId,list,source.id,batch);
+      done+=result.done; for(const key of batch) remaining.delete(key);
+      if(cancelFlag || (await get('job'))?.status==='failed') break;
+    }
+    return {done,total:keys.length};
+  }
   const source = sourceOf(r, sourceId);
+  const archive = r.mode === 'archive';
   const chosen = keys.slice(0, r.maxPerRun);
   const kind = list === 'tags' ? 'untag' : 'trash_posts';
   return withJob(kind, platformId, chosen.length, async (ctx) => {
@@ -207,8 +321,8 @@ export async function actOnList(platformId: string, list: ListKind, sourceId: st
       for (let i = 0; i < chosen.length; i += r.batch) {
         if (ctx.cancelled()) break;
         const batch = chosen.slice(i, i + r.batch);
-        await ctx.update({ progress: i / chosen.length, message: `${list === 'tags' ? 'Removing tags' : 'Moving to trash'}: ${i + 1}–${i + batch.length} of ${chosen.length}` });
-        const steps: Step[] = [...source.open, { op: 'collect', limit: 500 }, { op: 'select', keys: batch }, { op: 'click', loc: r.action }, ...(r.confirm ? [{ op: 'click' as const, optional: true, loc: r.confirm }] : []), { op: 'sleep', ms: 2500 }];
+        await ctx.update({ progress: i / chosen.length, message: `${list === 'tags' ? 'Removing tags' : archive ? 'Archiving' : 'Moving to trash'}: ${i + 1}–${i + batch.length} of ${chosen.length}` });
+        const steps: Step[] = [...source.open, { op: 'select', keys: batch }, { op: 'click', loc: r.action }, ...(r.confirm ? [{ op: 'click' as const, optional: true, loc: r.confirm }] : []), { op: 'sleep', ms: 2500 }];
         const out = await tab.run(steps, { cancelled: ctx.cancelled, pace: 300 });
         if (!out.ok) {
           stopped = out.reason;
@@ -219,12 +333,13 @@ export async function actOnList(platformId: string, list: ListKind, sourceId: st
       }
       // Count from a fresh list: rows that are gone were really changed.
       await ctx.update({ message: 'Checking what changed…', progress: 0.95 });
-      const { items } = await collect(tab, source.open, () => false);
+      const { items, out: verification } = await collect(tab, source.open, () => false);
+      if (!verification.ok) throw new Error('Could not verify the refreshed list; no changes are confirmed');
       const left = new Set(items.map((x) => x.key));
       const done = chosen.filter((k) => !left.has(k)).length;
-      await addHistory({ at: Date.now(), platform: platformId, kind, ok: done > 0 && !stopped, summary: list === 'tags' ? `Removed your tag from ${done} of ${chosen.length} ${source.label.toLowerCase()}` : `Moved ${done} of ${chosen.length} posts to trash (recoverable for 30 days)` });
+      await addHistory({ at: Date.now(), platform: platformId, kind, ok: done > 0 && !stopped, summary: list === 'tags' ? `Removed your tag from ${done} of ${chosen.length} ${source.label.toLowerCase()}` : archive ? `Archived ${done} of ${chosen.length} posts (restorable from Instagram)` : `Moved ${done} of ${chosen.length} posts to trash (recoverable for 30 days)` });
       const why = stopped === 'security_check' ? `${p.name} asked for a security check, so Footprint stopped.` : stopped === 'signed_out' ? `You're signed out of ${p.name}.` : stopped === 'cancelled' ? 'Stopped.' : stopped ? 'Footprint stopped when the page didn’t look as expected.' : '';
-      const what = list === 'tags' ? `Removed your tag from ${done} of ${chosen.length}` : `Moved ${done} of ${chosen.length} to trash`;
+      const what = list === 'tags' ? `Removed your tag from ${done} of ${chosen.length}` : archive ? `Archived ${done} of ${chosen.length}` : `Moved ${done} of ${chosen.length} to trash`;
       await ctx.update({ done, items, message: `${what}${why ? `. ${why}` : ''}`, ...(stopped && stopped !== 'cancelled' ? { status: 'failed' as const, endedAt: Date.now() } : {}) });
       return { done, total: chosen.length };
     } finally {

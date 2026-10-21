@@ -1,6 +1,6 @@
 import { ext } from '../shared/ext';
 import type { Reply, Request } from '../shared/messages';
-import { actOnList, cancel, findList, fix, isRunning, scan } from './jobs';
+import { actOnList, cancel, findList, loadPreviews, fix, isRunning, scan } from './jobs';
 import { activate, isPro } from './license';
 import { listen, nextRun, schedule, updateBadge } from './autoscan';
 import { clearAll, get, latestReport, set } from './store';
@@ -35,7 +35,7 @@ async function handle(req: Request, fromApp: boolean): Promise<Reply> {
   const background = (p: Promise<unknown>) => {
     p.then(() => updateBadge()).catch(() => undefined);
   };
-  if (['scan', 'fix', 'find', 'act'].includes(req.type) && isRunning()) return { ok: false, error: 'busy' };
+  if (['scan', 'fix', 'find', 'act', 'previews'].includes(req.type) && isRunning()) return { ok: false, error: 'busy' };
 
   switch (req.type) {
     case 'scan':
@@ -45,8 +45,11 @@ async function handle(req: Request, fromApp: boolean): Promise<Reply> {
       background(fix(req.platform, req.checks));
       return { ok: true };
     case 'find':
-      background(findList(req.platform, req.list, req.source));
+      background(findList(req.platform, req.list, req.source, req.resume));
       return { ok: true };
+    case 'previews':
+      background(loadPreviews(req.platform,req.list,req.source));
+      return {ok:true};
     case 'act':
       background(actOnList(req.platform, req.list, req.source, req.keys));
       return { ok: true };
