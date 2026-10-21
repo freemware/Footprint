@@ -1,3 +1,4 @@
+import { INSTAGRAM } from './instagram';
 import { FACEBOOK } from './facebook';
 import type { PlatformDef } from './types';
 
@@ -18,7 +19,7 @@ const coming = (id: string, name: string, mark: string, planned: string[]): Plat
 
 export const PLATFORMS: PlatformDef[] = [
   FACEBOOK,
-  coming('instagram', 'Instagram', 'ig', ['Private account and story audience', 'Who can tag and mention you', 'Activity status and contact syncing', 'Untag yourself from posts']),
+  INSTAGRAM,
   coming('linkedin', 'LinkedIn', 'in', ['Who can see your email and connections', 'Profile visibility off LinkedIn', 'Data used for ads and AI training']),
   coming('x', 'X', 'X', ['Protect your posts', 'Discoverability by email and phone', 'Personalised ads and data sharing', 'Delete old posts']),
   coming('tiktok', 'TikTok', 'tt', ['Private account', 'Suggest your account to others', 'Ads personalisation', 'Who can duet, stitch and message you']),

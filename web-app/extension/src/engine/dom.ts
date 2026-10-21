@@ -1,3 +1,4 @@
+import { rowMedia, postIdentity } from './media';
 import type { ListItem, Locator, PageOutline, Pattern, SettingReading, Vocabulary } from '../shared/types';
 
 /**
@@ -46,7 +47,7 @@ export function nameOf(el: Element): string {
   if (el.tagName === 'INPUT' || el.tagName === 'SELECT' || el.tagName === 'TEXTAREA') {
     const id = el.getAttribute('id');
     const label = (id && el.ownerDocument.querySelector(`label[for="${CSS_escape(id)}"]`)) || el.closest('label');
-    if (label) return norm(label.textContent);
+    if (label) return norm(leafTexts(label).map(x => x.text).join(' '));
     const v = (el as HTMLInputElement).value;
     if ((el.getAttribute('type') ?? '') === 'submit' && v) return norm(v);
   }
@@ -97,6 +98,7 @@ export function findAll(root: ParentNode, loc: Locator): Element[] {
       // Plain text locator: only the innermost element carrying the text.
       if (Array.from(el.children).some((c) => matchesAny(norm(c.textContent), names))) continue;
     }
+    if (loc.href && el.getAttribute('href') !== loc.href && (el as HTMLAnchorElement).href !== loc.href) continue;
     const name = nameOf(el);
     if (names.length && !matchesAny(name, names)) continue;
     if (!isVisible(el)) continue;
@@ -105,7 +107,7 @@ export function findAll(root: ParentNode, loc: Locator): Element[] {
   return out.sort((a, b) => a.len - b.len || a.i - b.i).map((x) => x.el);
 }
 
-export const find = (root: ParentNode, loc: Locator): Element | null => findAll(root, loc)[0] ?? null;
+export const find = (root: ParentNode, loc: Locator): Element | null => { const hits=findAll(root,loc); return loc.unique && hits.length!==1 ? null : hits[0] ?? null; };
 
 /** Click like a person: pointer and mouse events, then click (some sites listen for each). */
 export function press(el: Element) {
@@ -123,7 +125,9 @@ export function press(el: Element) {
 /* ---------- settings: question → current value ---------- */
 
 const AUDIENCE: [RegExp, string][] = [
-  [/^only me$/i, 'only_me'],
+  [/^(only me|no one)$/i, 'only_me'],
+  [/^possible connections$/i, 'public'],
+  [/^people you follow$/i, 'friends'],
   [/^friends of friends$/i, 'friends_of_friends'],
   [/^friends except/i, 'custom'],
   [/^specific friends$/i, 'custom'],
@@ -169,13 +173,15 @@ function leafTexts(el: Element): { el: Element; text: string }[] {
   return out;
 }
 
-const CONTROL_ROLES = ['button', 'combobox', 'switch', 'checkbox', 'link', 'menuitem'];
+const CONTROL_ROLES = ['button', 'combobox', 'switch', 'checkbox', 'link', 'menuitem', 'radio', 'menuitemradio'];
 
 /**
  * The row a question sits in: the smallest ancestor (up to 6 levels) that also holds a control.
  * Settings pages almost always show "question · current value · control" together.
  */
 export function rowOf(q: Element): Element | null {
+  const enclosing = q.closest('button,select,[role=button],[role=switch],[role=checkbox],[role=radio],[role=combobox]');
+  if (enclosing) return enclosing;
   let e: Element | null = q;
   for (let depth = 0; e && depth < 7; depth++, e = e.parentElement) {
     const hasControl = Array.from(e.querySelectorAll('*')).some((c) => CONTROL_ROLES.includes(roleOf(c)) && !q.contains(c)) || (CONTROL_ROLES.includes(roleOf(e)) && e !== q);
@@ -187,7 +193,8 @@ export function rowOf(q: Element): Element | null {
 export function readSetting(root: ParentNode, question: Pattern, vocab: Vocabulary): SettingReading | null {
   const q = findQuestion(root, question);
   if (!q) return null;
-  const row = rowOf(q) ?? q.parentElement;
+  const label = q.closest('label');
+  const row = label?.querySelector('input, [role=radio], [role=checkbox], [role=switch]') ? label : CONTROL_ROLES.includes(roleOf(q)) ? q : rowOf(q) ?? q.parentElement;
   if (!row) return null;
   // A switch, checkbox or radio button in the row speaks for itself.
   if (vocab === 'onoff') {
@@ -195,6 +202,26 @@ export function readSetting(root: ParentNode, question: Pattern, vocab: Vocabula
     if (sw) {
       const checked = sw.getAttribute('aria-checked') ?? ((sw as HTMLInputElement).checked !== undefined ? String((sw as HTMLInputElement).checked) : null);
       if (checked === 'true' || checked === 'false') return { value: checked === 'true', raw: checked === 'true' ? 'On' : 'Off' };
+    }
+  }
+  if (vocab === 'audience') {
+    const modal = find(root, {role:['dialog','alertdialog']});
+    if (modal && findQuestion(modal, question)) {
+      const selected = findAll(modal, {role:['radio','menuitemradio']}).find(isChecked);
+      if (selected) {
+        const label=nameOf(selected);
+        const primary=label.match(/^(Friends of friends|Only me|No one|Possible connections|Public|Everyone|Friends)(?:$|\s+(?:Your|Anyone|People|Only))/i)?.[1];
+        const value=normaliseValue(primary ?? label, vocab);
+        if(value!==undefined) return {value,raw:primary ?? label};
+      }
+    }
+  }
+  // Combined question/value text is common on current Facebook buttons.
+  if (vocab === 'audience') {
+    for (const el of [q, ...Array.from(row.querySelectorAll('*')), row]) {
+      const label = nameOf(el);
+      const value = label.match(/(?:\?|People with your (?:phone number|email address))\s*(Possible connections|Friends of friends|Only me|No one|Friends|Public|Everyone)$/i);
+      if (value) { const v = normaliseValue(value[1]!, vocab); if (v !== undefined) return {value: v, raw: value[1]!}; }
     }
   }
   const qText = norm(q.textContent);
@@ -230,11 +257,17 @@ export function settingControl(root: ParentNode, question: Pattern): Element | n
 
 const OPTION_ROLES = ['radio', 'menuitemradio', 'menuitem', 'option', 'menuitemcheckbox', 'button', 'link'];
 
-export function findOption(root: ParentNode, option: Pattern): Element | null {
+export function findOption(root: ParentNode, option: Pattern, near?: Pattern): Element | null {
+  if (near) { const q = findQuestion(root, near); for(let row=q?.parentElement, depth=0; row && depth<8; row=row.parentElement, depth++){ const hit=findOption(row,option); if(hit) return hit; } return null; }
+  const modal = find(root,{role:['dialog','alertdialog']});
+  if(modal) root=modal;
   const res = toRegexps(option);
   for (const role of OPTION_ROLES) {
     const hit = findAll(root, { role }).find((el) => {
       const n = nameOf(el);
+      const primary = norm(el.textContent).split(/[\n·•]/)[0] ?? '';
+      const audience = n.match(/^(Friends of friends|Only me|No one|Public|Everyone|Possible connections|Friends)(?:$|\s+(?:Your|Anyone|People|Only|Your profile))/i)?.[1];
+      if (res.some(r => r.test(primary) || (audience && r.test(audience)))) return true;
       // Match the option's main label, not its description ("Only me · Only you can see …").
       const first = norm(n.split(/[\n·•]/)[0]);
       return res.some((r) => r.test(first) || r.test(n));
@@ -311,7 +344,10 @@ export function listItems(root: ParentNode): { item: ListItem; box: Element }[] 
       if (date) break;
     }
     if (!date) date = headings.filter((x) => before(x.h, box)).pop()?.date;
-    out.push({ item: { key: `${hashText(text)}-${n}`, text, date }, box });
+    const media = rowMedia(row);
+    const id = box.getAttribute('data-id') || (box.getAttribute('value') !== 'on' ? box.getAttribute('value') : null);
+    const key = media.url ? `post-${hashText(postIdentity(media.url))}` : id ? `row-${hashText(id)}` : `${hashText(`${date ?? ''}:${text}`)}-${n}`;
+    out.push({ item: { key, text, date, ...media }, box });
   }
   return out;
 }
@@ -330,12 +366,12 @@ export function looksSignedOut(doc: Document): boolean {
 export function looksLikeSecurityCheck(doc: Document): boolean {
   if (/\/checkpoint\b|\/two_step_verification|\/challenge/.test(doc.location?.pathname ?? '')) return true;
   const text = norm(doc.body?.textContent).slice(0, 20000);
-  return /you('|’)re temporarily blocked|temporarily restricted|you('|’)re going too fast|slow down|we limit how often|confirm (it'?s|that it'?s) you|security check|unusual activity/i.test(text);
+  return /you('|’)re temporarily blocked|temporarily restricted|you('|’)re going too fast|slow down|we limit how often|confirm (it'?s|that it'?s) you|security check(?!s|up)\b|unusual activity/i.test(text);
 }
 
 /** Control labels only (never post text or names in lists), for a problem report. */
 export function outline(doc: Document): PageOutline {
-  const wanted = ['button', 'menuitem', 'menuitemradio', 'radio', 'switch', 'checkbox', 'tab', 'heading', 'option', 'combobox', 'dialog'];
+  const wanted = ['link', 'button', 'menuitem', 'menuitemradio', 'radio', 'switch', 'checkbox', 'tab', 'heading', 'option', 'combobox', 'dialog'];
   const controls: PageOutline['controls'] = [];
   for (const el of Array.from(doc.querySelectorAll('*'))) {
     const role = roleOf(el);
@@ -346,5 +382,7 @@ export function outline(doc: Document): PageOutline {
     controls.push({ role, name });
     if (controls.length >= 150) break;
   }
-  return { path: doc.location?.pathname ?? '', controls };
+  return { path: (doc.location?.pathname ?? '') + (doc.location?.search ?? ''), controls };
 }
+
+export function deviceRestricted(doc: Document): boolean { return /you can['’]?t make this change at the moment|device you don['’]?t usually use/i.test(norm(doc.body?.textContent)); }

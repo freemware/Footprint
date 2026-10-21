@@ -1,5 +1,5 @@
 import { ext } from '../shared/ext';
-import type { AutoscanSettings, HistoryEntry, Job, ScanReport } from '../shared/types';
+import type { AutoscanSettings, HistoryEntry, Job, ScanReport, SavedList } from '../shared/types';
 
 /**
  * Everything the extension keeps lives in this browser's extension storage, on this device.
@@ -12,6 +12,9 @@ export interface Stored {
   history: HistoryEntry[];
   autoscan: AutoscanSettings;
   prefs: { watch: boolean };
+  listResults: Record<string, SavedList>;
+  listSources: Record<string, string>;
+  listReviews: Record<string, boolean>;
 }
 
 export const DEFAULTS: Stored = {
@@ -21,6 +24,9 @@ export const DEFAULTS: Stored = {
   history: [],
   autoscan: { enabled: false, frequency: 'monthly' },
   prefs: { watch: true },
+  listResults: {},
+  listSources: {},
+  listReviews: {},
 };
 
 export async function get<K extends keyof Stored>(key: K): Promise<Stored[K]> {

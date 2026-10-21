@@ -1,40 +1,49 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Search, Tag, Trash2 } from 'lucide-react';
 import { C } from './copy';
 import { Button, Card, Dialog, JobBar, ProblemReport, ProGate } from './parts';
 import { useStored } from './hooks';
 import { call } from '../../src/shared/messages';
-import { FACEBOOK } from '../../src/platforms/facebook';
-import type { ListItem } from '../../src/shared/types';
+import { platform as platformOf } from '../../src/platforms/registry';
+import { ext } from '../../src/shared/ext';
+import { PostCard } from './PostCard';
+
 
 type Kind = 'tags' | 'posts';
 
 /** Untag yourself, or move old posts to trash: find → tick → approve → done, counted afterwards. */
-export function ListView({ kind, pro, onKey }: { kind: Kind; pro: boolean; onKey: () => void }) {
-  const recipe = kind === 'tags' ? FACEBOOK.tags! : FACEBOOK.posts!;
-  const copy = kind === 'tags' ? C.untag : C.cleanup;
+export function ListView({ kind, pro, onKey, platformId = 'facebook' }: { kind: Kind; pro: boolean; onKey: () => void; platformId?: string }) {
+  const platform = platformOf(platformId)!;
+  const recipe = (kind === 'tags' ? platform.tags : platform.posts)!;
+  const baseCopy = kind === 'tags' ? C.untag : C.cleanup;
+  const copy = kind === 'posts' && recipe.mode === 'archive' ? {
+    ...baseCopy,
+    title: 'Archive old posts',
+    lead: 'Review your posts and choose which to archive. You can restore them on Instagram.',
+    act: (n: number) => `Archive ${n} posts`,
+    confirmTitle: (n: number) => `Archive ${n} posts?`,
+    confirmText: 'These posts will be hidden in your Instagram archive. You can show them again from Instagram.',
+  } : baseCopy;
   const job = useStored('job');
-  const [source, setSource] = useState(recipe.sources[0]!.id);
-  const [items, setItems] = useState<ListItem[] | null>(null);
+  const sources = useStored('listSources');
+  const lists = useStored('listResults');
+  const reviews = useStored('listReviews');
+  const sourceOptions = kind==='tags' && recipe.sources.length>1 ? [{id:'all',label:'All tagged posts, photos & videos'},...recipe.sources] : recipe.sources;
+  const source = sources[`${platformId}:${kind}`] ?? sourceOptions[0]!.id;
+  const cacheKey = `${platformId}:${kind}:${source}`;
+  const cached = lists[cacheKey];
+  const items = cached?.items ?? null;
+  const setSource = (value:string) => {setTicked([]); void ext.storage.local.set({listSources:{...sources,[`${platformId}:${kind}`]:value}});};
+  const [unreviewed,setUnreviewed] = useState(false);
+  const [error,setError] = useState('');
   const [ticked, setTicked] = useState<string[]>([]);
   const [filter, setFilter] = useState('');
   const [year, setYear] = useState(String(new Date().getFullYear() - 5));
   const [confirming, setConfirming] = useState(false);
   const findKind = kind === 'tags' ? 'find_tags' : 'find_posts';
-  const actKind = kind === 'tags' ? 'untag' : 'trash_posts';
   const running = job?.status === 'running';
 
-  // Pick up what the background found, and refresh the list after acting on it.
-  useEffect(() => {
-    if (!job || job.platform !== 'facebook' || job.status === 'running') return;
-    if (job.kind === findKind && job.items) setItems(job.items);
-    if (job.kind === actKind && job.items) {
-      setItems(job.items);
-      setTicked([]);
-    }
-  }, [job, findKind, actKind]);
-
-  const shown = useMemo(() => (items ?? []).filter((i) => !filter || i.text.toLowerCase().includes(filter.toLowerCase())), [items, filter]);
+  const shown = useMemo(() => (items ?? []).filter((i) => (!filter || `${i.text} ${i.postText ?? ''}`.toLowerCase().includes(filter.toLowerCase())) && (!unreviewed || !reviews[`${cacheKey}:${i.key}`])), [items, filter, unreviewed, reviews, cacheKey]);
   const years = useMemo(() => {
     const ys = new Set((items ?? []).map((i) => i.date?.slice(0, 4)).filter(Boolean) as string[]);
     const now = new Date().getFullYear();
@@ -45,10 +54,14 @@ export function ListView({ kind, pro, onKey }: { kind: Kind; pro: boolean; onKey
   const capped = ticked.slice(0, recipe.maxPerRun);
   const failed = job?.kind === findKind && job.status === 'failed';
 
-  const find = () => {
-    setItems(null);
-    setTicked([]);
-    void call({ type: 'find', platform: 'facebook', list: kind, source });
+  const request = async (resume=false) => {
+    setTicked([]);setError('');
+    const result = await call({type:'find',platform:platformId,list:kind,source,resume});
+    if (!result.ok) setError(`Could not start: ${result.error}. Please retry.`);
+  };
+  const exportList = () => {
+    const blob = new Blob([JSON.stringify({platform:platformId,source,...cached,coverage:recipe.sources.map(s=>({source:s.label,count:lists[`${platformId}:${kind}:${s.id}`]?.items.length ?? 0,complete:lists[`${platformId}:${kind}:${s.id}`]?.complete ?? false}))}, (key,value)=>key.startsWith('worker')?undefined:value,2)],{type:'application/json'});
+    const url=URL.createObjectURL(blob); const a=document.createElement('a');a.href=url;a.download=`footprint-${platformId}-${source}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   };
 
   return (
@@ -62,11 +75,11 @@ export function ListView({ kind, pro, onKey }: { kind: Kind; pro: boolean; onKey
         <ProGate onHaveKey={onKey} />
       ) : (
         <Card className="flex flex-wrap items-end gap-3 p-4">
-          {recipe.sources.length > 1 && (
+          {sourceOptions.length > 1 && (
             <label className="flex min-w-0 flex-1 basis-60 flex-col gap-1 text-[13px] font-semibold text-ink-2">
               {C.untag.which}
               <select value={source} onChange={(e) => setSource(e.target.value)} className="h-11 rounded-xl border border-line bg-surface px-3 text-[14px] font-normal text-ink">
-                {recipe.sources.map((s) => (
+                {sourceOptions.map((s) => (
                   <option key={s.id} value={s.id}>
                     {s.label}
                   </option>
@@ -74,13 +87,21 @@ export function ListView({ kind, pro, onKey }: { kind: Kind; pro: boolean; onKey
               </select>
             </label>
           )}
-          <Button onClick={find} disabled={running}>
+          <Button onClick={()=>void request(false)} disabled={running}>
             <Search className="size-4" aria-hidden /> {running && job?.kind === findKind ? copy.finding : copy.find}
           </Button>
         </Card>
       )}
 
       <JobBar />
+      {error && <p role="alert" className="text-critical">{error}</p>}
+      {cached && <div className="coverage-strip flex flex-wrap items-center gap-3 rounded-2xl p-5" style={{background:cached.complete?'var(--mint-soft)':'var(--peach-soft)'}}>
+        <div className="min-w-0 flex-1 basis-64"><p className="font-semibold text-ink">{cached.complete?'Reached the end of this list':'More posts may be waiting'}</p><p className="mt-1 text-[13px] text-ink-2">{cached.items.length} saved · {new Date(cached.at).toLocaleString()}. {cached.complete?(source==='all'?'Both supported lists reached their end. Facebook may still withhold content.':'Check the other tagged lists too.'):'Continue scanning without losing your discoveries. Facebook may withhold older activity.'}</p></div>
+        {!cached.complete && <Button onClick={()=>void request(true)} disabled={running}>Continue scan</Button>}
+        <Button variant="ghost" onClick={exportList}>Export inventory</Button>
+      </div>}
+      {source==='all' && cached && <ul className="flex flex-wrap gap-3 text-[13px] text-ink-2">{recipe.sources.map(s=><li key={s.id} className="rounded-xl border border-line bg-surface px-3 py-2">{s.label}: {lists[`${platformId}:${kind}:${s.id}`]?.items.length ?? 0} · {lists[`${platformId}:${kind}:${s.id}`]?.complete?'End reached':'Not finished'}</li>)}</ul>}
+      {kind==='tags' && <p className="text-[13px] text-ink-2">“All tagged posts, photos & videos” scans both Facebook activity lists and combines their discoveries. Each list keeps its own progress. Reaching one list’s end does not prove that Facebook exposed all historical tags.</p>}
       {failed && job.outline && <ProblemReport outline={job.outline} what={`${findKind}:${source}`} />}
 
       {items && pro && (
@@ -93,12 +114,14 @@ export function ListView({ kind, pro, onKey }: { kind: Kind; pro: boolean; onKey
           </div>
           {items.length > 0 && (
             <div className="flex flex-wrap items-center gap-2 border-b border-line bg-surface-2 px-4 py-3 text-[13px]">
-              <Button size="sm" variant="quiet" onClick={() => setTicked(shown.map((i) => i.key))}>
+              <Button size="sm" variant="quiet" onClick={() => setTicked(shown.filter(i=>!reviews[`${cacheKey}:${i.key}`]).map((i) => i.key))}>
                 {C.scan.selectAll}
               </Button>
               <Button size="sm" variant="quiet" onClick={() => setTicked([])}>
                 Clear
               </Button>
+              <label className="flex items-center gap-2"><input type="checkbox" checked={unreviewed} onChange={e=>setUnreviewed(e.target.checked)}/>Needs review only</label>
+              <Button size="sm" variant="ghost" disabled={running || !items.some(i=>i.url && !i.previewChecked)} onClick={()=>void call({type:'previews',platform:platformId,list:kind,source})}>Load post previews</Button>
               {kind === 'posts' && (
                 <span className="ml-auto flex items-center gap-2">
                   <label htmlFor="older" className="text-ink-2">
@@ -116,17 +139,10 @@ export function ListView({ kind, pro, onKey }: { kind: Kind; pro: boolean; onKey
               )}
             </div>
           )}
-          <ul className="max-h-[480px] divide-y divide-line overflow-y-auto">
-            {shown.map((i) => (
-              <li key={i.key}>
-                <label className="flex cursor-pointer items-start gap-3 px-4 py-3 hover:bg-surface-2">
-                  <input type="checkbox" checked={ticked.includes(i.key)} onChange={() => toggle(i.key)} className="mt-1 size-4 accent-[var(--plan)]" />
-                  <span className="min-w-0 flex-1 text-ink">{i.text}</span>
-                  <span className="num shrink-0 text-[12px] text-ink-3">{i.date ?? C.cleanup.noDate}</span>
-                </label>
-              </li>
-            ))}
+          <ul className="grid gap-4 p-4 sm:grid-cols-2">
+            {shown.map(i=><li key={i.key}><PostCard item={i} selected={ticked.includes(i.key)} kept={!!reviews[`${cacheKey}:${i.key}`]} onSelect={()=>toggle(i.key)} onKeep={()=>{setTicked(t=>t.filter(k=>k!==i.key));void ext.storage.local.set({listReviews:{...reviews,[`${cacheKey}:${i.key}`]:!reviews[`${cacheKey}:${i.key}`]}});}}/></li>)}
           </ul>
+          {items.length > 0 && !shown.length && <p className="p-5 text-ink-2">No posts match these filters.</p>}
           {items.length > 0 && (
             <div className="flex flex-wrap items-center gap-3 border-t border-line p-4">
               <p className="min-w-0 flex-1 text-[13px] text-ink-3">{C.untag.limit(recipe.maxPerRun)}</p>
@@ -150,7 +166,7 @@ export function ListView({ kind, pro, onKey }: { kind: Kind; pro: boolean; onKey
               <Button
                 variant={kind === 'tags' ? 'fix' : 'danger'}
                 onClick={() => {
-                  void call({ type: 'act', platform: 'facebook', list: kind, source, keys: capped });
+                  void call({ type: 'act', platform: platformId, list: kind, source, keys: capped });
                   setConfirming(false);
                 }}
               >

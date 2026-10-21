@@ -7,7 +7,7 @@ import type { ScanReport } from '../shared/types';
 describe('platform recipes', () => {
   it('lists every requested platform, Facebook first and available', () => {
     expect(PLATFORMS.map((p) => p.id)).toEqual(['facebook', 'instagram', 'linkedin', 'x', 'tiktok', 'snapchat', 'venmo']);
-    expect(PLATFORMS.filter((p) => p.status === 'available').map((p) => p.id)).toEqual(['facebook']);
+    expect(PLATFORMS.filter((p) => p.status === 'available').map((p) => p.id)).toEqual(['facebook', 'instagram']);
     for (const p of PLATFORMS.filter((x) => x.status === 'coming')) expect(p.planned?.length).toBeGreaterThan(0);
   });
 

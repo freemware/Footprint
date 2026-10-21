@@ -1,5 +1,5 @@
 import { useRef, useState, type DragEvent } from 'react';
-import { AlertTriangle, FileArchive, FolderOpen, Link2, Loader2, Puzzle, Radio, ShieldCheck, Sparkles, Upload } from 'lucide-react';
+import { AlertTriangle, FileArchive, FolderOpen, Loader2, Puzzle, Radio, ShieldCheck, Sparkles, Upload } from 'lucide-react';
 import { extensionCopy as E } from '../i18n/extension';
 import { useExtension, useLiveReport } from '../extension/useExtension';
 import { platformName } from '../i18n/platform';
@@ -20,7 +20,7 @@ export function ImportScreen() {
 
   return (
     <main className="flex-1">
-      <div className="mx-auto grid max-w-[1240px] gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+      <div className="import-layout mx-auto grid max-w-[1440px] items-start gap-6 px-5 py-10 sm:px-10 lg:grid-cols-[minmax(0,2fr)_minmax(300px,1fr)]">
         <div>{importing ? <ImportProgress /> : showSummary ? <ImportSummary summary={summary} /> : <DropZone />}</div>
         <HowTo />
       </div>
@@ -57,95 +57,31 @@ function DropZone() {
   };
 
   return (
-    <section aria-label={t.importer.title}>
-      <h1 className="display max-w-[16ch] text-[44px] font-semibold text-ink sm:text-[60px]">{E.start.title}</h1>
-      <p className="mt-4 max-w-[60ch] text-[18px] text-ink-2">{E.start.lead}</p>
-
+    <section aria-label={t.importer.title} className="start-main">
+      <h1 className="display max-w-[16ch] text-[44px] font-bold text-ink sm:text-[64px] xl:text-[72px]">Your digital life,<br/>a little lighter.</h1>
+      <p className="mt-4 max-w-[60ch] text-[18px] text-ink-2">Explore what social platforms know about you. Choose what stays.</p>
       <ScanPath />
-
-      <p className="mt-4 flex max-w-[70ch] items-start gap-2 text-[14px] text-ink-2">
-        <Link2 className="mt-0.5 size-4 shrink-0 text-accent" aria-hidden />
-        {E.start.together}
-      </p>
-
-      <div className="mt-8 flex flex-wrap items-center gap-2">
-        <span className="grid size-8 place-items-center rounded-lg bg-accent-dim text-accent">
-          <Upload className="size-4" aria-hidden />
-        </span>
-        <h2 className="display text-[22px] font-semibold text-ink">{E.start.exportTitle}</h2>
-        <span className="rounded-full bg-surface-3 px-2.5 py-0.5 text-[12px] font-semibold text-ink-2">{E.start.exportBadge}</span>
-      </div>
-      <p className="mt-1 flex max-w-[64ch] items-start gap-2 text-ink-2">
-        <ShieldCheck className="mt-0.5 size-4 shrink-0 text-good" aria-hidden />
-        {E.start.exportText} {E.start.exportPrivacy}
-      </p>
-
-      <div
-        onDragOver={(e) => {
-          e.preventDefault();
-          setOver(true);
-        }}
-        onDragLeave={() => setOver(false)}
-        onDrop={onDrop}
-        className={[
-          'mt-4 flex flex-col items-center justify-center gap-4 rounded-3xl border-2 border-dashed px-6 py-12 text-center transition-colors',
-          over ? 'border-accent bg-accent-dim' : 'border-line-strong bg-surface',
-        ].join(' ')}
-      >
-        <span className="grid size-14 place-items-center rounded-2xl bg-accent-dim text-accent">
-          <Upload className="size-6" aria-hidden />
-        </span>
-        <div>
-          <div className="display text-[24px] font-semibold text-ink">{t.importer.drop}</div>
-          <div className="mt-1 text-ink-3">{t.importer.dropHint}</div>
+      <div className="mt-4 rounded-2xl border border-line bg-surface p-5 sm:p-6">
+        <h2 className="display text-[26px] font-semibold text-ink">Explore your data export</h2>
+        <p className="mt-2 text-ink-2">Drop your ZIP or JSON files here. We’ll read them locally in your browser.</p>
+        <div onDragOver={e=>{e.preventDefault();setOver(true);}} onDragLeave={()=>setOver(false)} onDrop={onDrop}
+          className={`drop-zone mt-5 flex min-h-56 flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed p-6 text-center transition ${over?'border-accent bg-accent-dim':'border-line-strong'}`}>
+          <FileArchive className="size-9 text-accent" aria-hidden/>
+          <p className="font-semibold text-ink">Drop your ZIP or JSON files here</p>
+          <p className="text-[13px] text-ink-3">or choose files or a folder from your device</p>
+          <div className="mt-2 flex flex-wrap justify-center gap-3">
+            <button type="button" onClick={()=>filesRef.current?.click()} className={primaryBtn}><Upload className="size-4" aria-hidden/>Choose files</button>
+            <button type="button" onClick={()=>folderRef.current?.click()} className={secondaryBtn}><FolderOpen className="size-4" aria-hidden/>Choose folder</button>
+          </div>
+          <input ref={filesRef} type="file" multiple accept=".zip,.json,application/zip,application/json" className="hidden" onChange={e=>start(filesFromInput(e.target.files)).then(()=>(e.target.value=''))}/>
+          <input ref={folderRef} type="file" className="hidden" {...({webkitdirectory:'',directory:''} as Record<string,string>)} onChange={e=>start(filesFromInput(e.target.files)).then(()=>(e.target.value=''))}/>
         </div>
-        <div className="mt-2 flex flex-wrap justify-center gap-2">
-          <button type="button" onClick={() => filesRef.current?.click()} className={primaryBtn}>
-            <FileArchive className="size-4" aria-hidden />
-            {t.importer.chooseFiles}
-          </button>
-          <button type="button" onClick={() => folderRef.current?.click()} className={secondaryBtn}>
-            <FolderOpen className="size-4" aria-hidden />
-            {t.importer.chooseFolder}
-          </button>
+        {error && <div role="alert" className="mt-4 flex gap-2 rounded-xl bg-critical/10 p-4 text-critical"><AlertTriangle className="size-5 shrink-0"/><p>{t.importer.failed}: {error}</p></div>}
+        <div className="sample-band mt-4 flex flex-wrap items-center gap-4 rounded-xl p-4" style={{background:'var(--peach-soft)'}}>
+          <Sparkles className="size-7 shrink-0 text-[var(--peach-ink)]" aria-hidden/>
+          <div className="min-w-0 flex-1 basis-52"><p className="font-semibold text-ink">Take a look around first</p><p className="mt-1 text-[13px] text-ink-2">Explore the app with sample data to see what you can do.</p></div>
+          <button type="button" onClick={sample} className={secondaryBtn}>Try sample data</button>
         </div>
-        <input
-          ref={filesRef}
-          type="file"
-          multiple
-          accept=".zip,.json,application/zip,application/json"
-          className="hidden"
-          onChange={(e) => start(filesFromInput(e.target.files)).then(() => (e.target.value = ''))}
-        />
-        <input
-          ref={folderRef}
-          type="file"
-          className="hidden"
-          {...({ webkitdirectory: '', directory: '' } as Record<string, string>)}
-          onChange={(e) => start(filesFromInput(e.target.files)).then(() => (e.target.value = ''))}
-        />
-      </div>
-
-      {error && (
-        <div role="alert" className="mt-4 flex items-start gap-2 rounded-2xl border border-critical/50 bg-critical/10 p-4 text-ink">
-          <AlertTriangle className="mt-0.5 size-4 shrink-0 text-critical" aria-hidden />
-          <span>
-            <b>{t.importer.failed}.</b> {error}
-          </span>
-        </div>
-      )}
-
-      <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-3 rounded-2xl border border-line bg-surface p-5">
-        <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-accent-dim text-accent">
-          <Sparkles className="size-5" aria-hidden />
-        </span>
-        <div className="min-w-0 flex-1 basis-64">
-          <p className="font-semibold text-ink">{t.importer.demoTitle}</p>
-          <p className="mt-0.5 text-[13px] text-ink-2">{t.importer.demoText}</p>
-        </div>
-        <button type="button" onClick={sample} className={secondaryBtn}>
-          {t.importer.trySample}
-        </button>
       </div>
     </section>
   );
@@ -158,16 +94,16 @@ function ScanPath() {
   const setView = useUiStore((s) => s.setView);
   const open = last?.results.filter((r) => r.status === 'risk').length ?? 0;
   return (
-    <div className="mt-8 flex flex-wrap items-center gap-4 rounded-3xl border border-accent/40 bg-accent-dim p-5 sm:p-6">
+    <div className="mt-6 flex flex-wrap items-center gap-4 rounded-2xl bg-accent-dim p-5 sm:p-6">
       <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-accent text-accent-ink">
         <Puzzle className="size-6" aria-hidden />
       </span>
       <div className="min-w-0 flex-1 basis-64">
         <div className="flex flex-wrap items-center gap-2">
-          <h2 className="display text-[22px] font-semibold text-ink">{E.start.scanTitle}</h2>
-          <span className="rounded-full bg-surface px-2.5 py-0.5 text-[12px] font-semibold text-accent">{E.start.scanBadge}</span>
+          <h2 className="display text-[22px] font-semibold text-ink">Check your privacy settings</h2>
+          <span className="rounded-full bg-surface px-2.5 py-0.5 text-[12px] font-semibold text-accent">{ext.installed ? "Connected" : "Browser extension"}</span>
         </div>
-        <p className="mt-1 text-ink-2">{E.start.scanText}</p>
+        <p className="mt-1 text-ink-2">Check what’s visible on your social accounts, then choose what to change.</p>
         {last && (
           <p className="mt-2 text-[14px] font-medium text-ink" aria-live="polite">
             {last.signedOut ? E.start.lastScanSignedOut(fmt.date(last.at)) : E.start.lastScan(fmt.date(last.at), open)}
@@ -286,23 +222,20 @@ function ImportSummary({ summary }: { summary: ExportSummary }) {
 }
 
 function HowTo() {
-  return (
-    <aside className="h-fit rounded-2xl border border-line bg-surface p-6">
-      <h2 className="display text-[22px] font-semibold text-ink">{t.importer.howTitle}</h2>
-      <ol className="mt-4 space-y-4 text-ink-2">
-        {t.importer.howSteps.map((s, i) => (
-          <li key={s} className="flex gap-3">
-            <span className="num grid size-7 shrink-0 place-items-center rounded-full bg-surface-3 text-[13px] font-semibold text-ink">{i + 1}</span>
-            <span className="leading-6">{s}</span>
-          </li>
-        ))}
-      </ol>
-      <button type="button" onClick={() => useUiStore.getState().setView('platforms')} className="mt-5 text-[13px] font-medium text-accent hover:underline">
-        Which other platforms work? →
-      </button>
-      <p className="mt-4 border-t border-line pt-4 text-[13px] text-ink-3">{t.app.notAffiliated}</p>
-    </aside>
-  );
+  return <aside className="start-guide rounded-2xl border border-line bg-surface p-6 lg:p-7">
+    <h2 className="display text-[30px] font-semibold text-ink">Start with your data</h2>
+    <p className="mt-2 text-ink-2">It only takes a few minutes. Here’s how:</p>
+    <ol className="mt-6 space-y-7">
+      {[
+        ['Download your Facebook or Instagram data','Go to your account settings and request a copy of your information.'],
+        ['Choose JSON and all time','Choose JSON format and include all time in your export settings.'],
+        ['Open it here. Your files stay on your device.','Drop your ZIP or JSON files on the left. Everything is processed locally in your browser.'],
+      ].map(([title,text],i)=><li key={title} className="flex gap-4"><span className="num grid size-11 shrink-0 place-items-center rounded-full bg-accent-dim text-[19px] font-semibold text-accent">{i+1}</span><div><h3 className="text-[16px] font-semibold leading-snug text-ink">{title}</h3><p className="mt-2 leading-relaxed text-ink-2">{text}</p></div></li>)}
+    </ol>
+    <details className="mt-6 border-t border-line pt-4 text-[13px] text-ink-2"><summary className="cursor-pointer font-semibold text-accent">Show download instructions</summary><ol className="mt-3 list-decimal space-y-2 pl-5">{t.importer.howSteps.map(step=><li key={step}>{step}</li>)}</ol></details>
+    <div className="mt-6 rounded-xl p-5" style={{background:'var(--mint-soft)'}}><h3 className="flex items-center gap-2 font-semibold text-ink"><ShieldCheck className="size-5 text-[var(--plan)]"/>You are in control</h3><p className="mt-2 leading-relaxed text-ink-2">Your files are processed locally. We don’t upload your export or share it with anyone. You decide what to explore and what to keep.</p></div>
+    <button type="button" onClick={()=>useUiStore.getState().setView('platforms')} className="mt-5 text-[13px] font-semibold text-accent hover:underline">Which platforms work?</button>
+  </aside>;
 }
 
 const primaryBtn =

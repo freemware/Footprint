@@ -109,12 +109,12 @@ export const CHROME: Record<
   },
   light: {
     surface: '#ffffff',
-    text: '#131a26',
-    text2: '#44506a',
-    text3: '#66728a',
-    border: '#dde2ea',
+    text: '#28213d',
+    text2: '#5b536e',
+    text3: '#726a84',
+    border: '#e7e0fa',
     grid: '#eceff4',
-    accent: '#4352d4',
+    accent: '#7047eb',
     tooltip: '#ffffff',
   },
 };

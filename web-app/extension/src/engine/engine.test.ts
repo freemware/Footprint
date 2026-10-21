@@ -105,11 +105,11 @@ describe('lists', () => {
   });
 
   it('ticks only the chosen rows', async () => {
-    document.body.innerHTML = LIST;
+    document.body.innerHTML = LIST + '<p>You have reached the end</p>';
     document.querySelectorAll('[role=checkbox]').forEach((b) => b.addEventListener('click', () => b.setAttribute('aria-checked', String(b.getAttribute('aria-checked') !== 'true'))));
     const items = listItems(document);
     const r = await runStep(document, { op: 'select', keys: [items[1]!.item.key, 'gone'] });
-    expect(r).toMatchObject({ ok: true, selected: 1, missing: ['gone'] });
+    expect(r).toMatchObject({ ok: false, reason: 'not_found' });
     expect(listItems(document).map((x) => isChecked(x.box))).toEqual([false, true, false]);
   });
 

@@ -1,98 +1,50 @@
 # Footprint
 
-This repository holds two separate parts:
+Understand what social platforms know about you, check your privacy settings, and choose what stays. Export analysis and extension results stay in your browser.
 
-| Folder | What it is |
-|---|---|
-| [`extension/`](extension/) | **The browser extension** (packaged v0.3.1). Install it from [`releases/`](releases/). Everything below this table is about the extension. |
-| [`web-app/`](web-app/) | **The web app** (source code). Reads the data download Facebook or Instagram gives you and builds a personal privacy plan, entirely in your browser. **[Open the web app](https://claude.ai/artifact/Evhotzt7jLYS5CH7vRYTsf)** (test link) · [`web-app/README.md`](web-app/README.md) |
+| Folder | Purpose |
+| --- | --- |
+| [`extension/`](extension/) | Installable browser extension, v0.4.0. Rebuilt from the source below. |
+| [`web-app/`](web-app/) | React website, data-export explorer, and extension source in `web-app/extension`. |
+| [`releases/`](releases/) | Installable ZIPs. |
 
-Footprint is a Chrome extension that helps you review social media privacy settings, find posts you’re tagged in, and clean up old posts. Supported actions vary by platform.
+## Install or update
 
-Scans read settings. Changes happen only after you approve an action. Extension data is stored locally in your browser.
+[Download Footprint v0.4.0](releases/footprint-extension-0.4.0.zip), extract it, open `chrome://extensions` (or `brave://extensions`), enable Developer mode, and choose **Load unpacked** with the folder containing `manifest.json`.
 
-## Download
+For an existing installation, copy the new files into the same extension folder and click **Reload**. Close old Footprint dashboard tabs and reopen the extension. Keeping the existing installation preserves its identity and saved data.
 
-[Download Footprint v0.3.1](https://github.com/freemware/Footprint/raw/refs/heads/main/releases/footprint-extension-0.3.1.zip)
+Website changes in this repository do not update the temporary Claude-hosted test artifact automatically.
 
-## Install
+## New in 0.4.0
 
-1. Download and extract the ZIP.
-2. Open `chrome://extensions` in Chrome.
-3. Enable **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the extracted folder containing `manifest.json`.
-6. Open Footprint from Chrome’s extensions menu.
-7. Sign in to the social media account you want to scan in the same browser.
+- Larger tagged-post cards, original-post links, and expanded previews. **Load post previews** reads up to twelve post pages per request to fill in available captions and images.
+- **All tagged posts, photos & videos** scans both Facebook activity lists and deduplicates posts with a recognized permalink. Source-specific views remain available.
+- Incremental result saving, explicit per-source coverage, and **Continue scan** from the paused worker tab when it is still available.
+- **Keep** decisions, a **Needs review only** filter, and an exportable JSON inventory with coverage metadata.
+- A brighter lavender, peach, and mint website design, clearer local-import instructions, working sample data, and shared extension styling.
+- Reproducible extension builds using committed source, with the prior packaged Facebook fixes restored and Instagram recipes preserved.
 
-### Update an existing installation
+## Honest limits
 
-1. Close any open Footprint dashboard tabs.
-2. Extract the new ZIP and copy its contents into your existing extension folder.
-3. Keep the existing folder and installation to preserve the extension’s identity and saved data.
-4. Open `chrome://extensions` and click **Reload** for Footprint.
-5. Reopen Footprint.
+Reaching the end of a Facebook activity list does **not** guarantee that every historical tag was accessible. Facebook may omit private/deleted content, withhold history, filter results, or change its UI. A paused list remains incomplete; Continue looks for more instead of removing the warning.
 
-## Features
+Paused scans retain inactive worker tabs for continuation. If those tabs are closed/navigated or the browser restarts, Continue may need a new traversal. Saved lists remain visible. Previews and links are available only where Facebook exposes them; images can expire. The dashboard displays saved snapshots, not a live embedded Facebook feed.
 
-- **Privacy scan:** Review supported settings and see which are private, need attention, or couldn’t be read.
-- **Untag yourself:** Find supported tagged posts, select items, and approve tag removal.
-- **Post previews:** See thumbnails and open the original post when Facebook provides an image or link.
-- **Saved results:** Tagged and cleanup results are saved separately by platform and list, and remain available after navigation or a dashboard reload.
-- **Background scanning:** Facebook scanning tabs open in the background so you can stay in Footprint and follow progress.
-- **Cleanup:** Review supported old-post cleanup actions before approving changes.
+Saved lists are separated by platform/tool/source. Clear Footprint data when changing Facebook accounts on a shared browser profile. No real-account tag removals or complete historical coverage have been verified for this release.
 
-## What’s new in v0.3.1
-
-- Scanning keeps Footprint visible instead of activating the Facebook settings tab.
-- Tagged results can include a thumbnail and a link to the original post.
-- Results and the selected list persist across navigation and reloads.
-- Collection checks scrollable panels, waits for delayed content, and retains rows that disappear as Facebook loads more items.
-- Bulk selection controls are excluded from the results.
-- Lists without a confirmed end are labeled **partial**.
-- Privacy scans with unread settings show **Scan incomplete**.
-
-## Understanding scan results
-
-- **Already private:** Footprint successfully read the setting and found its expected private value.
-- **Needs attention:** Footprint read a setting that differs from its recommended value.
-- **Couldn’t be read:** Footprint could not determine the setting. This does not mean the setting is private or unsafe; review it manually.
-- **Partial list:** Facebook may have more items than Footprint collected. Run Find again to retry.
-
-## Known limitations
-
-- Facebook can change its pages, restrict access, or stop loading history. Footprint cannot guarantee that it finds every historical tagged photo, video, or post.
-- Collection stops at 5,000 items, 150 scroll passes, or six passes without new items. A list is marked complete only when an explicit end marker is detected.
-- Images and post links are available only when exposed in the activity row. Some items have no thumbnail, and image URLs may expire.
-- Saved results can become outdated after changes on Facebook. Run Find again before acting on an old list.
-- Tag-removal verification refuses to confirm missing items from an incomplete verification list.
-- Login alerts, two-factor authentication, and other settings may require manual review when Facebook does not expose the expected controls or applies account restrictions.
-- Live account mutations and complete historical coverage have not been verified for this release. Automated tests use simulated Facebook pages.
-
-## Troubleshooting
-
-**The old behavior is still showing:** Reload the extension at `chrome://extensions`, close the old dashboard, and reopen Footprint.
-
-**A setting couldn’t be read:** Make sure you are signed in, resolve any Facebook security prompts, and retry. Review the setting manually if it remains unreadable.
-
-**Some tagged items are missing:** Check that you selected the intended list, such as **Photos and videos you’re tagged in**. Retry collection and check whether the results are marked partial.
-
-**An image is missing:** Facebook may not expose a preview, or the image URL may have expired. Use the post link when available.
-
-## Development and validation
-
-The repository contains the packaged Manifest V3 extension. The original application source tree is not included, so this checkout does not support a full source build or TypeScript validation.
-
-With Node.js 24 and npm 11, run:
+## Develop and validate
 
 ```sh
-cd extension/maintenance
+cd web-app
 npm ci --ignore-scripts --no-audit --no-fund
+npm run typecheck
+npx tsc -p extension/tsconfig.json
 npm test
+npm run build
+npm run build:extension
 ```
 
-The extension's version is in `extension/manifest.json` (currently `0.3.1`).
+The extension build produces `web-app/extension/dist` and its ZIP. Root `extension/` and `releases/` contain the packaged copy for installation.
 
-The test command runs five regression tests and a simulated Facebook privacy scan against the shipped scripts. These tests do not sign in to Facebook or change a live account.
-
-Release validation also included JavaScript syntax and manifest-reference checks, plus desktop and mobile Chromium dashboard checks.
+See [validation and coverage limits](docs/0.4.0-validation.md) and [product differentiation direction](docs/product-direction.md). Tests use synthetic Facebook pages and storage fixtures. Live scans and approved account changes still require testing in a signed-in browser.

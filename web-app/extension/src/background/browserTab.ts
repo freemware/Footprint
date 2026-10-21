@@ -32,6 +32,15 @@ export class BrowserTab {
     return new BrowserTab(tab.id);
   }
 
+  static async resume(id: number, expectedUrl: string): Promise<BrowserTab | null> {
+    const t = await ext.tabs.get(id).catch(() => null);
+    return t?.url === expectedUrl ? new BrowserTab(id) : null;
+  }
+
+  async url(): Promise<string | undefined> {
+    return (await ext.tabs.get(this.id).catch(() => null))?.url;
+  }
+
   async close() {
     await ext.tabs.remove(this.id).catch(() => undefined);
   }

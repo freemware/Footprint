@@ -41,6 +41,7 @@ export async function runAutoscan() {
   if (!s.enabled || !(await isPro()) || isRunning()) return;
   let risks = 0;
   let fresh = 0;
+  let unread = 0;
   let signedOut: string[] = [];
   for (const p of available()) {
     const before = await latestReport(p.id);
@@ -49,6 +50,7 @@ export async function runAutoscan() {
     if (report.signedOut) signedOut = [...signedOut, p.name];
     risks += report.results.filter((r) => r.status === 'risk').length;
     fresh += newRisks(report, before).length;
+    unread += report.results.filter(r=>r.status==='unknown').length + Math.max(0,p.checks.length-report.results.length);
   }
   await set('autoscan', { ...s, lastRun: Date.now() });
   await updateBadge();
@@ -59,7 +61,7 @@ export async function runAutoscan() {
       ? `${fresh} new ${fresh === 1 ? 'setting needs' : 'settings need'} attention. Open Footprint to review.`
       : risks
         ? `No new risks. ${risks} ${risks === 1 ? 'setting is' : 'settings are'} still open.`
-        : 'All checked settings are private. Nice.';
+        : unread ? `Scan incomplete: ${unread} settings could not be read. Open Footprint to review.` : 'All checked settings are private. Nice.';
   if (hasNotifications()) {
     await ext.notifications.create(`autoscan-${Date.now()}`, { type: 'basic', iconUrl: 'icons/icon-128.png', title, message }).catch(() => undefined);
   }

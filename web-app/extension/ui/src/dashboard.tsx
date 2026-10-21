@@ -1,9 +1,10 @@
-import { StrictMode } from 'react';
+import { StrictMode, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import '@fontsource-variable/bricolage-grotesque/standard.css';
 import '@fontsource-variable/public-sans';
 import './styles.css';
 import { CalendarClock, History, Home, Radar, Settings, Sparkles, Tag, Trash2 } from 'lucide-react';
+import { available } from '../../src/platforms/registry';
 import { C } from './copy';
 import { Logo } from './parts';
 import { useHashView, useStatus, useSystemTheme } from './hooks';
@@ -28,6 +29,7 @@ const NAV = [
  */
 function Dashboard() {
   useSystemTheme();
+  const [platformId,setPlatformId] = useState('facebook');
   const [hash, go] = useHashView('home');
   const [view, focus] = hash.split(':') as [string, string | undefined];
   const { pro } = useStatus();
@@ -62,14 +64,15 @@ function Dashboard() {
         </nav>
         <p className="hidden px-5 pt-4 text-[12px] leading-relaxed text-ink-3 lg:block">{C.promise}</p>
       </aside>
-      <main className="mx-auto w-full max-w-[1000px] px-4 py-8 sm:px-8">
-        {view === 'scan' && <ScanView pro={pro} focus={focus} onKey={toKey} />}
-        {view === 'untag' && <ListView key="tags" kind="tags" pro={pro} onKey={toKey} />}
-        {view === 'cleanup' && <ListView key="posts" kind="posts" pro={pro} onKey={toKey} />}
+      <main className="mx-auto w-full max-w-[1100px] px-4 py-8 sm:px-8">
+        {['scan','untag','cleanup'].includes(view) && <label className="mb-6 flex items-center gap-3 text-[13px] font-semibold text-ink-2">Account platform<select aria-label="Account platform" className="rounded-xl border border-line bg-surface px-3 py-2 text-ink" value={platformId} onChange={e=>setPlatformId(e.target.value)}>{available().map(p=><option key={p.id} value={p.id}>{p.name}</option>)}</select></label>}
+        {view === 'scan' && <ScanView key={platformId} platformId={platformId} pro={pro} focus={focus} onKey={toKey} />}
+        {view === 'untag' && <ListView key={`tags:${platformId}`} platformId={platformId} kind="tags" pro={pro} onKey={toKey} />}
+        {view === 'cleanup' && <ListView key={`posts:${platformId}`} platformId={platformId} kind="posts" pro={pro} onKey={toKey} />}
         {view === 'autoscans' && <AutoscanViewWrap onKey={toKey} />}
         {view === 'history' && <HistoryView />}
         {view === 'settings' && <SettingsView pro={pro} focusKey={focus === 'key'} />}
-        {!['scan', 'untag', 'cleanup', 'autoscans', 'history', 'settings'].includes(view) && <HomeView go={go} />}
+        {!['scan', 'untag', 'cleanup', 'autoscans', 'history', 'settings'].includes(view) && <HomeView go={go} onChoosePlatform={p=>{setPlatformId(p);go("scan");}} />}
       </main>
     </div>
   );
